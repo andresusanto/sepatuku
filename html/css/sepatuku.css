@@ -1,0 +1,208 @@
+/**************************************************
+ SEPATUKU SIRCLO THEME - (c) 2015 by AMBISNIS.COM
+	
+	Enquiry: sales@ambisnis.com
+
+***************************************************/
+
+/* COMMON ITEM */
+input[type=text] {
+	border-radius:12px;
+	-moz-border-radius:12px;
+	-webkit-border-radius:12px;
+
+	border: 2px solid #dad0bf;
+	background-color: white;
+
+	-webkit-transition: all 0.30s ease-in-out;
+	-moz-transition: all 0.30s ease-in-out;
+	-ms-transition: all 0.30s ease-in-out;
+	-o-transition: all 0.30s ease-in-out;
+}
+ 
+input[type=text]:focus {
+  box-shadow: 0 0 1px rgba(89, 62, 62, 1);
+  border: 2px solid rgba(89, 62, 62, 1);
+}
+
+
+/* BAGIAN MENU PALING ATAS */
+.s-menu-kecil{
+	margin-top: 60px;
+	font-weight: bold;
+}
+
+.s-menu-kecil li{
+	display:inline;
+	margin-right: 17px;
+}
+.s-chart-top{
+	width: 260px;
+	margin-left: -177px;
+	padding: 10px;
+}
+
+.s-checkout-right{
+	text-align: right;
+}
+
+.s-chart-top h4{
+	font-family: Impact,Haettenschweiler,Franklin Gothic Bold,Charcoal,Helvetica Inserat,Bitstream Vera Sans Bold,Arial Black,sans serif;
+	font-size: 14px;
+	text-transform: uppercase;
+}
+
+/* BAGIAN LOGO DAN MENU UTAMA */
+.s-logo-utama{
+	text-align: center;
+}
+
+.s-web-content{
+	display: none;
+	margin-top: 37px;
+	padding-top: 33px;
+	padding-bottom: 20px;
+	background: url("../img/double-dash.png") left top repeat-x, url("../img/double-dash.png") left bottom repeat-x;
+	height: 123px;
+}
+
+.s-menu-text-big{
+	color: #593e3e;
+	font-size: larger;
+}
+
+.s-menu-text-small{
+	color: #aaa18b;
+	font-size: smaller;
+}
+
+.s-menu-utama a:link {
+	text-decoration: none;
+	font-weight: 700;
+}
+
+.s-menu-utama a:visited {
+    text-decoration: none;
+}
+
+.s-menu-utama a:hover {
+    text-decoration: none;
+	font-weight: 800;
+}
+
+.s-menu-utama a:active {
+    text-decoration: none;	
+} 
+
+.s-top-search{
+	padding-top: 10px;
+	padding-bottom: 30px;
+}
+
+.s-top-search input[type=text]{
+	color: #593e3e;
+	height: 40px;
+	background: url("../img/ico-search.png") right center no-repeat, #fff;
+}
+
+.s-mobile-menu {
+	background: url("../img/double-dash.png") left top repeat-x, url("../img/double-dash.png") left bottom repeat-x;
+	margin-top: 20px;
+	padding-top: 20px;
+	height: 60px;
+}
+
+@media (min-width: 992px) {
+	.s-web-content{
+		display: block;
+	}
+	.s-mobile-content{
+		display: none;
+	}
+	.s-logo-utama{
+		margin-left: -30px;
+	}
+	.s-menu-left{
+		padding-right: 30px;
+	}
+	.s-menu-right{
+		padding-left: 30px;
+	}
+}
+
+@media (min-width: 1200px) {
+	.s-logo-utama{
+		margin-left: 0;
+	}
+	.s-menu-left{
+		padding-right: 0;
+	}
+	.s-menu-right{
+		padding-left: 0;
+	}
+}
+
+
+
+/* BAGIAN FOOTER */
+.s-footer-bleky{
+	background: #272324;
+}
+
+.s-footer-menu{
+	background: url("../img/double-dash.png") top left repeat-x;
+	padding-bottom: 20px;
+}
+
+.s-footer-menu input{
+	background: #c7c7c7;
+	color: #37342f;
+	border: 2px solid #aa7271;
+}
+
+.s-footer-menu h4{
+	font-family: Impact,Haettenschweiler,Franklin Gothic Bold,Charcoal,Helvetica Inserat,Bitstream Vera Sans Bold,Arial Black,sans serif;
+	font-size: 16px;
+	padding-top: 30px;	
+	text-transform: uppercase;
+}
+
+.s-footer-menu a{
+	color: #5f6264;
+}
+
+.s-foot-social{
+	text-align: center;
+	margin-top: 40px;
+	padding-bottom: 20px;
+}
+
+.s-foot-copyright{
+	font-family: Impact,Haettenschweiler,Franklin Gothic Bold,Charcoal,Helvetica Inserat,Bitstream Vera Sans Bold,Arial Black,sans serif;
+	font-size: 14px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.s-foot-menu-end{
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 20px;
+}
+
+.s-foot-menu-end li{
+	display:inline;
+	margin-right: 10px;
+	font-family: Impact,Haettenschweiler,Franklin Gothic Bold,Charcoal,Helvetica Inserat,Bitstream Vera Sans Bold,Arial Black,sans serif;
+	font-size: 14px;
+	text-transform: uppercase;
+}
+
+.s-foot-menu-end a{
+	color: #5f6264;
+}
+
+/* BODY */
+.s-main-content{
+	min-height: 400px;
+}

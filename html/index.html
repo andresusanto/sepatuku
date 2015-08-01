@@ -15,6 +15,7 @@ SEPATUKU SIRCLO THEME
     <link href="css/bootstrap.min.css" rel="stylesheet">
 	
 	<!-- Sepatuku CSS-->
+	<link href="css/drawer.css" rel="stylesheet">
 	<link href="css/sepatuku.css" rel="stylesheet">
 	<link href="css/font-awesome.min.css" rel="stylesheet">
 	
@@ -26,280 +27,320 @@ SEPATUKU SIRCLO THEME
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body>
-	<div class="container">
-		<!-- BEGIN HEADER -->
+  <body class="drawer drawer-left">
+  
+	<header role="banner">
 		
-		<!-- MENU KECIL YANG ADA DIATAS -->
-		<div class="row">
-			<div class="s-menu-kecil pull-right">
-				<ul class="list-unstyled">
-					<li>
-						<a class="page-scroll" href="#"><img src="img/ico-bullet.png" /> Login</a>
-					</li>
-					<li>
-						<a class="page-scroll" href="#"><img src="img/ico-bullet.png" /> Register</a>
-					</li>
-					<li class="dropdown">
-						<a aria-expanded="false" class="dropdown-toggle" data-toggle="dropdown" href="#"><img src="img/ico-bag.png" /> 8 Item(s)</a>
-						<ul class="dropdown-menu s-chart-top">
-						  <h4>Your Shopping Cart</h4>
-						  1 x Nike Jordan XL<br/>
-						  2 x Adidas Runner Pro 12<br/>
-						  1 x DC Shoes BVA324<br/>
-						  3 x Macbeth AB6213<br/>
-						  <br/>
-						  <div class="s-checkout-right"><a href="#"><i class="fa fa-shopping-cart"></i> Check Out</a></div>
+		<div class="drawer-main drawer-default">
+			<nav class="drawer-nav" role="navigation">
+				<br/><br/>
+				<ul class="drawer-menu">
+					<li class="drawer-menu-item"><a href="#">NEW IN</a></li>
+					<li class="drawer-menu-item"><a href="#">MEN</a></li>
+					<li class="drawer-menu-item"><a href="#">WOMEN</a></li>
+					<li class="drawer-menu-item dropdown drawer-dropdown">
+						<a href="#" data-toggle="dropdown" role="button" aria-expanded="false">KIDS <span class="caret"></span></a>
+						<ul class="drawer-submenu dropdown-menu" role="menu">
+							<li class="drawer-submenu-item"><a href="#">Child Product</a></li>
+							<li class="drawer-submenu-item"><a href="#">Child Product</a></li>
+							<li class="drawer-submenu-item"><a href="#">Child Product</a></li>
 						</ul>
 					</li>
-				</ul>
-			</div>
-		</div>
-		<!-- END MENU KECIL -->
-	
-		<!-- MENU DAN LOGO ATAS -->
-		<div class="row">
-			<!-- LEFT MENU -->
-			<div class="col-md-5 s-menu-left s-menu-utama">
-				<div class="s-web-content">
-					<div class="row">
-						<div class="col-md-4">
-							<a href="#">
-								<div class="s-menu-text-big">NEW IN</div>
-								<div class="s-menu-text-small">New Arrivals<br/>collections</div>
-							</a>
-						</div>
-						<div class="col-md-4">
-							<a href="#">
-								<div class="s-menu-text-big">MEN</div>
-								<div class="s-menu-text-small">Men's Shoes<br/>collections</div>
-							</a>
-						</div>
-						<div class="col-md-4">
-							<a href="#">
-								<div class="s-menu-text-big">WOMEN</div>
-								<div class="s-menu-text-small">Women's Shoes<br/>collections</div>
-							</a>
-						</div>
-						
-					</div>
-				</div>
-				<div class="s-mobile-content s-top-search">
-					<input class="form-control" type="text" placeholder="Search">
-				</div>
-			</div>
-			<!-- LOGO UTAMA SITUS -->
-			<div class="col-md-2 s-logo-utama"><img src="img/logo.png" /></div>
-			
-			<!-- RIGHT MENU -->
-			<div class="col-md-5 s-menu-right s-menu-utama">
-				<div class="s-web-content">
-					<div class="row">
-						<div class="col-md-4">
-							<a aria-expanded="false" class="dropdown-toggle" data-toggle="dropdown" href="#">
-								<div class="s-menu-text-big">KIDS</div>
-								<div class="s-menu-text-small">Kid's Shoes<br/>collections</div>
-							</a>
-							<ul class="dropdown-menu">
-							  <li><a href="#">Kid's Summer-set</a></li>
-							  <li><a href="#">Kid's Swim-wear</a></li>
-							  <li><a href="#">Kid's Bikini Collection</a></li>
-							  <li class="divider"></li>
-							  <li><a href="#">Kids for Sale</a></li>
-							</ul>
-						</div>
-						<div class="col-md-4">
-							<a href="#">
-								<div class="s-menu-text-big">SALE</div>
-								<div class="s-menu-text-small">All About Sale<br/>GRAB IT FAST!</div>
-							</a>
-						</div>
-						<div class="col-md-4">
-							<a href="#">
-								<div class="s-menu-text-big">CONTACT</div>
-								<div class="s-menu-text-small">You can find<br/>us at here</div>
-							</a>
-						</div>
-						
-					</div>
-				</div>
-				<div class="s-mobile-content">
-					<div class="s-mobile-menu">
-						<a href="#"><img src="img/ico-menu.png"/> MENU</a>
-					</div>
-				</div>	
-			</div>
-		</div>
-		<!-- END LOGO DAN MENU ATAS -->
-		
-		<!-- END HEADER -->
-		
-		
-		
-		
-		
-		
-		<!-- PAGE CONTENT HERE -->
-		<div class="row s-main-content">
-		
-		</div>
-		
-		
-		
-		<!-- BEGIN FOOTER -->
-		
-		<!-- FOOTER MENU -->
-		<div class="row s-footer-menu">
-			<div class="col-md-3">
-				<h4>TOP LABELS</h4>
-				<ul class="list-unstyled">
-					<li>
-						<a class="page-scroll" href="#">Sacha Drake</a>
-					</li>
-					<li>
-						<a class="page-scroll" href="#">George</a>
-					</li>
-					<li>
-						<a class="page-scroll" href="#">Joseph Ribkoff</a>
-					</li>
-					<li>
-						<a class="page-scroll" href="#">State of Georgia</a>
-					</li>
-					<li>
-						<a class="page-scroll" href="#">Unspoken</a>
-					</li>
-					<li>
-						<a class="page-scroll" href="#">7 Camicie</a>
-					</li>
-					<li>
-						<a class="page-scroll" href="#">Maurie & Eve</a>
-					</li>
-					<li>
-						<a class="page-scroll" href="#">Cannisse</a>
-					</li>
+					<li class="drawer-menu-item"><a href="#">SALE</a></li>
+					<li class="drawer-menu-item"><a href="#">CONTACT</a></li>
 					
 				</ul>
-			</div>
-			<div class="col-md-3">
-				<h4>CATEGORIES</h4>
-				<ul class="list-unstyled">
-					<li>
-						<a class="page-scroll" href="#">Casual Shoes</a>
-					</li>
-					<li>
-						<a class="page-scroll" href="#">Running Shoes</a>
-					</li>
-					<li>
-						<a class="page-scroll" href="#">Sport Shoes</a>
-					</li>
-					<li>
-						<a class="page-scroll" href="#">Football Shoes</a>
-					</li>
-					<li>
-						<a class="page-scroll" href="#">Sandals</a>
-					</li>
-					<li>
-						<a class="page-scroll" href="#">Slippers</a>
-					</li>
-					<li>
-						<a class="page-scroll" href="#">Sneakers</a>
-					</li>
-					
-				</ul>			
-			</div>
-			<div class="col-md-3">
-				<h4>LABELS</h4>
-				<ul class="list-unstyled">
-					<li>
-						<a class="page-scroll" href="#">Jimmy Choo</a>
-					</li>
-					<li>
-						<a class="page-scroll" href="#">Adidas</a>
-					</li>
-					<li>
-						<a class="page-scroll" href="#">Nike</a>
-					</li>
-					<li>
-						<a class="page-scroll" href="#">Rebook</a>
-					</li>
-					<li>
-						<a class="page-scroll" href="#">Christian Loubutin</a>
-					</li>
-					<li>
-						<a class="page-scroll" href="#">Manolo Blahnik</a>
-					</li>
-					<li>
-						<a class="page-scroll" href="#">Louis Vuitton</a>
-					</li>
-					<li>
-						<a class="page-scroll" href="#">Cannisse</a>
-					</li>
-					
-				</ul>
-			</div>
-			<div class="col-md-3">
-				<h4>CONTACT</h4>
-				<i class="fa fa-phone"></i> (021) 555 7777<br/>
-				<i class="fa fa-clock-o"></i> 09:00 AM - 06.00 PM (WIB)<br/>
-				
-				<h4>NEWSLETTER</h4>
-				<div class="input-group">
-					<input class="form-control" type="text" placeholder="Email Address">
-					<span class="input-group-btn">
-						<button class="btn btn-primary" type="button">Subscribe</button>
-					</span>
-				</div>
-				
-			</div>
+
+				<div class="drawer-footer"><span></span></div>
+			</nav>
 		</div>
-		
-		
-		
-		
-		
-	</div>
-	
-	<div class="s-footer-bleky">
+	</header>
+
+	<div class="drawer-overlay">
 		<div class="container">
-			<!-- FOOTER SOCIAL -->
-			<div class="row s-foot-social">
-				<a href="#"><img src="img/ico-fb.png"/> </a>
-				<a href="#"><img src="img/ico-twitter.png"/> </a>
-				<a href="#"><img src="img/logo-bawah.png"/> </a>
-				<a href="#"><img src="img/ico-pintrest.png"/> </a>
-				<a href="#"><img src="img/ico-instagram.png"/> </a>
+			<!-- BEGIN HEADER -->
+			
+			<!-- MENU KECIL YANG ADA DIATAS -->
+			<div class="row">
+				<div class="s-menu-kecil pull-right">
+					<ul class="list-unstyled">
+						<li>
+							<a class="page-scroll" href="#"><img src="img/ico-bullet.png" /> Login</a>
+						</li>
+						<li>
+							<a class="page-scroll" href="#"><img src="img/ico-bullet.png" /> Register</a>
+						</li>
+						<li class="dropdown">
+							<a aria-expanded="false" class="dropdown-toggle" data-toggle="dropdown" href="#"><img src="img/ico-bag.png" /> 8 Item(s)</a>
+							<ul class="dropdown-menu s-chart-top">
+							  <h4>Your Shopping Cart</h4>
+							  1 x Nike Jordan XL<br/>
+							  2 x Adidas Runner Pro 12<br/>
+							  1 x DC Shoes BVA324<br/>
+							  3 x Macbeth AB6213<br/>
+							  <br/>
+							  <div class="s-checkout-right"><a href="#"><i class="fa fa-shopping-cart"></i> Check Out</a></div>
+							</ul>
+						</li>
+					</ul>
+				</div>
 			</div>
-			<!-- FOOTER COPYRIGHT -->
-			<div class="row s-foot-copyright">
-				&copy; 2015 SEPATUKU.COM, ALL RIGHT RESERVED
+			<!-- END MENU KECIL -->
+		
+			<!-- MENU DAN LOGO ATAS -->
+			<div class="row">
+				<!-- LEFT MENU -->
+				<div class="col-md-5 s-menu-left s-menu-utama">
+					<div class="s-web-content">
+						<div class="row">
+							<div class="col-md-4">
+								<a href="#">
+									<div class="s-menu-text-big">NEW IN</div>
+									<div class="s-menu-text-small">New Arrivals<br/>collections</div>
+								</a>
+							</div>
+							<div class="col-md-4">
+								<a href="#">
+									<div class="s-menu-text-big">MEN</div>
+									<div class="s-menu-text-small">Men's Shoes<br/>collections</div>
+								</a>
+							</div>
+							<div class="col-md-4">
+								<a href="#">
+									<div class="s-menu-text-big">WOMEN</div>
+									<div class="s-menu-text-small">Women's Shoes<br/>collections</div>
+								</a>
+							</div>
+							
+						</div>
+					</div>
+					<div class="s-mobile-content s-top-search">
+						<input class="form-control" type="text" placeholder="Search">
+					</div>
+				</div>
+				<!-- LOGO UTAMA SITUS -->
+				<div class="col-md-2 s-logo-utama"><img src="img/logo.png" /></div>
+				
+				<!-- RIGHT MENU -->
+				<div class="col-md-5 s-menu-right s-menu-utama">
+					<div class="s-web-content">
+						<div class="row">
+							<div class="col-md-4">
+								<a aria-expanded="false" class="dropdown-toggle" data-toggle="dropdown" href="#">
+									<div class="s-menu-text-big">KIDS</div>
+									<div class="s-menu-text-small">Kid's Shoes<br/>collections</div>
+								</a>
+								<ul class="dropdown-menu">
+								  <li><a href="#">Kid's Summer-set</a></li>
+								  <li><a href="#">Kid's Swim-wear</a></li>
+								  <li><a href="#">Kid's Bikini Collection</a></li>
+								  <li class="divider"></li>
+								  <li><a href="#">Kids for Sale</a></li>
+								</ul>
+							</div>
+							<div class="col-md-4">
+								<a href="#">
+									<div class="s-menu-text-big">SALE</div>
+									<div class="s-menu-text-small">All About Sale<br/>GRAB IT FAST!</div>
+								</a>
+							</div>
+							<div class="col-md-4">
+								<a href="#">
+									<div class="s-menu-text-big">CONTACT</div>
+									<div class="s-menu-text-small">You can find<br/>us at here</div>
+								</a>
+							</div>
+							
+						</div>
+					</div>
+					<div class="s-mobile-content">
+						<div class="s-mobile-menu">
+							<a href="#" id="menu-mobile"><img src="img/ico-menu.png"/> MENU</a>
+						</div>
+					</div>	
+				</div>
 			</div>
-			<!-- FOOTER EXTRA MENU -->
-			<div class="row s-foot-menu-end">
-				<ul class="list-unstyled">
-					<li>
-						<a class="page-scroll" href="#">About</a>
-					</li>
-					<li>
-						<a class="page-scroll" href="#">Contact</a>
-					</li>
-					<li>
-						<a class="page-scroll" href="#">Terms</a>
-					</li>
-					<li>
-						<a class="page-scroll" href="#">Privacy</a>
-					</li>
-					<li>
-						<a class="page-scroll" href="#">Sitemap</a>
-					</li>
-				</ul>
+			<!-- END LOGO DAN MENU ATAS -->
+			
+			<!-- END HEADER -->
+			
+			
+			
+			
+			
+			
+			<!-- PAGE CONTENT HERE -->
+			<div class="row s-main-content">
+			
+			</div>
+			
+			
+			
+			<!-- BEGIN FOOTER -->
+			
+			<!-- FOOTER MENU -->
+			<div class="row s-footer-menu">
+				<div class="col-md-3">
+					<h4>TOP LABELS</h4>
+					<ul class="list-unstyled">
+						<li>
+							<a class="page-scroll" href="#">Sacha Drake</a>
+						</li>
+						<li>
+							<a class="page-scroll" href="#">George</a>
+						</li>
+						<li>
+							<a class="page-scroll" href="#">Joseph Ribkoff</a>
+						</li>
+						<li>
+							<a class="page-scroll" href="#">State of Georgia</a>
+						</li>
+						<li>
+							<a class="page-scroll" href="#">Unspoken</a>
+						</li>
+						<li>
+							<a class="page-scroll" href="#">7 Camicie</a>
+						</li>
+						<li>
+							<a class="page-scroll" href="#">Maurie & Eve</a>
+						</li>
+						<li>
+							<a class="page-scroll" href="#">Cannisse</a>
+						</li>
+						
+					</ul>
+				</div>
+				<div class="col-md-3">
+					<h4>CATEGORIES</h4>
+					<ul class="list-unstyled">
+						<li>
+							<a class="page-scroll" href="#">Casual Shoes</a>
+						</li>
+						<li>
+							<a class="page-scroll" href="#">Running Shoes</a>
+						</li>
+						<li>
+							<a class="page-scroll" href="#">Sport Shoes</a>
+						</li>
+						<li>
+							<a class="page-scroll" href="#">Football Shoes</a>
+						</li>
+						<li>
+							<a class="page-scroll" href="#">Sandals</a>
+						</li>
+						<li>
+							<a class="page-scroll" href="#">Slippers</a>
+						</li>
+						<li>
+							<a class="page-scroll" href="#">Sneakers</a>
+						</li>
+						
+					</ul>			
+				</div>
+				<div class="col-md-3">
+					<h4>LABELS</h4>
+					<ul class="list-unstyled">
+						<li>
+							<a class="page-scroll" href="#">Jimmy Choo</a>
+						</li>
+						<li>
+							<a class="page-scroll" href="#">Adidas</a>
+						</li>
+						<li>
+							<a class="page-scroll" href="#">Nike</a>
+						</li>
+						<li>
+							<a class="page-scroll" href="#">Rebook</a>
+						</li>
+						<li>
+							<a class="page-scroll" href="#">Christian Loubutin</a>
+						</li>
+						<li>
+							<a class="page-scroll" href="#">Manolo Blahnik</a>
+						</li>
+						<li>
+							<a class="page-scroll" href="#">Louis Vuitton</a>
+						</li>
+						<li>
+							<a class="page-scroll" href="#">Cannisse</a>
+						</li>
+						
+					</ul>
+				</div>
+				<div class="col-md-3">
+					<h4>CONTACT</h4>
+					<i class="fa fa-phone"></i> (021) 555 7777<br/>
+					<i class="fa fa-clock-o"></i> 09:00 AM - 06.00 PM (WIB)<br/>
+					
+					<h4>NEWSLETTER</h4>
+					<div class="input-group">
+						<input class="form-control" type="text" placeholder="Email Address">
+						<span class="input-group-btn">
+							<button class="btn btn-primary" type="button">Subscribe</button>
+						</span>
+					</div>
+					
+				</div>
+			</div>
+			
+			
+			
+			
+			
+		</div>
+	
+		<div class="s-footer-bleky">
+			<div class="container">
+				<!-- FOOTER SOCIAL -->
+				<div class="row s-foot-social">
+					<a href="#"><img src="img/ico-fb.png"/> </a>
+					<a href="#"><img src="img/ico-twitter.png"/> </a>
+					<a href="#"><img src="img/logo-bawah.png"/> </a>
+					<a href="#"><img src="img/ico-pintrest.png"/> </a>
+					<a href="#"><img src="img/ico-instagram.png"/> </a>
+				</div>
+				<!-- FOOTER COPYRIGHT -->
+				<div class="row s-foot-copyright">
+					&copy; 2015 SEPATUKU.COM, ALL RIGHT RESERVED
+				</div>
+				<!-- FOOTER EXTRA MENU -->
+				<div class="row s-foot-menu-end">
+					<ul class="list-unstyled">
+						<li>
+							<a class="page-scroll" href="#">About</a>
+						</li>
+						<li>
+							<a class="page-scroll" href="#">Contact</a>
+						</li>
+						<li>
+							<a class="page-scroll" href="#">Terms</a>
+						</li>
+						<li>
+							<a class="page-scroll" href="#">Privacy</a>
+						</li>
+						<li>
+							<a class="page-scroll" href="#">Sitemap</a>
+						</li>
+					</ul>
+				</div>
 			</div>
 		</div>
-    </div>
-	<!-- END FOOTER-->
-	
+		<!-- END FOOTER-->
+	</div>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.1.1/iscroll-min.js"></script>
+    <script src="js/jquery.drawer.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+	
+	<script type="text/javascript">
+	$(document).ready(function() {
+	  $(".drawer").drawer();
+	});
+	$("#menu-mobile").click(function() {
+	  $('.drawer').drawer('toggle');
+	});	
+	</script>
   </body>
 </html>

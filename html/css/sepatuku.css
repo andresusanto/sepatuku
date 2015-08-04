@@ -5,6 +5,16 @@
 
 ***************************************************/
 
+@font-face {
+    font-family: BebasNeue;
+    src: url(../fonts/BebasNeue.otf);
+}
+
+@font-face {
+    font-family: DroidSans;
+    src: url(../fonts/DroidSans.ttf);
+}
+
 /* COMMON ITEM */
 input[type=text] {
 	border-radius:12px;
@@ -23,6 +33,12 @@ input[type=text] {
 input[type=text]:focus {
   box-shadow: 0 0 1px rgba(89, 62, 62, 1);
   border: 2px solid rgba(89, 62, 62, 1);
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: BebasNeue;
+	color: #333333;
+	text-align: center;
 }
 
 
@@ -205,4 +221,120 @@ input[type=text]:focus {
 /* BODY */
 .s-main-content{
 	min-height: 400px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+.s-main-content a{
+	text-decoration: none;
+	font-family: DroidSans;
+}
+
+.s-main-content a:hover{
+	font-weight: 600;
+}
+
+.s-top-padding{
+	padding-top : 20px;
+}
+
+.s-bottom-padding{
+	padding-bottom : 20px;
+}
+
+.s-breadcrumb a, span{
+	color: #333333;
+}
+
+.s-content-title h1{
+	text-align: center;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+.s-content-title h2{
+	font-size: 22px;
+}
+
+.s-content-title hr{
+	margin-top: 6px;
+	margin-bottom: 6px;
+	width: 120px;
+	height: 5px;
+	background-color: #333333;
+}
+
+.s-categories{
+	background-color: #e6d9d0;
+	font-family: DroidSans;
+	padding-top: 12px;
+	padding-bottom: 12px;
+}
+
+.s-categories a{
+	margin: 9px 0px;
+	color: #333333;
+	white-space: nowrap;
+}
+
+.s-single-product{
+	padding: 16px 8px;
+}
+
+.s-single-product-img{
+	position: relative;
+	background-color: #f0e6dd;
+	float: left;
+	width: 100%;
+}
+
+.s-single-product-img .product-img{
+	width: 100%;
+	margin: 50px 0px;
+}
+
+.s-single-product-img .label-img{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+}
+
+.s-single-product-desc{
+	width: 100%;
+	float: left;
+	padding: 15px 0px;
+	text-align: center;
+	font-family: DroidSans;
+}
+
+.s-single-product-desc div{
+	margin: 3px 0px;
+}
+
+.stripped{
+	text-decoration: line-through;
+	color: #8e8e8e;
+}
+
+.attention{
+	color: #e85e35;
+	font-weight: 600;
+}
+
+.s-pagination{
+	float: right;
+}
+
+.s-pagination .item{
+	margin: 0px 9px;
+}
+
+.s-pagination a{
+	color: #333333;
+}
+
+.s-pagination a:hover{
+	font-weight: normal;
+	color: #e85e35;
+	text-decoration: underline;
 }

@@ -15,6 +15,10 @@
     src: url(../fonts/DroidSans.ttf);
 }
 
+* {
+	font-family: DroidSans;
+}
+
 /* COMMON ITEM */
 input[type=text] {
 	border-radius:12px;
@@ -63,7 +67,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .s-chart-top h4{
-	font-family: Impact,Haettenschweiler,Franklin Gothic Bold,Charcoal,Helvetica Inserat,Bitstream Vera Sans Bold,Arial Black,sans serif;
+	font-family: BebasNeue;
 	font-size: 14px;
 	text-transform: uppercase;
 }
@@ -84,7 +88,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .s-menu-text-big{
 	color: #593e3e;
-	font-size: larger;
+	font-size: 15pt;
+	font-family: BebasNeue;
 }
 
 .s-menu-text-small{
@@ -94,7 +99,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .s-menu-utama a:link {
 	text-decoration: none;
-	font-weight: 700;
+	font-weight: normal;
 }
 
 .s-menu-utama a:visited {
@@ -177,7 +182,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .s-footer-menu h4{
-	font-family: Impact,Haettenschweiler,Franklin Gothic Bold,Charcoal,Helvetica Inserat,Bitstream Vera Sans Bold,Arial Black,sans serif;
+	font-family: BebasNeue;
 	font-size: 16px;
 	padding-top: 30px;	
 	text-transform: uppercase;
@@ -194,7 +199,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .s-foot-copyright{
-	font-family: Impact,Haettenschweiler,Franklin Gothic Bold,Charcoal,Helvetica Inserat,Bitstream Vera Sans Bold,Arial Black,sans serif;
+	font-family: BebasNeue;
 	font-size: 14px;
 	text-align: center;
 	text-transform: uppercase;
@@ -209,7 +214,7 @@ h1, h2, h3, h4, h5, h6 {
 .s-foot-menu-end li{
 	display:inline;
 	margin-right: 10px;
-	font-family: Impact,Haettenschweiler,Franklin Gothic Bold,Charcoal,Helvetica Inserat,Bitstream Vera Sans Bold,Arial Black,sans serif;
+	font-family: BebasNeue;
 	font-size: 14px;
 	text-transform: uppercase;
 }
@@ -339,4 +344,49 @@ h1, h2, h3, h4, h5, h6 {
 	font-weight: normal;
 	color: #e85e35;
 	text-decoration: underline;
+}
+
+.s-contact {
+	margin: 20px 0px;
+}
+
+.s-contact-form-container label{
+	display: block;
+}
+
+.s-contact-form-container input{
+	border-radius: 7px;
+	padding: 3px;
+	width: 60%;
+}
+
+.s-contact-form-container textarea {
+	border-radius: 7px;
+	width: 80%;
+}
+
+.s-contact-form-container .send {
+	padding: 10px 35px;
+	background-color: #b1d6cd;
+	font-family: BebasNeue;
+}
+
+.s-contact-info .title {
+	font-family: BebasNeue;
+	font-size: 16px;
+	margin-bottom: 10px;
+	display: block;
+}
+
+.s-contact-info table {
+	margin-bottom: 10px;
+}
+
+.s-contact-info td {
+	padding: 4px 0px;
+}
+
+.s-contact-info .first {
+	font-family: BebasNeue;
+	width: 30px;
 }

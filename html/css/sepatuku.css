@@ -265,6 +265,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .s-categories{
+	float: left;
+	width: 100%;
 	background-color: #e6d9d0;
 	font-family: DroidSans;
 	padding-top: 12px;

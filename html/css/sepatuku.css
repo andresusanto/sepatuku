@@ -365,7 +365,7 @@ h1, h2, h3, h4, h5, h6 {
 	width: 80%;
 }
 
-.s-contact-form-container .send {
+.blue-button {
 	padding: 10px 35px;
 	background-color: #b1d6cd;
 	font-family: BebasNeue;
@@ -389,4 +389,58 @@ h1, h2, h3, h4, h5, h6 {
 .s-contact-info .first {
 	font-family: BebasNeue;
 	width: 30px;
+}
+
+.s-cart .s-table {
+	margin: 20px 0px;
+	width: 100%;
+}
+
+.s-cart .s-table thead {
+	background-color: #816c69;
+}
+
+.s-cart .s-table thead td {
+	color: #333333;
+	font-family: BebasNeue;
+	padding: 10px 10px;
+}
+
+.s-cart .s-table tr {
+	border-bottom: solid #bdbdbd 1px;
+	border-top: none;
+}
+
+.s-cart .s-table td {
+	vertical-align: middle;
+	padding: 0px 2px;
+}
+
+.s-cart .s-table td img {
+	max-width: 170px;
+	padding: 10px;
+	vertical-align: middle;
+}
+
+.s-cart .s-table .product-description {
+	display: inline-block;
+}
+
+.s-cart .s-table input, .blue-button {
+	text-align: center;
+	width: 70px;
+	margin-top: 2px;
+	display: block;
+	border-radius: 2px;
+	padding: 2px;
+}
+
+.s-main-content .s-table-responsive {
+	border: none;
+}
+
+.s-cart a {
+	display: block;
+	margin-top: 5px;
+	color: #333333;
 }

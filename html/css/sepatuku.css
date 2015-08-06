@@ -514,7 +514,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .nopadding {
    padding: 0 !important;
-   margin: 0 !important;
+}
+
+.nomargin {
+	margin: 0 !important;
 }
 
 .s-cart-conclusion .col-xs-12 {
@@ -559,6 +562,13 @@ h1, h2, h3, h4, h5, h6 {
 	width: 100%;
 	background: url("../img/wavy.png") top left repeat-x;
 	margin: 25px 0px !important;
+	padding-bottom: 15px;
+}
+
+.s-doubly-separator {
+	width: 100%;
+	background: url("../img/double-dash.png") top left repeat-x;
+	margin: 10px 0px !important;
 	padding-bottom: 15px;
 }
 
@@ -634,4 +644,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .s-dropdown-container {
 	position: relative;
+}
+
+#product-zoom-gallery img {
+	width: 22%;
+	margin-top: 15px;
+	margin-right: 2%;
 }

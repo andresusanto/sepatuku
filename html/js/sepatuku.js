@@ -1,3 +1,4 @@
+// MENU DRAWER MOBILE
 $(document).ready(function() {
 	$(".drawer").drawer();
 	$("#menu-mobile").click(function() {
@@ -5,6 +6,8 @@ $(document).ready(function() {
 	});	
 });
 
+
+// DROPDOWN
 $( document.body ).on( 'click', '.dropdown-menu li', function( event ) {
 	var $target = $( event.currentTarget );
 
@@ -17,10 +20,19 @@ $( document.body ).on( 'click', '.dropdown-menu li', function( event ) {
 
 });
 
+// CHECKOUT AS GUEST ON CLICK
 $('.s-checkout-as-guest').on('click', function() {
 	window.location = 'shopping-cart.html';
 });
 
+// LOGIN ON CLICK
 $('.s-login-button').on('click', function() {
 	window.location = 'product.html';
 });
+
+// ELEVATE ZOOM
+$("#product-zoom").elevateZoom({
+	zoomType : "inner",
+    gallery : "product-zoom-gallery",
+    galleryActiveClass: "active"
+}); 

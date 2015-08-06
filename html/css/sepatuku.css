@@ -343,6 +343,10 @@ h1, h2, h3, h4, h5, h6 {
 	color: #e85e35;
 }
 
+.calm {
+	color: #33CCCC;;
+}
+
 .s-pagination{
 	float: right;
 }
@@ -650,4 +654,43 @@ h1, h2, h3, h4, h5, h6 {
 	width: 22%;
 	margin-top: 15px;
 	margin-right: 2%;
+}
+
+.s-product-detail {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background: white;
+	box-shadow: -10px 0px 10px #aaaaaa;
+}
+
+.s-product-detail h2, h3 {
+	text-align: left;
+}
+
+.s-product-detail .s-strike > span:before,
+.s-product-detail .s-strike > span:after {
+	background-color: #dddddd;
+	height: 1px;
+}
+
+.s-product-detail .btn-group, .s-product-detail .s-stock-status {
+	width: 30%;
+}
+
+@media only screen and (max-width: 600px) {
+	.s-product-detail .btn-group, .s-product-detail .s-stock-status {
+		width: 60%;
+	}
+}
+
+.s-product-detail .s-stock-status {
+	display: inline-block;
+	text-align: center;
+	font-size: 12pt;
+}
+
+.s-product-detail .s-label-fw {
+	position: relative;
+	display: inline-block;
+	width: 10%;
 }

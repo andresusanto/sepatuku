@@ -30,6 +30,11 @@ $('.s-login-button').on('click', function() {
 	window.location = 'product.html';
 });
 
+// ADD TO CART ON CLICK
+$('.s-add-to-cart').on('click', function() {
+	window.location = 'shopping-cart.html';
+});
+
 // ELEVATE ZOOM
 $("#product-zoom").elevateZoom({
 	zoomType : "inner",

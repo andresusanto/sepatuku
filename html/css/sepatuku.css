@@ -247,6 +247,18 @@ h1, h2, h3, h4, h5, h6 {
 	padding-bottom : 20px;
 }
 
+.s-top-margin {
+	margin-top: 20px;
+}
+
+.s-top-less-margin {
+	margin-top: 8px;
+}
+
+.s-bottom-margin {
+	margin-bottom: 20px;
+}
+
 .s-breadcrumb a, span{
 	color: #333333;
 }
@@ -560,4 +572,56 @@ h1, h2, h3, h4, h5, h6 {
 	width: inherit;
 	padding: 10px 25px;
 	border-radius: 7px;
+}
+
+.s-login-container {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	text-align: center;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.s-fullwidth {
+	width: 100%;
+}
+
+.s-login-container a {
+	color: #333333;
+}
+
+.s-strike {
+    display: block;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap; 
+}
+
+.s-strike > span {
+    position: relative;
+    display: inline-block;
+}
+
+.s-strike > span:before,
+.s-strike > span:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 9999px;
+    height: 1px;
+    background: #333333;
+}
+
+.s-strike > span:before {
+    right: 100%;
+    margin-right: 15px;
+}
+
+.s-strike > span:after {
+    left: 100%;
+    margin-left: 15px;
+}
+
+.s-login-container i {
+	color: #bbbbbb;
 }

@@ -16,3 +16,11 @@ $( document.body ).on( 'click', '.dropdown-menu li', function( event ) {
 	return false;
 
 });
+
+$('.s-checkout-as-guest').on('click', function() {
+	window.location = 'shopping-cart.html';
+});
+
+$('.s-login-button').on('click', function() {
+	window.location = 'product.html';
+});

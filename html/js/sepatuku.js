@@ -29,7 +29,7 @@ $('.s-checkout-as-guest').on('click', function() {
 
 // LOGIN ON CLICK
 $('.s-login-button').on('click', function() {
-	window.location = 'product.html';
+	window.location = 'account-info.html';
 });
 
 // ADD TO CART ON CLICK
@@ -63,7 +63,11 @@ $('.s-to-checkout-page').on('click', function() {
 });
 
 // CHECKOUT SUBMIT
-$('.s-checkout-submit').on('click', function(e) {
-	e.preventDefault();
+$('.s-checkout-submit').on('click', function() {
 	alert('Thank you for trusting us!')
+});
+
+// CHANGE PASSWORD
+$('.s-change-password-submit').on('click', function() {
+	alert('Password Changed!')
 });

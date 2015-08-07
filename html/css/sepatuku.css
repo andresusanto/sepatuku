@@ -35,7 +35,7 @@ input[type=text], input[type=password], input[type=date], input[type=email] {
 }
 
 input[type=text], input[type=password], input[type=email] {
-	padding: 7px 5px;
+	padding: 5px 5px;
 }
  
 input[type=text]:focus {
@@ -267,7 +267,8 @@ h1, h2, h3, h4, h5, h6 {
 	margin-bottom: 8px;
 }
 
-.s-main-content .s-breadcrumb a, span{
+.s-main-content .s-breadcrumb a,
+.s-main-content .s-breadcrumb span{
 	color: #333333;
 }
 
@@ -741,7 +742,7 @@ h1, h2, h3, h4, h5, h6 {
 	color: #333333;
 }
 
-.s-static-page .s-content h1,h2,h3,h4,h5,h6 {
+.s-content h1,h2,h3,h4,h5,h6 {
 	text-align: left;
 }
 
@@ -770,20 +771,20 @@ h1, h2, h3, h4, h5, h6 {
 	padding: 10px;
 }
 
-.s-checkout-page input[type=text], 
-.s-checkout-page input[type=password], 
-.s-checkout-page input[type=date], 
-.s-checkout-page input[type=email], 
-.s-checkout-page .s-dropdown {
+.s-half-form input[type=text], 
+.s-half-form input[type=password], 
+.s-half-form input[type=date], 
+.s-half-form input[type=email], 
+.s-half-form .s-dropdown {
 	width: 50%;
 }
 
 @media only screen and (max-width: 600px) {
-	.s-checkout-page input[type=text], 
-	.s-checkout-page input[type=password], 
-	.s-checkout-page input[type=date], 
-	.s-checkout-page input[type=email], 
-	.s-checkout-page .s-dropdown {
+	.s-half-form input[type=text], 
+	.s-half-form input[type=password], 
+	.s-half-form input[type=date], 
+	.s-half-form input[type=email], 
+	.s-half-form .s-dropdown {
 		width: 80%;
 	}
 }
@@ -791,4 +792,13 @@ h1, h2, h3, h4, h5, h6 {
 img.s-icon-pay {
 	height: 30px;
 	margin-bottom: 12px;
+}
+
+.s-account-page .s-content {
+	line-height: 2em;
+}
+
+.s-account-page .fixed-width {
+	display: inline-block;
+	width: 200px;
 }

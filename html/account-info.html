@@ -170,101 +170,71 @@ SEPATUKU SIRCLO THEME
 			
 			
 			<!-- PAGE CONTENT HERE -->
-			<div class="row s-main-content s-checkout-page">
+			<div class="row s-main-content s-account-page">
 				<div class="col-md-12 s-breadcrumb s-bottom-padding">
 					<a href="index.html">Home</a>
 					<span>&nbsp;/&nbsp;</span>
-					<a href="checkout.html">Checkout</a>
+					<a href="account-info.html">My Account</a>
+					<span>&nbsp;/&nbsp;</span>
+					<a href="account-info.html">Account Info</a>
 				</div>
 				<div class="col-md-12 s-content-title">
-					<h1>CHECKOUT</h1>
+					<h1>ACCOUNT INFO</h1>
 					<hr/>
 				</div>
-				<div class="col-md-5 s-top-margin">
-					<table>
-						<thead>
-							<tr>
-								<td><big class="s-bebas">YOUR SUMMARY ORDER</big></td>
-								<td></td>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>2 &times; Nike - Ardilla</td>
-								<td class="text-right">3.000.000</td>
-							</tr>
-							<tr>
-								<td class="text-right">Item total</td>
-								<td class="text-right">3.000.000</td>
-							</tr>
-							<tr>
-								<td class="text-right">Shipping and handling</td>
-								<td class="text-right">100.000</td>
-							</tr>
-							<tr>
-								<td class="text-right"><big class="s-bebas">TOTAL</big></td>
-								<td class="text-right"><big class="s-bebas">IDR 3.100.000</big></td>
-							</tr>
-						</tbody>
-					</table>
+				<div class="col-md-3 s-top-margin">
+					<h2 class="nomargin">MY ACCOUNT</h2>
+					<div class="active s-top-margin">
+						<a class="attention" href="#ai">Account Info</a>
+					</div>
+					<div class="active s-top-margin">
+						<a class="attention" href="#cp">Change Password</a>
+					</div>
+					<div class="active s-top-margin">
+						<a class="attention" href="#oh">Order History</a>
+					</div>
+					<div class="active s-top-margin">
+						<a class="attention" href="javascript:void(0);">Logout</a>
+					</div>
 				</div>
-				<div class="col-md-7 s-top-margin">
+				<div class="col-md-9 s-content s-top-margin">
+					<div class="s-bottom-margin">Hello, route dummy!</div>
+					<p>From your My Account Dashboard you have the ability to view a snapshot of your recent account activity and update your account information. Select a link to view or edit information.</p>
+					<br/>
+
+					<div id="ai" class="s-bottom-margin"><big>ACCOUNT INFO</big>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a class="attention" href="">edit</a>)</div>
+					<span class="fixed-width">Name</span>: Route dummy<br/>
+					<span class="fixed-width">Address</span>: Kasunanan, Mangkunegaran, Mangkubumi<br/>
+					<span class="fixed-width">Postal Code</span>: 57200<br/>
+					<span class="fixed-width">City</span>: Mangkubumi<br/>
+					<span class="fixed-width">State</span>: Indonesia<br/>
+					<span class="fixed-width">Country</span>: Indonesia<br/>
+					<span class="fixed-width">Phone</span>: +6080989999<br/>
+					<span class="fixed-width">Date of Birth</span>: 29 February 1993<br/><br/>
+
+					<div id="cp" class="s-bottom-margin"><big>CHANGE PASSWORD</big></div>
 					<form role="form" class="s-half-form">
 						<div class="form-group">
-							<label for="name">Name *</label><br/>
-							<input class="s-fullwidth" type="text" id="name">
+							<label for="current-password">Current Password</label><br/>
+							<input class="s-fullwidth" type="password" id="current-password">
 						</div>
 						<div class="form-group">
-							<label for="address">Address</label><br/>
-							<input class="s-fullwidth" type="text" id="address">
+							<label for="password">New Password</label><br/>
+							<input class="s-fullwidth" type="password" id="new-password">
 						</div>
 						<div class="form-group">
-							<label for="postal-code">Postal Code</label><br/>
-							<input class="s-fullwidth" type="text" id="postal-code">
+							<label for="confirm-password">Confirm Password</label><br/>
+							<input class="s-fullwidth" type="password" id="confirm-password">
 						</div>
-						<div class="form-group">
-							<label for="city">City *</label><br/>
-							<input class="s-fullwidth" type="text" id="city">
-						</div>
-						<div class="form-group">
-							<label for="country">Country *</label><br/>
-							<input class="s-fullwidth" type="text" id="country">
-						</div>
-						<div class="form-group">
-							<label for="email">Email *</label><br/>
-							<input class="s-fullwidth" type="email" id="email">
-						</div>
-						<div class="form-group">
-							<label for="phone">Phone *</label><br/>
-							<input class="s-fullwidth" type="text" id="phone">
-						</div>
-						<div class="s-bottom-less-margin"><strong>Shipment</strong></div>
-						<div class="checkbox form-group">
-							<label><input type="checkbox" value="">Ship to different address</label>
-						</div>
-						<div class="s-bottom-less-margin s-top-padding"><strong>Payment</strong></div>
-						<div class="radio form-group">	
-							<label><input name="payment_method" type="radio" value="">
-								Paypal / Visa / MasterCard
-							</label><br/>
-							<img class="s-icon-pay" src="img/paypal.jpg"/>
-							<img class="s-icon-pay" src="img/visa.jpg"/>
-							<img class="s-icon-pay" src="img/mastercard.jpg"/><br/>
-							<label><input name="payment_method" type="radio" value="">
-								Internet Banking / ATM Transfer
-							</label><br/>
-							<img class="s-icon-pay" src="img/dbs.jpg"/>
-							<img class="s-icon-pay" src="img/posb.jpg"/>
-							<img class="s-icon-pay" src="img/uob.png"/>
-							<img class="s-icon-pay" src="img/ocbc.jpg"/><br/>
-							We accept payment in SGD. Total amount payable: SGD 19.80
-						</div>
-						<div class="checkbox form-group s-bottom-margin">
-							<label><input type="checkbox" value="">I agree to the Privacy Policy
-							</label>
-						</div>
-						<button type="submit" class="btn btn-lg blue-button s-checkout-submit">CHECKOUT</button>
+						<button type="submit" class="btn btn-lg blue-button s-change-password-submit">CHANGE PASSWORD</button>
 					</form>
+
+					<div id="oh" class="s-bottom-margin s-top-margin s-top-padding"><big>ORDER HISTORY</big></div>
+					<span class="fixed-width">18 June 2015</span>: eASADcKJH<br/>
+					<span class="fixed-width">18 June 2015</span>: kjBKJbKJB<br/>
+					<span class="fixed-width">21 June 2015</span>: JHbjhVJJH<br/>
+					<span class="fixed-width">17 August 2015</span>: 78TGyuguh<br/>
+					<br/>
 				</div>
 			</div>
 			

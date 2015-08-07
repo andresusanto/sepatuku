@@ -806,3 +806,8 @@ img.s-icon-pay {
 	display: inline-block;
 	width: 200px;
 }
+
+.gamma-container {
+	height: 900px;
+	overflow: hidden;
+}

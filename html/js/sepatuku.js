@@ -71,3 +71,33 @@ $('.s-checkout-submit').on('click', function() {
 $('.s-change-password-submit').on('click', function() {
 	alert('Password Changed!')
 });
+
+// LOOKBOOK			
+$(function() {
+	var GammaSettings = {
+			// order is important!
+			viewport : [ {
+				width : 1200,
+				columns : 5
+			}, {
+				width : 900,
+				columns : 4
+			}, {
+				width : 500,
+				columns : 3
+			}, { 
+				width : 320,
+				columns : 2
+			}, { 
+				width : 0,
+				columns : 2
+			} ]
+	};
+
+	Gamma.init( GammaSettings );
+
+});
+
+$('.gamma-gallery li').on("click", function() {
+	alert('click image. ganti dengan script yang diinginkan atau hapus alert ini bila ingin menampilkan gambar.');
+});

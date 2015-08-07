@@ -798,6 +798,10 @@ img.s-icon-pay {
 	line-height: 2em;
 }
 
+.s-account-page .s-content form {
+	line-height: 1.428571429em;
+}
+
 .s-account-page .fixed-width {
 	display: inline-block;
 	width: 200px;

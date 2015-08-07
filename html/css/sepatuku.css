@@ -263,7 +263,7 @@ h1, h2, h3, h4, h5, h6 {
 	margin-bottom: 20px;
 }
 
-.s-breadcrumb a, span{
+.s-main-content .s-breadcrumb a, span{
 	color: #333333;
 }
 
@@ -340,7 +340,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .attention{
-	color: #e85e35;
+	color: #e85e35; /*red attention*/
 }
 
 .calm {
@@ -409,33 +409,33 @@ h1, h2, h3, h4, h5, h6 {
 	width: 30px;
 }
 
-.s-cart .s-table {
+.s-cart .s-table, .s-static-page .s-table {
 	margin: 20px 0px;
 	width: 100%;
 	border-collapse: collapse;
 }
 
-.s-cart .s-table thead {
+.s-cart .s-table thead, .s-static-page .s-table thead {
 	background-color: #816c69;
 }
 
-.s-cart .s-table thead td {
+.s-cart .s-table thead td, .s-static-page .s-table thead td {
 	color: #333333;
 	font-family: BebasNeue;
 	padding: 10px 10px;
 }
 
-.s-cart .s-table tr {
+.s-cart .s-table tr, .s-static-page .s-table tr {
 	border-bottom: solid #bdbdbd 1px;
 	border-top: none;
 }
 
-.s-cart .s-table td {
+.s-cart .s-table td, .s-static-page .s-table td {
 	vertical-align: middle;
 	padding: 0px 2px;
 }
 
-.s-cart .s-table td img {
+.s-cart .s-table td img, .s-static-page .s-table td img {
 	max-width: 170px;
 	padding: 10px;
 	vertical-align: middle;
@@ -693,4 +693,66 @@ h1, h2, h3, h4, h5, h6 {
 	position: relative;
 	display: inline-block;
 	width: 10%;
+}
+
+.s-static-sidebar ul {
+	list-style-type: none;
+	padding-left: 0px;
+}
+
+.s-static-sidebar > ul > li {
+	padding-left: 15px;
+	border-top: #cccccc solid 1px;
+	padding-top: 12px;
+	padding-bottom: 12px;
+}
+
+.s-static-sidebar > ul:last-child {
+	border-bottom: #cccccc solid 1px;
+}
+
+.s-static-sidebar > ul > li > ul {
+	padding-left: 15px;
+	display: none;
+}
+
+.s-static-sidebar > ul > li.active > ul {
+	display: block;
+}
+
+.s-static-sidebar > ul > li > ul > li {
+	padding-top: 5px ;
+	padding-bottom: 5px;
+}
+
+.s-static-sidebar ul li ul li ul {
+	display: none;
+}
+
+.s-static-sidebar > ul li a {
+	color: #00aa99; /*green link*/
+}
+
+.s-static-sidebar > ul li ul li a {
+	color: #333333;
+}
+
+.s-static-page .s-content h1,h2,h3,h4,h5,h6 {
+	text-align: left;
+}
+
+.s-static-page a {
+	color: #00aa99;
+	font-weight: normal;
+}
+
+.s-static-page a:hover {
+	color: #e85e35;
+}
+
+.s-static-page .s-table td {
+	padding: 10px 10px;
+}
+.s-static-page .s-content img {
+	margin: 10px;
 }

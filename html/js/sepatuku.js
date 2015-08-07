@@ -1,3 +1,5 @@
+var isTouchDevice = 'ontouchstart' in document.documentElement;
+
 // MENU DRAWER MOBILE
 $(document).ready(function() {
 	$(".drawer").drawer();
@@ -41,3 +43,16 @@ $("#product-zoom").elevateZoom({
     gallery : "product-zoom-gallery",
     galleryActiveClass: "active"
 }); 
+
+// STATIC PAGE SIDEBAR
+if (!isTouchDevice) {
+	$(".s-static-sidebar > ul > li").hover(function(){
+		if (!$(this).hasClass('active')) {
+			$(this).children('ul').slideDown();
+		}
+	}, function(){
+		if (!$(this).hasClass('active')) {
+			$(this).children('ul').slideUp();
+		}
+	});
+}

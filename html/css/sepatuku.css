@@ -20,7 +20,7 @@
 }
 
 /* COMMON ITEM */
-input[type=text], input[type=password], input[type=date] {
+input[type=text], input[type=password], input[type=date], input[type=email] {
 	border-radius:10px;
 	-moz-border-radius:10px;
 	-webkit-border-radius:10px;
@@ -34,7 +34,7 @@ input[type=text], input[type=password], input[type=date] {
 	-o-transition: all 0.30s ease-in-out;
 }
 
-input[type=text], input[type=password] {
+input[type=text], input[type=password], input[type=email] {
 	padding: 7px 5px;
 }
  
@@ -263,6 +263,10 @@ h1, h2, h3, h4, h5, h6 {
 	margin-bottom: 20px;
 }
 
+.s-bottom-less-margin {
+	margin-bottom: 8px;
+}
+
 .s-main-content .s-breadcrumb a, span{
 	color: #333333;
 }
@@ -466,7 +470,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @media only screen and (max-width: 480px) {
 	/* Force table to not be like tables anymore */
-	.s-cart table, thead, tbody, th, td, tr { 
+	table.s-table, .s-table thead, .s-table tbody, .s-table th, .s-table td, .s-table tr { 
 		display: block; 
 	}
 
@@ -755,4 +759,36 @@ h1, h2, h3, h4, h5, h6 {
 }
 .s-static-page .s-content img {
 	margin: 10px;
+}
+
+.s-checkout-page table {
+	width: 100%;
+}
+
+.s-checkout-page table td {
+	border: #cccccc solid 1px;
+	padding: 10px;
+}
+
+.s-checkout-page input[type=text], 
+.s-checkout-page input[type=password], 
+.s-checkout-page input[type=date], 
+.s-checkout-page input[type=email], 
+.s-checkout-page .s-dropdown {
+	width: 50%;
+}
+
+@media only screen and (max-width: 600px) {
+	.s-checkout-page input[type=text], 
+	.s-checkout-page input[type=password], 
+	.s-checkout-page input[type=date], 
+	.s-checkout-page input[type=email], 
+	.s-checkout-page .s-dropdown {
+		width: 80%;
+	}
+}
+
+img.s-icon-pay {
+	height: 30px;
+	margin-bottom: 12px;
 }

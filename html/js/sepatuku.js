@@ -56,3 +56,14 @@ if (!isTouchDevice) {
 		}
 	});
 }
+
+// SHOPPING CART CLICK CHECKOUT
+$('.s-to-checkout-page').on('click', function() {
+	window.location = 'checkout.html';
+});
+
+// CHECKOUT SUBMIT
+$('.s-checkout-submit').on('click', function(e) {
+	e.preventDefault();
+	alert('Thank you for trusting us!')
+});

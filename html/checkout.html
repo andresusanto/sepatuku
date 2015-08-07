@@ -6,13 +6,13 @@ SEPATUKU SIRCLO THEME
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>SEPATUKU</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>SEPATUKU</title>
 
-    <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+	<!-- Bootstrap -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
 	
 	<!-- Sepatuku CSS-->
 	<link href="css/drawer.css" rel="stylesheet">
@@ -20,12 +20,12 @@ SEPATUKU SIRCLO THEME
 	<link href="css/font-awesome.min.css" rel="stylesheet">
 	
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+	  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
   </head>
   <body class="drawer drawer-left">
   
@@ -46,7 +46,7 @@ SEPATUKU SIRCLO THEME
 							<li class="drawer-submenu-item"><a href="#">Child Product</a></li>
 						</ul>
 					</li>
-					<li class="drawer-menu-item"><a href="">SALE</a></li>
+					<li class="drawer-menu-item"><a href="#">SALE</a></li>
 					<li class="drawer-menu-item"><a href="contact.html">CONTACT</a></li>
 					
 				</ul>
@@ -170,130 +170,104 @@ SEPATUKU SIRCLO THEME
 			
 			
 			<!-- PAGE CONTENT HERE -->
-			<div class="row s-main-content">
+			<div class="row s-main-content s-checkout-page">
 				<div class="col-md-12 s-breadcrumb s-bottom-padding">
 					<a href="index.html">Home</a>
 					<span>&nbsp;/&nbsp;</span>
-					<a href="shopping-cart.html">Shopping Cart</a>
+					<a href="checkout.html">Checkout</a>
 				</div>
 				<div class="col-md-12 s-content-title">
-					<h1>SHOPPING CART</h1>
+					<h1>CHECKOUT</h1>
 					<hr/>
 				</div>
-				<div class="col-md-12 s-cart">
-					<table class="s-table">
+				<div class="col-md-5 s-top-margin">
+					<table>
 						<thead>
 							<tr>
-								<td class="text-center">ITEM</td>
-								<td>PRICE</td>
-								<td>QUANTITY</td>
-								<td class="text-right">TOTAL</td>
+								<td><big class="s-bebas">YOUR SUMMARY ORDER</big></td>
+								<td></td>
 							</tr>
 						</thead>
 						<tbody>
 							<tr>
-								<td>
-									<img src="img/one-shoe.jpg"/>
-									<div class="product-description">Nike Ardilla<br/>SDK. 1231241</div>
-								</td>
-								<td>IDR 1.350.000</td>
-								<td>
-									<input type="text" value="1"/>
-									<button class="btn blue-button">UPDATE</button>
-									<a href="javascript:void(0);">[x] remove</a>
-								</td>
-								<td class="text-right">IDR 1.350.000</td>
+								<td>2 &times; Nike - Ardilla</td>
+								<td class="text-right">3.000.000</td>
 							</tr>
 							<tr>
-								<td>
-									<img src="img/one-shoe.jpg"/>
-									<div class="product-description">Nike Ardilla<br/>SDK. 1231241</div>
-								</td>
-								<td>IDR 1.350.000</td>
-								<td>
-									<input type="text" value="1"/>
-									<button class="btn blue-button">UPDATE</button>
-									<a href="javascript:void(0);">[x] remove</a>
-								</td>
-								<td class="text-right">IDR 1.350.000</td>
+								<td class="text-right">Item total</td>
+								<td class="text-right">3.000.000</td>
 							</tr>
 							<tr>
-								<td>
-									<img src="img/one-shoe.jpg"/>
-									<div class="product-description">Nike Ardilla<br/>SDK. 1231241</div>
-								</td>
-								<td>IDR 1.350.000</td>
-								<td>
-									<input type="text" value="1"/>
-									<button class="btn blue-button">UPDATE</button>
-									<a href="javascript:void(0);">[x] remove</a>
-								</td>
-								<td class="text-right">IDR 1.350.000</td>
+								<td class="text-right">Shipping and handling</td>
+								<td class="text-right">100.000</td>
+							</tr>
+							<tr>
+								<td class="text-right"><big class="s-bebas">TOTAL</big></td>
+								<td class="text-right"><big class="s-bebas">IDR 3.100.000</big></td>
 							</tr>
 						</tbody>
 					</table>
 				</div>
-				<div class="s-cart-conclusion">
-					<div class="item-total col-xs-12 pull-right">
-						<div class="col-xs-6 col-md-3 nopadding pull-right text-right">
-							2.700.000
+				<div class="col-md-7 s-top-margin">
+					<form role="form">
+						<div class="form-group">
+							<label for="name">Name *</label><br/>
+							<input class="s-fullwidth" type="text" id="name">
 						</div>
-						<div class="col-xs-6 col-md-3 pull-right text-right">
-							Item total
+						<div class="form-group">
+							<label for="address">Address</label><br/>
+							<input class="s-fullwidth" type="text" id="address">
 						</div>
-					</div>
-					<div class="item-ship col-xs-12 pull-right">
-						<div class="col-xs-6 col-md-3 nopadding pull-right text-right">
-							50.000
+						<div class="form-group">
+							<label for="postal-code">Postal Code</label><br/>
+							<input class="s-fullwidth" type="text" id="postal-code">
 						</div>
-						<div class="col-xs-6 col-md-3 pull-right text-right">
-							Shipping and handling
+						<div class="form-group">
+							<label for="city">City *</label><br/>
+							<input class="s-fullwidth" type="text" id="city">
 						</div>
-					</div>
-					<div class="total attention col-xs-12 pull-right">
-						<div class="col-xs-6 col-md-3 nopadding pull-right text-right">
-							IDR 2.750.000
+						<div class="form-group">
+							<label for="country">Country *</label><br/>
+							<input class="s-fullwidth" type="text" id="country">
 						</div>
-						<div class="col-xs-6 col-md-3 pull-right text-right">
-							Total
+						<div class="form-group">
+							<label for="email">Email *</label><br/>
+							<input class="s-fullwidth" type="email" id="email">
 						</div>
-					</div>
-					<div class="col-xs-12 text-right">
-						<button class="col-xs-1 col-md-1 blue-button btn pull-right">UPDATE</button>
-						<div class="col-xs-5 col-md-2 dropdown pull-right btn-group clearfix">
-					    <button class="btn btn-default dropdown-toggle s-dropdown" type="button" id="menu1" data-toggle="dropdown"><span data-bind="label">Indonesia</span>
-					    <span class="caret"></span></button>
-					    <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
-					      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Indonesia</a></li>
-					      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Malaysia</a></li>
-					      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Singapore</a></li>
-					      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Thailand</a></li>
-					      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">USA</a></li>
-					    </ul>
-					  </div>
-						<span class="col-xs-4 col-md-2 s-label pull-right">Shipping Country</span>
-					</div>
-					<div class="col-xs-12 text-right">
-						<button class="col-xs-1 col-md-1 blue-button btn pull-right">UPDATE</button>
-						<div class="col-xs-5 col-md-2 dropdown pull-right btn-group">
-					    <button class="btn btn-default dropdown-toggle s-dropdown" type="button" id="menu1" data-toggle="dropdown"><span data-bind="label">USPS First Class</span>
-					    <span class="caret"></span></button>
-					    <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
-					      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">USPS First Class</a></li>
-					      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">USPS First Class International</a></li>
-					      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">USPS Priority</a></li>
-					      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">USPS MediaMail</a></li>
-					      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">USPS Two-Day</a></li>
-					    </ul>
-					  </div>
-						<span class="col-xs-4 col-md-2 s-label pull-right">Shipping Method</span>
-					</div>
-					<div class="s-wavy-separator pull-right"></div>
-					<a href="product.html" class="col-xs-4 col-md-7"><span class="s-large-font s-bebas attention"><i class="fa fa-angle-left"></i> CONTINUE SHOPPING</span></a>
-					<span class="col-xs-8 col-md-5"><button class="btn btn-lg blue-button pull-right s-large-button s-to-checkout-page">CHECKOUT</button></span>
+						<div class="form-group">
+							<label for="phone">Phone *</label><br/>
+							<input class="s-fullwidth" type="text" id="phone">
+						</div>
+						<div class="s-bottom-less-margin"><strong>Shipment</strong></div>
+						<div class="checkbox form-group">
+							<label><input type="checkbox" value="">Ship to different address</label>
+						</div>
+						<div class="s-bottom-less-margin s-top-padding"><strong>Payment</strong></div>
+						<div class="radio form-group">	
+							<label><input name="payment_method" type="radio" value="">
+								Paypal / Visa / MasterCard
+							</label><br/>
+							<img class="s-icon-pay" src="img/paypal.jpg"/>
+							<img class="s-icon-pay" src="img/visa.jpg"/>
+							<img class="s-icon-pay" src="img/mastercard.jpg"/><br/>
+							<label><input name="payment_method" type="radio" value="">
+								Internet Banking / ATM Transfer
+							</label><br/>
+							<img class="s-icon-pay" src="img/dbs.jpg"/>
+							<img class="s-icon-pay" src="img/posb.jpg"/>
+							<img class="s-icon-pay" src="img/uob.png"/>
+							<img class="s-icon-pay" src="img/ocbc.jpg"/><br/>
+							We accept payment in SGD. Total amount payable: SGD 19.80
+						</div>
+						<div class="checkbox form-group s-bottom-margin">
+							<label><input type="checkbox" value="">I agree to the Privacy Policy
+							</label>
+						</div>
+						<button type="submit" class="btn btn-lg blue-button s-checkout-submit">CHECKOUT</button>
+					</form>
 				</div>
-					
 			</div>
+			
 			
 			
 			<!-- BEGIN FOOTER -->
@@ -447,13 +421,13 @@ SEPATUKU SIRCLO THEME
 		</div>
 		<!-- END FOOTER-->
 	</div>
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.1.1/iscroll-min.js"></script>
-    <script src="js/jquery.drawer.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.elevatezoom.js"></script>
-    <script src="js/sepatuku.js"></script>
+	<script src="js/jquery.drawer.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.elevatezoom.js"></script>
+	<script src="js/sepatuku.js"></script>
   </body>
 </html>

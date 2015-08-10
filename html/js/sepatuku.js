@@ -101,3 +101,13 @@ $(function() {
 $('.gamma-gallery li').on("click", function() {
 	alert('click image. ganti dengan script yang diinginkan atau hapus alert ini bila ingin menampilkan gambar.');
 });
+
+// SLIDER TESTIMONY
+$(document).ready(function(){
+	$('.quote-slider').bxSlider({
+		slideWidth: 1000,
+		minSlides: 1,
+		maxSlides: 1,
+		slideMargin: 10
+	});
+});

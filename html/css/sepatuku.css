@@ -247,6 +247,10 @@ h1, h2, h3, h4, h5, h6 {
 	padding-top : 20px;
 }
 
+.s-padding {
+	padding: 20px;
+}
+
 .s-top-less-padding{
 	padding-top : 8px;
 }
@@ -847,4 +851,45 @@ img.s-icon-pay {
 	padding-bottom: 8px;
 	background-color: #777;
 	font-size: 16px;
+}
+
+.s-testimonial-page .s-content {
+	text-align: center;
+}
+
+.s-testimonial-page .quote-icon {
+	font-size: 20pt;
+	color: #bbbbbb;
+	margin-bottom: 50px;
+}
+
+.s-testimonial-page .quote-slider {
+	text-align: center;
+	color: #3D1F00;
+	line-height: 3em;
+}
+
+.s-testimonial-page .quote-slider img {
+	clear: both;
+	float: none !important;
+}
+
+.s-testimonial-page .quote-slider .location {
+	color: #8e8e8e;
+}
+
+.quote-slider .identity {
+	line-height: 1.5em;
+	margin-top: 45px;
+	text-align: left;
+}
+
+@media only screen and (max-width: 600px) {
+	.quote-slider .identity {
+		text-align: center;
+	}
+}
+
+.s-testimonial-page .s-content small {
+	font-size: 10px;
 }

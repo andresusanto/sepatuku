@@ -247,8 +247,16 @@ h1, h2, h3, h4, h5, h6 {
 	padding-top : 20px;
 }
 
+.s-top-less-padding{
+	padding-top : 8px;
+}
+
 .s-bottom-padding{
 	padding-bottom : 20px;
+}
+
+.s-bottom-less-padding{
+	padding-bottom : 8px;
 }
 
 .s-top-margin {
@@ -527,6 +535,14 @@ h1, h2, h3, h4, h5, h6 {
 
 .nomargin {
 	margin: 0 !important;
+}
+
+.no-bottom-margin {
+	margin-bottom: 0px !important;
+}
+
+.no-top-margin {
+	margin-top: 0px !important;
 }
 
 .s-cart-conclusion .col-xs-12 {
@@ -810,4 +826,25 @@ img.s-icon-pay {
 .gamma-container {
 	height: 900px;
 	overflow: hidden;
+}
+
+.s-blog-date, .s-blog-month {
+	width: 100%;
+	text-align: center;
+	color: white;
+}
+
+.s-blog-date {
+	padding-top: 8px;
+	padding-bottom: 7px;
+	background-color: #555555;
+	font-size: 30pt;
+	font-family: BebasNeue;
+}
+
+.s-blog-month {
+	padding-top: 8px;
+	padding-bottom: 8px;
+	background-color: #777;
+	font-size: 16px;
 }

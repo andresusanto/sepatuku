@@ -16,6 +16,7 @@ SEPATUKU SIRCLO THEME
 	
 	<!-- Sepatuku CSS-->
 	<link href="css/drawer.css" rel="stylesheet">
+	<link href="css/jquery.bxslider.css" rel="stylesheet">
 	<link href="css/sepatuku.css" rel="stylesheet">
 	<link href="css/font-awesome.min.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/lookbook.css"/>
@@ -72,6 +73,12 @@ SEPATUKU SIRCLO THEME
 						<li>
 							<a class="page-scroll" href="register.html" /> Register</a>
 						</li>
+						<li>
+							<a class="page-scroll" href="account-info.html" /> Account Info</a>
+						</li>
+						<li>
+							<a class="page-scroll" href="account-info.html" /> Account Info</a>
+						</li>
 						<li class="dropdown">
 							<a aria-expanded="false" class="dropdown-toggle" data-toggle="dropdown" href="#"><img src="img/ico-bag.png" /> 8 Item(s)</a>
 							<ul class="dropdown-menu s-chart-top">
@@ -102,7 +109,7 @@ SEPATUKU SIRCLO THEME
 								</a>
 							</div>
 							<div class="col-md-4">
-								<a href="#">
+								<a href="">
 									<div class="s-menu-text-big">MEN</div>
 									<div class="s-menu-text-small">Men's Shoes<br/>collections</div>
 								</a>
@@ -172,13 +179,113 @@ SEPATUKU SIRCLO THEME
 			
 			
 			<!-- PAGE CONTENT HERE -->
-			<div class="row s-main-content">
+			<div class="row s-main-content s-home-page">
 				<div class="col-md-12">
-					<h2>Other page(s) unlinked</h2>
-					<a href="lookbook.html">Lookbook</a><br/>
-					<a href="blog.html">Blog</a><br/>
-					<a href="testimonial.html">Testimonial</a><br/>
-					<a href="invite-friends.html">Invite Friends</a>
+					<div class="home-slider">
+						<div class="slide">
+							<img class="" lass="s-fullwidth s-padding" src="img/products/large/image1.jpg">
+						</div>
+						<div class="slide">
+							<img class="" lass="s-fullwidth s-padding" src="img/products/large/image2.jpg">
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-12 s-top-margin">
+					<div class="row">
+						<div class="col-md-8 col-md-offset-2">
+							<h1 class="nopadding nomargin">FEATURED PRODUCTS</h1>
+						</div>
+						<div class="col-md-2">
+							<button id="see-all-products" class="s-title-button btn-warning btn pull-right">See All&nbsp;&nbsp;<small><i class="fa fa-play"></i></small></button>
+						</div>
+					</div>
+					<div class="s-doubly-separator"></div>
+				</div>
+				<div class="col-md-12 s-products">
+					<a href="product-detail.html">
+						<div class="col-md-3 s-single-product">
+							<div class="s-single-product-img">
+								<img class="label-img" src="img/label-exclusive.png"/>
+								<img class="product-img img-responsive" src="img/one-shoe.jpg"/>
+							</div>
+							<div class="s-single-product-desc">
+								<div class="">Nike - Ardilla</div>
+								<div class="">IDR 1.500.000</div>
+							</div>
+						</div>
+					</a>
+					<a href="product-detail.html">
+						<div class="col-md-3 s-single-product">
+							<div class="s-single-product-img">
+								<img class="label-img" src="img/label-exclusive.png"/>
+								<img class="product-img img-responsive" src="img/one-shoe.jpg"/>
+							</div>
+							<div class="s-single-product-desc">
+								<div class="">Nike - Ardilla</div>
+								<div class="">IDR 1.500.000</div>
+							</div>
+						</div>
+					</a>
+					<a href="product-detail.html">
+						<div class="col-md-3 s-single-product">
+							<div class="s-single-product-img">
+								<img class="product-img img-responsive" src="img/one-shoe.jpg"/>
+							</div>
+							<div class="s-single-product-desc">
+								<div class="">Nike - Ardilla</div>
+								<div class="stripped">IDR 1.500.000</div>
+								<div class="attention">IDR 1.000.000</div>
+							</div>
+						</div>
+					</a>
+					<a href="product-detail.html">
+						<div class="col-md-3 s-single-product">
+							<div class="s-single-product-img">
+								<img class="product-img img-responsive" src="img/one-shoe.jpg"/>
+							</div>
+							<div class="s-single-product-desc">
+								<div class="">Nike - Ardilla</div>
+								<div class="stripped">IDR 1.500.000</div>
+								<div class="attention">SOLD</div>
+							</div>
+						</div>
+					</a>
+				</div>
+
+				<div class="col-md-12 s-top-margin">
+					<div class="row">
+						<div class="col-md-8 col-md-offset-2">
+							<h1 class="nopadding nomargin">LABELS</h1>
+						</div>
+						<div class="col-md-2">
+							<button id="see-labels" class="s-title-button btn-warning btn pull-right">See All&nbsp;&nbsp;<small><i class="fa fa-play"></i></small></button>
+						</div>
+					</div>
+					<div class="s-doubly-separator"></div>
+				</div>
+				<div class="col-md-12 s-bottom-margin s-bottom-padding">
+					<div class="col-md-7ths">
+						<img src="img/label-logo.gif" class="s-fullwidth">
+					</div>
+					<div class="col-md-7ths">
+						<img src="img/label-logo.gif" class="s-fullwidth">
+					</div>
+					<div class="col-md-7ths">
+						<img src="img/label-logo.gif" class="s-fullwidth">
+					</div>
+					<div class="col-md-7ths">
+						<img src="img/label-logo.gif" class="s-fullwidth">
+					</div>
+					<div class="col-md-7ths">
+						<img src="img/label-logo.gif" class="s-fullwidth">
+					</div>
+					<div class="col-md-7ths">
+						<img src="img/label-logo.gif" class="s-fullwidth">
+					</div>
+					<div class="col-md-7ths">
+						<img src="img/label-logo.gif" class="s-fullwidth">
+					</div>
 				</div>
 			</div>
 			
@@ -246,33 +353,17 @@ SEPATUKU SIRCLO THEME
 					</ul>			
 				</div>
 				<div class="col-md-3">
-					<h4>LABELS</h4>
+					<h4>PAGES</h4>
 					<ul class="list-unstyled">
 						<li>
-							<a class="page-scroll" href="#">Jimmy Choo</a>
+							<a class="page-scroll" href="lookbook.html">Lookbook</a>
 						</li>
 						<li>
-							<a class="page-scroll" href="#">Adidas</a>
+							<a class="page-scroll" href="blog.html">Blog</a>
 						</li>
 						<li>
-							<a class="page-scroll" href="#">Nike</a>
+							<a class="page-scroll" href="testimonial.html">Testimonial</a>
 						</li>
-						<li>
-							<a class="page-scroll" href="#">Rebook</a>
-						</li>
-						<li>
-							<a class="page-scroll" href="#">Christian Loubutin</a>
-						</li>
-						<li>
-							<a class="page-scroll" href="#">Manolo Blahnik</a>
-						</li>
-						<li>
-							<a class="page-scroll" href="#">Louis Vuitton</a>
-						</li>
-						<li>
-							<a class="page-scroll" href="#">Cannisse</a>
-						</li>
-						
 					</ul>
 				</div>
 				<div class="col-md-3">
@@ -348,5 +439,6 @@ SEPATUKU SIRCLO THEME
 	<script src="js/js-url.min.js"></script>
 	<script src="js/jquerypp.custom.js"></script>
 	<script src="js/gamma.js"></script>
+	<script src="js/jquery.bxslider.min.js"></script>
   </body>
 </html>

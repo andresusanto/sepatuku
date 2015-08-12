@@ -111,3 +111,21 @@ $(document).ready(function(){
 		slideMargin: 10
 	});
 });
+
+// SLIDER HOME
+$(document).ready(function(){
+	$('.home-slider').bxSlider({
+		minSlides: 1,
+		maxSlides: 1,
+		controls: false,
+		auto: true
+	});
+});
+
+$('#see-all-products').on('click', function() {
+	window.location = 'product.html';
+});
+
+$('#see-labels').on('click', function() {
+	window.location = 'product.html';
+});

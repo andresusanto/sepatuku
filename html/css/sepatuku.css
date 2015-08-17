@@ -974,3 +974,16 @@ img.s-icon-pay {
 .s-title-button:hover {
 	background-color: #E69369;
 }
+
+.s-editable-desc h2 {
+	text-align: center;
+}
+
+.s-editable-desc {
+	text-align: center;
+	background: url('../img/home-bgtext.png');
+	background-size: 100% 100%;
+	padding-bottom: 20px;
+	padding-left: 40px;
+	padding-right: 40px;
+}

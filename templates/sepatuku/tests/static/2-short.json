@@ -1,0 +1,65 @@
+{
+    "title": "Static",
+    "breadcrumb": [
+        {
+            "title": "Home",
+            "link": "http://home"
+        },
+        {
+            "title": "Some Page",
+            "link": "http://page"
+        },
+        {
+            "title": "Sub Page",
+            "link": "http://subpage"
+        }
+    ],
+    "static_data": {
+        "title": "The Static Title: The Subtitle",
+        "content": "<p>This is a very short content.</p>",
+        "nav": [
+            {
+                "title": "Company: Who we are",
+                "link": "http://company"
+            },
+            {
+                "title": "Vision and Mission",
+                "link": "http://vision_mission",
+                "is_active": true
+            },
+            {
+                "title": "Our Services: What we do",
+                "link": ""
+            },
+            {
+                "title": "This Is A Very Very Very Very Long Title",
+                "link": "http://longtitle",
+                "sub_nav": [
+                    {
+                        "title": "Sub Nav 1 Very Very Very Very Long Title",
+                        "link": "http://subnav1"
+                    },
+                    {
+                        "title": "Sub Nav 2",
+                        "link": "http://subnav2",
+                        "is_active": true
+                    },
+                    {
+                        "title": "Sub Nav 3",
+                        "link": "http://subnav3"
+                    }
+                ]
+            },
+            {
+                "title": "Normal Title",
+                "link": "http://normal"
+            }
+        ],
+        "nav_title": "About Us",
+        "images": [
+            "http://palomino.local/images/test/static1.jpg",
+            "http://palomino.local/images/test/static2.jpg",
+            "http://palomino.local/images/test/static3.jpg"
+        ]
+    }
+}

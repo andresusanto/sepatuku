@@ -1,0 +1,20 @@
+{
+  "title": "Login",
+  "context_links": {
+    "account_login": "/account/login",
+    "account_register": "/account/register"
+  },
+"configs": {
+    "theme_favicon_url": "/images/test/favicon.png",
+    "theme_background_image":"/images/bg.jpg",
+    "theme_bank_accounts": "BCA, OCBC Current, OCBC Savings",
+    "theme_facebook_url": "http://www.facebook.com/sirclo",
+    "theme_twitter_url": "http://www.twitter.com/sirclo",
+    "theme_instagram_url": "http://www.instagram.com/sirclo",
+    "theme_homepage_featured": "Yes",
+    "theme_mailing_list_popup": "Yes",
+    "theme_mailing_list_content": "<p><img src=\"/images/test/banner-fashion.jpg\"></img></p>",
+    "theme_menu_font_color": "#ff0000",
+    "text_agreement": "<p>This is customizable agree to <a href=\"#\">Terms of Use</a> and <a href=\"#\">Privacy Policy</a></p>"
+  }
+}

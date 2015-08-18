@@ -513,6 +513,9 @@ EOD;
 			else if ($_value == "REGISTER") {
 				$_html_input .= '<button type="submit" class="btn btn-lg blue-button"> REGISTER </button>';
 			}
+			else if ($_value == "SEND") {
+				$_html_input .= '<button type="submit" class="btn btn-lg blue-button">SEND</button>';
+			}
 			else {
 				/*
 				if ($lang == "id") {
@@ -766,19 +769,66 @@ EOD;
         $_member_state = !empty($params['member']['state']) ? $params['member']['state'] : '';
         $_member_country = !empty($params['member']['country']) ? $params['member']['country'] : '';
         $_member_email = !empty($params['member']['email']) ? $params['member']['email'] : '';
+		$_member_dob = !empty($params['member']['dob_timestamp']) ? date('d/m/Y',$params['member']['dob_timestamp']) : '';
         $_table_class = !empty($params['table_class']) ? $params['table_class'] : '';
 
         $_lang = !empty($params['lang']) ? $params['lang'] : "en";
-
+		
+		$_label_halo = $_lang == "id" ? "Halo, ".$_member_name."!" : "Hello, ".$_member_name."!";
+		$_label_description = $_lang == "id" ? "Kamu dapat melihat profil akunmu serta mengubah informasi pada profilmu." : "From your My Account Dashboard you have the ability to view a snapshot of your recent account activity and update your account information. Select a link to view or edit information.";
         $_label_name = $_lang == "id" ? "Nama" : "Name";
-        $_label_phone = $_lang == "id" ? "No HP" : "Mobile Phone";
+        $_label_phone = $_lang == "id" ? "No HP" : "Phone";
         $_label_address = $_lang == "id" ? "Alamat" : "Address";
         $_label_postal_code = $_lang == "id" ? "Kode Pos" : "Postal Code";
-        $_label_city = $_lang == "id" ? "Kota/Kecamatan" : "City/District";
-        $_label_state = $_lang == "id" ? "Provinsi" : "State/Province";
+        $_label_city = $_lang == "id" ? "Kota/Kecamatan" : "City";
+        $_label_state = $_lang == "id" ? "Provinsi" : "State";
         $_label_country = $_lang == "id" ? "Negara" : "Country";
         $_label_email = $_lang == "id" ? "E-mail" : "E-mail";
+		
+		$_label_dob = $_lang == "id" ? "Tanggal lahir" : "Date of Birth";
+		
+		$html .= 
+		"<div class='col-md-9 s-content s-top-margin'>
+			<div class='s-bottom-margin'>$_label_halo</div>
+			<p>$_label_description</p>
+			<br/>
 
+			<div id='ai' class='s-bottom-margin'><big>ACCOUNT INFO</big>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<a class='attention' href=''>edit</a>)</div>
+			<span class='fixed-width'>$_label_name</span>: $_member_name<br/>
+			<span class='fixed-width'>$_label_address</span>: $_member_address<br/>
+			<span class='fixed-width'>$_label_postal_code</span>: $_member_postal_code<br/>
+			<span class='fixed-width'>$_label_city</span>: $_member_city<br/>
+			<span class='fixed-width'>$_label_state</span>: $_member_state<br/>
+			<span class='fixed-width'>$_label_country</span>: $_member_country<br/>
+			<span class='fixed-width'>$_label_phone</span>: $_member_phone<br/>
+			<span class='fixed-width'>$_label_dob</span>: $_member_dob<br/><br/>
+
+			<div id='cp' class='s-bottom-margin'><big>CHANGE PASSWORD</big></div>
+			<form role='form' class='s-half-form'>
+				<div class='form-group'>
+					<label for='current-password'>Current Password</label><br/>
+					<input class='s-fullwidth' type='password' id='current-password'>
+				</div>
+				<div class='form-group'>
+					<label for='password'>New Password</label><br/>
+					<input class='s-fullwidth' type='password' id='new-password'>
+				</div>
+				<div class='form-group'>
+					<label for='confirm-password'>Confirm Password</label><br/>
+					<input class='-fullwidth' type='password' id='confirm-password'>
+				</div>
+				<button type='submit' class='btn btn-lg blue-button s-change-password-submit'>CHANGE PASSWORD</button>
+			</form>
+
+			<div id='oh' class='s-bottom-margin s-top-margin s-top-padding'><big>ORDER HISTORY</big></div>
+			<span class='fixed-width'>18 June 2015</span>: eASADcKJH<br/>
+			<span class='fixed-width'>18 June 2015</span>: kjBKJbKJB<br/>
+			<span class='fixed-width'>21 June 2015</span>: JHbjhVJJH<br/>
+			<span class='fixed-width'>17 August 2015</span>: 78TGyuguh<br/>
+			<br
+		</div>";
+		
+		/*
         $html .= "
         <div id='account-detail'>
             <table class='$_table_class'>
@@ -815,7 +865,7 @@ EOD;
                     <td>$_member_email</td>
                 </tr>
             </table>
-        </div>";
+        </div>"; */
 
         return $html;
     }
@@ -1208,15 +1258,17 @@ EOD;
 
     static function sircloRenderContactForm($params) {
         $_lang = !empty($params['lang']) ? $params['lang'] : "en";
-        $_label_name = $_lang == "id" ? "Nama" : "Name";
-        $_label_email = $_lang == "id" ? "E-mail" : "E-mail";
+        $_label_name = $_lang == "id" ? "Nama" : "Your Name";
+        $_label_email = $_lang == "id" ? "E-mail" : "Your E-mail";
+		$_label_subject = $_lang == "id" ? "Subyek" : "Subject";
         $_label_message = $_lang == "id" ? "Pesan" : "Message";
 
         $params['fields'] = array(
-        array('name' => 'name', 'type' => 'text', 'value' => '', 'label' => $_label_name, 'attribute' => 'required'),
-        array('name' => 'email', 'type' => 'email', 'value' => '', 'label' => $_label_email, 'attribute' => 'required'),
-        array('name' => 'message', 'type' => 'textarea', 'value' => '', 'label' => $_label_message, 'attribute' => 'required'),
-        array('name' => '', 'type' => 'submit', 'value' => 'Submit', 'label' => '', 'attribute' => 'class="btn-flat"'));
+        array('name' => 'name', 'type' => 'text', 'value' => '', 'label' => $_label_name, 'attribute' => ''),
+        array('name' => 'email', 'type' => 'email', 'value' => '', 'label' => $_label_email, 'attribute' => ''),
+        array('name' => 'subject', 'type' => 'text', 'value' => '', 'label' => $_label_subject, 'attribute' => ''),
+        array('name' => 'message', 'type' => 'textarea', 'value' => '', 'label' => $_label_message, 'attribute' => ''),
+        array('name' => '', 'type' => 'submit', 'value' => 'SEND', 'label' => '', 'attribute' => 'class="btn-flat"'));
 
         $_html = Helper_Renderer::renderForm($params);
         return $_html;

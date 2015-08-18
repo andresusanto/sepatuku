@@ -2,19 +2,40 @@
     [
         'title' => 'Account Info',
         'page' => 'account',
-        'link' => {$links.account}
+        'link' => '#ai'
     ],
     [
         'title' => 'Change Password',
         'page' => 'account_edit_password',
-        'link' => {$links.account_change_password}
+        'link' => '#cp'
     ],
     [
         'title' => 'Order History',
         'page' => 'order_list',
-        'link' => {$links.account_orders}
+        'link' => '#oh'
+    ],
+	[
+        'title' => 'Invite Friends',
+        'page' => 'account_invite',
+        'link' => '{$links.account_invite}'
+    ],
+	[
+        'title' => 'Logout',
+        'page' => '/',
+        'link' => 'javascript:void(0);'
     ]
 ]}
+
+<div class="col-md-3 s-top-margin">
+	<h2 class="nomargin">MY ACCOUNT</h2>
+	{foreach $_array_tabs as $side_nav}
+		<div class="active s-top-margin">
+			<a class="attention" href="{$side_nav.link}">{$side_nav.title}</a>
+		</div>
+	{/foreach}
+</div>
+
+<!--
 <ul>
 {foreach $_array_tabs as $side_nav}
     {$_first = ''}
@@ -43,4 +64,4 @@
 <li class="{$_active} {$_first}"><a href="{$side_nav.link}" >{$side_nav.title}</a></li>
 
 {/if}
-<ul>
+<ul> -->

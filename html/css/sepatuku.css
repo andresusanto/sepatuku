@@ -638,12 +638,6 @@ h1, h2, h3, h4, h5, h6 {
 	text-align: left;
 }
 
-/*@media only screen and (max-width: 1090px) {
-	.s-dropdown {
-		width: 100px;
-	}
-}*/
-
 .s-dropdown .caret {
 	position: absolute;
 	right: 7px;

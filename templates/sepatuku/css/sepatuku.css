@@ -7,12 +7,12 @@
 
 @font-face {
     font-family: BebasNeue;
-    src: url(../fonts/BebasNeue.otf);
+    src: url(/fonts/BebasNeue.otf);
 }
 
 @font-face {
     font-family: DroidSans;
-    src: url(../fonts/DroidSans.ttf);
+    src: url(/fonts/DroidSans.ttf);
 }
 
 * {
@@ -123,7 +123,7 @@ h1, h2, h3, h4, h5, h6 {
 	margin-top: 37px;
 	padding-top: 33px;
 	padding-bottom: 20px;
-	background: url("../img/double-dash.png") left top repeat-x, url("../img/double-dash.png") left bottom repeat-x;
+	background: url("/images/double-dash.png") left top repeat-x, url("/images/double-dash.png") left bottom repeat-x;
 	height: 123px;
 }
 
@@ -164,11 +164,11 @@ h1, h2, h3, h4, h5, h6 {
 .s-top-search input[type=text]{
 	color: #593e3e;
 	height: 40px;
-	background: url("../img/ico-search.png") right center no-repeat, #fff;
+	background: url("/images/ico-search.png") right center no-repeat, #fff;
 }
 
 .s-mobile-menu {
-	background: url("../img/double-dash.png") left top repeat-x, url("../img/double-dash.png") left bottom repeat-x;
+	background: url("/images/double-dash.png") left top repeat-x, url("/images/double-dash.png") left bottom repeat-x;
 	margin-top: 20px;
 	padding-top: 20px;
 	height: 60px;
@@ -212,7 +212,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .s-footer-menu{
-	background: url("../img/double-dash.png") top left repeat-x;
+	background: url("/images/double-dash.png") top left repeat-x;
 	padding-bottom: 20px;
 }
 
@@ -626,14 +626,14 @@ h1, h2, h3, h4, h5, h6 {
 
 .s-wavy-separator {
 	width: 100%;
-	background: url("../img/wavy.png") top left repeat-x;
+	background: url("/images/wavy.png") top left repeat-x;
 	margin: 25px 0px !important;
 	padding-bottom: 15px;
 }
 
 .s-doubly-separator {
 	width: 100%;
-	background: url("../img/double-dash.png") top left repeat-x;
+	background: url("/images/double-dash.png") top left repeat-x;
 	margin: 10px 0px !important;
 	padding-bottom: 15px;
 }
@@ -981,7 +981,7 @@ img.s-icon-pay {
 
 .s-editable-desc {
 	text-align: center;
-	background: url('../img/home-bgtext.png');
+	background: url('/images/home-bgtext.png');
 	background-size: 100% 100%;
 	padding-bottom: 20px;
 	padding-left: 40px;

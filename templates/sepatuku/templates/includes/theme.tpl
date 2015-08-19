@@ -35,7 +35,6 @@ SEPATUKU SIRCLO THEME
 
         <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
 
-        {sirclo_render_css}
         {$_body_css = 'rel="stylesheet" type="text/css"'}
         <!-- Bootstrap -->
         <link {$_body_css} href="{sirclo_resource file='css/bootstrap.min.css'}">
@@ -222,9 +221,7 @@ SEPATUKU SIRCLO THEME
                 {/if}
 {/if}
 
-                <div id="content" class="container">
-                    {block name=body}{/block}
-                </div>
+                {block name=body}{/block}
 
 {if empty($smarty.get.viewmode)}
                 <!-- BEGIN FOOTER -->
@@ -287,16 +284,16 @@ SEPATUKU SIRCLO THEME
                         </ul>
                     </div>
                     <div class="col-md-3">
-                        <h4>PAGES</h4>
+                        <h4>LABELS</h4>
                         <ul class="list-unstyled">
                             <li>
-                                <a class="page-scroll" href="{$links.lookbook}">{sirclo_get_text text='lookbook'}</a>
+                                <a class="page-scroll" href="#">Anna Kendrick</a>
                             </li>
                             <li>
-                                <a class="page-scroll" href="{$links.blog}">{sirclo_get_text text='blog'}</a>
+                                <a class="page-scroll" href="#">Robert Downey Jr.</a>
                             </li>
                             <li>
-                                <a class="page-scroll" href="{$links.testimonials}">{sirclo_get_text text='testimonial'}</a>
+                                <a class="page-scroll" href="#">Leonardo Dicaprio</a>
                             </li>
                         </ul>
                     </div>
@@ -320,11 +317,11 @@ SEPATUKU SIRCLO THEME
                 <div class="container">
                     <!-- FOOTER SOCIAL -->
                     <div class="row s-foot-social">
-                        <a href="{$configs.theme_facebook_url}"><img src="/images/ico-fb.png"/> </a>
-                        <a href="{$configs.theme_twitter_url}"><img src="/images/ico-twitter.png"/> </a>
-                        <a href="#"><img src="/images/logo-bawah.png"/> </a>
-                        <a href="{$configs.theme_pinterest_url}"><img src="/images/ico-pintrest.png"/> </a>
-                        <a href="{$configs.theme_instagram_url}"><img src="/images/ico-instagram.png"/> </a>
+                        <a href="{$configs.theme_facebook_url}"><img src="/images/ico-fb.png"/></a>
+                        <a href="{$configs.theme_twitter_url}"><img src="/images/ico-twitter.png"/></a>
+                        <a><img src="/images/logo-bawah.png"/></a>
+                        <a href="{$configs.theme_pinterest_url}"><img src="/images/ico-pintrest.png"/></a>
+                        <a href="{$configs.theme_instagram_url}"><img src="/images/ico-instagram.png"/></a>
                     </div>
                     <!-- FOOTER COPYRIGHT -->
                     <div class="row s-foot-copyright">
@@ -348,6 +345,15 @@ SEPATUKU SIRCLO THEME
                             <li>
                                 <a class="page-scroll" href="{$links.sitemap}">{sirclo_get_text text='sitemap'}</a>
                             </li>
+                            <li>
+                                <a class="page-scroll" href="{$links.lookbook}">{sirclo_get_text text='lookbook'}</a>
+                            </li>
+                            <li>
+                                <a class="page-scroll" href="{$links.blog}">{sirclo_get_text text='blog'}</a>
+                            </li>
+                            <li>
+                                <a class="page-scroll" href="{$links.testimonials}">{sirclo_get_text text='testimonial'}</a>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -355,8 +361,6 @@ SEPATUKU SIRCLO THEME
             <!-- END FOOTER-->
         </div>
 
-        {sirclo_render_js}
-        {sirclo_render_ajax_info}
         {$_body_js = 'type="text/javascript"'}
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>

@@ -1,0 +1,19 @@
+{
+    "title": "Contact Us",
+    "breadcrumb": [
+        {
+            "title": "Home",
+            "link": "http://home"
+        },
+        {
+            "title": "Some Page",
+            "link": "http://page"
+        },
+        {
+            "title": "Sub Page",
+            "link": "http://subpage"
+        }
+    ],
+    "message": "Sorry, an error occurred.",
+    "message_type": "error"
+}

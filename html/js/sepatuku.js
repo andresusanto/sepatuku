@@ -136,7 +136,13 @@ $('#see-labels').on('click', function() {
 });
 
 // POPUP PRODUCT
-$('.s-products a').on('click', function(e) {
+$('.s-product-overlay').hover(function() {
+	$(this).children('i').show();
+}, function() {
+	$(this).children('i').hide();
+});
+
+$('.s-products i').on('click', function(e) {
 	e.preventDefault();
 	$('.s-show-product').show();
 });

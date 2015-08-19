@@ -354,11 +354,19 @@ h1, h2, h3, h4, h5, h6 {
 	white-space: nowrap;
 }
 
-.s-single-product{
-	padding: 16px 8px;
+.s-product-overlay {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
 }
 
-.s-single-product-img{
+.s-product-overlay:hover {
+	background: rgba(0,0,0,0.4);
+}
+
+.s-single-product-img {
 	position: relative;
 	background-color: #f0e6dd;
 	float: left;
@@ -374,6 +382,24 @@ h1, h2, h3, h4, h5, h6 {
 	position: absolute;
 	left: 0px;
 	top: 0px;
+}
+
+.s-single-product-img i {
+	display: none;
+	z-index: 11;
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	background: rgba(255,255,255,0.8);
+	border-radius: 0px 0px 0px 10px;
+	padding: 7px;
+	font-size: 30px;
+	color: rgb(100, 100, 100);
+}
+
+.s-single-product-img i:hover {
+	background: rgba(255,255,255,1);
+	color: black;
 }
 
 .s-single-product-desc{

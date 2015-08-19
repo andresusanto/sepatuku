@@ -288,10 +288,10 @@ EOD;
 		
 		if ($_type == "emailLogin") 
 		{
-			$_html_input .= "<input id='input_$_name' type='$_type' name='$_name' $_attribute value='$_value' placeholder='Email' class='form-control'>
+			$_html_input .= "<input id='input_$_name' type='$_type' name='$_name' $_attribute value='$_value' placeholder='Email' class='s-fullwidth'>
 							 <i class='fa fa-envelope s-top-less-margin form-control-feedback'></i>";
 			$_html .= 
-			'<div id="form-row-$_sanitized_name" class="sirclo-form-row">
+			'<div id="form-row-$_sanitized_name" class="form-group">
 				<div class="form-group has-feedback sirclo-form-input">
 					'.$_html_input.'
 				</div>
@@ -299,10 +299,10 @@ EOD;
 		}
 		else if ($_type == "passwordLogin") 
 		{
-			$_html_input .= "<input id='input_$_name' type='$_type' name='$_name' $_attribute value='$_value' placeholder='Password' class='form-control'>
+			$_html_input .= "<input id='input_$_name' type='$_type' name='$_name' $_attribute value='$_value' placeholder='Password' class='s-fullwidth'>
 							 <i class='fa fa-lock s-top-less-margin form-control-feedback'></i>";
 			$_html .= 
-			'<div id="form-row-$_sanitized_name" class="sirclo-form-row">
+			'<div id="form-row-$_sanitized_name" class="form-group">
 				<div class="form-group has-feedback sirclo-form-input">
 					'.$_html_input.'
 				</div>
@@ -312,7 +312,7 @@ EOD;
 		else if ($_type == "text"  || $_type == "password" || $_type == "email" || $_type == "tel") {
 			$_html_input .= "<input id='input_$_name' type='$_type' name='$_name' $_attribute value='$_value'>";
             $_html .= "
-            <div id='form-row-$_sanitized_name' class='sirclo-form-row'>
+            <div id='form-row-$_sanitized_name' class='form-group'>
                 <div class='sirclo-form-label'>
                     <label for='$_name'>
                         $_label
@@ -327,7 +327,7 @@ EOD;
         else if ($_type == "textarea") {
             $_html_input .= "<textarea name='$_name' $_attribute></textarea>";
             $_html .= "
-            <div id='form-row-$_sanitized_name' class='sirclo-form-row'>
+            <div id='form-row-$_sanitized_name' class='form-group'>
                 <div class='sirclo-form-label'>
                     <label for='$_name'>
                         $_label
@@ -342,7 +342,7 @@ EOD;
         else if ($_type == "file") {
             $_html_input .= "<input id='input_$_name' type='file' name='$_name' $_attribute>";
             $_html .= "
-            <div id='form-row-$_sanitized_name' class='sirclo-form-row'>
+            <div id='form-row-$_sanitized_name' class='form-group'>
                 <div class='sirclo-form-label'>
                     <label for='$_name'>
                         $_label
@@ -368,7 +368,7 @@ EOD;
 
             $_html_input .= "<select name='$_name' $_attribute>$_html_input_option</select>";
             $_html .= "
-            <div id='form-row-$_sanitized_name' class='sirclo-form-row'>
+            <div id='form-row-$_sanitized_name' class='form-group'>
                 <div class='sirclo-form-label'>
                     <label for='$_name'>
                         $_label
@@ -413,7 +413,7 @@ EOD;
 
             $_html_input .= "<select name='$_name' $_attribute>$_html_input_option</select>";
             $_html .= "
-            <div id='form-row-$_sanitized_name' class='sirclo-form-row'>
+            <div id='form-row-$_sanitized_name' class='form-group'>
                 <div class='sirclo-form-label'>
                     <label for='$_name'>
                         $_label
@@ -428,14 +428,12 @@ EOD;
         else if ($_type == "checkbox") {
             $_html_input .= "<input name='$_name' $_attribute type='checkbox'>";
             $_html .= "
-            <div id='form-row-$_sanitized_name' class='sirclo-form-row'>
-                <div class='sirclo-form-input checkbox'>
-                    $_html_input
-                    <label for='$_name'>
-                        $_label
-                        $_required
-                    </label>
-                </div>
+            <div id='form-row-$_sanitized_name' class='form-group checkbox'>
+                <label for='$_name'>
+                    <input type='checkbox' value=''>
+                    $_label
+                    $_required
+                </label>
             </div>";
         }
         else if ($_type == "radio") {
@@ -444,13 +442,18 @@ EOD;
                 foreach ($_value as $_v) {
                     $_html_image = '';
                     if (!empty($_v['image'])) {
-                        $_html_image = '<br/><img src="'.Helper_File::addSuffix($_v['image'], '_ori').'"/>';
+                        foreach ($_v['image'] as $img) {
+                            if ($_html_image == '') {
+                                $_html_image .= '<br/>';
+                            }
+                            $_html_image .= '<img class="s-icon-pay" src="'.$img.'"/>';
+                        }
                     }
                     if (isset($_selected) && $_v['value'] == $_selected) {
-                        $_html_input .= "<div class='radio'><input value='".$_v['value']."' name='".$_name."' type='radio' ".$_attribute." checked='checked'>".$_v['title'].$_html_image."</div>\n";
+                        $_html_input .= "<label><input value='".$_v['value']."' name='".$_name."' type='radio' ".$_attribute." checked='checked'>".$_v['title'].$_html_image."</label>\n";
                     }
                     else {
-                        $_html_input .= "<div class='radio'><input value='".$_v['value']."' name='".$_name."' type='radio' ".$_attribute.">".$_v['title'].$_html_image."</div>\n";
+                        $_html_input .= "<label><input value='".$_v['value']."' name='".$_name."' type='radio' ".$_attribute.">".$_v['title'].$_html_image."</label>\n";
                     }
                 }
             }
@@ -461,9 +464,8 @@ EOD;
             }
 
             $_html .= <<<EOD
-<div id='form-row-$_sanitized_name' class='sirclo-form-row'>
-<div class='sirclo-form-input radio'>
-$_html_input</div>
+<div id='form-row-$_sanitized_name' class='form-group radio'>
+    $_html_input
 </div>
 
 EOD;
@@ -487,7 +489,7 @@ EOD;
             }
 
             $_html .= "
-            <div id='form-row-$_sanitized_name' class='sirclo-form-row'>
+            <div id='form-row-$_sanitized_name' class='form-group'>
                 <div class='sirclo-form-input checkbox-multiple'>
                     $_html_input
                 </div>
@@ -519,16 +521,16 @@ EOD;
 			else {
 				/*
 				if ($lang == "id") {
-					$_html_input .= "<div class='sirclo-form-row notice'><span class='required'>*</span> wajib diisi.</div>";
+					$_html_input .= "<div class='form-group notice'><span class='required'>*</span> wajib diisi.</div>";
 				}
 				else {
-					$_html_input .= "<div class='sirclo-form-row notice'>Fields marked with <span class='required'>*</span> are required.</div>";
+					$_html_input .= "<div class='form-group notice'>Fields marked with <span class='required'>*</span> are required.</div>";
 				}*/
 				$_html_input .= "<input type='submit' value='$_value' $_attribute>";
 			}
 			
             $_html .= "
-            <div id='form-row-$_sanitized_name' class='sirclo-form-row'>
+            <div id='form-row-$_sanitized_name' class='form-group'>
                 $_html_input
             </div>";
         }
@@ -539,7 +541,7 @@ EOD;
             }
             $_html_input .= Helper_Xml::xmlSelect($_name, $_options, $_value, $_attrs);
             $_html .= "
-            <div id='form-row-$_sanitized_name' class='sirclo-form-row'>
+            <div id='form-row-$_sanitized_name' class='form-group'>
                 <div class='sirclo-form-label'>
                     <label for='$_name'>
                         $_label
@@ -554,7 +556,7 @@ EOD;
         else if ($_type == "plain_text") {
             $_html_input .= "<p>$_value</p>";
             $_html .= "
-            <div id='form-row-$_sanitized_name' class='sirclo-form-row'>
+            <div id='form-row-$_sanitized_name' class='form-group'>
                 $_html_input
             </div>";
         }
@@ -678,9 +680,9 @@ EOD;
             $_label_email = 'E-mail';
 
             $_label_shipping = "Shipping Address";
-            $_label_shipping_methods = "Shipping Method";
+            // $_label_shipping_methods = "Shipping Method";
             $_label_backorder_shipping_methods = "Backorder Shipping Method";
-            $_label_different_address = 'Send to different address?';
+            $_label_different_address = 'Ship to different address';
 
             $_label_payment_method = 'Payment Method';
             $_label_message_subheader = 'Note to Seller';
@@ -690,7 +692,7 @@ EOD;
             //$_label_agreement = "I agree to the <a href='$_link_terms'>Terms of Use</a> and <a href='$_link_privacy'>Privacy Policy</a>";
         }
 
-        $_label_agreement = 'I agree to Terms of Use and Privacy Policy';
+        $_label_agreement = 'I agree to the Privacy Policy';
         if (!empty($params['configs']['text_agreement'])) {
             $_label_agreement = strip_tags($params['configs']['text_agreement'], '<a>');
         }
@@ -701,8 +703,7 @@ EOD;
                 array_push($_payment_methods, array('title' => $_label_credit_card, 'value' => 'paypal'));
             }
             array_push($_payment_methods, array('title' => $_label_bank_transfer, 'value' => 'ibanking'));
-        }
-        else {
+        } else {
             $_payment_methods = $params['_payment_methods'];
         }
 
@@ -712,13 +713,13 @@ EOD;
             $params['fields'][] = array('name' => 'salutation', 'type' => 'salutation', 'value' => $_member_salutation, 'label' => $_label_salutation, 'attribute' => 'required');
         }
         $params['fields'][] = array('name' => 'first_name', 'type' => 'text', 'value' => $_member_name, 'label' => $_label_name, 'attribute' => 'required');
-        $params['fields'][] = array('name' => 'phone', 'type' => 'text', 'value' => $_member_phone, 'label' => $_label_phone, 'attribute' => 'required');
         $params['fields'][] = array('name' => 'address_line1', 'type' => 'text', 'value' => $_member_address, 'label' => $_label_address, 'attribute' => 'required');
-        $params['fields'][] = array('name' => 'country', 'type' => 'country', 'value' => $_member_country, 'label' => $_label_country, 'attribute' => 'required data-area-autocomplete="country"');
-        $params['fields'][] = array('name' => 'state', 'type' => 'text', 'value' => $_member_state, 'label' => $_label_state, 'attribute' => 'required data-area-autocomplete="state"');
-        $params['fields'][] = array('name' => 'city', 'type' => 'text', 'value' => $_member_city, 'label' => $_label_city, 'attribute' => 'required data-area-autocomplete="city"');
         $params['fields'][] = array('name' => 'postal_code', 'type' => 'text', 'value' => $_member_postal_code, 'label' => $_label_postal_code, 'attribute' => 'required');
+        $params['fields'][] = array('name' => 'city', 'type' => 'text', 'value' => $_member_city, 'label' => $_label_city, 'attribute' => 'required data-area-autocomplete="city"');
+        $params['fields'][] = array('name' => 'state', 'type' => 'text', 'value' => $_member_state, 'label' => $_label_state, 'attribute' => 'required data-area-autocomplete="state"');
+        $params['fields'][] = array('name' => 'country', 'type' => 'country', 'value' => $_member_country, 'label' => $_label_country, 'attribute' => 'required data-area-autocomplete="country"');
         $params['fields'][] = array('name' => 'email', 'type' => 'email', 'value' => $_member_email, 'label' => $_label_email, 'attribute' => 'required');
+        $params['fields'][] = array('name' => 'phone', 'type' => 'text', 'value' => $_member_phone, 'label' => $_label_phone, 'attribute' => 'required');
         $params['fields'][] = array('name' => '', 'type' => 'div_close', 'value' => '', 'label' => '', 'attribute' => '');
 
         $params['fields'][] = array('name' => '', 'type' => 'subheader', 'value' => $_label_shipping, 'label' => '', 'attribute' => '');
@@ -734,10 +735,10 @@ EOD;
         $params['fields'][] = array('name' => 'delivery_email', 'type' => 'email', 'value' => $_member_email, 'label' => $_label_email, 'attribute' => 'required');
         $params['fields'][] = array('name' => '', 'type' => 'div_close', 'value' => '', 'label' => '', 'attribute' => '');
 
-        if (!empty($params['with_shipping_methods'])) {
-            $params['fields'][] = array('name' => '', 'type' => 'subheader', 'value' => $_label_shipping_methods, 'label' => '', 'attribute' => '');
-            $params['fields'][] = array('name' => 'shipping_value_wrapper', 'type' => 'plain_text', 'value' => '', 'label' => '', 'attribute' => '');
-        }
+        // if (!empty($params['with_shipping_methods'])) {
+        //     $params['fields'][] = array('name' => '', 'type' => 'subheader', 'value' => $_label_shipping_methods, 'label' => '', 'attribute' => '');
+        //     $params['fields'][] = array('name' => 'shipping_value_wrapper', 'type' => 'plain_text', 'value' => '', 'label' => '', 'attribute' => '');
+        // }
 
         if (!empty($params['with_backorder_shipping_methods'])) {
             $params['fields'][] = array('name' => '', 'type' => 'subheader', 'value' => $_label_backorder_shipping_methods, 'label' => '', 'attribute' => '');
@@ -746,16 +747,17 @@ EOD;
 
         $params['fields'][] = array('name' => '', 'type' => 'subheader', 'value' => $_label_payment_method, 'label' => '', 'attribute' => '');
         $params['fields'][] = array('name' => 'payment_method', 'type' => 'radio', 'value' => $_payment_methods, 'label' => '', 'attribute' => 'required');
-        $params['fields'][] = array('name' => '', 'type' => 'subheader', 'value' => $_label_message_subheader, 'label' => '', 'attribute' => '');
-        $params['fields'][] = array('name' => 'message', 'type' => 'textarea', 'value' => '', 'label' => $_label_message, 'attribute' => '');
+        // $params['fields'][] = array('name' => '', 'type' => 'subheader', 'value' => $_label_message_subheader, 'label' => '', 'attribute' => '');
+        // $params['fields'][] = array('name' => 'message', 'type' => 'textarea', 'value' => '', 'label' => $_label_message, 'attribute' => '');
         if (!empty($_label_agreement)) {
             $params['fields'][] = array('name' => 'agreement', 'type' => 'checkbox', 'value' => '', 'label' => $_label_agreement, 'attribute' => 'required');
         }
-        $params['fields'][] = array('name' => '', 'type' => 'submit', 'value' => 'Place Order', 'label' => '', 'attribute' => 'class="'.$_btn_class.'"');
+        $params['fields'][] = array('name' => '', 'type' => 'plain_text', 'value' => 'We accept payment in SGD. Total amount payable: SGD 19.80', 'label' => '', 'attribute' => '');
+        $params['fields'][] = array('name' => '', 'type' => 'submit', 'value' => 'Checkout', 'label' => '', 'attribute' => 'class="'.$_btn_class.'"');
 
         $renderer = Renderer_Cart::getInstanceFromSmartyParams($params);
-        $couponForm = $renderer->_getDiscountForm(array('link' => '/cart?return='.htmlentities($_SERVER['REQUEST_URI']),'discounts' => ''));
-        $html = Helper_Renderer::renderForm($params) . $couponForm;
+        // $couponForm = $renderer->_getDiscountForm(array('link' => '/cart?return='.htmlentities($_SERVER['REQUEST_URI']),'discounts' => ''));
+        $html = Helper_Renderer::renderForm($params);
         return $html;
     }
 

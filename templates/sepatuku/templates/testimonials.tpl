@@ -3,9 +3,9 @@
 {block name="body"}
     <div class="row s-main-content s-testimonial-page">
         <div class="col-md-12 s-breadcrumb s-bottom-padding">
-            <a href="{$links.home}">Home</a>
+            <a href="{$links.home}">{sirclo_get_text text='home_title'}</a>
             <span>&nbsp;/&nbsp;</span>
-            <a href="{$links.testimonials}">Testimonial</a>
+            <a href="{$links.testimonials}">{sirclo_get_text text='testimonial_title'}</a>
         </div>
         <div class="col-md-12 s-content-title">
             <h1>{sirclo_get_text text='testimonial_title'}</h1>
@@ -30,10 +30,10 @@
                 {/if}
             </div>
             <div>
-                <div>You had story about our shop?</div>
-                <small>Share your story with other customers</small><br/>
-                <button class="btn blue-button btn-lg s-top-margin">
-                    ADD TESTIMONIAL
+                <div>{sirclo_get_text text='testimonial_story_text'}</div>
+                <small>{sirclo_get_text text='testimonial_share_text'}</small><br/>
+                <button class="btn blue-button btn-lg s-top-margin" onclick="window.location='{$links.testimonials}/submit'">
+                        {sirclo_get_text text='add_testimonial_link'}
                 </button>
             </div>
         </div> 

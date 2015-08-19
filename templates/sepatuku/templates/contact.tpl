@@ -12,7 +12,7 @@ SEPATUKU SIRCLO THEME
 				<div class="col-md-12 s-breadcrumb s-bottom-padding">
 					<a href="{$links.home}">{sirclo_get_text text='home_title'}</a>
 					<span>&nbsp;/&nbsp;</span>
-					<a href="{$links.contact}">{sirclo_get_text text='contact'}</a>
+					<a href="{$links.contact}">{sirclo_get_text text='contact_us_title'}</a>
 				</div>
 				<div class="col-md-12 s-content-title">
 					<h1>{sirclo_get_text text='contact_us_title'}</h1>

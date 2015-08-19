@@ -5610,16 +5610,22 @@
   ],
   "payment_methods":[
     { 
-      "title":"Bank Transfer",
-      "value":"bank-transfer",
-      "image":"http:\/\/gemes.local\/resources\/images\/test\/payment_method_bank.jpg"
+      "title":"Paypal / Visa / MasterCard",
+      "value":"Paypal / Visa / MasterCard",
+      "image": [
+        "/images/paypal.jpg",
+        "/images/visa.jpg",
+        "/images/mastercard.jpg"
+      ]
     },{
-      "title":"PayPal",
-      "value":"paypal"
-    },{
-      "title":"Custom Payment",
-      "value":"custom-payment",
-      "image":"http:\/\/gemes.local\/resources\/images\/test\/payment_method_custom.jpg"
+      "title":"Internet Banking / ATM Transfer",
+      "value":"Internet Banking / ATM Transfer",
+      "image": [
+        "/images/dbs.jpg",
+        "/images/posb.jpg",
+        "/images/uob.png",
+        "/images/ocbc.jpg"
+      ]
     }
   ]
 }

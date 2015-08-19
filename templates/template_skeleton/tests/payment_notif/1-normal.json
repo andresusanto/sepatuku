@@ -1,0 +1,5 @@
+{
+  "title": "Payment Confirmation",
+  "payment_instruction" : "Payment instruction here",
+  "bank_accounts" : {}
+}

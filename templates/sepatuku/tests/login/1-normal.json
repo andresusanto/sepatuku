@@ -1,0 +1,7 @@
+{
+  "title": "Login",
+  "context_links": {
+    "account_login": "/account/login",
+    "account_register": "/account/register"
+  }
+}

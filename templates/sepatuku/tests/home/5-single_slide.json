@@ -1,0 +1,13 @@
+{
+    "title": "Home",
+    "slides": [
+        {
+            "title": "Slide 1 Very Very Long Title",
+            "description": "<p>Lorem ipsum <strong>dolor sit amet</strong>, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>\n",
+            "image": "/images/test/banner1.jpg",
+            "link": "http://banner1",
+            "cta_text": "",
+            "youtube_id": "kmk43_2dtn0"
+        }
+    ]
+}

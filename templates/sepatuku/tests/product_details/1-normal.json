@@ -1,0 +1,1038 @@
+{
+  "title": "Product Details",
+  "breadcrumb": [
+      {
+          "title": "Home",
+          "link": "http://home"
+      },
+      {
+          "title": "Some Page",
+          "link": "http://page"
+      },
+      {
+          "title": "Sub Page",
+          "link": "http://subpage"
+      }
+  ],
+  "product": {
+    "id": 3,
+    "fid": "product-3",
+    "product_code": "ABC3",
+    "title": "Product 3 Long Long Very Long Name",
+    "description": "<p>Lorem ipsum <strong>dolor sit amet</strong>, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>\n\n<p>Lorem ipsum <strong>dolor sit amet</strong>, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>\n",
+    "brand": "Brand 3",
+    "specification": "<p>Lorem ipsum <strong>dolor sit amet</strong>, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>\n\n<h3>Specification</h3>\n\n<p>Lorem ipsum <strong>dolor sit amet</strong>, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>\n\n<p>Lorem ipsum <strong>dolor sit amet</strong>, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>\n\n<h3>Application</h3>\n\n<p>Lorem ipsum <strong>dolor sit amet</strong>, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>\n\n<h3>Features</h3>\n\n<p>Lorem ipsum <strong>dolor sit amet</strong>, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>\n",
+    "link": "http://product3",
+    "price_raw": 1500,
+    "is_new": true,
+    "is_featured": false,
+    "size": "Size 3",
+    "color": "Color 3",
+    "images": [
+      "/images/test/product_3a.jpg",
+      "/images/test/product_b.jpg",
+      "/images/test/product_a.jpg",
+      "/images/test/product_b.jpg",
+      "/images/test/product_a.jpg",
+      "/images/test/product_b.jpg"
+    ],
+    "detailed_images": [
+      {
+        "url": "/images/test/product_a.jpg",
+        "color": "red",
+        "size": "S",
+        "file_basename": "File Basename 1"
+      },
+      {
+        "url": "/images/test/product_b.jpg",
+        "color": "light green",
+        "size": "M",
+        "file_basename": "File Basename 2"
+      },
+      {
+        "url": "/images/test/product_c.jpg",
+        "color": null,
+        "size": "S",
+        "file_basename": "File Basename 3"
+      },
+      {
+        "url": "/images/test/product_a.jpg",
+        "color": "red",
+        "size": null,
+        "file_basename": "File Basename 4"
+      },
+      {
+        "url": "/images/test/product_b.jpg",
+        "color": "light green",
+        "size": "S",
+        "file_basename": "File Basename 5"
+      },
+      {
+        "url": "/images/test/product_c.jpg",
+        "color": null,
+        "size": "M",
+        "file_basename": "File Basename 6"
+      },
+      {
+        "url": "/images/test/product_a.jpg",
+        "color": "red",
+        "size": "S",
+        "file_basename": "File Basename 7"
+      },
+      {
+        "url": "/images/test/product_b.jpg",
+        "color": "light green",
+        "size": null,
+        "file_basename": "File Basename 8"
+      },
+      {
+        "url": "/images/test/product_c.jpg",
+        "color": null,
+        "size": "S",
+        "file_basename": "File Basename 9"
+      },
+      {
+        "url": "/images/test/product_a.jpg",
+        "color": "red",
+        "size": "M",
+        "file_basename": "File Basename 10"
+      },
+      {
+        "url": "/images/test/product_b.jpg",
+        "color": "light green",
+        "size": "S",
+        "file_basename": "File Basename 11"
+      },
+      {
+        "url": "/images/test/product_c.jpg",
+        "color": null,
+        "size": null,
+        "file_basename": "File Basename 12"
+      }
+    ],
+    "custom_attribute1": "Custom Field 1 3",
+    "custom_attribute2": "Custom Field 2 3",
+    "custom_attribute3": "Custom Field 3 3",
+    "custom_attribute4": "Custom Field 4 3",
+    "custom_attribute5": "Custom Field 5 3",
+    "usual_price_raw": 1550,
+    "wish_count": 147,
+    "options": {
+      "size": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "color": [
+        "Red",
+        "Light Green",
+        "Blue"
+      ]
+    },
+    "general_options": {
+      "option1": {
+        "title": "Size",
+        "value": "option1_value",
+        "options": [
+          "S",
+          "M",
+          "L",
+          "XL"
+        ]
+      },
+      "option2": {
+        "title": "Color",
+        "value": "option2_value",
+        "options": [
+          "Red",
+          "Light Green",
+          "Blue"
+        ]
+      }
+    },
+    "is_backorder": false,
+    "stock": 3,
+    "sold_stock": 14,
+    "is_in_stock": true,
+    "variants": {
+      "S|Red": "no_stock",
+      "M|Red": "available",
+      "S|Light Green": "available",
+      "|Blue": "no_stock"
+    },
+    "detailed_variants": {
+      "S|Red": {
+        "price": 1000.5,
+        "stock": 0
+      },
+      "M|Red": {
+        "price": 2000,
+        "stock": 1000000
+      },
+      "S|Light Green": {
+        "price": 2000.5,
+        "stock": 4
+      },
+      "|Blue": {
+        "price": 10000,
+        "stock": 0
+      }
+    },
+    "prices_by_color": {
+      "Red": 20.5,
+      "Blue": 3000,
+      "Pink": 40
+    }
+  },
+  "related_products": [
+    {
+      "id": 1,
+      "fid": "product-1",
+      "product_code": "ABC1",
+      "title": "Product 1 Long Long Very Long Name",
+      "description": "<p>Lorem ipsum <strong>dolor sit amet</strong>, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>\n\n<p>Lorem ipsum <strong>dolor sit amet</strong>, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>\n",
+      "brand": "Brand 1",
+      "specification": "<p>Lorem ipsum <strong>dolor sit amet</strong>, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>\n\n<h3>Specification</h3>\n\n<p>Lorem ipsum <strong>dolor sit amet</strong>, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>\n\n<p>Lorem ipsum <strong>dolor sit amet</strong>, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>\n\n<h3>Application</h3>\n\n<p>Lorem ipsum <strong>dolor sit amet</strong>, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>\n\n<h3>Features</h3>\n\n<p>Lorem ipsum <strong>dolor sit amet</strong>, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>\n",
+      "link": "http://product1",
+      "price_raw": 500,
+      "is_new": false,
+      "is_featured": false,
+      "size": "Size 1",
+      "color": "Color 1",
+      "images": [
+        "/images/test/product_1a.jpg",
+        "/images/test/product_b.jpg",
+        "/images/test/product_a.jpg",
+        "/images/test/product_b.jpg",
+        "/images/test/product_a.jpg",
+        "/images/test/product_b.jpg"
+      ],
+      "detailed_images": [
+        {
+          "url": "/images/test/product_a.jpg",
+          "color": "red",
+          "size": "S",
+          "file_basename": "File Basename 1"
+        },
+        {
+          "url": "/images/test/product_b.jpg",
+          "color": "light green",
+          "size": "M",
+          "file_basename": "File Basename 2"
+        },
+        {
+          "url": "/images/test/product_c.jpg",
+          "color": null,
+          "size": "S",
+          "file_basename": "File Basename 3"
+        },
+        {
+          "url": "/images/test/product_a.jpg",
+          "color": "red",
+          "size": null,
+          "file_basename": "File Basename 4"
+        },
+        {
+          "url": "/images/test/product_b.jpg",
+          "color": "light green",
+          "size": "S",
+          "file_basename": "File Basename 5"
+        },
+        {
+          "url": "/images/test/product_c.jpg",
+          "color": null,
+          "size": "M",
+          "file_basename": "File Basename 6"
+        },
+        {
+          "url": "/images/test/product_a.jpg",
+          "color": "red",
+          "size": "S",
+          "file_basename": "File Basename 7"
+        },
+        {
+          "url": "/images/test/product_b.jpg",
+          "color": "light green",
+          "size": null,
+          "file_basename": "File Basename 8"
+        },
+        {
+          "url": "/images/test/product_c.jpg",
+          "color": null,
+          "size": "S",
+          "file_basename": "File Basename 9"
+        },
+        {
+          "url": "/images/test/product_a.jpg",
+          "color": "red",
+          "size": "M",
+          "file_basename": "File Basename 10"
+        },
+        {
+          "url": "/images/test/product_b.jpg",
+          "color": "light green",
+          "size": "S",
+          "file_basename": "File Basename 11"
+        },
+        {
+          "url": "/images/test/product_c.jpg",
+          "color": null,
+          "size": null,
+          "file_basename": "File Basename 12"
+        }
+      ],
+      "custom_attribute1": "Custom Field 1 1",
+      "custom_attribute2": "Custom Field 2 1",
+      "custom_attribute3": "Custom Field 3 1",
+      "custom_attribute4": "Custom Field 4 1",
+      "custom_attribute5": "Custom Field 5 1",
+      "usual_price_raw": 550,
+      "wish_count": 49,
+      "options": {
+        "size": [
+          "S",
+          "M",
+          "L",
+          "XL"
+        ],
+        "color": [
+          "Red",
+          "Light Green",
+          "Blue"
+        ]
+      },
+      "general_options": {
+        "option1": {
+          "title": "Size",
+          "value": "option1_value",
+          "options": [
+            "S",
+            "M",
+            "L",
+            "XL"
+          ]
+        },
+        "option2": {
+          "title": "Color",
+          "value": "option2_value",
+          "options": [
+            "Red",
+            "Light Green",
+            "Blue"
+          ]
+        }
+      },
+      "is_backorder": true,
+      "stock": 1,
+      "sold_stock": 0,
+      "is_in_stock": false,
+      "variants": {
+        "S|Red": "no_stock",
+        "M|Red": "available",
+        "S|Light Green": "available",
+        "|Blue": "no_stock"
+      },
+      "detailed_variants": {
+        "S|Red": {
+          "price": 1000.5,
+          "stock": 0
+        },
+        "M|Red": {
+          "price": 2000,
+          "stock": 1000000
+        },
+        "S|Light Green": {
+          "price": 2000.5,
+          "stock": 4
+        },
+        "|Blue": {
+          "price": 10000,
+          "stock": 0
+        }
+      },
+      "prices_by_color": {
+        "Red": 20.5,
+        "Blue": 3000,
+        "Pink": 40
+      }
+    },
+    {
+      "id": 2,
+      "fid": "product-2",
+      "product_code": "ABC2",
+      "title": "Product 2",
+      "description": "<p>Lorem ipsum <strong>dolor sit amet</strong>, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>\n\n<p>Lorem ipsum <strong>dolor sit amet</strong>, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>\n",
+      "brand": "Brand 2",
+      "specification": "<p>Lorem ipsum <strong>dolor sit amet</strong>, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>\n\n<h3>Specification</h3>\n\n<p>Lorem ipsum <strong>dolor sit amet</strong>, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>\n\n<p>Lorem ipsum <strong>dolor sit amet</strong>, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>\n\n<h3>Application</h3>\n\n<p>Lorem ipsum <strong>dolor sit amet</strong>, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>\n\n<h3>Features</h3>\n\n<p>Lorem ipsum <strong>dolor sit amet</strong>, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>\n",
+      "link": "http://product2",
+      "price_raw": 1000,
+      "is_new": false,
+      "is_featured": true,
+      "size": "Size 2",
+      "color": "Color 2",
+      "images": [
+        "/images/test/product_2a.jpg",
+        "/images/test/product_b.jpg"
+      ],
+      "detailed_images": [
+        {
+          "url": "/images/test/product_a.jpg",
+          "color": "red",
+          "size": "S",
+          "file_basename": "File Basename 1"
+        },
+        {
+          "url": "/images/test/product_b.jpg",
+          "color": "light green",
+          "size": "M",
+          "file_basename": "File Basename 2"
+        },
+        {
+          "url": "/images/test/product_c.jpg",
+          "color": null,
+          "size": "S",
+          "file_basename": "File Basename 3"
+        },
+        {
+          "url": "/images/test/product_a.jpg",
+          "color": "red",
+          "size": null,
+          "file_basename": "File Basename 4"
+        }
+      ],
+      "custom_attribute1": "Custom Field 1 2",
+      "custom_attribute2": "Custom Field 2 2",
+      "custom_attribute3": "Custom Field 3 2",
+      "custom_attribute4": "Custom Field 4 2",
+      "custom_attribute5": "Custom Field 5 2",
+      "wish_count": 98,
+      "options": {
+        "color": [
+          "Red",
+          "Light Green",
+          "Blue"
+        ]
+      },
+      "general_options": {
+        "option2": {
+          "title": "Color",
+          "value": "option2_value",
+          "options": [
+            "Red",
+            "Light Green",
+            "Blue"
+          ]
+        }
+      },
+      "is_backorder": false,
+      "stock": 2,
+      "sold_stock": 7,
+      "is_in_stock": true,
+      "variants": {
+        "|Red": "available",
+        "|Blue": "no_stock"
+      },
+      "detailed_variants": {
+        "|Red": {
+          "price": 5000.5,
+          "stock": 5
+        },
+        "|Blue": {
+          "price": 1000.5,
+          "stock": 0
+        }
+      },
+      "prices_by_color": {
+        "Red": 20.5,
+        "Blue": 3000,
+        "Pink": 40
+      }
+    },
+    {
+      "id": 3,
+      "fid": "product-3",
+      "product_code": "ABC3",
+      "title": "Product 3 Long Long Very Long Name",
+      "description": "<p>Lorem ipsum <strong>dolor sit amet</strong>, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>\n\n<p>Lorem ipsum <strong>dolor sit amet</strong>, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>\n",
+      "brand": "Brand 3",
+      "specification": "<p>Lorem ipsum <strong>dolor sit amet</strong>, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>\n\n<h3>Specification</h3>\n\n<p>Lorem ipsum <strong>dolor sit amet</strong>, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>\n\n<p>Lorem ipsum <strong>dolor sit amet</strong>, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>\n\n<h3>Application</h3>\n\n<p>Lorem ipsum <strong>dolor sit amet</strong>, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>\n\n<h3>Features</h3>\n\n<p>Lorem ipsum <strong>dolor sit amet</strong>, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>\n",
+      "link": "http://product3",
+      "price_raw": 1500,
+      "is_new": true,
+      "is_featured": false,
+      "size": "Size 3",
+      "color": "Color 3",
+      "images": [
+        "/images/test/product_3a.jpg",
+        "/images/test/product_b.jpg",
+        "/images/test/product_a.jpg",
+        "/images/test/product_b.jpg",
+        "/images/test/product_a.jpg",
+        "/images/test/product_b.jpg"
+      ],
+      "detailed_images": [
+        {
+          "url": "/images/test/product_a.jpg",
+          "color": "red",
+          "size": "S",
+          "file_basename": "File Basename 1"
+        },
+        {
+          "url": "/images/test/product_b.jpg",
+          "color": "light green",
+          "size": "M",
+          "file_basename": "File Basename 2"
+        },
+        {
+          "url": "/images/test/product_c.jpg",
+          "color": null,
+          "size": "S",
+          "file_basename": "File Basename 3"
+        },
+        {
+          "url": "/images/test/product_a.jpg",
+          "color": "red",
+          "size": null,
+          "file_basename": "File Basename 4"
+        },
+        {
+          "url": "/images/test/product_b.jpg",
+          "color": "light green",
+          "size": "S",
+          "file_basename": "File Basename 5"
+        },
+        {
+          "url": "/images/test/product_c.jpg",
+          "color": null,
+          "size": "M",
+          "file_basename": "File Basename 6"
+        },
+        {
+          "url": "/images/test/product_a.jpg",
+          "color": "red",
+          "size": "S",
+          "file_basename": "File Basename 7"
+        },
+        {
+          "url": "/images/test/product_b.jpg",
+          "color": "light green",
+          "size": null,
+          "file_basename": "File Basename 8"
+        },
+        {
+          "url": "/images/test/product_c.jpg",
+          "color": null,
+          "size": "S",
+          "file_basename": "File Basename 9"
+        },
+        {
+          "url": "/images/test/product_a.jpg",
+          "color": "red",
+          "size": "M",
+          "file_basename": "File Basename 10"
+        },
+        {
+          "url": "/images/test/product_b.jpg",
+          "color": "light green",
+          "size": "S",
+          "file_basename": "File Basename 11"
+        },
+        {
+          "url": "/images/test/product_c.jpg",
+          "color": null,
+          "size": null,
+          "file_basename": "File Basename 12"
+        }
+      ],
+      "custom_attribute1": "Custom Field 1 3",
+      "custom_attribute2": "Custom Field 2 3",
+      "custom_attribute3": "Custom Field 3 3",
+      "custom_attribute4": "Custom Field 4 3",
+      "custom_attribute5": "Custom Field 5 3",
+      "usual_price_raw": 1550,
+      "wish_count": 147,
+      "options": {
+        "size": [
+          "S",
+          "M",
+          "L",
+          "XL"
+        ],
+        "color": [
+          "Red",
+          "Light Green",
+          "Blue"
+        ]
+      },
+      "general_options": {
+        "option1": {
+          "title": "Size",
+          "value": "option1_value",
+          "options": [
+            "S",
+            "M",
+            "L",
+            "XL"
+          ]
+        },
+        "option2": {
+          "title": "Color",
+          "value": "option2_value",
+          "options": [
+            "Red",
+            "Light Green",
+            "Blue"
+          ]
+        }
+      },
+      "is_backorder": false,
+      "stock": 3,
+      "sold_stock": 14,
+      "is_in_stock": true,
+      "variants": {
+        "S|Red": "no_stock",
+        "M|Red": "available",
+        "S|Light Green": "available",
+        "|Blue": "no_stock"
+      },
+      "detailed_variants": {
+        "S|Red": {
+          "price": 1000.5,
+          "stock": 0
+        },
+        "M|Red": {
+          "price": 2000,
+          "stock": 1000000
+        },
+        "S|Light Green": {
+          "price": 2000.5,
+          "stock": 4
+        },
+        "|Blue": {
+          "price": 10000,
+          "stock": 0
+        }
+      },
+      "prices_by_color": {
+        "Red": 20.5,
+        "Blue": 3000,
+        "Pink": 40
+      }
+    },
+    {
+      "id": 4,
+      "fid": "product-4",
+      "product_code": "ABC4",
+      "title": "Product 4",
+      "description": "<p>Lorem ipsum <strong>dolor sit amet</strong>, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>\n",
+      "brand": "Brand 4",
+      "specification": "<p>Lorem ipsum <strong>dolor sit amet</strong>, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>\n\n<h3>Specification</h3>\n\n<p>Lorem ipsum <strong>dolor sit amet</strong>, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>\n\n<p>Lorem ipsum <strong>dolor sit amet</strong>, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>\n\n<h3>Application</h3>\n\n<p>Lorem ipsum <strong>dolor sit amet</strong>, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>\n\n<h3>Features</h3>\n\n<p>Lorem ipsum <strong>dolor sit amet</strong>, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>\n",
+      "link": "http://product4",
+      "price_raw": 2000,
+      "is_new": false,
+      "is_featured": true,
+      "size": "Size 4",
+      "color": "Color 4",
+      "images": [
+        "/images/test/product_4a.jpg",
+        "/images/test/product_b.jpg"
+      ],
+      "detailed_images": [
+        {
+          "url": "/images/test/product_a.jpg",
+          "color": "red",
+          "size": "S",
+          "file_basename": "File Basename 1"
+        },
+        {
+          "url": "/images/test/product_b.jpg",
+          "color": "light green",
+          "size": "M",
+          "file_basename": "File Basename 2"
+        },
+        {
+          "url": "/images/test/product_c.jpg",
+          "color": null,
+          "size": "S",
+          "file_basename": "File Basename 3"
+        },
+        {
+          "url": "/images/test/product_a.jpg",
+          "color": "red",
+          "size": null,
+          "file_basename": "File Basename 4"
+        }
+      ],
+      "custom_attribute1": "Custom Field 1 4",
+      "custom_attribute2": "Custom Field 2 4",
+      "custom_attribute3": "Custom Field 3 4",
+      "custom_attribute4": "Custom Field 4 4",
+      "custom_attribute5": "Custom Field 5 4",
+      "wish_count": 196,
+      "options": {
+        "color": [
+          "Red",
+          "Light Green",
+          "Blue"
+        ]
+      },
+      "general_options": {
+        "option2": {
+          "title": "Color",
+          "value": "option2_value",
+          "options": [
+            "Red",
+            "Light Green",
+            "Blue"
+          ]
+        }
+      },
+      "is_backorder": true,
+      "stock": 4,
+      "sold_stock": 21,
+      "is_in_stock": false,
+      "variants": [],
+      "detailed_variants": [],
+      "prices_by_color": {
+        "Red": 20.5,
+        "Blue": 3000,
+        "Pink": 40
+      }
+    }
+  ],
+  "cart": {
+    "currency_symbol": "RM",
+    "items": [
+      {
+        "fid": "some-product",
+        "name": "Some Product",
+        "quantity": 7,
+        "price": 70,
+        "weight": 30,
+        "link": "http://some-product",
+        "edit_link": "http://edit-some-product",
+        "image": "/images/test/product7.jpg",
+        "options": {
+          "size": "S",
+          "color": "Red"
+        }
+      },
+      {
+        "fid": "another-product",
+        "name": "Another Product",
+        "quantity": 8,
+        "price": 80,
+        "weight": 40,
+        "image": "/images/test/product8.jpg",
+        "link": "http://another-product",
+        "edit_link": "http://edit-another-product"
+      },
+      {
+        "fid": "yet-another-product",
+        "name": "Yet Another Product",
+        "quantity": 23,
+        "price": 7.5,
+        "weight": 10,
+        "link": "http://yet-another-product",
+        "edit_link": "http://edit-yet-another-product",
+        "image": "/images/test/product9.jpg",
+        "options": {
+          "text": "This is a very long text and really really long text"
+        }
+      }
+    ],
+    "shipping": 0,
+    "shipping_discount": 0,
+    "link": "http://localhost/debug.php",
+    "checkout_link": "http://cartcheckout",
+    "code": "cart-code",
+    "backorder_shipping_method": "Registered Shipping",
+    "shipping_method": "Normal Shipping",
+    "backorder_shipping_destination": "SG",
+    "shipping_destination": "ID",
+    "shipping_country": "MY",
+    "shipping_city": "Surabaya",
+    "coupon_code": "ABC",
+    "discounts": [],
+    "total_items": 2,
+    "total_weight": 2750,
+    "npoints": 4,
+    "npoints_earned": 40,
+    "grand_total": 1300.5,
+    "item_total": 1200.5,
+    "is_checkout_enabled": true,
+    "checkout_disabled_reason": "",
+    "delivery_timestamp": 1421260002,
+    "tax": 0,
+    "point_rule": {
+      "point_per_dollar": 1.4567,
+      "dollar_per_point": 0.2345
+    }
+  },
+  "prev_next_products": [
+    {
+      "id": 1,
+      "fid": "product-1",
+      "product_code": "ABC1",
+      "title": "Product 1 Long Long Very Long Name",
+      "description": "<p>Lorem ipsum <strong>dolor sit amet</strong>, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>\n\n<p>Lorem ipsum <strong>dolor sit amet</strong>, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>\n",
+      "brand": "Brand 1",
+      "specification": "<p>Lorem ipsum <strong>dolor sit amet</strong>, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>\n\n<h3>Specification</h3>\n\n<p>Lorem ipsum <strong>dolor sit amet</strong>, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>\n\n<p>Lorem ipsum <strong>dolor sit amet</strong>, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>\n\n<h3>Application</h3>\n\n<p>Lorem ipsum <strong>dolor sit amet</strong>, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>\n\n<h3>Features</h3>\n\n<p>Lorem ipsum <strong>dolor sit amet</strong>, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>\n",
+      "link": "http://product1",
+      "price_raw": 500,
+      "is_new": false,
+      "is_featured": false,
+      "size": "Size 1",
+      "color": "Color 1",
+      "images": [
+        "/images/test/product_1a.jpg",
+        "/images/test/product_b.jpg",
+        "/images/test/product_a.jpg",
+        "/images/test/product_b.jpg",
+        "/images/test/product_a.jpg",
+        "/images/test/product_b.jpg"
+      ],
+      "detailed_images": [
+        {
+          "url": "/images/test/product_a.jpg",
+          "color": "red",
+          "size": "S",
+          "file_basename": "File Basename 1"
+        },
+        {
+          "url": "/images/test/product_b.jpg",
+          "color": "light green",
+          "size": "M",
+          "file_basename": "File Basename 2"
+        },
+        {
+          "url": "/images/test/product_c.jpg",
+          "color": null,
+          "size": "S",
+          "file_basename": "File Basename 3"
+        },
+        {
+          "url": "/images/test/product_a.jpg",
+          "color": "red",
+          "size": null,
+          "file_basename": "File Basename 4"
+        },
+        {
+          "url": "/images/test/product_b.jpg",
+          "color": "light green",
+          "size": "S",
+          "file_basename": "File Basename 5"
+        },
+        {
+          "url": "/images/test/product_c.jpg",
+          "color": null,
+          "size": "M",
+          "file_basename": "File Basename 6"
+        },
+        {
+          "url": "/images/test/product_a.jpg",
+          "color": "red",
+          "size": "S",
+          "file_basename": "File Basename 7"
+        },
+        {
+          "url": "/images/test/product_b.jpg",
+          "color": "light green",
+          "size": null,
+          "file_basename": "File Basename 8"
+        },
+        {
+          "url": "/images/test/product_c.jpg",
+          "color": null,
+          "size": "S",
+          "file_basename": "File Basename 9"
+        },
+        {
+          "url": "/images/test/product_a.jpg",
+          "color": "red",
+          "size": "M",
+          "file_basename": "File Basename 10"
+        },
+        {
+          "url": "/images/test/product_b.jpg",
+          "color": "light green",
+          "size": "S",
+          "file_basename": "File Basename 11"
+        },
+        {
+          "url": "/images/test/product_c.jpg",
+          "color": null,
+          "size": null,
+          "file_basename": "File Basename 12"
+        }
+      ],
+      "custom_attribute1": "Custom Field 1 1",
+      "custom_attribute2": "Custom Field 2 1",
+      "custom_attribute3": "Custom Field 3 1",
+      "custom_attribute4": "Custom Field 4 1",
+      "custom_attribute5": "Custom Field 5 1",
+      "usual_price_raw": 550,
+      "wish_count": 49,
+      "options": {
+        "size": [
+          "S",
+          "M",
+          "L",
+          "XL"
+        ],
+        "color": [
+          "Red",
+          "Light Green",
+          "Blue"
+        ]
+      },
+      "general_options": {
+        "option1": {
+          "title": "Size",
+          "value": "option1_value",
+          "options": [
+            "S",
+            "M",
+            "L",
+            "XL"
+          ]
+        },
+        "option2": {
+          "title": "Color",
+          "value": "option2_value",
+          "options": [
+            "Red",
+            "Light Green",
+            "Blue"
+          ]
+        }
+      },
+      "is_backorder": true,
+      "stock": 1,
+      "sold_stock": 0,
+      "is_in_stock": false,
+      "variants": {
+        "S|Red": "no_stock",
+        "M|Red": "available",
+        "S|Light Green": "available",
+        "|Blue": "no_stock"
+      },
+      "detailed_variants": {
+        "S|Red": {
+          "price": 1000.5,
+          "stock": 0
+        },
+        "M|Red": {
+          "price": 2000,
+          "stock": 1000000
+        },
+        "S|Light Green": {
+          "price": 2000.5,
+          "stock": 4
+        },
+        "|Blue": {
+          "price": 10000,
+          "stock": 0
+        }
+      },
+      "prices_by_color": {
+        "Red": 20.5,
+        "Blue": 3000,
+        "Pink": 40
+      }
+    },
+    {
+      "id": 2,
+      "fid": "product-2",
+      "product_code": "ABC2",
+      "title": "Product 2",
+      "description": "<p>Lorem ipsum <strong>dolor sit amet</strong>, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>\n\n<p>Lorem ipsum <strong>dolor sit amet</strong>, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>\n",
+      "brand": "Brand 2",
+      "specification": "<p>Lorem ipsum <strong>dolor sit amet</strong>, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>\n\n<h3>Specification</h3>\n\n<p>Lorem ipsum <strong>dolor sit amet</strong>, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>\n\n<p>Lorem ipsum <strong>dolor sit amet</strong>, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>\n\n<h3>Application</h3>\n\n<p>Lorem ipsum <strong>dolor sit amet</strong>, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>\n\n<h3>Features</h3>\n\n<p>Lorem ipsum <strong>dolor sit amet</strong>, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>\n",
+      "link": "http://product2",
+      "price_raw": 1000,
+      "is_new": false,
+      "is_featured": true,
+      "size": "Size 2",
+      "color": "Color 2",
+      "images": [
+        "/images/test/product_2a.jpg",
+        "/images/test/product_b.jpg"
+      ],
+      "detailed_images": [
+        {
+          "url": "/images/test/product_a.jpg",
+          "color": "red",
+          "size": "S",
+          "file_basename": "File Basename 1"
+        },
+        {
+          "url": "/images/test/product_b.jpg",
+          "color": "light green",
+          "size": "M",
+          "file_basename": "File Basename 2"
+        },
+        {
+          "url": "/images/test/product_c.jpg",
+          "color": null,
+          "size": "S",
+          "file_basename": "File Basename 3"
+        },
+        {
+          "url": "/images/test/product_a.jpg",
+          "color": "red",
+          "size": null,
+          "file_basename": "File Basename 4"
+        }
+      ],
+      "custom_attribute1": "Custom Field 1 2",
+      "custom_attribute2": "Custom Field 2 2",
+      "custom_attribute3": "Custom Field 3 2",
+      "custom_attribute4": "Custom Field 4 2",
+      "custom_attribute5": "Custom Field 5 2",
+      "wish_count": 98,
+      "options": {
+        "color": [
+          "Red",
+          "Light Green",
+          "Blue"
+        ]
+      },
+      "general_options": {
+        "option2": {
+          "title": "Color",
+          "value": "option2_value",
+          "options": [
+            "Red",
+            "Light Green",
+            "Blue"
+          ]
+        }
+      },
+      "is_backorder": false,
+      "stock": 2,
+      "sold_stock": 7,
+      "is_in_stock": true,
+      "variants": {
+        "|Red": "available",
+        "|Blue": "no_stock"
+      },
+      "detailed_variants": {
+        "|Red": {
+          "price": 5000.5,
+          "stock": 5
+        },
+        "|Blue": {
+          "price": 1000.5,
+          "stock": 0
+        }
+      },
+      "prices_by_color": {
+        "Red": 20.5,
+        "Blue": 3000,
+        "Pink": 40
+      }
+    }
+  ]
+}

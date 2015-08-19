@@ -2,17 +2,17 @@
     [
         'title' => 'Account Info',
         'page' => 'account',
-        'link' => '#ai'
+        'link' => '{$links.account}'
     ],
     [
         'title' => 'Change Password',
         'page' => 'account_edit_password',
-        'link' => '#cp'
+        'link' => '{$links.account_change_password}'
     ],
     [
         'title' => 'Order History',
         'page' => 'order_list',
-        'link' => '#oh'
+        'link' => '{$links.account_orders}'
     ],
 	[
         'title' => 'Invite Friends',

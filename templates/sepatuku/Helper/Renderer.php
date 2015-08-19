@@ -285,10 +285,15 @@ EOD;
         if (strpos($_attribute,'required') !== false) {
             $_required .= "<span class='required'>*</span>";
         }
-		
+		/*
+		<div class="form-group has-feedback">
+					    <input type="text" class="form-control" placeholder="Email" />
+					    <i class="fa fa-envelope s-top-less-margin form-control-feedback"></i>
+					</div> */
+					
 		if ($_type == "emailLogin") 
 		{
-			$_html_input .= "<input id='input_$_name' type='$_type' name='$_name' $_attribute value='$_value' placeholder='Email' class='s-fullwidth'>
+			$_html_input .= "<input id='input_$_name' class='form-control' type='$_type' name='$_name' $_attribute value='$_value' placeholder='Email'>
 							 <i class='fa fa-envelope s-top-less-margin form-control-feedback'></i>";
 			$_html .= 
 			'<div id="form-row-$_sanitized_name" class="form-group">
@@ -299,7 +304,7 @@ EOD;
 		}
 		else if ($_type == "passwordLogin") 
 		{
-			$_html_input .= "<input id='input_$_name' type='$_type' name='$_name' $_attribute value='$_value' placeholder='Password' class='s-fullwidth'>
+			$_html_input .= "<input id='input_$_name' class='form-control' type='$_type' name='$_name' $_attribute value='$_value' placeholder='Password'>
 							 <i class='fa fa-lock s-top-less-margin form-control-feedback'></i>";
 			$_html .= 
 			'<div id="form-row-$_sanitized_name" class="form-group">
@@ -309,7 +314,7 @@ EOD;
 			</div>';
 		}
 		
-		else if ($_type == "text"  || $_type == "password" || $_type == "email" || $_type == "tel") {
+		else if ($_type == "text"  || $_type == "password" || $_type == "email" || $_type == "tel" || $_type == "date") {
 			$_html_input .= "<input id='input_$_name' type='$_type' name='$_name' $_attribute value='$_value'>";
             $_html .= "
             <div id='form-row-$_sanitized_name' class='form-group'>
@@ -496,7 +501,7 @@ EOD;
             </div>";
         }
         else if ($_type == "subheader") {
-            $_html .= "<h3 class='$_sanitized_name'>".$_value."</h3>";
+            $_html .= "<h2 class='$_sanitized_name'>".$_value."</h2>";
         }
         else if ($_type == "hidden") {
             $_html .= "<input id='input_$_sanitized_name' type='$_type' name='$_name' $_attribute value='$_value'>";
@@ -517,6 +522,9 @@ EOD;
 			}
 			else if ($_value == "SEND") {
 				$_html_input .= '<button type="submit" class="btn btn-lg blue-button">SEND</button>';
+			}
+			else if ($_value == "CHANGE PASSWORD") {
+				$_html_input .= '<button type="submit" class="btn btn-lg blue-button s-change-password-submit">CHANGE PASSWORD</button>';
 			}
 			else {
 				/*
@@ -790,7 +798,7 @@ EOD;
 		$_label_dob = $_lang == "id" ? "Tanggal lahir" : "Date of Birth";
 		
 		$html .= 
-		"<div class='col-md-9 s-content s-top-margin'>
+		"
 			<div class='s-bottom-margin'>$_label_halo</div>
 			<p>$_label_description</p>
 			<br/>
@@ -805,30 +813,7 @@ EOD;
 			<span class='fixed-width'>$_label_phone</span>: $_member_phone<br/>
 			<span class='fixed-width'>$_label_dob</span>: $_member_dob<br/><br/>
 
-			<div id='cp' class='s-bottom-margin'><big>CHANGE PASSWORD</big></div>
-			<form role='form' class='s-half-form'>
-				<div class='form-group'>
-					<label for='current-password'>Current Password</label><br/>
-					<input class='s-fullwidth' type='password' id='current-password'>
-				</div>
-				<div class='form-group'>
-					<label for='password'>New Password</label><br/>
-					<input class='s-fullwidth' type='password' id='new-password'>
-				</div>
-				<div class='form-group'>
-					<label for='confirm-password'>Confirm Password</label><br/>
-					<input class='-fullwidth' type='password' id='confirm-password'>
-				</div>
-				<button type='submit' class='btn btn-lg blue-button s-change-password-submit'>CHANGE PASSWORD</button>
-			</form>
-
-			<div id='oh' class='s-bottom-margin s-top-margin s-top-padding'><big>ORDER HISTORY</big></div>
-			<span class='fixed-width'>18 June 2015</span>: eASADcKJH<br/>
-			<span class='fixed-width'>18 June 2015</span>: kjBKJbKJB<br/>
-			<span class='fixed-width'>21 June 2015</span>: JHbjhVJJH<br/>
-			<span class='fixed-width'>17 August 2015</span>: 78TGyuguh<br/>
-			<br
-		</div>";
+			<br/>";
 		
 		/*
         $html .= "
@@ -935,15 +920,15 @@ EOD;
         $_btn_class = !empty($params['btn_class']) ? $params['btn_class'] : 'btn-flat';
 
         $_lang = !empty($params['lang']) ? $params['lang'] : "en";
-        $_label_old_password = $_lang == "id" ? "Password Lama" : "Old Password";
+        $_label_old_password = $_lang == "id" ? "Password Sekarang" : "Current Password";
         $_label_new_password = $_lang == "id" ? "Password Baru" : "New Password";
         $_label_new_password_confirmation = $_lang == "id" ? "Konfirmasi Password Baru" : "Confirm New Password";
 
         $params['fields'] = array(
-            array('name' => 'old_password', 'type' => 'password', 'value' => '', 'label' => $_label_old_password, 'attribute' => 'required'),
-            array('name' => 'new_password', 'type' => 'password', 'value' => '', 'label' => $_label_new_password, 'attribute' => 'required'),
-            array('name' => 'confirm_new_password', 'type' => 'password', 'value' => '', 'label' => $_label_new_password_confirmation, 'attribute' => 'required'),
-            array('name' => '', 'type' => 'submit', 'value' => 'Change Password', 'label' => '', 'attribute' => 'class="'.$_btn_class.'"'));
+            array('name' => 'old_password', 'type' => 'password', 'value' => '', 'label' => $_label_old_password, 'attribute' => 'required class ="s-fullwidth"'),
+            array('name' => 'new_password', 'type' => 'password', 'value' => '', 'label' => $_label_new_password, 'attribute' => 'required class ="s-fullwidth"'),
+            array('name' => 'confirm_new_password', 'type' => 'password', 'value' => '', 'label' => $_label_new_password_confirmation, 'attribute' => 'required class ="s-fullwidth"'),
+            array('name' => '', 'type' => 'submit', 'value' => 'CHANGE PASSWORD', 'label' => '', 'attribute' => 'class="'.$_btn_class.'"'));
 
         $html = Helper_Renderer::renderForm($params);
         return $html;
@@ -1013,10 +998,10 @@ EOD;
         $params['fields'] = array();
 		$params['fields'][] = array('name' => '', 'type' => 'subheader', 'value' => $_label_accountdetails_subheader, 'label' => '', 'attribute' => '');
         $params['fields'][] = array('name' => '', 'type' => 'div', 'value' => '', 'label' => '', 'attribute' => 'class="address address-autocomplete"');
-        $params['fields'][] = array('name' => 'email', 'type' => 'email', 'value' => '', 'label' => $_label_email, 'attribute' => '');
+        $params['fields'][] = array('name' => 'email', 'type' => 'email', 'value' => '', 'label' => $_label_email, 'attribute' => 'class ="s-fullwidth"');
 
-        $params['fields'][] = array('name' => 'password', 'type' => 'password', 'value' => '', 'label' => $_label_password, 'attribute' => '');
-        $params['fields'][] = array('name' => 'confirm_password', 'type' => 'password', 'value' => '', 'label' => $_label_password_confirm, 'attribute' => '');
+        $params['fields'][] = array('name' => 'password', 'type' => 'password', 'value' => '', 'label' => $_label_password, 'attribute' => 'class ="s-fullwidth"');
+        $params['fields'][] = array('name' => 'confirm_password', 'type' => 'password', 'value' => '', 'label' => $_label_password_confirm, 'attribute' => 'class ="s-fullwidth"');
 		
 		$params['fields'][] = array('name' => '', 'type' => 'subheader', 'value' => $_label_personalparticular_subheader, 'label' => '', 'attribute' => '');
         
@@ -1025,16 +1010,16 @@ EOD;
 		if (!empty($params['with_salutation'])) {
             $params['fields'][] = array('name' => 'salutation', 'type' => 'salutation', 'value' => '', 'label' => $_label_salutation, 'attribute' => 'required');
         }*/
-        $params['fields'][] = array('name' => 'first_name', 'type' => 'text', 'value' => '', 'label' => $_label_name, 'attribute' => 'required');
+        $params['fields'][] = array('name' => 'first_name', 'type' => 'text', 'value' => '', 'label' => $_label_name, 'attribute' => 'required class ="s-fullwidth"');
 
-        $params['fields'][] = array('name' => 'address_line1', 'type' => 'text', 'value' => '', 'label' => $_label_address, 'attribute' => 'required');
-        $params['fields'][] = array('name' => 'postal_code', 'type' => 'text', 'value' => '', 'label' => $_label_postal_code, 'attribute' => 'required');
-        $params['fields'][] = array('name' => 'city', 'type' => 'text', 'value' => '', 'label' => $_label_city, 'attribute' => 'required data-area-autocomplete="city"');
-        $params['fields'][] = array('name' => 'state', 'type' => 'text', 'value' => '', 'label' => $_label_state, 'attribute' => 'required data-area-autocomplete="state"');
-		$params['fields'][] = array('name' => 'country', 'type' => 'country', 'value' => $_default_country, 'label' => $_label_country, 'attribute' => 'required data-area-autocomplete="country"');
-        $params['fields'][] = array('name' => 'phone', 'type' => 'text', 'value' => '', 'label' => $_label_phone, 'attribute' => 'required');
+        $params['fields'][] = array('name' => 'address_line1', 'type' => 'text', 'value' => '', 'label' => $_label_address, 'attribute' => 'required class ="s-fullwidth"');
+        $params['fields'][] = array('name' => 'postal_code', 'type' => 'text', 'value' => '', 'label' => $_label_postal_code, 'attribute' => 'required class ="s-fullwidth"');
+        $params['fields'][] = array('name' => 'city', 'type' => 'text', 'value' => '', 'label' => $_label_city, 'attribute' => 'required data-area-autocomplete="city" class ="s-fullwidth"');
+        $params['fields'][] = array('name' => 'state', 'type' => 'text', 'value' => '', 'label' => $_label_state, 'attribute' => 'required data-area-autocomplete="state" class ="s-fullwidth"');
+		$params['fields'][] = array('name' => 'country', 'type' => 'country', 'value' => $_default_country, 'label' => $_label_country, 'attribute' => 'required data-area-autocomplete="country" class ="s-fullwidth"');
+        $params['fields'][] = array('name' => 'phone', 'type' => 'text', 'value' => '', 'label' => $_label_phone, 'attribute' => 'required class ="s-fullwidth"');
 		if (!empty($params['with_birthday'])) {
-            $params['fields'][] = array('name' => 'dob', 'type' => 'text', 'value' => '', 'label' => $_label_birthday, 'attribute' => 'required');
+            $params['fields'][] = array('name' => 'dob', 'type' => 'date', 'value' => '', 'label' => $_label_birthday, 'attribute' => 'required class ="s-fullwidth"');
             //$params['fields'][] = array('name' => '', 'type' => 'subheader', 'value' => $_label_address_subheader, 'label' => '', 'attribute' => '');
         }
 		
@@ -1261,7 +1246,7 @@ EOD;
     static function sircloRenderContactForm($params) {
         $_lang = !empty($params['lang']) ? $params['lang'] : "en";
         $_label_name = $_lang == "id" ? "Nama" : "Your Name";
-        $_label_email = $_lang == "id" ? "E-mail" : "Your E-mail";
+        $_label_email = $_lang == "id" ? "E-mail" : "Your Email";
 		$_label_subject = $_lang == "id" ? "Subyek" : "Subject";
         $_label_message = $_lang == "id" ? "Pesan" : "Message";
 
@@ -1269,7 +1254,7 @@ EOD;
         array('name' => 'name', 'type' => 'text', 'value' => '', 'label' => $_label_name, 'attribute' => ''),
         array('name' => 'email', 'type' => 'email', 'value' => '', 'label' => $_label_email, 'attribute' => ''),
         array('name' => 'subject', 'type' => 'text', 'value' => '', 'label' => $_label_subject, 'attribute' => ''),
-        array('name' => 'message', 'type' => 'textarea', 'value' => '', 'label' => $_label_message, 'attribute' => ''),
+        array('name' => 'message', 'type' => 'textarea', 'value' => '', 'label' => $_label_message, 'attribute' => 'rows = "5"'),
         array('name' => '', 'type' => 'submit', 'value' => 'SEND', 'label' => '', 'attribute' => 'class="btn-flat"'));
 
         $_html = Helper_Renderer::renderForm($params);

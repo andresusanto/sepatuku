@@ -453,12 +453,12 @@ class Renderer_Cart extends PageView
     {
         $ths = '';
         if ($this->_withImage) {
-            $ths .= $this->xmlTag('th', $this->getCartText('Picture'));
+            $ths .= $this->xmlTag('th', $this->getCartText(''));
         }
-        $ths .= $this->xmlTag('th', $this->getCartText('Description'));
+        $ths .= $this->xmlTag('th', $this->getCartText('Item'));
         $ths .= $this->xmlTag('th', $this->getCartText('Price'), array('class' => 'number cart-column-price'));
         $ths .= $this->xmlTag('th', $this->getCartText('Quantity'), array('class' => 'number cart-column-quantity'));
-        $ths .= $this->xmlTag('th', $this->getCartText('Amount'), array('class' => 'number cart-column-amount'));
+        $ths .= $this->xmlTag('th', $this->getCartText('Total'), array('class' => 'number cart-column-amount'));
         $trs = $this->xmlTag('tr', $ths);
         return $trs;
     }
@@ -567,7 +567,7 @@ class Renderer_Cart extends PageView
             $item_total_tds .= $this->xmlTag('td', '&nbsp;', array('class' => 'cart-cell-empty'));
             $item_total_tds .= $this->xmlTag('td', '&nbsp;', array('class' => 'cart-cell-empty'));
         }
-        $item_total_tds .= $this->xmlTag('td', $this->xmlTag('strong', 'Item Total:'), array('class' => 'number'));
+        $item_total_tds .= $this->xmlTag('td', $this->xmlTag('strong', 'Item Total'), array('class' => 'number'));
         $itemTotal = Helper_Cart::getItemTotal($this->cart['items']);
         $item_total_tds .= $this->xmlTag('td', $this->xmlTag('strong', $this->dol($itemTotal)), array('class' => 'number dollar-value'));
         $tr = $this->xmlTag('tr', $item_total_tds, array('class' => 'cart-item-total-row'));

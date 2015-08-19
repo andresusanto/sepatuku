@@ -1522,7 +1522,7 @@
     }
   ],
   "cart":{  
-    "currency_symbol":"RM",
+    "currency_symbol":"IDR",
     "items":[  
       {  
         "fid":"some-product",

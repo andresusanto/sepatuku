@@ -27,9 +27,11 @@ SEPATUKU SIRCLO THEME
 						{include 'includes/account_nav.tpl'}
 					</div>
 
-					<div id="account-form" class="span-sirclo4-3 col">
+					<div id="account-form" class="span-sirclo4-3 col col-md-9 s-content s-top-margin">
 						{sirclo_render_account_info member=$member table_class="table table-no-bordered"}
 					</div>
+					
+					<
 				</div>
 			</div>
 		</div>

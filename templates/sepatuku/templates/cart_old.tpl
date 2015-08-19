@@ -1,6 +1,7 @@
 {extends file='includes/theme.tpl'}
 
 {block name="body"}
+
 <div id="common-page-header">
     <h1>Cart</h1>
     <p>{sirclo_get_text text='review_your_items_title'}</p>

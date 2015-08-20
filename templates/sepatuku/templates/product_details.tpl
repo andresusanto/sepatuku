@@ -4,145 +4,109 @@
 
 
 {block name="body"}
-
-{if empty($smarty.get.viewmode)} {* blok kondisi untuk ajax quickview  *} 
-{sirclo_render_breadcrumb breadcrumb=$breadcrumb}
-{/if}
-
-<div id="product-details" class="container">
-    <div class="row">
-        <div id="product-details-images" class= "span6">
-            {if !empty($product.images)}
-                {$_full_url = $product['images'][0]|sirclo_file_add_suffix:'_full'}
-                {$_zoom_url = $product['images'][0]|sirclo_file_add_suffix:'_zoom'}
-
-                <a href="{$_zoom_url}" class = 'cloud-zoom' id='product-img-zoom' rel="position:'inside'">
-                    <img class="product-img-main" src="{$_full_url}" alt='' title="" />
-                </a>
-
-                <ul>
-                    {foreach $product['images'] as $img_value}
-                        {$_thumb_url = $img_value|sirclo_file_add_suffix:'_tn'}
-                        {$_full_url = $img_value|sirclo_file_add_suffix:'_full'}
-                        {$_zoom_url = $img_value|sirclo_file_add_suffix:'_zoom'}
-
-                        {if $img_value@key % 5 == 0}
-                            {$_class = "first"}
-                        {else}
-                            {$_class = ""}
-                        {/if}
-
-                        <li class="{$_class}">
-                            <a href="{$_zoom_url}" class="cloud-zoom-gallery" rel="useZoom: 'product-img-zoom', smallImage: '{$_full_url}'">
-                                <img class="product-img-thumb" src="{$_thumb_url}"/>
-                            </a>
-                        </li>
-
-                    {/foreach}
-                </ul>
-            {/if}
-            	            
-        </div>
-
-        <div id="product-details-details" class= "span6">
-        	    
-                
+    <div class="row s-main-content">
+        {if empty($smarty.get.viewmode)} {* blok kondisi untuk ajax quickview  *} 
+            {sirclo_render_breadcrumb breadcrumb=$breadcrumb}
+        {/if}
+        <div class="col-md-12 s-content-title">
             <h1>{$product.title}</h1>
-
-            <div class="price">
-                {if !empty($product.usual_price_raw)}
-                    <span class="usual-price">
-                        <del>{$active_currency} {$product.usual_price_raw|number_format:2}</del>
-                    </span>
-                {/if}
-
-                <span id="product-price" class="price">
-                    {$active_currency} {$product.price_raw|number_format:2}
-                </span>
-            </div>
-
-            {if !empty($member.email)}
-                {$_member_email = $member.email}
-            {else}
-                {$_member_email = ""}
-            {/if}
-
-            {sirclo_render_product_add_to_cart product=$product member_email=$_member_email action=$links.cart}
-
             <hr/>
-
-            <div class="specification">
-                <h3>{sirclo_get_text text='description_title'}</h3>
-                <p>{$product.specification}</p>
-            </div>
-			<div>
-             <!-- AddThis Button BEGIN -->
-            <div class="addthis_toolbox addthis_default_style ">
-            <a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
-            <a class="addthis_button_tweet"></a>
-            <a class="addthis_button_pinterest_pinit" pi:pinit:layout="horizontal"></a>
-            <a class="addthis_counter addthis_pill_style"></a>
-            </div>
-            <script type="text/javascript">var addthis_config = {ldelim}"data_track_addressbar":true{rdelim};</script>
-            <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js"></script>
-            <!-- AddThis Button END -->
-                                
-                                
-			</div>
-			
         </div>
-    </div>
+
+        <div class="col-md-7 s-bottom-margin s-top-margin">
+            {if !empty($product.images)}
+                {$_small_url = $product['images'][0]|replace:'folder':'small'|replace:'jpg':'png'}
+                {$_large_url = $product['images'][0]|replace:'folder':'large'}
+                
+                <img class="s-fullwidth" id="product-zoom" src="{$_small_url}" data-zoom-image="{$_large_url}"/><br/>
+
+                <div id="product-zoom-gallery" style='width=" 500pxfloat:left;="" "="'>
+                    {foreach $product['images'] as $img_value}
+                        {$_small_url = $img_value|replace:'folder':'small'|replace:'jpg':'png'}
+                        {$_large_url = $img_value|replace:'folder':'large'}
+
+                        <a href="#" class="elevatezoom-gallery active" data-update="" data-image="{$_small_url}" data-zoom-image="{$_large_url}">
+                        <img class="" src="{$_small_url}" width="100"></a>
+                    {/foreach}
+                </div>
+            {/if}
+        </div>
+
+        <div class="col-md-5 s-top-margin s-product-detail">
+            <h2>{$active_currency} {$product.price_raw|number_format:2}</h2>
+            <h3>{sirclo_get_text text='description_title'}</h3>
+            <div>
+                {$product.description}
+            </div>
+            <h3>SHARE</h3>
+            [to be added]
+            <div class="s-strike s-top-margin s-bottom-margin">
+                <span><img src="/images/wavy.png"></span></span>
+            </div>
+
+            {sirclo_render_product_add_to_cart product=$product action=$links.cart}
+
+        </div>
 
 {if empty($smarty.get.viewmode)} {* blok kondisi untuk ajax quickview  *} 
 
     {if !empty($related_products)}
-        <div id="product-details-related" class="row sirclo-no-negative">
-            <h2>{sirclo_get_text text='recommended_title'}</h2>
-            <p>{sirclo_get_text text='other_stuff_you_like'}</p>
-            <hr/>
+        <div class="col-md-12 s-top-margin">
+            <h1>{sirclo_get_text text='recommended_title'}</h1>
+            <div class="s-doubly-separator"></div>
+        </div>
+        <div class="col-md-12 s-products">
             {call skeleton_render_products_product products=$related_products col_count=4}
         </div>
     {/if}
-    
-{/if}    
-    
-</div>
-{/block}
 
-{block name="footer"}
-    <script type="text/javascript">
-        var _variants = {$product['variants']|sirclo_to_json};
-        var _detailedVariants = {$product|sirclo_detailed_variants_to_json:$active_currency};
+{/if}
+    </div>
 
-        var _member = false;
-        var _memberEmail = '';
-        {if !empty($member)}
-            _member = true;
-            _memberEmail = '{$member['email']}';
-        {/if}
+    <div class="s-show-product">
+        <div class="s-overlay">
+        </div>
+        <div class="s-quickview col-md-10 col-md-offset-1">
+            <div class="s-close">&times;</div>
+            <div class="col-md-12 s-content-title">
+                <h1>{$product.title}</h1>
+                <hr/>
+            </div>
 
-        var _linkLogin = '';
-        {if !empty($links['account_login'])}
-            _linkLogin = '{$links['account_login']}';
-        {/if}
+            <div class="col-md-7 s-bottom-margin s-top-margin">
+                {if !empty($product.images)}
+                    {$_small_url = $product['images'][0]|replace:'folder':'small'|replace:'jpg':'png'}
+                    {$_large_url = $product['images'][0]|replace:'folder':'large'}
+                    
+                    <img class="s-fullwidth" id="product-zoom" src="{$_small_url}" data-zoom-image="{$_large_url}"/><br/>
 
-        var _isInStock = false;
-        {if !empty($product['is_in_stock'])}
-            _isInStock = true;
-        {/if}
+                    <div id="product-zoom-gallery" style='width=" 500pxfloat:left;="" "="'>
+                        {foreach $product['images'] as $img_value}
+                            {$_small_url = $img_value|replace:'folder':'small'|replace:'jpg':'png'}
+                            {$_large_url = $img_value|replace:'folder':'large'}
 
-        var _option1 = '';
-        {if !empty($product['general_options']['option1']['title'])}
-            _option1 = '{$product['general_options']['option1']['title']}';
-        {/if}
+                            <a href="#" class="elevatezoom-gallery active" data-update="" data-image="{$_small_url}" data-zoom-image="{$_large_url}">
+                            <img class="" src="{$_small_url}" width="100"></a>
+                        {/foreach}
+                    </div>
+                {/if}
+            </div>
 
-        var _option2 = '';
-        {if !empty($product['general_options']['option2']['title'])}
-            _option2 = '{$product['general_options']['option2']['title']}';
-        {/if}
+            <div class="col-md-5 s-top-margin s-product-detail">
+                <h2>{$active_currency} {$product.price_raw|number_format:2}</h2>
+                <h3>{sirclo_get_text text='description_title'}</h3>
+                <div>
+                    {$product.description}
+                </div>
+                <h3>SHARE</h3>
+                [to be added]
+                <div class="s-strike s-top-margin s-bottom-margin">
+                    <span><img src="/images/wavy.png"></span></span>
+                </div>
 
-        var product_details = new SIRCLO.ProductDetails(_variants, _member, _linkLogin, _isInStock, _option1, _option2, true, _memberEmail);
-        product_details.detailedVariants = _detailedVariants;
-        product_details.init();
-    </script>
+                {sirclo_render_product_add_to_cart product=$product action=$links.cart}
+
+            </div>
+        </div>
+    </div>
 {/block}

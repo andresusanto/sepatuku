@@ -1,12 +1,12 @@
-blog
-lookbook
-product
-shopping-cart
-static
-
-PENDING
+CHRIST
 index
 product-detail
+static
+
+TONY
+blog
+product
+shopping-cart
 
 DONE
 account-info
@@ -14,5 +14,6 @@ checkout
 contact
 invite-friends
 login
+lookbook
 register
 testimonial

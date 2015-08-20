@@ -282,7 +282,8 @@
     "home": "/",
     "terms": "/legal/terms-of-use",
     "privacy": "/legal/privacy-policy",
-    "lookbook": "/lookbook"
+    "lookbook": "/lookbook",
+    "static": "/static"
   },
   "static_contents": {
     "Contact Info": "<h3 class='head-title'>PT Agel Langgeng</h3>\n<address>\n<strong>The Plaza Office Tower Lt 22 Unit A-D </strong><br>\nJl. MH. Thamrin Kav. 28-30 <br>\nJakarta Pusat, Indonesia <br>\nPhone: 021-0000001 <br>\nE-mail: info@agel.co.id\n</address>",
@@ -347,7 +348,7 @@
       "exchange_rate": 0.61
     }
   },
-  "active_currency": "CAD",
+  "active_currency": "IDR",
   "meta": {
     "description": "This is meta description.",
     "keywords": "Keyword 1, Keyword 2, Keyword 3"

@@ -1365,8 +1365,10 @@ EOD;
                 <input type='hidden' name='item_id' value='".$_product['fid']."'>
                 <input type='hidden' name='member_email' value='$_member_email'>
 
-                <input id='product-add-to-cart' type='submit' class='$_btn_class' value='$_label_add_to_cart' onclick='$_btn_onclick'>
+                <button id='product-add-to-cart' class='btn btn-lg blue-button s-add-to-cart' value='$_label_add_to_cart' onclick='$_btn_onclick'>ADD TO CART</button>
                 <span id='product-member-status' class='error'></span>
+                <br/>
+                <div class='s-stock-status s-bebas s-top-less-margin calm'>IN STOCK</div>
             </form>
         </div>";
 

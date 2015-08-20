@@ -1365,10 +1365,8 @@ EOD;
                 <input type='hidden' name='item_id' value='".$_product['fid']."'>
                 <input type='hidden' name='member_email' value='$_member_email'>
 
-                <button id='product-add-to-cart' class='btn btn-lg blue-button s-add-to-cart' value='$_label_add_to_cart' onclick='$_btn_onclick'>ADD TO CART</button>
+                <input id='product-add-to-cart' type='submit' class='$_btn_class' value='$_label_add_to_cart' onclick='$_btn_onclick'>
                 <span id='product-member-status' class='error'></span>
-                <br/>
-                <div class='s-stock-status s-bebas s-top-less-margin calm'>IN STOCK</div>
             </form>
         </div>";
 
@@ -1386,7 +1384,7 @@ EOD;
         }
 
         $pg = '';
-        $pg .= "<div class=\"paging\">\n";
+        $pg .= "<div class=\"paging s-pagination\">\n";
         $pg .= "<p>\n";
         $prev = 'prev';
         $next = 'next';
@@ -1396,12 +1394,13 @@ EOD;
         if (isset($options['text_next'])) {
             $next = $options['text_next'];
         }
+		/*
         if ($p_cur > 1) {
             $link = self::addPageToUrl($p_link, $p_cur-1);
             $pg .= "<a class=\"page-prev\" href=\"$link\">$prev</a>\n";
         } else {
-            $pg .= "<span class=\"page-prev\">$prev</span>\n";
-        }
+            $pg .= "<span class=\"page-prev item item\">$prev</span>\n";
+        }*/
         $start = 1;
         if ($p_cur-1 >= $stretch_lim) {
             $start = $p_cur - $stretch_lim;
@@ -1432,6 +1431,14 @@ EOD;
             $link = self::addPageToUrl($p_link, $p_tot);
             $pg .= "<a href=\"$link\">$p_tot</a>\n";
         }
+		
+		if ($p_tot - $p_cur > $stretch_lim) {
+            $link = self::addPageToUrl($p_link, $p_cur+1);
+            $pg .= "<a class=\"page-next\">...</a>\n";
+        } else {
+            $pg .= "<span class=\"page-next\"> ... </span>\n";
+        }
+		
         if ($p_cur < $p_tot) {
             $link = self::addPageToUrl($p_link, $p_cur+1);
             $pg .= "<a class=\"page-next\" href=\"$link\">$next</a>\n";

@@ -20,6 +20,7 @@ SEPATUKU SIRCLO THEME
 		<h1>SHOPPING CART</h1>
 		<hr/>
 	</div>
+	
 	<div class="col-md-12 s-cart ">
 		{if !empty($cart['items'])}
 			<div class="row s-main-content">
@@ -30,7 +31,14 @@ SEPATUKU SIRCLO THEME
 		{else}
 			<p class="cart-empty">{sirclo_get_text text='cart_empty'}.</p>
 		{/if}
+		</div>
 	</div>
+
+	<a href="{$continue_url}" class="col-xs-4 col-md-7"><span class="s-large-font s-bebas attention"><i class="fa fa-angle-left"></i>{sirclo_get_text text='continue_shopping_link'}</span></a>
+	{if !empty($cart['items'])}
+		<span class="col-xs-8 col-md-5"><a href="{$links['cart_place_order']}" class="btn btn-lg blue-button pull-right s-large-button s-to-checkout-page">{sirclo_get_text text='check_out_title'}</a></span>
+	{/if}
+					
 	<div class="s-wavy-separator pull-right"></div>
 	<br> <br> <br>
 

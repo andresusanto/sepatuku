@@ -33,21 +33,19 @@
 
 {function skeleton_render_sidebar_category categories=array()}
     {if !empty($categories)}
-        <ul>
-        {foreach $categories as $category}
-            {if !empty($category.is_active)}
-                {$is_active_class = "active"}
-            {else}
-                {$is_active_class = ""}
-            {/if}
-            <li class="{$is_active_class}">
-                <a href="{$category.link}">{$category.title}</a>
-                {if !empty($category.is_active) and !empty($category['sub_nav'])}
-                    {call skeleton_render_sidebar_category categories=$category.sub_nav}
-                {/if}
-            </li>
-        {/foreach}
-        </ul>
+		<div>
+			{foreach $categories as $category}
+				{if !empty($category.is_active)}
+					{$is_active_class = "active"}
+				{else}
+					{$is_active_class = ""}
+				{/if}
+				<a href="{$category.link}" class="{$is_active_class} col-md-3">{$category.title}</a>
+				{if !empty($category.is_active) and !empty($category['sub_nav'])}
+					{call skeleton_render_sidebar_category categories=$category.sub_nav}
+				{/if}
+			{/foreach}
+		</div>
     {/if}
 {/function}
 

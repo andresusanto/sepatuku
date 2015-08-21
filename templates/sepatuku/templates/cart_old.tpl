@@ -21,6 +21,7 @@
     {/if}
 
     <hr/>
+	
 
     <div id="cart-continue">
         <div id="cart-continue-continue">

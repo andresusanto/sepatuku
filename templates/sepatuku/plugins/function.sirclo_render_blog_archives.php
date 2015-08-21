@@ -15,14 +15,15 @@
 function smarty_function_sirclo_render_blog_archives($params, $template)
 {
     $html = "";
+	
     if (!empty($params['archives'])) {
         $html .= "<ul id='blog-archives'>";
         foreach ($params['archives'] as $ar) {
             $html .= "<li>";
-            $html .= "<a href='" . $ar['link'] . "'>" . $ar['name'] . " (" . $ar['n_articles'] . ")" . "</a>";
+            $html .= "<big> <a href='" . $ar['link'] . "'>" . $ar['name'] . " (" . $ar['n_articles'] . ")" . "</a> </big>";
             $html .= "</li>";
         }
-        $html .= "</ul>";
+        $html .= "</ul>"; 
     }
     return $html;
 }

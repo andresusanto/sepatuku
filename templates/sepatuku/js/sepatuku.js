@@ -37,6 +37,11 @@ $('.s-add-to-cart').on('click', function() {
 	window.location = 'shopping-cart.html';
 });
 
+// PRODUCT DETAIL ON CLICK
+$('.s-button-detail').on('click', function() {
+	window.location = 'product-detail.html';
+});
+
 // ELEVATE ZOOM
 $("#product-zoom").elevateZoom({
 	zoomType : "inner",
@@ -128,4 +133,24 @@ $('#see-all-products').on('click', function() {
 
 $('#see-labels').on('click', function() {
 	window.location = 'product.html';
+});
+
+// POPUP PRODUCT
+$('.s-product-overlay').hover(function() {
+	$(this).children('i').show();
+}, function() {
+	$(this).children('i').hide();
+});
+
+$('.s-products i').on('click', function(e) {
+	e.preventDefault();
+	$('.s-show-product').show();
+});
+
+$('.s-close').on('click', function() {
+	$('.s-show-product').hide();
+});
+
+$('.s-overlay').on('click', function() {
+	$('.s-show-product').hide();
 });

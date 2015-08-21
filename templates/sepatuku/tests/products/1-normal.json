@@ -19,24 +19,22 @@
       "id": 1,
       "fid": "product-1",
       "product_code": "ABC1",
-      "title": "Product 1 Long Long Very Long Name",
+      "title": "NIKE - LUNAR TERRA SAFARI",
       "description": "<p>Lorem ipsum <strong>dolor sit amet</strong>, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>\n\n<p>Lorem ipsum <strong>dolor sit amet</strong>, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>\n",
       "brand": "Brand 1",
       "specification": "<p>Lorem ipsum <strong>dolor sit amet</strong>, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>\n\n<h3>Specification</h3>\n\n<p>Lorem ipsum <strong>dolor sit amet</strong>, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>\n\n<p>Lorem ipsum <strong>dolor sit amet</strong>, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>\n\n<h3>Application</h3>\n\n<p>Lorem ipsum <strong>dolor sit amet</strong>, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>\n\n<h3>Features</h3>\n\n<p>Lorem ipsum <strong>dolor sit amet</strong>, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>\n",
       "link": "http://product1",
-      "price_raw": 500,
+      "price_raw": 1500000,
       "is_new": false,
       "is_featured": false,
       "size": "Size 1",
       "color": "Color 1",
       "images": [
-        "/images/test/product_1a.jpg",
-        "/images/test/product_b.jpg",
-        "/images/test/product_a.jpg",
-        "/images/test/product_b.jpg",
-        "/images/test/product_a.jpg",
-        "/images/test/product_b.jpg"
-      ],
+		  "/images/products/folder/image1.jpg",
+		  "/images/products/folder/image2.jpg",
+		  "/images/products/folder/image3.jpg",
+		  "/images/products/folder/image4.jpg"
+	  ],
       "detailed_images": [
         {
           "url": "/images/test/product_a.jpg",

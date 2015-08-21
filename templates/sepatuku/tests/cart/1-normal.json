@@ -1526,13 +1526,13 @@
     "items":[  
       {  
         "fid":"some-product",
-        "name":"Some Product",
+        "name":"Nike Ardilla",
         "quantity":7,
         "price":70,
         "weight":30,
         "link":"http:\/\/some-product",
         "edit_link":"http:\/\/edit-some-product",
-        "image":"\/images\/test\/product7.jpg",
+        "image":"/images/one-shoe.jpg",
         "options":{  
           "size":"S",
           "color":"Red"
@@ -1540,26 +1540,23 @@
       },
       {  
         "fid":"another-product",
-        "name":"Another Product",
+        "name":"Nike Ardilla",
         "quantity":8,
         "price":80,
         "weight":40,
-        "image":"\/images\/test\/product8.jpg",
+        "image":"/images/one-shoe.jpg",
         "link":"http:\/\/another-product",
         "edit_link":"http:\/\/edit-another-product"
       },
       {  
         "fid":"yet-another-product",
-        "name":"Yet Another Product",
+        "name":"Nike Ardilla",
         "quantity":23,
         "price":7.5,
         "weight":10,
         "link":"http:\/\/yet-another-product",
         "edit_link":"http:\/\/edit-yet-another-product",
-        "image":"\/images\/test\/product9.jpg",
-        "options":{  
-          "text":"This is a very long text and really really long text"
-        }
+        "image":"/images/one-shoe.jpg"
       }
     ],
     "shipping":0,

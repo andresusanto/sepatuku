@@ -286,7 +286,7 @@
     "static": "/static"
   },
   "static_contents": {
-    "Contact Info": "<h3 class='head-title'>PT Agel Langgeng</h3>\n<address>\n<strong>The Plaza Office Tower Lt 22 Unit A-D </strong><br>\nJl. MH. Thamrin Kav. 28-30 <br>\nJakarta Pusat, Indonesia <br>\nPhone: 021-0000001 <br>\nE-mail: info@agel.co.id\n</address>",
+    "Contact Info": "<span class=\"title\">OUR STORE</span>\n<table>\n<tr>\n<td class=\"first\">P</td>\n<td>0813123123</td>\n</tr>\n<tr>\n<td class=\"first\">E</td>\n<td>email@alamak.com</td>\n</tr>\n<tr>\n<td class=\"first\">A</td>\n<td>Jalan Mangkubumi, Kasunanan, Mangkunegaran</td>\n</tr>\n</table>\n<span class=\"title\">DAILY OPEN</span>\n<div>09.00pm - 05.00am</div>",
     "Widget 1": "<p>\n<img data-src=\"holder.js/100%x188/social\">\n</p>\n",
     "Widget 2": "<p>\n<img data-src=\"holder.js/100%x188/gray\">\n</p>\n",
     "Widget 3": "<p>\n<img data-src=\"holder.js/100%x188/industrial\">\n</p>\n",

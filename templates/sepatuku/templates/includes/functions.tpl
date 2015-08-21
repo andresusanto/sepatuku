@@ -77,7 +77,7 @@
                     {/if}
                     <img class="product-img img-responsive" src="{$product.images.0}"/>
                     <div class="s-product-overlay">
-                        <i class="glyphicon glyphicon-zoom-in"></i>
+						<i class="glyphicon glyphicon-zoom-in" linkproduk="{$product.link}?viewmode=quickview"></i>
                     </div>
                 </div>
                 <div class="s-single-product-desc">

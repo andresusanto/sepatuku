@@ -33,15 +33,13 @@ SEPATUKU SIRCLO THEME
 		{/if}
 		</div>
 	</div>
-
-	<a href="{$continue_url}" class="col-xs-4 col-md-7"><span class="s-large-font s-bebas attention"><i class="fa fa-angle-left"></i>{sirclo_get_text text='continue_shopping_link'}</span></a>
-	{if !empty($cart['items'])}
-		<span class="col-xs-8 col-md-5"><a href="{$links['cart_place_order']}" class="btn btn-lg blue-button pull-right s-large-button s-to-checkout-page">{sirclo_get_text text='check_out_title'}</a></span>
-	{/if}
-					
+	
 	<div class="s-wavy-separator pull-right"></div>
-	<br> <br> <br>
-
+	<a href="{$continue_url}" class="col-xs-4 col-md-7"><span class="s-large-font s-bebas attention"><i class="fa fa-angle-left"></i>{sirclo_get_text text='continue_shopping_link'}</span></a>
+	
+	{if !empty($cart['items'])}
+		<span class="col-xs-8 col-md-5"><a href="{$links['cart_place_order']}" class="btn btn-lg blue-button pull-right s-large-button s-to-checkout-page s-bebas">{sirclo_get_text text='check_out_title'}</a></span>
+	{/if}
 </div>
 
 {/block}

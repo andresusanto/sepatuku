@@ -26,6 +26,12 @@ SEPATUKU SIRCLO THEME
 				</div>
 				
 				<div class="col-md-5 s-contact s-contact-info">
+					{if !empty($static_contents['Contact Info'])}
+                        {$static_contents['Contact Info']}
+                    {/if}
+				</div>
+				<!--
+				<div class="col-md-5 s-contact s-contact-info">
 				<span class="title">OUR STORE</span>
 				<table>
 					<tr>
@@ -43,7 +49,7 @@ SEPATUKU SIRCLO THEME
 				</table>
 				<span class="title">DAILY OPEN</span>
 				<div>09.00pm - 05.00am</div>
-				</div>
+				</div> -->
 			</div>
 
 {/block}

@@ -74,8 +74,8 @@ class Renderer_Cart extends PageView
             $attrs['colspan'] = 3;
         }
         $tds .= $this->xmlTag('td', $quantity, $attrs);
-        $tds .= $this->xmlTag('td', $amount, array('class' => 'number dollar-value'));
-        $row = $this->xmlTag('tr', $tds, array('class' => 'cart-total-row'));
+        $tds .= $this->xmlTag('td', $amount, array('class' => 'number dollar-value text-right'));
+        $row = $this->xmlTag('tr', $tds, array('class' => 'cart-total-row '));
         return $row;
     }
 
@@ -430,7 +430,7 @@ class Renderer_Cart extends PageView
             }
             $total_tds .= $this->xmlTag('td', $this->xmlTag('strong', 'Total:'), array('class' => 'number'));
             $grandTotal = Helper_Cart::getGrandTotal($cart);
-            $total_tds .= $this->xmlTag('td', $this->xmlTag('strong', $this->dol($grandTotal)), array('class' => 'number dollar-value'));
+            $total_tds .= $this->xmlTag('td', $this->xmlTag('strong', $this->dol($grandTotal)), array('class' => 'number dollar-value text-right'));
             $trs .= $this->xmlTag('tr', $total_tds, array('class' => 'cart-grand-total-row'));
         }
         return $trs;
@@ -510,7 +510,8 @@ class Renderer_Cart extends PageView
         ) + $itemOptions);
         $remove_content .= $this->xmlEmptyTag('input', array(
             'type' => 'submit',
-            'value' => '[x] remove'
+            'value' => '[x] remove',
+			'class' => 'cart-remove-btn'
         ));
         $remove_form = $this->xmlTag('form', $remove_content, array(
             'action' => $this->cart['link'],
@@ -545,7 +546,7 @@ class Renderer_Cart extends PageView
             $tds .= $this->xmlTag('td', $q_cell, array('class' => 'number'));
         }
         $amount = $item['quantity'] * $item['price'];
-        $tds .= $this->xmlTag('td', $this->dol($amount), array('class' => 'number dollar-value'));
+        $tds .= $this->xmlTag('td', $this->dol($amount), array('class' => 'number dollar-value text-right'));
         $tr = $this->xmlTag('tr', $tds, array('class' => 'shopping-cart-item'));
         return $tr;
     }
@@ -571,7 +572,7 @@ class Renderer_Cart extends PageView
         }
         $item_total_tds .= $this->xmlTag('td', $this->xmlTag('strong', 'Item Total'), array('class' => 'number'));
         $itemTotal = Helper_Cart::getItemTotal($this->cart['items']);
-        $item_total_tds .= $this->xmlTag('td', $this->xmlTag('strong', $this->dol($itemTotal)), array('class' => 'number dollar-value'));
+        $item_total_tds .= $this->xmlTag('td', $this->xmlTag('strong', $this->dol($itemTotal)), array('class' => 'number text-right'));
         $tr = $this->xmlTag('tr', $item_total_tds, array('class' => 'cart-item-total-row'));
         return $tr;
     }

@@ -1,7 +1,6 @@
 <?php
 class Helper_Renderer
 {
-
     static function getOrderTableTd($tag, $val, $color, $options, $withKey)
     {
         if (empty($options[$withKey])) {

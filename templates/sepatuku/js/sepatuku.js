@@ -144,6 +144,9 @@ $('.s-product-overlay').hover(function() {
 
 $('.s-products i').on('click', function(e) {
 	e.preventDefault();
+	//alert($(this).attr('linkproduk'));
+	var link_dokumen = $(this).attr('linkproduk');
+	$('#konten-produk').attr('src', link_dokumen);
 	$('.s-show-product').show();
 });
 

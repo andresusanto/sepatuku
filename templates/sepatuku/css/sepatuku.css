@@ -467,6 +467,7 @@ h1, h2, h3, h4, h5, h6 {
 	border-radius: 5px;
 	background-color: #b1d6cd;
 	font-family: BebasNeue;
+	color: #333;
 }
 
 .s-contact-info .title {
@@ -505,6 +506,11 @@ h1, h2, h3, h4, h5, h6 {
 	padding: 10px 10px;
 }
 
+.s-cart .s-table .cart-remove-btn{
+	border: none;
+	background: none;
+}
+
 .s-cart .s-table tr, .s-static-page .s-table tr {
 	border-bottom: solid #bdbdbd 1px;
 	border-top: none;
@@ -515,10 +521,37 @@ h1, h2, h3, h4, h5, h6 {
 	padding: 0px 2px;
 }
 
+
 .s-cart .s-table td img, .s-static-page .s-table td img {
 	max-width: 170px;
 	padding: 10px;
 	vertical-align: middle;
+}
+
+.s-cart .s-table .cart-total-row .number{
+	margin-top: 10px;
+}
+
+.s-cart .s-table .cart-grand-total-row {
+	border-top: solid #bdbdbd 1px;
+	border-bottom: none;
+}
+
+.s-cart .s-table .cart-grand-total-row .number{
+	padding-top: 10px;
+	color: red;
+}
+
+.s-cart .s-table .cart-item-total-row .number{
+	padding-top: 10px;
+}
+
+.s-cart .s-table .cart-item-total-row{
+	border-bottom: none;
+}
+
+.s-cart .s-table .cart-total-row{
+	border-bottom: none;
 }
 
 .s-cart .s-table .product-description {

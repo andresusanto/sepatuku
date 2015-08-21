@@ -45,11 +45,14 @@ SEPATUKU SIRCLO THEME
 	</div> 
 	
 </div>
+
+
 <div class="s-show-product">
         <div class="s-overlay">
         </div>
         <div class="s-quickview col-md-10 col-md-offset-1">
             <div class="s-close">&times;</div>
+			<!--
             <div class="col-md-12 s-content-title">
                 <h1>{$products.0.title}</h1>
                 <hr/>
@@ -89,6 +92,8 @@ SEPATUKU SIRCLO THEME
                 {sirclo_render_product_add_to_cart product=$products.0 action=$links.cart}
 
             </div>
+			-->
+			<iframe id="konten-produk" src="" style="border:none;" width="100%" height="100%"></iframe>
         </div>
     </div>
 {/block}

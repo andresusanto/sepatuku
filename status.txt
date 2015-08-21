@@ -1,19 +1,17 @@
 CHRIST
-index
-product-detail
 static
-
-TONY
-blog
-product
-shopping-cart
 
 DONE
 account-info
+blog
 checkout
 contact
+index
 invite-friends
 login
 lookbook
+product
+product-detail
 register
+shopping-cart
 testimonial

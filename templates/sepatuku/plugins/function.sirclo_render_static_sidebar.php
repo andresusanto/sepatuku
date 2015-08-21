@@ -28,7 +28,7 @@ function smarty_function_sirclo_render_static_sidebar($params, $template)
             $_html_list .= "<li ".$_is_active."><a href='".$_n['link']."'>".$_n['title']."</a><ul>";
             foreach ($_n['sub_nav'] as $_sn) {
                 $_sn_is_active = !empty($_sn['is_active']) ? 'class="active"' : '';
-                $_html_list .= "<li ".$_sn_is_active."><a href='".$_sn['link']."'>".$_sn['title']."</a></li>";
+                $_html_list .= "<li ".$_sn_is_active."><big><a href='".$_sn['link']."'>".$_sn['title']."</a></big></li>";
             }
             $_html_list .= "</ul></li>";
         }

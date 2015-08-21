@@ -25,19 +25,20 @@ function smarty_function_sirclo_render_static_sidebar($params, $template)
         $_is_active = !empty($_n['is_active']) ? 'class="active"' : '';
 
         if (!empty($_n['sub_nav']) && !$_hide_subnav) {
-            $_html_list .= "<li ".$_is_active."><a href='".$_n['link']."'>".$_n['title']."</a><ul>";
+            $_html_list .= "<li ".$_is_active."><big><a href='".$_n['link']."'>".$_n['title']."</a></big><ul>";
             foreach ($_n['sub_nav'] as $_sn) {
                 $_sn_is_active = !empty($_sn['is_active']) ? 'class="active"' : '';
                 $_html_list .= "<li ".$_sn_is_active."><a href='".$_sn['link']."'>".$_sn['title']."</a></li>";
             }
             $_html_list .= "</ul></li>";
+        } else {
+          $_html_list .= "<li ".$_is_active."><big><a href='".$_n['link']."'>".$_n['title']."</a></big></li>";
         }
-        $_html_list .= "<li ".$_is_active."><a href='".$_n['link']."'>".$_n['title']."</a></li>";
     }
 
-    if (!$_hide_title) {
-        $html .= "<div class='sidebar-header'>$_nav_title</div>";
-    }
+    // if (!$_hide_title) {
+    //     $html .= "<div class='sidebar-header'>$_nav_title</div>";
+    // }
 
     $html .= "
     <ul>

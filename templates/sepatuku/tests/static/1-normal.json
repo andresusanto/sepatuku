@@ -16,46 +16,61 @@
   ],
   "static_data": {
     "title": "The Static Title: The Subtitle",
-    "content": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>\n\n<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>\n\n<h2>This is the second heading</h2>\n\n<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim\n<img src=\"http://upload.wikimedia.org/wikipedia/en/b/bc/Wiki.png\" alt=\"Wikipedia Logo 1\" />\nad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>\n\n<p><img src=\"http://upload.wikimedia.org/wikipedia/en/b/bc/Wiki.png\" alt=\"This is a very very very very very very very very very very very very very very very long title\" /></p>\n\n<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>\n\n<p><img src=\"http://upload.wikimedia.org/wikipedia/en/b/bc/Wiki.png\"/></p>\n\n<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>\n\n<h3>This is the third heading</h3>\n\n<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>\n\n<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>\n\n<h1>This is the first heading</h1>\n\n<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>\n\n<hr />\n\n<p>This is the first paragraph. <strong>This text is bold</strong>.\n<em>This text is italic</em>.</p>\n\n<h4>This is the fourth heading</h4>\n\n<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>\n\n<blockquote>\n  <p>This is a block quote\n  This is still in the block quote\n  And so is this</p>\n  \n  <p>This is the first level of quoting.</p>\n  \n  <blockquote>\n    <p>This is nested blockquote.</p>\n  </blockquote>\n  \n  <p>Back to the first level.</p>\n  \n  <h2>This is a header.</h2>\n  \n  <ol>\n  <li>This is the first list item.</li>\n  <li>This is the second list item.</li>\n  </ol>\n  \n  <p>Here's some example code:</p>\n\n<pre><code>return shell_exec(\"echo $input | $markdown_script\");\n</code></pre>\n</blockquote>\n\n<ol>\n<li>This is the first ordered item.</li>\n<li>This is the second ordered item.</li>\n<li>This is the third ordered item.</li>\n</ol>\n\n<ul>\n<li>This is the first unordered item.</li>\n<li>This is the second unordered item.</li>\n<li>This is the third unordered item.</li>\n<ul>\n<li>This is the first nested item.</li>\n<li>This is the second nested item.</li>\n</ul>\n<li>This is the fourth unordered item.</li>\n</ul>\n\n<ol>\n<li><p>This is a list item with two paragraphs. Lorem ipsum dolor\nsit amet, consectetuer adipiscing elit. Aliquam hendrerit\nmi posuere lectus.</p>\n\n<p>Vestibulum enim wisi, viverra nec, fringilla in, laoreet\nvitae, risus. Donec sit amet nisl. Aliquam semper ipsum\nsit amet velit.</p></li>\n<li><p>Suspendisse id sem consectetuer libero luctus adipiscing.</p></li>\n</ol>\n\n<p>This is a normal paragraph:</p>\n\n<pre><code>This is a code block.\n\n&lt;div class=\"footer\"&gt;\n    &amp;copy; 2004 Foo Corporation\n&lt;/div&gt;\n</code></pre>\n\n<hr />\n\n<p>This is <a href=\"http://example.com/\" title=\"Title\">an example</a> inline link.</p>\n\n<p><a href=\"http://example.net/\">This link</a> has no title attribute.</p>\n\n<p>See my <a href=\"/about/\">About</a> page for details.</p>\n\n<p>This is <a href=\"http://example.com/\" title=\"Optional Title Here\">an example</a> reference-style link.</p>\n\n<p>This is a <a href=\"exec\" target=\"popup\">popup</a> link.</p>\n\n<p>This is a <a href=\"exec\" class=\"button\">Button</a> link.</p>\n\n<hr />\n\n<p>Use the <code>printf()</code> function.</p>\n\n<p><code>&amp;#8212;</code> is the decimal-encoded equivalent of <code>&amp;mdash;</code>.</p>\n<table>\n<tr>\n<th>Title 1</th><th>Title 2</th><th>Title 3</th>\n</tr>\n<tr>\n<td>Some Value</td><td>Some Other Value</td><td>Yet Another Value</td>\n</tr>\n<tr>\n<td>Some Value</td><td>Some Other Value</td><td>Yet Another Value</td>\n</tr>\n<tr>\n<td>Some Value</td><td>Some Other Value</td><td>Yet Another Value</td>\n</tr>\n<tr>\n<td>Some Value</td><td>Some Other Value</td><td>Yet Another Value</td>\n</tr>\n</table>\n\n<table class=\"table-plain\">\n<tr>\n<th>Title 1</th><th>Title 2</th><th>Title 3</th>\n</tr>\n<tr>\n<td>Some Value</td><td>Some Other Value</td><td>Yet Another Value</td>\n</tr>\n<tr>\n<td>Some Value</td><td>Some Other Value</td><td>Yet Another Value</td>\n</tr>\n<tr>\n<td>Some Value</td><td>Some Other Value</td><td>Yet Another Value</td>\n</tr>\n<tr>\n<td>Some Value</td><td>Some Other Value</td><td>Yet Another Value</td>\n</tr>\n</table>\n\n<p><img class=\"img-plain\" src=\"http://upload.wikimedia.org/wikipedia/en/b/bc/Wiki.png\" /></p>\n\n<blockquote class=\"static-tabbing\">\n<p>Lorem ipsum <strong>dolor sit amet</strong>, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>\n\n<h3>Specification</h3>\n\n<p>Lorem ipsum <strong>dolor sit amet</strong>, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>\n\n<p>Lorem ipsum <strong>dolor sit amet</strong>, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>\n\n<h3>Application</h3>\n\n<p>Lorem ipsum <strong>dolor sit amet</strong>, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>\n\n<h3>Features</h3>\n\n<p>Lorem ipsum <strong>dolor sit amet</strong>, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>\n\n</blockquote>\n\n<p>This is hidden email: <span class=\"hi-cc\"></span></p>\n",
+    "content": "<img class='pull-right' src='/images/caslon-specimen1.jpg' style='width:200px; margin-top:0px'/><p><i>Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, </i></p><h1>LEVEL 01 HEADING</h1><h2>LEVEL 02 HEADING</h2><h3>LEVEL 03 HEADING</h3><h4>LEVEL 04 HEADING</h4><h5>LEVEL 05 HEADING</h5><p>Teks biasa, <a href='#'>link silakan dihover</a><br/><br/></p><h2>TEXT STYLE</h2><p>Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, </p><br/><h2>TABLE</h2><table class='s-table'><thead><tr><td>COLUMN HEADER</td><td>COLUMN HEADER</td><td>COLUMN HEADER</td><td>COLUMN HEADER</td><td>COLUMN HEADER</td></tr></thead><tbody><tr><td>Row Header</td><td>Cell Data</td><td>Cell Data</td><td>Cell Data</td><td>Cell Data</td></tr><tr><td>Row Header</td><td>Cell Data</td><td>Cell Data</td><td>Cell Data</td><td>Cell Data</td></tr><tr><td>Row Header</td><td>Cell Data</td><td>Cell Data</td><td>Cell Data</td><td>Cell Data</td></tr><tr><td>Row Header</td><td>Cell Data</td><td>Cell Data</td><td>Cell Data</td><td>Cell Data</td></tr></tbody></table>",
     "nav": [
       {
-        "title": "Company: Who we are",
-        "link": "http://company"
-      },
-      {
-        "title": "Vision and Mission",
-        "link": "http://vision_mission",
+        "title": "About Us",
+        "link": "/contact",
+        "sub_nav": [
+          {
+            "title": "Overview",
+            "link": "/overview"
+          },
+          {
+            "title": "History",
+            "link": "/history"
+          },
+          {
+            "title": "Our Team",
+            "link": "/our-team"
+          }
+        ],
         "is_active": true
       },
       {
-        "title": "Our Services: What we do",
-        "link": ""
-      },
-      {
-        "title": "This Is A Very Very Very Very Long Title",
-        "link": "http://longtitle",
+        "title": "Terms & Conditions",
+        "link": "/terms",
         "sub_nav": [
           {
-            "title": "Sub Nav 1 Very Very Very Very Long Title",
+            "title": "Sub 1",
             "link": "http://subnav1"
           },
           {
-            "title": "Sub Nav 2",
-            "link": "http://subnav2",
-            "is_active": true
-          },
-          {
-            "title": "Sub Nav 3",
-            "link": "http://subnav3"
+            "title": "Sub 2",
+            "link": "http://subnav2"
           }
         ]
       },
       {
-        "title": "Normal Title",
-        "link": "http://normal"
+        "title": "Privacy Policy",
+        "link": ""
+      },
+      {
+        "title": "Sitemap",
+        "link": "http://longtitle",
+        "sub_nav": [
+          {
+            "title": "Sub 1",
+            "link": "http://subnav1"
+          },
+          {
+            "title": "Sub 2",
+            "link": "http://subnav2"
+          }
+        ]   
       }
     ],
-    "nav_title": "About Us",
+    "nav_title": "",
     "images": [
       "/images/test/static1.jpg",
       "/images/test/static2.jpg",

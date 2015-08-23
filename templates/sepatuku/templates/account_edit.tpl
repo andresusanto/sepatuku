@@ -12,7 +12,7 @@
                 {include 'includes/account_nav.tpl'}
             </div>
 
-            <div id="account-form" class="span-sirclo4-3 col">
+            <div id="account-form" class="span-sirclo4-3 col-md-9 s-content s-top-margin">
                 {sirclo_render_account_edit_form form_class="sirclo-form" member=$member with_birthday=true}
             </div>
         </div>

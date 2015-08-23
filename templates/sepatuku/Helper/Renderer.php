@@ -870,19 +870,19 @@ EOD;
         $_member_state = !empty($params['member']['state']) ? $params['member']['state'] : '';
         $_member_email = !empty($params['member']['email']) ? $params['member']['email'] : '';
         $_member_birthday = !empty($params['member']['dob_timestamp']) ? date('j F Y', $params['member']['dob_timestamp']) : '';
-        $_btn_class = !empty($params['btn_class']) ? $params['btn_class'] : 'btn-flat';
+        $_btn_class = !empty($params['btn_class']) ? $params['btn_class'] : 'btn btn-lg blue-button s-change-password-submit';
 
         $_lang = !empty($params['lang']) ? $params['lang'] : "en";
         $_label_salutation = $_lang == "id" ? "Sapaan" : "Salutation";
         $_label_name = $_lang == "id" ? "Nama" : "Name";
-        $_label_phone = $_lang == "id" ? "No HP" : "Mobile Phone";
+        $_label_phone = $_lang == "id" ? "No HP" : "Phone";
         $_label_address = $_lang == "id" ? "Alamat" : "Address";
         $_label_postal_code = $_lang == "id" ? "Kode Pos" : "Postal Code";
-        $_label_city = $_lang == "id" ? "Kota/Kecamatan" : "City/District";
-        $_label_state = $_lang == "id" ? "Provinsi" : "State/Province";
+        $_label_city = $_lang == "id" ? "Kota/Kecamatan" : "City";
+        $_label_state = $_lang == "id" ? "Provinsi" : "State";
         $_label_country = $_lang == "id" ? "Negara" : "Country";
         $_label_email = $_lang == "id" ? "E-mail" : "E-mail";
-        $_label_birthday = $_lang == "id" ? "Tanggal Lahir" : "Birthdate";
+        $_label_birthday = $_lang == "id" ? "Tanggal Lahir" : "Date of Birth";
 
         if (!empty($params['address_label']) && $params['address_label'] == 'billing') {
             $_label_address_subheader = $_lang == "id" ? "Alamat" : "Address";
@@ -893,23 +893,23 @@ EOD;
 
         $params['fields'] = array();
         if (!empty($params['with_salutation'])) {
-            $params['fields'][] = array('name' => 'salutation', 'type' => 'salutation', 'value' => $_member_salutation, 'label' => $_label_salutation, 'attribute' => 'required');
+            $params['fields'][] = array('name' => 'salutation', 'type' => 'salutation', 'value' => $_member_salutation, 'label' => $_label_salutation, 'attribute' => '');
         }
-        $params['fields'][] = array('name' => 'first_name', 'type' => 'text', 'value' => $_member_name, 'label' => $_label_name, 'attribute' => 'required');
-        $params['fields'][] = array('name' => 'phone', 'type' => 'text', 'value' => $_member_phone, 'label' => $_label_phone, 'attribute' => 'required');
+        $params['fields'][] = array('name' => 'first_name', 'type' => 'text', 'value' => $_member_name, 'label' => $_label_name, 'attribute' => '');
+        $params['fields'][] = array('name' => 'address_line1', 'type' => 'text', 'value' => $_member_address, 'label' => $_label_address, 'attribute' => '');
+        $params['fields'][] = array('name' => 'postal_code', 'type' => 'text', 'value' => $_member_postal_code, 'label' => $_label_postal_code, 'attribute' => '');
+        $params['fields'][] = array('name' => 'city', 'type' => 'text', 'value' => $_member_city, 'label' => $_label_city, 'attribute' => 'data-area-autocomplete="city"');
+        $params['fields'][] = array('name' => 'state', 'type' => 'text', 'value' => $_member_state, 'label' => $_label_state, 'attribute' => 'data-area-autocomplete="state"');
+        $params['fields'][] = array('name' => 'country', 'type' => 'country', 'value' => $_member_country, 'label' => $_label_country, 'attribute' => 'data-area-autocomplete="country"');
+        $params['fields'][] = array('name' => 'phone', 'type' => 'text', 'value' => $_member_phone, 'label' => $_label_phone, 'attribute' => '');
 
         if (!empty($params['with_birthday'])) {
             $params['fields'][] = array('name' => 'dob', 'type' => 'text', 'value' => $_member_birthday, 'label' => $_label_birthday, 'attribute' => '');
-            $params['fields'][] = array('name' => '', 'type' => 'subheader', 'value' => $_label_address_subheader, 'label' => '', 'attribute' => '');
         }
 
-        $params['fields'][] = array('name' => 'address_line1', 'type' => 'text', 'value' => $_member_address, 'label' => $_label_address, 'attribute' => 'required');
-        $params['fields'][] = array('name' => 'country', 'type' => 'country', 'value' => $_member_country, 'label' => $_label_country, 'attribute' => 'required data-area-autocomplete="country"');
-        $params['fields'][] = array('name' => 'state', 'type' => 'text', 'value' => $_member_state, 'label' => $_label_state, 'attribute' => 'required data-area-autocomplete="state"');
-        $params['fields'][] = array('name' => 'city', 'type' => 'text', 'value' => $_member_city, 'label' => $_label_city, 'attribute' => 'required data-area-autocomplete="city"');
-        $params['fields'][] = array('name' => 'postal_code', 'type' => 'text', 'value' => $_member_postal_code, 'label' => $_label_postal_code, 'attribute' => 'required');
-        $params['fields'][] = array('name' => 'email', 'type' => 'email', 'value' => $_member_email, 'label' => $_label_email, 'attribute' => 'disabled');
-        $params['fields'][] = array('name' => '', 'type' => 'submit', 'value' => 'Update Account Info', 'label' => '', 'attribute' => 'class="'.$_btn_class.'"');
+        //$params['fields'][] = array('name' => 'email', 'type' => 'email', 'value' => $_member_email, 'label' => $_label_email, 'attribute' => 'disabled');
+        
+		$params['fields'][] = array('name' => '', 'type' => 'submit', 'value' => 'Update Account Info', 'label' => '', 'attribute' => 'class="'.$_btn_class.'"');
 
         $html = Helper_Renderer::renderForm($params);
         return $html;

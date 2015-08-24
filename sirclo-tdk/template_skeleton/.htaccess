@@ -1,0 +1,10 @@
+RewriteEngine on
+RewriteCond $1 !^(index\.php|resources|admin_resources|tmp_preview|favicon\.ico|images|css|js)
+RewriteRule ^(.*)$ index.php [L]
+SetEnvIfNoCase ^Authorization$ "(.+)" PHP_AUTH_DIGEST_RAW=$1
+
+# if the above does not work, use this instead
+#RewriteEngine on
+#RewriteRule ^(index\.php|resources|admin_resources|tmp_preview|images|css|js|favicon\.ico) - [L]
+#RewriteRule .* index.php [L]
+#SetEnvIfNoCase ^Authorization$ "(.+)" PHP_AUTH_DIGEST_RAW=$1

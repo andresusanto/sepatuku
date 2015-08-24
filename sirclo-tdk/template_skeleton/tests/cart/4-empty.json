@@ -1,0 +1,159 @@
+{  
+  "title":"Cart",
+  "breadcrumb":[  
+    {  
+      "title":"Home",
+      "link":"http:\/\/home"
+    },
+    {  
+      "title":"Some Page",
+      "link":"http:\/\/page"
+    },
+    {  
+      "title":"Sub Page",
+      "link":"http:\/\/subpage"
+    }
+  ],
+  "cart_products":[],
+  "cart":{  
+    "currency_symbol":"RM",
+    "items":[  
+
+    ],
+    "shipping":0,
+    "shipping_discount":0,
+    "link":"http:\/\/localhost\/debug.php",
+    "checkout_link":"http:\/\/cartcheckout",
+    "code":"cart-code",
+    "backorder_shipping_method":"Registered Shipping",
+    "shipping_method":"Normal Shipping",
+    "backorder_shipping_destination":"SG",
+    "shipping_destination":"ID",
+    "shipping_country":"MY",
+    "shipping_city":"Surabaya",
+    "coupon_code":"ABC",
+    "discounts":[  
+
+    ],
+    "total_items":0,
+    "total_weight":2750,
+    "npoints":4,
+    "npoints_earned":40,
+    "grand_total":1300.5,
+    "item_total":1200.5,
+    "is_checkout_enabled":true,
+    "checkout_disabled_reason":"",
+    "delivery_timestamp":1423116772,
+    "tax":0,
+    "point_rule":{  
+      "point_per_dollar":1.4567,
+      "dollar_per_point":0.2345
+    }
+  },
+  "continue_url":"http:\/\/continue",
+  "categories":[  
+    {  
+      "title":"Category 1",
+      "link":"http:\/\/category1",
+      "images":[  
+        "\/images\/test\/category1.jpg",
+        "\/images\/test\/category1-2.jpg"
+      ],
+      "sub_nav":[  
+        {  
+          "title":"Subcategory 1",
+          "link":"http:\/\/subcategory1"
+        },
+        {  
+          "title":"Subcategory 2",
+          "link":"http:\/\/subcategory2"
+        },
+        {  
+          "title":"Subcategory 3",
+          "link":"http:\/\/subcategory3"
+        }
+      ],
+    },
+    {  
+      "title":"Category 2",
+      "link":"http:\/\/category2",
+      "images":[  
+        "\/images\/test\/category2.jpg",
+        "\/images\/test\/category2-2.jpg"
+      ],
+      "is_active":true,
+      "sub_nav":[  
+        {  
+          "title":"Subcategory 1",
+          "link":"http:\/\/subcategory1",
+          "images":[  
+            "\/images\/test\/category2a.jpg",
+            "\/images\/test\/category2a-2.jpg"
+          ]
+        },
+        {  
+          "title":"Subcategory 2",
+          "link":"http:\/\/subcategory2",
+          "is_active":true,
+          "images":[  
+            "\/images\/test\/category2b.jpg",
+            "\/images\/test\/category2b-2.jpg"
+          ],
+          "sub_nav":[  
+            {  
+              "title":"Subcategory 2a",
+              "link":"http:\/\/subcategory2a"
+            },
+            {  
+              "title":"Subcategory 2b",
+              "link":"http:\/\/subcategory2b",
+              "is_active":true
+            },
+            {  
+              "title":"Subcategory 2c",
+              "link":"http:\/\/subcategory2c"
+            }
+          ],
+        },
+        {  
+          "title":"Subcategory 3",
+          "link":"http:\/\/subcategory3",
+          "images":[  
+            "\/images\/test\/category2c.jpg",
+            "\/images\/test\/category2c-2.jpg"
+          ]
+        }
+      ],
+    },
+    {  
+      "title":"Category 3",
+      "link":"http:\/\/category3",
+      "images":[  
+
+      ],
+      "is_active":false,
+      "is_special":false,
+    },
+    {  
+      "title":"Category 4",
+      "link":"http:\/\/category4",
+      "is_hidden":true,
+      "images":[  
+        "\/images\/test\/category4.jpg",
+        "\/images\/test\/category4-2.jpg"
+      ],
+      "is_active":false,
+    },
+    {  
+      "title":"Special Category",
+      "link":"http:\/\/special",
+      "is_special":true,
+      "images":[  
+        "\/images\/test\/specialcat1.jpg",
+        "\/images\/test\/specialcat2.jpg"
+      ],
+      "is_active":false
+    }
+  ],
+  "member":null
+}

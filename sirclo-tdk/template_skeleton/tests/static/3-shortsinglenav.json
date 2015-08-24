@@ -1,0 +1,34 @@
+{
+    "title": "Static",
+    "breadcrumb": [
+        {
+            "title": "Home",
+            "link": "http://home"
+        },
+        {
+            "title": "Some Page",
+            "link": "http://page"
+        },
+        {
+            "title": "Sub Page",
+            "link": "http://subpage"
+        }
+    ],
+    "static_data": {
+        "title": "The Static Title: The Subtitle",
+        "content": "<p>This is a very short content.</p>",
+        "nav": [
+            {
+                "title": "Vision and Mission",
+                "link": "http://vision_mission",
+                "is_active": true
+            }
+        ],
+        "nav_title": "About Us",
+        "images": [
+            "http://palomino.local/images/test/static1.jpg",
+            "http://palomino.local/images/test/static2.jpg",
+            "http://palomino.local/images/test/static3.jpg"
+        ]
+    }
+}

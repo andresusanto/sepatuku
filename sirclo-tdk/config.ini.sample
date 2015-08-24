@@ -1,0 +1,8 @@
+smarty_dir = "D:\xampp\htdocs\sepatuku\smarty-3.1.27"
+templates_dir = "D:\xampp\htdocs\sepatuku\templates"
+temporary_dir = "D:\xampp\htdocs\sepatuku\templates\tmp_preview"
+webserver = "apache"
+apache_dir = "D:\xampp"
+nginx_dir = "/usr/local/etc/nginx"
+nginx_phpfpm = 127.0.0.1:9000 ;unix:/var/run/php5-fpm.sock
+xampp = 1

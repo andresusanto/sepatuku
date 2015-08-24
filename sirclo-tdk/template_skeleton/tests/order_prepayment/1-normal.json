@@ -1,0 +1,82 @@
+{
+  "title": "Order Submitted",
+  "order" : {
+    "id": 1,
+    "order_id": "11111111",
+    "invoice_id": "INVOICE1",
+    "order_timestamp": 1272672000,
+    "expiry_timestamp": 1272717000,
+    "expiry_hours": 1,
+    "total_amount_raw": 1000,
+    "item_total_amount_raw": 500,
+    "status": "Processing",
+    "merchant_remarks": "This is the remarks.\nThis is the second line.",
+    "message": "This is message line 1.\nThis is message line 2.\nThis is message line 3.",
+    "payment_notif_message": "This is payment message line 1.\nThis is payment message line 2.\nThis is payment message line 3.",
+    "prefered_delivery_timestamp": 1275350400,
+    "coupon_code": "ABCDE",
+    "n_points_earned": 10,
+    "n_points_used": 2,
+    "items": [
+        "Item 1 (Size M)",
+        "Item 2 (Size L Color Green)",
+        "Item 3"
+    ],
+    "invoice_link": "http://invoice1",
+    "currency": "SGD",
+    "detailed_items": [
+        {
+            "title": "Product 1 Very Very Long Title",
+            "quantity": 1,
+            "price": 1000,
+            "options": {
+                "size": "L",
+                "color": "Blue"
+            },
+            "image": "/images/test/product_a_tn.jpg"
+        },
+        {
+            "product_code": "PROD1",
+            "title": "Product 2",
+            "quantity": 2,
+            "price": 2000,
+            "options": [],
+            "image": "/images/test/product_a_tn.jpg"
+        },
+        {
+            "title": "Product 3 Very Very Long Title",
+            "quantity": 1,
+            "price": 500
+        }
+    ],
+    "shipping": 10,
+    "discount": -2.5,
+    "tax": 1.555,
+    "shipping_info": "Local Registered Post",
+    "payment_method": "Payment Method 1",
+    "payment_instruction": "<ul><li>ABC Bank 001-001-001</li><li>XYZ Bank 002-002-002</li></ul>",
+    "billing_info": {
+        "name": "John Smith",
+        "address": "10 Singapore Street #12-123",
+        "city": "Singapore City",
+        "postal_code": "543210",
+        "state": "Singapore State",
+        "country": "Singapore Country",
+        "phone": "12345678",
+        "email": "john@smith.com",
+        "salutation": "Dr",
+        "dob_timestamp": 439689600
+    },
+    "delivery_info": {
+        "name": "Alice Bob",
+        "address": "Jl. Semangka Barat II/41",
+        "city": "Surabaya",
+        "postal_code": "98765",
+        "state": "Jawa Timur",
+        "country": "Indonesia",
+        "phone": "23456789",
+        "email": "alice@bob.com"
+    }
+  },
+  "payment_link" : "/order/pay"
+}

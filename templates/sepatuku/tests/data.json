@@ -4,196 +4,23 @@
   "main_nav": {
     "home": {
       "title": "Home",
-      "link": "http://perdana-staging.mysirclo.com/",
-      "is_active": true
+      "link": "/"
     },
     "products/category/new-in": {
       "title": "New In",
-      "link": "/products/category/new-in",
-      "sub_nav": {
-        "new-in-1": {
-          "title": "New In 1: Subtitle 1 Very Long Title",
-          "link": "http://new-in-1"
-        },
-        "new-in-2": {
-          "title": "New In 2: Subtitle 2",
-          "link": "http://new-in-2",
-          "sub_nav": {
-            "new-in-2a": {
-              "title": "New In 2a: Subtitle 2a",
-              "link": "http://new-in-2a"
-            },
-            "new-in-2b": {
-              "title": "New In 2b: Subtitle 2b",
-              "link": "http://new-in-2b",
-              "sub_nav": {
-                "new-in-2b1": {
-                  "title": "New In 2b1: Subtitle 2b1",
-                  "link": "http://new-in-2b1"
-                },
-                "new-in-2b2": {
-                  "title": "New In 2b2: Subtitle 2b2",
-                  "link": "http://new-in-2b2"
-                }
-              }
-            },
-            "new-in-2c": {
-              "title": "New In 2c: Subtitle 2c",
-              "link": "http://new-in-2c"
-            }
-          }
-        },
-        "new-in-3": {
-          "title": "New In 3: Subtitle 3",
-          "link": "http://new-in-3",
-          "is_active": true
-        },
-        "new-in-4": {
-          "title": "New In 4",
-          "link": "http://new-in-3"
-        }
-      }
+      "link": "/products/category/new-in"
     },
     "products/category/men": {
       "title": "Men",
-      "link": "/products/category/men",
-      "sub_nav": {
-        "men-1": {
-          "title": "Men 1: Subtitle 1 Very Long Title",
-          "link": "http://men-1"
-        },
-        "men-2": {
-          "title": "Men 2: Subtitle 2",
-          "link": "http://men-2",
-          "sub_nav": {
-            "men-2a": {
-              "title": "Men 2a: Subtitle 2a",
-              "link": "http://men-2a"
-            },
-            "men-2b": {
-              "title": "Men 2b: Subtitle 2b",
-              "link": "http://men-2b",
-              "sub_nav": {
-                "men-2b1": {
-                  "title": "Men 2b1: Subtitle 2b1",
-                  "link": "http://men-2b1"
-                },
-                "men-2b2": {
-                  "title": "Men 2b2: Subtitle 2b2",
-                  "link": "http://men-2b2"
-                }
-              }
-            },
-            "men-2c": {
-              "title": "Men 2c: Subtitle 2c",
-              "link": "http://men-2c"
-            }
-          }
-        },
-        "men-3": {
-          "title": "Men 3: Subtitle 3",
-          "link": "http://men-3",
-          "is_active": true
-        },
-        "men-4": {
-          "title": "Men 4",
-          "link": "http://men-3"
-        }
-      }
+      "link": "/products/category/men"
     },
     "products/category/women": {
       "title": "Women",
-      "link": "/products/category/women",
-      "sub_nav": {
-        "women-1": {
-          "title": "Women 1: Subtitle 1 Very Long Title",
-          "link": "http://women-1"
-        },
-        "women-2": {
-          "title": "Women 2: Subtitle 2",
-          "link": "http://women-2",
-          "sub_nav": {
-            "women-2a": {
-              "title": "Women 2a: Subtitle 2a",
-              "link": "http://women-2a"
-            },
-            "women-2b": {
-              "title": "Women 2b: Subtitle 2b",
-              "link": "http://women-2b",
-              "sub_nav": {
-                "women-2b1": {
-                  "title": "Women 2b1: Subtitle 2b1",
-                  "link": "http://women-2b1"
-                },
-                "women-2b2": {
-                  "title": "Women 2b2: Subtitle 2b2",
-                  "link": "http://women-2b2"
-                }
-              }
-            },
-            "women-2c": {
-              "title": "Women 2c: Subtitle 2c",
-              "link": "http://women-2c"
-            }
-          }
-        },
-        "women-3": {
-          "title": "Women 3: Subtitle 3",
-          "link": "http://women-3",
-          "is_active": true
-        },
-        "women-4": {
-          "title": "Women 4",
-          "link": "http://women-3"
-        }
-      }
+      "link": "/products/category/women"
     },
     "products/category/sale": {
       "title": "Sale",
-      "link": "/products/category/sale",
-      "sub_nav": {
-        "sale-1": {
-          "title": "Sale 1: Subtitle 1 Very Long Title",
-          "link": "http://sale-1"
-        },
-        "sale-2": {
-          "title": "Sale 2: Subtitle 2",
-          "link": "http://sale-2",
-          "sub_nav": {
-            "sale-2a": {
-              "title": "Sale 2a: Subtitle 2a",
-              "link": "http://sale-2a"
-            },
-            "sale-2b": {
-              "title": "Sale 2b: Subtitle 2b",
-              "link": "http://sale-2b",
-              "sub_nav": {
-                "sale-2b1": {
-                  "title": "Sale 2b1: Subtitle 2b1",
-                  "link": "http://sale-2b1"
-                },
-                "sale-2b2": {
-                  "title": "Sale 2b2: Subtitle 2b2",
-                  "link": "http://sale-2b2"
-                }
-              }
-            },
-            "sale-2c": {
-              "title": "Sale 2c: Subtitle 2c",
-              "link": "http://sale-2c"
-            }
-          }
-        },
-        "sale-3": {
-          "title": "Sale 3: Subtitle 3",
-          "link": "http://sale-3",
-          "is_active": true
-        },
-        "sale-4": {
-          "title": "Sale 4",
-          "link": "http://sale-3"
-        }
-      }
+      "link": "/products/category/sale"
     },
     "products/category/kids": {
       "title": "Kids",
@@ -205,36 +32,11 @@
         },
         "kids-2": {
           "title": "Kids Swimwear",
-          "link": "/products/category/kids/swimwear",
-          "sub_nav": {
-            "kids-2a": {
-              "title": "Kids 2a: Subtitle 2a",
-              "link": "http://kids-2a"
-            },
-            "kids-2b": {
-              "title": "Kids 2b: Subtitle 2b",
-              "link": "http://kids-2b",
-              "sub_nav": {
-                "kids-2b1": {
-                  "title": "Kids 2b1: Subtitle 2b1",
-                  "link": "http://kids-2b1"
-                },
-                "kids-2b2": {
-                  "title": "Kids 2b2: Subtitle 2b2",
-                  "link": "http://kids-2b2"
-                }
-              }
-            },
-            "kids-2c": {
-              "title": "Kids 2c: Subtitle 2c",
-              "link": "http://kids-2c"
-            }
-          }
+          "link": "/products/category/kids/swimwear"
         },
         "kids-3": {
           "title": "Kids Bikini Collection",
-          "link": "/products/category/kids/bikini-collection",
-          "is_active": true
+          "link": "/products/category/kids/bikini-collection"
         },
         "kids-4": {
           "title": "Kids for Sale",

@@ -100,7 +100,7 @@ SEPATUKU SIRCLO THEME
                                         <a class="page-scroll" href="{$links.account_register}" />{sirclo_get_text text='register_link'}</a>
                                     </li>
                                     <li>
-                                        <a class="page-scroll" href="{$links.account_info}" />{sirclo_get_text text='account_info'}</a>
+                                        <a class="page-scroll" href="{$links.account_info}" />{sirclo_get_text text='account_info_link'}</a>
                                     </li>
                                 {/if}
                                 <li class="dropdown">

@@ -88,7 +88,7 @@
     "static": "/static"
   },
   "static_contents": {
-    "Contact Info": "<span class=\"title\">OUR STORE</span>\n<table>\n<tr>\n<td class=\"first\">P</td>\n<td>0813123123</td>\n</tr>\n<tr>\n<td class=\"first\">E</td>\n<td>email@alamak.com</td>\n</tr>\n<tr>\n<td class=\"first\">A</td>\n<td>Jalan Mangkubumi, Kasunanan, Mangkunegaran</td>\n</tr>\n</table>\n<span class=\"title\">DAILY OPEN</span>\n<div>09.00pm - 05.00am</div>",
+    "Contact Info": "<i class='fa fa-phone'></i> (021) 555 7777<br/><i class='fa fa-clock-o'></i> 09:00 AM - 06.00 PM (WIB)<br/>",
     "Widget 1": "<p>\n<img data-src=\"holder.js/100%x188/social\">\n</p>\n",
     "Widget 2": "<p>\n<img data-src=\"holder.js/100%x188/gray\">\n</p>\n",
     "Widget 3": "<p>\n<img data-src=\"holder.js/100%x188/industrial\">\n</p>\n",
@@ -112,15 +112,7 @@
     "Payment Logo": "<p>This is the content of Payment Logo. Lorem ipsum <strong>dolor sit amet</strong>, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>\n\n<p>Lorem ipsum <strong>dolor sit amet</strong>, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>\n",
     "Short About": "<h2>THIS IS AN EDITABLE TEXT</h2>\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Duis rutrum tincidunt arcu at volutpat. Cras risus leo, efficitur at pulvinar nec, dignissim vel nibh. Morbi suscipit pellentesque arcu nec cursus. Integer tincidunt nulla eu sagittis gravida. Etiam vehicula, velit in auctor pretium, sapien dui rhoncus ex, a tristique augue massa ac turpis."
   },
-  "link_image_src": [
-    "/images/label0.jpg",
-    "/images/label1.jpg",
-    "/images/label2.jpg",
-    "/images/label3.jpg",
-    "/images/label4.jpg",
-    "/images/label5.jpg",
-    "/images/label6.jpg"
-  ],
+  "link_image_src": "/images/test/link_image.jpg",
   "configs": {
     "theme_favicon_url": "/images/test/favicon.png",
     "theme_background_image":"/images/bg.jpg",
@@ -215,76 +207,28 @@
       ],
       "detailed_images": [
         {
-          "url": "/images/test/product_a.jpg",
+          "url": "/images/products/folder/image1.jpg",
           "color": "red",
           "size": "S",
           "file_basename": "File Basename 1"
         },
         {
-          "url": "/images/test/product_b.jpg",
+          "url": "/images/products/folder/image2.jpg",
           "color": "light green",
           "size": "M",
           "file_basename": "File Basename 2"
         },
         {
-          "url": "/images/test/product_c.jpg",
+          "url": "/images/products/folder/image3.jpg",
           "color": null,
           "size": "S",
           "file_basename": "File Basename 3"
         },
         {
-          "url": "/images/test/product_a.jpg",
+          "url": "/images/products/folder/image4.jpg",
           "color": "red",
           "size": null,
           "file_basename": "File Basename 4"
-        },
-        {
-          "url": "/images/test/product_b.jpg",
-          "color": "light green",
-          "size": "S",
-          "file_basename": "File Basename 5"
-        },
-        {
-          "url": "/images/test/product_c.jpg",
-          "color": null,
-          "size": "M",
-          "file_basename": "File Basename 6"
-        },
-        {
-          "url": "/images/test/product_a.jpg",
-          "color": "red",
-          "size": "S",
-          "file_basename": "File Basename 7"
-        },
-        {
-          "url": "/images/test/product_b.jpg",
-          "color": "light green",
-          "size": null,
-          "file_basename": "File Basename 8"
-        },
-        {
-          "url": "/images/test/product_c.jpg",
-          "color": null,
-          "size": "S",
-          "file_basename": "File Basename 9"
-        },
-        {
-          "url": "/images/test/product_a.jpg",
-          "color": "red",
-          "size": "M",
-          "file_basename": "File Basename 10"
-        },
-        {
-          "url": "/images/test/product_b.jpg",
-          "color": "light green",
-          "size": "S",
-          "file_basename": "File Basename 11"
-        },
-        {
-          "url": "/images/test/product_c.jpg",
-          "color": null,
-          "size": null,
-          "file_basename": "File Basename 12"
         }
       ],
       "custom_attribute1": "Custom Field 1 1",
@@ -380,25 +324,25 @@
       ],
       "detailed_images": [
         {
-          "url": "/images/test/product_a.jpg",
+          "url": "/images/products/folder/image1.jpg",
           "color": "red",
           "size": "S",
           "file_basename": "File Basename 1"
         },
         {
-          "url": "/images/test/product_b.jpg",
+          "url": "/images/products/folder/image2.jpg",
           "color": "light green",
           "size": "M",
           "file_basename": "File Basename 2"
         },
         {
-          "url": "/images/test/product_c.jpg",
+          "url": "/images/products/folder/image3.jpg",
           "color": null,
           "size": "S",
           "file_basename": "File Basename 3"
         },
         {
-          "url": "/images/test/product_a.jpg",
+          "url": "/images/products/folder/image4.jpg",
           "color": "red",
           "size": null,
           "file_basename": "File Basename 4"
@@ -471,76 +415,28 @@
       ],
       "detailed_images": [
         {
-          "url": "/images/test/product_a.jpg",
+          "url": "/images/products/folder/image1.jpg",
           "color": "red",
           "size": "S",
           "file_basename": "File Basename 1"
         },
         {
-          "url": "/images/test/product_b.jpg",
+          "url": "/images/products/folder/image2.jpg",
           "color": "light green",
           "size": "M",
           "file_basename": "File Basename 2"
         },
         {
-          "url": "/images/test/product_c.jpg",
+          "url": "/images/products/folder/image3.jpg",
           "color": null,
           "size": "S",
           "file_basename": "File Basename 3"
         },
         {
-          "url": "/images/test/product_a.jpg",
+          "url": "/images/products/folder/image4.jpg",
           "color": "red",
           "size": null,
           "file_basename": "File Basename 4"
-        },
-        {
-          "url": "/images/test/product_b.jpg",
-          "color": "light green",
-          "size": "S",
-          "file_basename": "File Basename 5"
-        },
-        {
-          "url": "/images/test/product_c.jpg",
-          "color": null,
-          "size": "M",
-          "file_basename": "File Basename 6"
-        },
-        {
-          "url": "/images/test/product_a.jpg",
-          "color": "red",
-          "size": "S",
-          "file_basename": "File Basename 7"
-        },
-        {
-          "url": "/images/test/product_b.jpg",
-          "color": "light green",
-          "size": null,
-          "file_basename": "File Basename 8"
-        },
-        {
-          "url": "/images/test/product_c.jpg",
-          "color": null,
-          "size": "S",
-          "file_basename": "File Basename 9"
-        },
-        {
-          "url": "/images/test/product_a.jpg",
-          "color": "red",
-          "size": "M",
-          "file_basename": "File Basename 10"
-        },
-        {
-          "url": "/images/test/product_b.jpg",
-          "color": "light green",
-          "size": "S",
-          "file_basename": "File Basename 11"
-        },
-        {
-          "url": "/images/test/product_c.jpg",
-          "color": null,
-          "size": null,
-          "file_basename": "File Basename 12"
         }
       ],
       "custom_attribute1": "Custom Field 1 3",
@@ -637,25 +533,25 @@
       ],
       "detailed_images": [
         {
-          "url": "/images/test/product_a.jpg",
+          "url": "/images/products/folder/image1.jpg",
           "color": "red",
           "size": "S",
           "file_basename": "File Basename 1"
         },
         {
-          "url": "/images/test/product_b.jpg",
+          "url": "/images/products/folder/image2.jpg",
           "color": "light green",
           "size": "M",
           "file_basename": "File Basename 2"
         },
         {
-          "url": "/images/test/product_c.jpg",
+          "url": "/images/products/folder/image3.jpg",
           "color": null,
           "size": "S",
           "file_basename": "File Basename 3"
         },
         {
-          "url": "/images/test/product_a.jpg",
+          "url": "/images/products/folder/image4.jpg",
           "color": "red",
           "size": null,
           "file_basename": "File Basename 4"
@@ -675,13 +571,26 @@
         ]
       },
       "general_options": {
+        "option1": {
+          "title": "Size",
+          "value": "option1_value",
+          "options": [
+            "X-Small",
+            "Small",
+            "Medium",
+            "Large",
+            "X-Large"
+          ]
+        },
         "option2": {
           "title": "Color",
           "value": "option2_value",
           "options": [
-            "Red",
-            "Light Green",
-            "Blue"
+            "White",
+            "Black",
+            "Navy",
+            "Brown",
+            "Grey"
           ]
         }
       },
@@ -698,101 +607,6 @@
       }
     }
   ],
-  "current_product": {
-    "id": 5,
-    "fid": "product-5",
-    "product_code": "ABC5",
-    "title": "NIKE - LUNAR TERRA SAFARI",
-    "description": "<p>Lorem ipsum <strong>dolor sit amet</strong>, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>\n",
-    "brand": "Brand 5",
-    "specification": "<p>Lorem ipsum <strong>dolor sit amet</strong>, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>\n\n<h3>Specification</h3>\n\n<p>Lorem ipsum <strong>dolor sit amet</strong>, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>\n\n<p>Lorem ipsum <strong>dolor sit amet</strong>, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>\n\n<h3>Application</h3>\n\n<p>Lorem ipsum <strong>dolor sit amet</strong>, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>\n\n<h3>Features</h3>\n\n<p>Lorem ipsum <strong>dolor sit amet</strong>, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>\n",
-    "link": "http://product5",
-    "price_raw": 1500000,
-    "is_new": false,
-    "is_featured": true,
-    "size": "Size 5",
-    "color": "Color 5",
-    "images": [
-      "/images/products/folder/image1.jpg",
-      "/images/products/folder/image2.jpg",
-      "/images/products/folder/image3.jpg",
-      "/images/products/folder/image4.jpg"
-    ],
-    "detailed_images": [
-      {
-        "url": "/images/test/product_a.jpg",
-        "color": "red",
-        "size": "S",
-        "file_basename": "File Basename 1"
-      },
-      {
-        "url": "/images/test/product_b.jpg",
-        "color": "light green",
-        "size": "M",
-        "file_basename": "File Basename 2"
-      },
-      {
-        "url": "/images/test/product_c.jpg",
-        "color": null,
-        "size": "S",
-        "file_basename": "File Basename 3"
-      },
-      {
-        "url": "/images/test/product_a.jpg",
-        "color": "red",
-        "size": null,
-        "file_basename": "File Basename 4"
-      }
-    ],
-    "custom_attribute1": "Custom Field 1 4",
-    "custom_attribute2": "Custom Field 2 4",
-    "custom_attribute3": "Custom Field 3 4",
-    "custom_attribute4": "Custom Field 4 4",
-    "custom_attribute5": "Custom Field 5 4",
-    "wish_count": 196,
-    "options": {
-      "color": [
-        "Red",
-        "Light Green",
-        "Blue"
-      ]
-    },
-    "general_options": {
-      "option1": {
-        "title": "Size",
-        "value": "option1_value",
-        "options": [
-          "X-Small",
-          "Small",
-          "Medium",
-          "Large",
-          "X-Large"
-        ]
-      },
-      "option2": {
-        "title": "Color",
-        "value": "option2_value",
-        "options": [
-          "White",
-          "Black",
-          "Navy",
-          "Brown",
-          "Grey"
-        ]
-      }
-    },
-    "is_backorder": true,
-    "stock": 5,
-    "sold_stock": 21,
-    "is_in_stock": false,
-    "variants": [],
-    "detailed_variants": [],
-    "prices_by_color": {
-      "Red": 20.5,
-      "Blue": 3000,
-      "Pink": 40
-    }
-  },
   "new_products": [
     {
       "id": 1,
@@ -4028,16 +3842,16 @@
   ],
   "categories": [
     {
-        "title": "Category 1",
-        "link": "http://category1",
+        "title": "Casual Shoes",
+        "link": "http://casual",
         "images": [
             "/images/test/category1.jpg",
             "/images/test/category1-2.jpg"
         ]
     },
     {
-        "title": "Category 2",
-        "link": "http://category2",
+        "title": "Running Shoes",
+        "link": "http://running",
         "images": [
             "/images/test/category2.jpg",
             "/images/test/category2-2.jpg"
@@ -4045,15 +3859,15 @@
         "is_active": true
     },
     {
-        "title": "Category 3",
-        "link": "http://category3",
+        "title": "Sport Shoes",
+        "link": "http://sport",
         "images": [],
         "is_active": false,
         "is_special": false
     },
     {
-        "title": "Category 4",
-        "link": "http://category4",
+        "title": "Footbal Shoes",
+        "link": "http://football",
         "is_hidden": true,
         "images": [
             "/images/test/category4.jpg",
@@ -4062,8 +3876,28 @@
         "is_active": false
     },
     {
-        "title": "Special Category",
-        "link": "http://special",
+        "title": "Sandals",
+        "link": "http://sandals",
+        "is_special": true,
+        "images": [
+            "/images/test/specialcat1.jpg",
+            "/images/test/specialcat2.jpg"
+        ],
+        "is_active": false
+    },
+    {
+        "title": "Slippers",
+        "link": "http://slippers",
+        "is_special": true,
+        "images": [
+            "/images/test/specialcat1.jpg",
+            "/images/test/specialcat2.jpg"
+        ],
+        "is_active": false
+    },
+    {
+        "title": "Sneakers",
+        "link": "http://sneakers",
         "is_special": true,
         "images": [
             "/images/test/specialcat1.jpg",
@@ -4541,6 +4375,106 @@
         "/images/posb.jpg",
         "/images/uob.png",
         "/images/ocbc.jpg"
+      ]
+    }
+  ],
+  "labels": [
+    {
+      "title": "Sacha Drake",
+      "link": "http://sashadrake",
+      "is_top": false,
+      "images": [
+        "/images/label0.jpg",
+        "/images/label1.jpg",
+        "/images/label2.jpg",
+        "/images/label3.jpg",
+        "/images/label4.jpg",
+        "/images/label5.jpg",
+        "/images/label6.jpg"
+      ]
+    },
+    {
+      "title": "George",
+      "link": "http://george",
+      "is_top": false,
+      "images": [
+        "/images/label1.jpg",
+        "/images/label2.jpg",
+        "/images/label3.jpg",
+        "/images/label4.jpg",
+        "/images/label5.jpg",
+        "/images/label6.jpg",
+        "/images/label0.jpg"
+      ]
+    },
+    {
+      "title": "Joseph Ribkoff",
+      "link": "http://josephribkoff",
+      "is_top": false,
+      "images": [
+        "/images/label2.jpg",
+        "/images/label3.jpg",
+        "/images/label4.jpg",
+        "/images/label5.jpg",
+        "/images/label6.jpg",
+        "/images/label0.jpg",
+        "/images/label1.jpg"
+      ]
+    },
+    {
+      "title": "State of Georgia",
+      "link": "http://stateofgeorgia",
+      "is_top": false,
+      "images": [
+        "/images/label3.jpg",
+        "/images/label4.jpg",
+        "/images/label5.jpg",
+        "/images/label6.jpg",
+        "/images/label0.jpg",
+        "/images/label1.jpg",
+        "/images/label2.jpg"
+      ]
+    },
+    {
+      "title": "Unspoken",
+      "link": "http://unspoken",
+      "is_top": false,
+      "images": [
+        "/images/label4.jpg",
+        "/images/label5.jpg",
+        "/images/label6.jpg",
+        "/images/label0.jpg",
+        "/images/label1.jpg",
+        "/images/label2.jpg",
+        "/images/label3.jpg"
+      ]
+    },
+    {
+      "title": "7 Camicie",
+      "link": "http://7camicie",
+      "is_top": false,
+      "images": [
+        "/images/label5.jpg",
+        "/images/label6.jpg",
+        "/images/label0.jpg",
+        "/images/label1.jpg",
+        "/images/label2.jpg",
+        "/images/label3.jpg",
+        "/images/label4.jpg"
+      ]
+    },
+    {
+      "title": "Maurie & Eve",
+      "link": "http://maurieandeve",
+      "is_top": true,
+      "images": [
+        "/images/label6.jpg",
+        "/images/label0.jpg",
+        "/images/label1.jpg",
+        "/images/label2.jpg",
+        "/images/label3.jpg",
+        "/images/label4.jpg",
+        "/images/label5.jpg"
       ]
     }
   ]

@@ -61,22 +61,24 @@ SEPATUKU SIRCLO THEME
                 <nav class="drawer-nav" role="navigation">
                     <br/><br/>
                     <ul class="drawer-menu">
-                        {foreach $main_nav as $key=>$nav}
-                            {if $key != 'home'}
-                                {if isset($nav.sub_nav)}
-                                    <li class="drawer-menu-item dropdown drawer-dropdown">
-                                        <a href="#" data-toggle="dropdown" role="button" aria-expanded="false">{$nav.title}<span class="caret"></span></a>
-                                        <ul class="drawer-submenu dropdown-menu" role="menu">
-                                            {foreach $nav.sub_nav as $sn}
-                                                <li class="drawer-submenu-item"><a href="{$sn.link}">{$sn.title}</a></li>
-                                            {/foreach}
-                                        </ul>
-                                    </li>
-                                {else}
-                                    <li class="drawer-menu-item"><a href="{$nav.link}">{$nav.title}</a></li>
+                        {if isset($main_nav)}
+                            {foreach $main_nav as $key=>$nav}
+                                {if $key != 'home'}
+                                    {if isset($nav.sub_nav)}
+                                        <li class="drawer-menu-item dropdown drawer-dropdown">
+                                            <a href="#" data-toggle="dropdown" role="button" aria-expanded="false">{$nav.title}<span class="caret"></span></a>
+                                            <ul class="drawer-submenu dropdown-menu" role="menu">
+                                                {foreach $nav.sub_nav as $sn}
+                                                    <li class="drawer-submenu-item"><a href="{$sn.link}">{$sn.title}</a></li>
+                                                {/foreach}
+                                            </ul>
+                                        </li>
+                                    {else}
+                                        <li class="drawer-menu-item"><a href="{$nav.link}">{$nav.title}</a></li>
+                                    {/if}
                                 {/if}
-                            {/if}
-                        {/foreach}
+                            {/foreach}
+                        {/if}
                     </ul>
                     <div class="drawer-footer"><span></span></div>
                 </nav>
@@ -134,34 +136,37 @@ SEPATUKU SIRCLO THEME
                     <div class="col-md-5 s-menu-left s-menu-utama">
                         <div class="s-web-content">
                             <div class="row">
-                                {$i = 0}
-                                {foreach $main_nav as $key=>$nav}
-                                    {if $key != 'home'}
-                                        {if $i lt (count($main_nav)-1)/2}
-                                            {if isset($nav.sub_nav)}
-                                                <div class="col-md-{(int) (24/(count($main_nav)-1))|floor}">
-                                                    <a aria-expanded="false" class="dropdown-toggle" data-toggle="dropdown" href="#">
-                                                        <div class="s-menu-text-big">{$nav.title}</div>
-                                                        <div class="s-menu-text-small">{sirclo_get_text text=$nav.title|cat:'_collections'|replace:' ':'_'|lower}</div>
-                                                    </a>
-                                                    <ul class="dropdown-menu">
-                                                        {foreach $nav.sub_nav as $sn}
-                                                            <li><a href="{$sn.link}">{$sn.title}</a></li>
-                                                        {/foreach}
-                                                    </ul>
-                                                </div>
-                                            {else}
-                                                <div class="col-md-{(int) (24/(count($main_nav)-1))|floor}">
-                                                    <a href="{$nav.link}">
-                                                        <div class="s-menu-text-big">{$nav.title}</div>
-                                                        <div class="s-menu-text-small">{sirclo_get_text text=$nav.title|cat:'_collections'|replace:' ':'_'|lower}</div>
-                                                    </a>
-                                                </div>
+                                {if isset($main_nav)}
+                                    {$i = 0}
+                                    {foreach $main_nav as $key=>$nav}
+                                        {if $key != 'home'}
+                                            {if $i lt (count($main_nav)-1)/2}
+                                                {$col = count($main_nav)-1 - ((count($main_nav)-1)/2)|floor}
+                                                {if isset($nav.sub_nav)}
+                                                    <div class="col-md-{(int) (12/$col)}">
+                                                        <a aria-expanded="false" class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                                            <div class="s-menu-text-big">{$nav.title}</div>
+                                                            <div class="s-menu-text-small">{sirclo_get_text text=$nav.title|cat:'_collections'|replace:' ':'_'|lower}</div>
+                                                        </a>
+                                                        <ul class="dropdown-menu">
+                                                            {foreach $nav.sub_nav as $sn}
+                                                                <li><a href="{$sn.link}">{$sn.title}</a></li>
+                                                            {/foreach}
+                                                        </ul>
+                                                    </div>
+                                                {else}
+                                                    <div class="col-md-{(int) (12/$col)}">
+                                                        <a href="{$nav.link}">
+                                                            <div class="s-menu-text-big">{$nav.title}</div>
+                                                            <div class="s-menu-text-small">{sirclo_get_text text=$nav.title|cat:'_collections'|replace:' ':'_'|lower}</div>
+                                                        </a>
+                                                    </div>
+                                                {/if}
                                             {/if}
+                                            {$i=$i+1}
                                         {/if}
-                                        {$i=$i+1}
-                                    {/if}
-                                {/foreach}
+                                    {/foreach}
+                                {/if}
                             </div>
                         </div>
                         <div class="s-mobile-content s-top-search">
@@ -170,42 +175,49 @@ SEPATUKU SIRCLO THEME
                     </div>
                     <!-- LOGO UTAMA SITUS -->
                     <div class="col-md-2 s-logo-utama">
-                    {if !empty($logo_url)}
+                    {if isset($main_nav.home.link) and isset($logo_url)}
                         <a href="{$main_nav.home.link}"><img src="{$logo_url}" /></div></a>
+                    {else if isset($logo_url)}
+                        <a href="#"><img src="{$logo_url}" /></div></a>
+                    {else}
+                        <a href="#"></div></a>
                     {/if}
 
                     <!-- RIGHT MENU -->
                     <div class="col-md-5 s-menu-right s-menu-utama">
                         <div class="s-web-content">
                             <div class="row">
-                                {$i = 0}
-                                {foreach $main_nav as $key=>$nav}
-                                    {if $key != 'home'}
-                                        {if $i gte (count($main_nav)-1)/2}
-                                            {if isset($nav.sub_nav)}
-                                                <div class="col-md-{(int) (24/(count($main_nav)-1))|ceil}">
-                                                    <a aria-expanded="false" class="dropdown-toggle" data-toggle="dropdown" href="#">
-                                                        <div class="s-menu-text-big">{$nav.title}</div>
-                                                        <div class="s-menu-text-small">{sirclo_get_text text=$nav.title|cat:'_collections'|replace:' ':'_'|lower}</div>
-                                                    </a>
-                                                    <ul class="dropdown-menu">
-                                                        {foreach $nav.sub_nav as $sn}
-                                                            <li><a href="{$sn.link}">{$sn.title}</a></li>
-                                                        {/foreach}
-                                                    </ul>
-                                                </div>
-                                            {else}
-                                                <div class="col-md-{(int) (24/(count($main_nav)-1))|ceil}">
-                                                    <a href="{$nav.link}">
-                                                        <div class="s-menu-text-big">{$nav.title}</div>
-                                                        <div class="s-menu-text-small">{sirclo_get_text text=$nav.title|cat:'_collections'|replace:' ':'_'|lower}</div>
-                                                    </a>
-                                                </div>
+                                {if isset($main_nav)}
+                                    {$i = 0}
+                                    {foreach $main_nav as $key=>$nav}
+                                        {if $key != 'home'}
+                                            {if $i gte (count($main_nav)-1)/2}
+                                                {$col = count($main_nav)-1 - ((count($main_nav)-1)/2)|ceil}
+                                                {if isset($nav.sub_nav)}
+                                                    <div class="col-md-{(int) (12/$col)}">
+                                                        <a aria-expanded="false" class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                                            <div class="s-menu-text-big">{$nav.title}</div>
+                                                            <div class="s-menu-text-small">{sirclo_get_text text=$nav.title|cat:'_collections'|replace:' ':'_'|lower}</div>
+                                                        </a>
+                                                        <ul class="dropdown-menu">
+                                                            {foreach $nav.sub_nav as $sn}
+                                                                <li><a href="{$sn.link}">{$sn.title}</a></li>
+                                                            {/foreach}
+                                                        </ul>
+                                                    </div>
+                                                {else}
+                                                    <div class="col-md-{(int) (12/$col)}">
+                                                        <a href="{$nav.link}">
+                                                            <div class="s-menu-text-big">{$nav.title}</div>
+                                                            <div class="s-menu-text-small">{sirclo_get_text text=$nav.title|cat:'_collections'|replace:' ':'_'|lower}</div>
+                                                        </a>
+                                                    </div>
+                                                {/if}
                                             {/if}
+                                            {$i=$i+1}
                                         {/if}
-                                        {$i=$i+1}
-                                    {/if}
-                                {/foreach}
+                                    {/foreach}
+                                {/if}
                             </div>
                         </div>
                         <div class="s-mobile-content">
@@ -243,82 +255,50 @@ SEPATUKU SIRCLO THEME
                 <!-- FOOTER MENU -->
                 <div class="row s-footer-menu">
                     <div class="col-md-3">
-                        <h4>TOP LABELS</h4>
-                        <ul class="list-unstyled">
-                            <li>
-                                <a class="page-scroll" href="#">Sacha Drake</a>
-                            </li>
-                            <li>
-                                <a class="page-scroll" href="#">George</a>
-                            </li>
-                            <li>
-                                <a class="page-scroll" href="#">Joseph Ribkoff</a>
-                            </li>
-                            <li>
-                                <a class="page-scroll" href="#">State of Georgia</a>
-                            </li>
-                            <li>
-                                <a class="page-scroll" href="#">Unspoken</a>
-                            </li>
-                            <li>
-                                <a class="page-scroll" href="#">7 Camicie</a>
-                            </li>
-                            <li>
-                                <a class="page-scroll" href="#">Maurie & Eve</a>
-                            </li>
-                            <li>
-                                <a class="page-scroll" href="#">Cannisse</a>
-                            </li>
-                        </ul>
+                        {if isset($labels)}
+                            <h4>{sirclo_get_text text='top_labels'}</h4>
+                            <ul class="list-unstyled">
+                                {foreach $labels as $label}
+                                    {if isset($label.is_top) and $label.is_top}
+                                        <li>
+                                            <a class="page-scroll" href="{$label.link}">{$label.title}</a>
+                                        </li>
+                                    {/if}
+                                {/foreach}
+                            </ul>
+                        {/if}
                     </div>
                     <div class="col-md-3">
-                        <h4>CATEGORIES</h4>
-                        <ul class="list-unstyled">
-                            <li>
-                                <a class="page-scroll" href="#">Casual Shoes</a>
-                            </li>
-                            <li>
-                                <a class="page-scroll" href="#">Running Shoes</a>
-                            </li>
-                            <li>
-                                <a class="page-scroll" href="#">Sport Shoes</a>
-                            </li>
-                            <li>
-                                <a class="page-scroll" href="#">Football Shoes</a>
-                            </li>
-                            <li>
-                                <a class="page-scroll" href="#">Sandals</a>
-                            </li>
-                            <li>
-                                <a class="page-scroll" href="#">Slippers</a>
-                            </li>
-                            <li>
-                                <a class="page-scroll" href="#">Sneakers</a>
-                            </li>
-                        </ul>
+                        {if isset($categories)}
+                            <h4>{sirclo_get_text text='categories'}</h4>
+                            <ul class="list-unstyled">
+                                {foreach $categories as $category}
+                                    <li>
+                                        <a class="page-scroll" href="{$category.link}">{$category.title}</a>
+                                    </li>
+                                {/foreach}
+                            </ul>
+                        {/if}
                     </div>
                     <div class="col-md-3">
-                        <h4>LABELS</h4>
-                        <ul class="list-unstyled">
-                            <li>
-                                <a class="page-scroll" href="#">Anna Kendrick</a>
-                            </li>
-                            <li>
-                                <a class="page-scroll" href="#">Robert Downey Jr.</a>
-                            </li>
-                            <li>
-                                <a class="page-scroll" href="#">Leonardo Dicaprio</a>
-                            </li>
-                        </ul>
+                        {if isset($labels)}
+                            <h4>{sirclo_get_text text='labels'}</h4>
+                            <ul class="list-unstyled">
+                                {foreach $labels as $label}
+                                    <li>
+                                        <a class="page-scroll" href="{$label.link}">{$label.title}</a>
+                                    </li>
+                                {/foreach}
+                            </ul>
+                        {/if}
                     </div>
                     <div class="col-md-3">
-                        <h4>CONTACT</h4>
-                        <i class="fa fa-phone"></i> (021) 555 7777<br/>
-                        <i class="fa fa-clock-o"></i> 09:00 AM - 06.00 PM (WIB)<br/>
+                        <h4>{sirclo_get_text text='contact'}</h4>
+                        {$static_contents['Contact Info']}
                         
-                        <h4>NEWSLETTER</h4>
+                        <h4>{sirclo_get_text text='newsletter'}</h4>
                         <div class="input-group">
-                            <input class="form-control" type="text" placeholder="Email Address">
+                            <input class="form-control" type="text" placeholder="{sirclo_get_text text='email_address'}">
                             <span class="input-group-btn">
                                 <button class="btn btn-primary" type="button">{sirclo_get_text text='subscribe'}</button>
                             </span>

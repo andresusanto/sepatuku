@@ -28,7 +28,7 @@ SEPATUKU SIRCLO THEME
 
 				<div class="blog-articles-row">
 					{if !empty($article.image)}
-						<p><img class="s-fullwidth nomargin" src="{$article.image}"></p>
+						<p><img class="s-fullwidth nomargin" src="{sirclo_resource file=$article.image}"></p>
 					{/if}
 					
 					<div class="row">

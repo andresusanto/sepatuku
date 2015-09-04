@@ -25,10 +25,10 @@
     "size": "Size 3",
     "color": "Color 3",
     "images": [
-      "/images/products/folder/image1.jpg",
-      "/images/products/folder/image2.jpg",
-      "/images/products/folder/image3.jpg",
-      "/images/products/folder/image4.jpg"
+      "images/products/folder/image1.jpg",
+      "images/products/folder/image2.jpg",
+      "images/products/folder/image3.jpg",
+      "images/products/folder/image4.jpg"
     ],
     "detailed_images": [
       {
@@ -201,7 +201,7 @@
       "size": "Size 1",
       "color": "Color 1",
       "images": [
-        "/images/one-shoe.jpg"
+        "images/one-shoe.jpg"
       ],
       "detailed_images": [
         {
@@ -367,7 +367,7 @@
       "size": "Size 2",
       "color": "Color 2",
       "images": [
-        "/images/one-shoe.jpg"
+        "images/one-shoe.jpg"
       ],
       "detailed_images": [
         {
@@ -458,7 +458,7 @@
       "size": "Size 3",
       "color": "Color 3",
       "images": [
-        "/images/one-shoe.jpg"
+        "images/one-shoe.jpg"
       ],
       "detailed_images": [
         {
@@ -624,7 +624,7 @@
       "size": "Size 4",
       "color": "Color 4",
       "images": [
-        "/images/one-shoe.jpg"
+        "images/one-shoe.jpg"
       ],
       "detailed_images": [
         {

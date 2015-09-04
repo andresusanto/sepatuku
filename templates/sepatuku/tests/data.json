@@ -1,6 +1,6 @@
 {
   "title": "Sepatuku",
-  "logo_url": "/images/logo.png",
+  "logo_url": "images/logo.png",
   "main_nav": {
     "home": {
       "title": "Home",
@@ -112,10 +112,10 @@
     "Payment Logo": "<p>This is the content of Payment Logo. Lorem ipsum <strong>dolor sit amet</strong>, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>\n\n<p>Lorem ipsum <strong>dolor sit amet</strong>, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>\n",
     "Short About": "<h2>THIS IS AN EDITABLE TEXT</h2>\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Duis rutrum tincidunt arcu at volutpat. Cras risus leo, efficitur at pulvinar nec, dignissim vel nibh. Morbi suscipit pellentesque arcu nec cursus. Integer tincidunt nulla eu sagittis gravida. Etiam vehicula, velit in auctor pretium, sapien dui rhoncus ex, a tristique augue massa ac turpis."
   },
-  "link_image_src": "/images/test/link_image.jpg",
+  "link_image_src": "images/test/link_image.jpg",
   "configs": {
-    "theme_favicon_url": "/images/test/favicon.png",
-    "theme_background_image":"/images/bg.jpg",
+    "theme_favicon_url": "images/test/favicon.png",
+    "theme_background_image":"images/bg.jpg",
     "theme_bank_accounts": "BCA, OCBC Current, OCBC Savings",
     "theme_facebook_url": "http://www.facebook.com/sepatuku",
     "theme_facebook_appid": "1234567890",
@@ -124,7 +124,7 @@
     "theme_pinterest_url": "http://www.pinterest.com/sepatuku",
     "theme_homepage_featured": "Yes",
     "theme_mailing_list_popup": "Yes",
-    "theme_mailing_list_content": "<p><img src=\"/images/test/banner-fashion.jpg\"></img></p>",
+    "theme_mailing_list_content": "<p><img src=\"images/test/banner-fashion.jpg\"></img></p>",
     "theme_menu_font_color": "#ff0000",
     "text_agreement": "<p>This is customizable agree to <a href=\"#\">Terms of Use</a> and <a href=\"#\">Privacy Policy</a></p>"
   },
@@ -176,13 +176,13 @@
     {
       "title": "",
       "description": "<p>Lorem ipsum <strong>dolor sit amet</strong>, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>\n",
-      "image": "/images/products/large/image1.jpg",
+      "image": "images/products/large/image1.jpg",
       "link": ""
     },
     {
       "title": "",
       "description": "",
-      "image": "/images/products/large/image1.jpg",
+      "image": "images/products/large/image1.jpg",
       "link": "",
       "cta_text": ""
     }
@@ -203,29 +203,29 @@
       "size": "Size 1",
       "color": "Color 1",
       "images": [
-        "/images/one-shoe.jpg"
+        "images/one-shoe.jpg"
       ],
       "detailed_images": [
         {
-          "url": "/images/products/folder/image1.jpg",
+          "url": "images/products/folder/image1.jpg",
           "color": "red",
           "size": "S",
           "file_basename": "File Basename 1"
         },
         {
-          "url": "/images/products/folder/image2.jpg",
+          "url": "images/products/folder/image2.jpg",
           "color": "light green",
           "size": "M",
           "file_basename": "File Basename 2"
         },
         {
-          "url": "/images/products/folder/image3.jpg",
+          "url": "images/products/folder/image3.jpg",
           "color": null,
           "size": "S",
           "file_basename": "File Basename 3"
         },
         {
-          "url": "/images/products/folder/image4.jpg",
+          "url": "images/products/folder/image4.jpg",
           "color": "red",
           "size": null,
           "file_basename": "File Basename 4"
@@ -320,29 +320,29 @@
       "size": "Size 2",
       "color": "Color 2",
       "images": [
-        "/images/one-shoe.jpg"
+        "images/one-shoe.jpg"
       ],
       "detailed_images": [
         {
-          "url": "/images/products/folder/image1.jpg",
+          "url": "images/products/folder/image1.jpg",
           "color": "red",
           "size": "S",
           "file_basename": "File Basename 1"
         },
         {
-          "url": "/images/products/folder/image2.jpg",
+          "url": "images/products/folder/image2.jpg",
           "color": "light green",
           "size": "M",
           "file_basename": "File Basename 2"
         },
         {
-          "url": "/images/products/folder/image3.jpg",
+          "url": "images/products/folder/image3.jpg",
           "color": null,
           "size": "S",
           "file_basename": "File Basename 3"
         },
         {
-          "url": "/images/products/folder/image4.jpg",
+          "url": "images/products/folder/image4.jpg",
           "color": "red",
           "size": null,
           "file_basename": "File Basename 4"
@@ -411,29 +411,29 @@
       "size": "Size 3",
       "color": "Color 3",
       "images": [
-        "/images/one-shoe.jpg"
+        "images/one-shoe.jpg"
       ],
       "detailed_images": [
         {
-          "url": "/images/products/folder/image1.jpg",
+          "url": "images/products/folder/image1.jpg",
           "color": "red",
           "size": "S",
           "file_basename": "File Basename 1"
         },
         {
-          "url": "/images/products/folder/image2.jpg",
+          "url": "images/products/folder/image2.jpg",
           "color": "light green",
           "size": "M",
           "file_basename": "File Basename 2"
         },
         {
-          "url": "/images/products/folder/image3.jpg",
+          "url": "images/products/folder/image3.jpg",
           "color": null,
           "size": "S",
           "file_basename": "File Basename 3"
         },
         {
-          "url": "/images/products/folder/image4.jpg",
+          "url": "images/products/folder/image4.jpg",
           "color": "red",
           "size": null,
           "file_basename": "File Basename 4"
@@ -529,29 +529,29 @@
       "size": "Size 4",
       "color": "Color 4",
       "images": [
-        "/images/one-shoe.jpg"
+        "images/one-shoe.jpg"
       ],
       "detailed_images": [
         {
-          "url": "/images/products/folder/image1.jpg",
+          "url": "images/products/folder/image1.jpg",
           "color": "red",
           "size": "S",
           "file_basename": "File Basename 1"
         },
         {
-          "url": "/images/products/folder/image2.jpg",
+          "url": "images/products/folder/image2.jpg",
           "color": "light green",
           "size": "M",
           "file_basename": "File Basename 2"
         },
         {
-          "url": "/images/products/folder/image3.jpg",
+          "url": "images/products/folder/image3.jpg",
           "color": null,
           "size": "S",
           "file_basename": "File Basename 3"
         },
         {
-          "url": "/images/products/folder/image4.jpg",
+          "url": "images/products/folder/image4.jpg",
           "color": "red",
           "size": null,
           "file_basename": "File Basename 4"
@@ -623,82 +623,82 @@
       "size": "Size 1",
       "color": "Color 1",
       "images": [
-        "/images/test/product_1a.jpg",
-        "/images/test/product_b.jpg",
-        "/images/test/product_a.jpg",
-        "/images/test/product_b.jpg",
-        "/images/test/product_a.jpg",
-        "/images/test/product_b.jpg"
+        "images/test/product_1a.jpg",
+        "images/test/product_b.jpg",
+        "images/test/product_a.jpg",
+        "images/test/product_b.jpg",
+        "images/test/product_a.jpg",
+        "images/test/product_b.jpg"
       ],
       "detailed_images": [
         {
-          "url": "/images/test/product_a.jpg",
+          "url": "images/test/product_a.jpg",
           "color": "red",
           "size": "S",
           "file_basename": "File Basename 1"
         },
         {
-          "url": "/images/test/product_b.jpg",
+          "url": "images/test/product_b.jpg",
           "color": "light green",
           "size": "M",
           "file_basename": "File Basename 2"
         },
         {
-          "url": "/images/test/product_c.jpg",
+          "url": "images/test/product_c.jpg",
           "color": null,
           "size": "S",
           "file_basename": "File Basename 3"
         },
         {
-          "url": "/images/test/product_a.jpg",
+          "url": "images/test/product_a.jpg",
           "color": "red",
           "size": null,
           "file_basename": "File Basename 4"
         },
         {
-          "url": "/images/test/product_b.jpg",
+          "url": "images/test/product_b.jpg",
           "color": "light green",
           "size": "S",
           "file_basename": "File Basename 5"
         },
         {
-          "url": "/images/test/product_c.jpg",
+          "url": "images/test/product_c.jpg",
           "color": null,
           "size": "M",
           "file_basename": "File Basename 6"
         },
         {
-          "url": "/images/test/product_a.jpg",
+          "url": "images/test/product_a.jpg",
           "color": "red",
           "size": "S",
           "file_basename": "File Basename 7"
         },
         {
-          "url": "/images/test/product_b.jpg",
+          "url": "images/test/product_b.jpg",
           "color": "light green",
           "size": null,
           "file_basename": "File Basename 8"
         },
         {
-          "url": "/images/test/product_c.jpg",
+          "url": "images/test/product_c.jpg",
           "color": null,
           "size": "S",
           "file_basename": "File Basename 9"
         },
         {
-          "url": "/images/test/product_a.jpg",
+          "url": "images/test/product_a.jpg",
           "color": "red",
           "size": "M",
           "file_basename": "File Basename 10"
         },
         {
-          "url": "/images/test/product_b.jpg",
+          "url": "images/test/product_b.jpg",
           "color": "light green",
           "size": "S",
           "file_basename": "File Basename 11"
         },
         {
-          "url": "/images/test/product_c.jpg",
+          "url": "images/test/product_c.jpg",
           "color": null,
           "size": null,
           "file_basename": "File Basename 12"
@@ -794,30 +794,30 @@
       "size": "Size 2",
       "color": "Color 2",
       "images": [
-        "/images/test/product_2a.jpg",
-        "/images/test/product_b.jpg"
+        "images/test/product_2a.jpg",
+        "images/test/product_b.jpg"
       ],
       "detailed_images": [
         {
-          "url": "/images/test/product_a.jpg",
+          "url": "images/test/product_a.jpg",
           "color": "red",
           "size": "S",
           "file_basename": "File Basename 1"
         },
         {
-          "url": "/images/test/product_b.jpg",
+          "url": "images/test/product_b.jpg",
           "color": "light green",
           "size": "M",
           "file_basename": "File Basename 2"
         },
         {
-          "url": "/images/test/product_c.jpg",
+          "url": "images/test/product_c.jpg",
           "color": null,
           "size": "S",
           "file_basename": "File Basename 3"
         },
         {
-          "url": "/images/test/product_a.jpg",
+          "url": "images/test/product_a.jpg",
           "color": "red",
           "size": null,
           "file_basename": "File Basename 4"
@@ -886,82 +886,82 @@
       "size": "Size 3",
       "color": "Color 3",
       "images": [
-        "/images/test/product_3a.jpg",
-        "/images/test/product_b.jpg",
-        "/images/test/product_a.jpg",
-        "/images/test/product_b.jpg",
-        "/images/test/product_a.jpg",
-        "/images/test/product_b.jpg"
+        "images/test/product_3a.jpg",
+        "images/test/product_b.jpg",
+        "images/test/product_a.jpg",
+        "images/test/product_b.jpg",
+        "images/test/product_a.jpg",
+        "images/test/product_b.jpg"
       ],
       "detailed_images": [
         {
-          "url": "/images/test/product_a.jpg",
+          "url": "images/test/product_a.jpg",
           "color": "red",
           "size": "S",
           "file_basename": "File Basename 1"
         },
         {
-          "url": "/images/test/product_b.jpg",
+          "url": "images/test/product_b.jpg",
           "color": "light green",
           "size": "M",
           "file_basename": "File Basename 2"
         },
         {
-          "url": "/images/test/product_c.jpg",
+          "url": "images/test/product_c.jpg",
           "color": null,
           "size": "S",
           "file_basename": "File Basename 3"
         },
         {
-          "url": "/images/test/product_a.jpg",
+          "url": "images/test/product_a.jpg",
           "color": "red",
           "size": null,
           "file_basename": "File Basename 4"
         },
         {
-          "url": "/images/test/product_b.jpg",
+          "url": "images/test/product_b.jpg",
           "color": "light green",
           "size": "S",
           "file_basename": "File Basename 5"
         },
         {
-          "url": "/images/test/product_c.jpg",
+          "url": "images/test/product_c.jpg",
           "color": null,
           "size": "M",
           "file_basename": "File Basename 6"
         },
         {
-          "url": "/images/test/product_a.jpg",
+          "url": "images/test/product_a.jpg",
           "color": "red",
           "size": "S",
           "file_basename": "File Basename 7"
         },
         {
-          "url": "/images/test/product_b.jpg",
+          "url": "images/test/product_b.jpg",
           "color": "light green",
           "size": null,
           "file_basename": "File Basename 8"
         },
         {
-          "url": "/images/test/product_c.jpg",
+          "url": "images/test/product_c.jpg",
           "color": null,
           "size": "S",
           "file_basename": "File Basename 9"
         },
         {
-          "url": "/images/test/product_a.jpg",
+          "url": "images/test/product_a.jpg",
           "color": "red",
           "size": "M",
           "file_basename": "File Basename 10"
         },
         {
-          "url": "/images/test/product_b.jpg",
+          "url": "images/test/product_b.jpg",
           "color": "light green",
           "size": "S",
           "file_basename": "File Basename 11"
         },
         {
-          "url": "/images/test/product_c.jpg",
+          "url": "images/test/product_c.jpg",
           "color": null,
           "size": null,
           "file_basename": "File Basename 12"
@@ -1057,30 +1057,30 @@
       "size": "Size 4",
       "color": "Color 4",
       "images": [
-        "/images/test/product_4a.jpg",
-        "/images/test/product_b.jpg"
+        "images/test/product_4a.jpg",
+        "images/test/product_b.jpg"
       ],
       "detailed_images": [
         {
-          "url": "/images/test/product_a.jpg",
+          "url": "images/test/product_a.jpg",
           "color": "red",
           "size": "S",
           "file_basename": "File Basename 1"
         },
         {
-          "url": "/images/test/product_b.jpg",
+          "url": "images/test/product_b.jpg",
           "color": "light green",
           "size": "M",
           "file_basename": "File Basename 2"
         },
         {
-          "url": "/images/test/product_c.jpg",
+          "url": "images/test/product_c.jpg",
           "color": null,
           "size": "S",
           "file_basename": "File Basename 3"
         },
         {
-          "url": "/images/test/product_a.jpg",
+          "url": "images/test/product_a.jpg",
           "color": "red",
           "size": null,
           "file_basename": "File Basename 4"
@@ -1137,82 +1137,82 @@
       "size": "Size 5",
       "color": "Color 5",
       "images": [
-        "/images/test/product_5a.jpg",
-        "/images/test/product_b.jpg",
-        "/images/test/product_a.jpg",
-        "/images/test/product_b.jpg",
-        "/images/test/product_a.jpg",
-        "/images/test/product_b.jpg"
+        "images/test/product_5a.jpg",
+        "images/test/product_b.jpg",
+        "images/test/product_a.jpg",
+        "images/test/product_b.jpg",
+        "images/test/product_a.jpg",
+        "images/test/product_b.jpg"
       ],
       "detailed_images": [
         {
-          "url": "/images/test/product_a.jpg",
+          "url": "images/test/product_a.jpg",
           "color": "red",
           "size": "S",
           "file_basename": "File Basename 1"
         },
         {
-          "url": "/images/test/product_b.jpg",
+          "url": "images/test/product_b.jpg",
           "color": "light green",
           "size": "M",
           "file_basename": "File Basename 2"
         },
         {
-          "url": "/images/test/product_c.jpg",
+          "url": "images/test/product_c.jpg",
           "color": null,
           "size": "S",
           "file_basename": "File Basename 3"
         },
         {
-          "url": "/images/test/product_a.jpg",
+          "url": "images/test/product_a.jpg",
           "color": "red",
           "size": null,
           "file_basename": "File Basename 4"
         },
         {
-          "url": "/images/test/product_b.jpg",
+          "url": "images/test/product_b.jpg",
           "color": "light green",
           "size": "S",
           "file_basename": "File Basename 5"
         },
         {
-          "url": "/images/test/product_c.jpg",
+          "url": "images/test/product_c.jpg",
           "color": null,
           "size": "M",
           "file_basename": "File Basename 6"
         },
         {
-          "url": "/images/test/product_a.jpg",
+          "url": "images/test/product_a.jpg",
           "color": "red",
           "size": "S",
           "file_basename": "File Basename 7"
         },
         {
-          "url": "/images/test/product_b.jpg",
+          "url": "images/test/product_b.jpg",
           "color": "light green",
           "size": null,
           "file_basename": "File Basename 8"
         },
         {
-          "url": "/images/test/product_c.jpg",
+          "url": "images/test/product_c.jpg",
           "color": null,
           "size": "S",
           "file_basename": "File Basename 9"
         },
         {
-          "url": "/images/test/product_a.jpg",
+          "url": "images/test/product_a.jpg",
           "color": "red",
           "size": "M",
           "file_basename": "File Basename 10"
         },
         {
-          "url": "/images/test/product_b.jpg",
+          "url": "images/test/product_b.jpg",
           "color": "light green",
           "size": "S",
           "file_basename": "File Basename 11"
         },
         {
-          "url": "/images/test/product_c.jpg",
+          "url": "images/test/product_c.jpg",
           "color": null,
           "size": null,
           "file_basename": "File Basename 12"
@@ -1358,82 +1358,82 @@
       "size": "Size 7",
       "color": "Color 7",
       "images": [
-        "/images/test/product_7a.jpg",
-        "/images/test/product_b.jpg",
-        "/images/test/product_a.jpg",
-        "/images/test/product_b.jpg",
-        "/images/test/product_a.jpg",
-        "/images/test/product_b.jpg"
+        "images/test/product_7a.jpg",
+        "images/test/product_b.jpg",
+        "images/test/product_a.jpg",
+        "images/test/product_b.jpg",
+        "images/test/product_a.jpg",
+        "images/test/product_b.jpg"
       ],
       "detailed_images": [
         {
-          "url": "/images/test/product_a.jpg",
+          "url": "images/test/product_a.jpg",
           "color": "red",
           "size": "S",
           "file_basename": "File Basename 1"
         },
         {
-          "url": "/images/test/product_b.jpg",
+          "url": "images/test/product_b.jpg",
           "color": "light green",
           "size": "M",
           "file_basename": "File Basename 2"
         },
         {
-          "url": "/images/test/product_c.jpg",
+          "url": "images/test/product_c.jpg",
           "color": null,
           "size": "S",
           "file_basename": "File Basename 3"
         },
         {
-          "url": "/images/test/product_a.jpg",
+          "url": "images/test/product_a.jpg",
           "color": "red",
           "size": null,
           "file_basename": "File Basename 4"
         },
         {
-          "url": "/images/test/product_b.jpg",
+          "url": "images/test/product_b.jpg",
           "color": "light green",
           "size": "S",
           "file_basename": "File Basename 5"
         },
         {
-          "url": "/images/test/product_c.jpg",
+          "url": "images/test/product_c.jpg",
           "color": null,
           "size": "M",
           "file_basename": "File Basename 6"
         },
         {
-          "url": "/images/test/product_a.jpg",
+          "url": "images/test/product_a.jpg",
           "color": "red",
           "size": "S",
           "file_basename": "File Basename 7"
         },
         {
-          "url": "/images/test/product_b.jpg",
+          "url": "images/test/product_b.jpg",
           "color": "light green",
           "size": null,
           "file_basename": "File Basename 8"
         },
         {
-          "url": "/images/test/product_c.jpg",
+          "url": "images/test/product_c.jpg",
           "color": null,
           "size": "S",
           "file_basename": "File Basename 9"
         },
         {
-          "url": "/images/test/product_a.jpg",
+          "url": "images/test/product_a.jpg",
           "color": "red",
           "size": "M",
           "file_basename": "File Basename 10"
         },
         {
-          "url": "/images/test/product_b.jpg",
+          "url": "images/test/product_b.jpg",
           "color": "light green",
           "size": "S",
           "file_basename": "File Basename 11"
         },
         {
-          "url": "/images/test/product_c.jpg",
+          "url": "images/test/product_c.jpg",
           "color": null,
           "size": null,
           "file_basename": "File Basename 12"
@@ -1505,30 +1505,30 @@
       "size": "Size 8",
       "color": "Color 8",
       "images": [
-        "/images/test/product_8a.jpg",
-        "/images/test/product_b.jpg"
+        "images/test/product_8a.jpg",
+        "images/test/product_b.jpg"
       ],
       "detailed_images": [
         {
-          "url": "/images/test/product_a.jpg",
+          "url": "images/test/product_a.jpg",
           "color": "red",
           "size": "S",
           "file_basename": "File Basename 1"
         },
         {
-          "url": "/images/test/product_b.jpg",
+          "url": "images/test/product_b.jpg",
           "color": "light green",
           "size": "M",
           "file_basename": "File Basename 2"
         },
         {
-          "url": "/images/test/product_c.jpg",
+          "url": "images/test/product_c.jpg",
           "color": null,
           "size": "S",
           "file_basename": "File Basename 3"
         },
         {
-          "url": "/images/test/product_a.jpg",
+          "url": "images/test/product_a.jpg",
           "color": "red",
           "size": null,
           "file_basename": "File Basename 4"
@@ -1581,82 +1581,82 @@
       "size": "Size 9",
       "color": "Color 9",
       "images": [
-        "/images/test/product_9a.jpg",
-        "/images/test/product_b.jpg",
-        "/images/test/product_a.jpg",
-        "/images/test/product_b.jpg",
-        "/images/test/product_a.jpg",
-        "/images/test/product_b.jpg"
+        "images/test/product_9a.jpg",
+        "images/test/product_b.jpg",
+        "images/test/product_a.jpg",
+        "images/test/product_b.jpg",
+        "images/test/product_a.jpg",
+        "images/test/product_b.jpg"
       ],
       "detailed_images": [
         {
-          "url": "/images/test/product_a.jpg",
+          "url": "images/test/product_a.jpg",
           "color": "red",
           "size": "S",
           "file_basename": "File Basename 1"
         },
         {
-          "url": "/images/test/product_b.jpg",
+          "url": "images/test/product_b.jpg",
           "color": "light green",
           "size": "M",
           "file_basename": "File Basename 2"
         },
         {
-          "url": "/images/test/product_c.jpg",
+          "url": "images/test/product_c.jpg",
           "color": null,
           "size": "S",
           "file_basename": "File Basename 3"
         },
         {
-          "url": "/images/test/product_a.jpg",
+          "url": "images/test/product_a.jpg",
           "color": "red",
           "size": null,
           "file_basename": "File Basename 4"
         },
         {
-          "url": "/images/test/product_b.jpg",
+          "url": "images/test/product_b.jpg",
           "color": "light green",
           "size": "S",
           "file_basename": "File Basename 5"
         },
         {
-          "url": "/images/test/product_c.jpg",
+          "url": "images/test/product_c.jpg",
           "color": null,
           "size": "M",
           "file_basename": "File Basename 6"
         },
         {
-          "url": "/images/test/product_a.jpg",
+          "url": "images/test/product_a.jpg",
           "color": "red",
           "size": "S",
           "file_basename": "File Basename 7"
         },
         {
-          "url": "/images/test/product_b.jpg",
+          "url": "images/test/product_b.jpg",
           "color": "light green",
           "size": null,
           "file_basename": "File Basename 8"
         },
         {
-          "url": "/images/test/product_c.jpg",
+          "url": "images/test/product_c.jpg",
           "color": null,
           "size": "S",
           "file_basename": "File Basename 9"
         },
         {
-          "url": "/images/test/product_a.jpg",
+          "url": "images/test/product_a.jpg",
           "color": "red",
           "size": "M",
           "file_basename": "File Basename 10"
         },
         {
-          "url": "/images/test/product_b.jpg",
+          "url": "images/test/product_b.jpg",
           "color": "light green",
           "size": "S",
           "file_basename": "File Basename 11"
         },
         {
-          "url": "/images/test/product_c.jpg",
+          "url": "images/test/product_c.jpg",
           "color": null,
           "size": null,
           "file_basename": "File Basename 12"
@@ -1752,30 +1752,30 @@
       "size": "Size 10",
       "color": "Color 10",
       "images": [
-        "/images/test/product_10a.jpg",
-        "/images/test/product_b.jpg"
+        "images/test/product_10a.jpg",
+        "images/test/product_b.jpg"
       ],
       "detailed_images": [
         {
-          "url": "/images/test/product_a.jpg",
+          "url": "images/test/product_a.jpg",
           "color": "red",
           "size": "S",
           "file_basename": "File Basename 1"
         },
         {
-          "url": "/images/test/product_b.jpg",
+          "url": "images/test/product_b.jpg",
           "color": "light green",
           "size": "M",
           "file_basename": "File Basename 2"
         },
         {
-          "url": "/images/test/product_c.jpg",
+          "url": "images/test/product_c.jpg",
           "color": null,
           "size": "S",
           "file_basename": "File Basename 3"
         },
         {
-          "url": "/images/test/product_a.jpg",
+          "url": "images/test/product_a.jpg",
           "color": "red",
           "size": null,
           "file_basename": "File Basename 4"
@@ -1844,82 +1844,82 @@
       "size": "Size 11",
       "color": "Color 11",
       "images": [
-        "/images/test/product_11a.jpg",
-        "/images/test/product_b.jpg",
-        "/images/test/product_a.jpg",
-        "/images/test/product_b.jpg",
-        "/images/test/product_a.jpg",
-        "/images/test/product_b.jpg"
+        "images/test/product_11a.jpg",
+        "images/test/product_b.jpg",
+        "images/test/product_a.jpg",
+        "images/test/product_b.jpg",
+        "images/test/product_a.jpg",
+        "images/test/product_b.jpg"
       ],
       "detailed_images": [
         {
-          "url": "/images/test/product_a.jpg",
+          "url": "images/test/product_a.jpg",
           "color": "red",
           "size": "S",
           "file_basename": "File Basename 1"
         },
         {
-          "url": "/images/test/product_b.jpg",
+          "url": "images/test/product_b.jpg",
           "color": "light green",
           "size": "M",
           "file_basename": "File Basename 2"
         },
         {
-          "url": "/images/test/product_c.jpg",
+          "url": "images/test/product_c.jpg",
           "color": null,
           "size": "S",
           "file_basename": "File Basename 3"
         },
         {
-          "url": "/images/test/product_a.jpg",
+          "url": "images/test/product_a.jpg",
           "color": "red",
           "size": null,
           "file_basename": "File Basename 4"
         },
         {
-          "url": "/images/test/product_b.jpg",
+          "url": "images/test/product_b.jpg",
           "color": "light green",
           "size": "S",
           "file_basename": "File Basename 5"
         },
         {
-          "url": "/images/test/product_c.jpg",
+          "url": "images/test/product_c.jpg",
           "color": null,
           "size": "M",
           "file_basename": "File Basename 6"
         },
         {
-          "url": "/images/test/product_a.jpg",
+          "url": "images/test/product_a.jpg",
           "color": "red",
           "size": "S",
           "file_basename": "File Basename 7"
         },
         {
-          "url": "/images/test/product_b.jpg",
+          "url": "images/test/product_b.jpg",
           "color": "light green",
           "size": null,
           "file_basename": "File Basename 8"
         },
         {
-          "url": "/images/test/product_c.jpg",
+          "url": "images/test/product_c.jpg",
           "color": null,
           "size": "S",
           "file_basename": "File Basename 9"
         },
         {
-          "url": "/images/test/product_a.jpg",
+          "url": "images/test/product_a.jpg",
           "color": "red",
           "size": "M",
           "file_basename": "File Basename 10"
         },
         {
-          "url": "/images/test/product_b.jpg",
+          "url": "images/test/product_b.jpg",
           "color": "light green",
           "size": "S",
           "file_basename": "File Basename 11"
         },
         {
-          "url": "/images/test/product_c.jpg",
+          "url": "images/test/product_c.jpg",
           "color": null,
           "size": null,
           "file_basename": "File Basename 12"
@@ -2015,30 +2015,30 @@
       "size": "Size 12",
       "color": "Color 12",
       "images": [
-        "/images/test/product_12a.jpg",
-        "/images/test/product_b.jpg"
+        "images/test/product_12a.jpg",
+        "images/test/product_b.jpg"
       ],
       "detailed_images": [
         {
-          "url": "/images/test/product_a.jpg",
+          "url": "images/test/product_a.jpg",
           "color": "red",
           "size": "S",
           "file_basename": "File Basename 1"
         },
         {
-          "url": "/images/test/product_b.jpg",
+          "url": "images/test/product_b.jpg",
           "color": "light green",
           "size": "M",
           "file_basename": "File Basename 2"
         },
         {
-          "url": "/images/test/product_c.jpg",
+          "url": "images/test/product_c.jpg",
           "color": null,
           "size": "S",
           "file_basename": "File Basename 3"
         },
         {
-          "url": "/images/test/product_a.jpg",
+          "url": "images/test/product_a.jpg",
           "color": "red",
           "size": null,
           "file_basename": "File Basename 4"
@@ -2109,82 +2109,82 @@
       "size": "Size 1",
       "color": "Color 1",
       "images": [
-        "/images/test/product_1a.jpg",
-        "/images/test/product_b.jpg",
-        "/images/test/product_a.jpg",
-        "/images/test/product_b.jpg",
-        "/images/test/product_a.jpg",
-        "/images/test/product_b.jpg"
+        "images/test/product_1a.jpg",
+        "images/test/product_b.jpg",
+        "images/test/product_a.jpg",
+        "images/test/product_b.jpg",
+        "images/test/product_a.jpg",
+        "images/test/product_b.jpg"
       ],
       "detailed_images": [
         {
-          "url": "/images/test/product_a.jpg",
+          "url": "images/test/product_a.jpg",
           "color": "red",
           "size": "S",
           "file_basename": "File Basename 1"
         },
         {
-          "url": "/images/test/product_b.jpg",
+          "url": "images/test/product_b.jpg",
           "color": "light green",
           "size": "M",
           "file_basename": "File Basename 2"
         },
         {
-          "url": "/images/test/product_c.jpg",
+          "url": "images/test/product_c.jpg",
           "color": null,
           "size": "S",
           "file_basename": "File Basename 3"
         },
         {
-          "url": "/images/test/product_a.jpg",
+          "url": "images/test/product_a.jpg",
           "color": "red",
           "size": null,
           "file_basename": "File Basename 4"
         },
         {
-          "url": "/images/test/product_b.jpg",
+          "url": "images/test/product_b.jpg",
           "color": "light green",
           "size": "S",
           "file_basename": "File Basename 5"
         },
         {
-          "url": "/images/test/product_c.jpg",
+          "url": "images/test/product_c.jpg",
           "color": null,
           "size": "M",
           "file_basename": "File Basename 6"
         },
         {
-          "url": "/images/test/product_a.jpg",
+          "url": "images/test/product_a.jpg",
           "color": "red",
           "size": "S",
           "file_basename": "File Basename 7"
         },
         {
-          "url": "/images/test/product_b.jpg",
+          "url": "images/test/product_b.jpg",
           "color": "light green",
           "size": null,
           "file_basename": "File Basename 8"
         },
         {
-          "url": "/images/test/product_c.jpg",
+          "url": "images/test/product_c.jpg",
           "color": null,
           "size": "S",
           "file_basename": "File Basename 9"
         },
         {
-          "url": "/images/test/product_a.jpg",
+          "url": "images/test/product_a.jpg",
           "color": "red",
           "size": "M",
           "file_basename": "File Basename 10"
         },
         {
-          "url": "/images/test/product_b.jpg",
+          "url": "images/test/product_b.jpg",
           "color": "light green",
           "size": "S",
           "file_basename": "File Basename 11"
         },
         {
-          "url": "/images/test/product_c.jpg",
+          "url": "images/test/product_c.jpg",
           "color": null,
           "size": null,
           "file_basename": "File Basename 12"
@@ -2280,30 +2280,30 @@
       "size": "Size 2",
       "color": "Color 2",
       "images": [
-        "/images/test/product_2a.jpg",
-        "/images/test/product_b.jpg"
+        "images/test/product_2a.jpg",
+        "images/test/product_b.jpg"
       ],
       "detailed_images": [
         {
-          "url": "/images/test/product_a.jpg",
+          "url": "images/test/product_a.jpg",
           "color": "red",
           "size": "S",
           "file_basename": "File Basename 1"
         },
         {
-          "url": "/images/test/product_b.jpg",
+          "url": "images/test/product_b.jpg",
           "color": "light green",
           "size": "M",
           "file_basename": "File Basename 2"
         },
         {
-          "url": "/images/test/product_c.jpg",
+          "url": "images/test/product_c.jpg",
           "color": null,
           "size": "S",
           "file_basename": "File Basename 3"
         },
         {
-          "url": "/images/test/product_a.jpg",
+          "url": "images/test/product_a.jpg",
           "color": "red",
           "size": null,
           "file_basename": "File Basename 4"
@@ -2372,82 +2372,82 @@
       "size": "Size 3",
       "color": "Color 3",
       "images": [
-        "/images/test/product_3a.jpg",
-        "/images/test/product_b.jpg",
-        "/images/test/product_a.jpg",
-        "/images/test/product_b.jpg",
-        "/images/test/product_a.jpg",
-        "/images/test/product_b.jpg"
+        "images/test/product_3a.jpg",
+        "images/test/product_b.jpg",
+        "images/test/product_a.jpg",
+        "images/test/product_b.jpg",
+        "images/test/product_a.jpg",
+        "images/test/product_b.jpg"
       ],
       "detailed_images": [
         {
-          "url": "/images/test/product_a.jpg",
+          "url": "images/test/product_a.jpg",
           "color": "red",
           "size": "S",
           "file_basename": "File Basename 1"
         },
         {
-          "url": "/images/test/product_b.jpg",
+          "url": "images/test/product_b.jpg",
           "color": "light green",
           "size": "M",
           "file_basename": "File Basename 2"
         },
         {
-          "url": "/images/test/product_c.jpg",
+          "url": "images/test/product_c.jpg",
           "color": null,
           "size": "S",
           "file_basename": "File Basename 3"
         },
         {
-          "url": "/images/test/product_a.jpg",
+          "url": "images/test/product_a.jpg",
           "color": "red",
           "size": null,
           "file_basename": "File Basename 4"
         },
         {
-          "url": "/images/test/product_b.jpg",
+          "url": "images/test/product_b.jpg",
           "color": "light green",
           "size": "S",
           "file_basename": "File Basename 5"
         },
         {
-          "url": "/images/test/product_c.jpg",
+          "url": "images/test/product_c.jpg",
           "color": null,
           "size": "M",
           "file_basename": "File Basename 6"
         },
         {
-          "url": "/images/test/product_a.jpg",
+          "url": "images/test/product_a.jpg",
           "color": "red",
           "size": "S",
           "file_basename": "File Basename 7"
         },
         {
-          "url": "/images/test/product_b.jpg",
+          "url": "images/test/product_b.jpg",
           "color": "light green",
           "size": null,
           "file_basename": "File Basename 8"
         },
         {
-          "url": "/images/test/product_c.jpg",
+          "url": "images/test/product_c.jpg",
           "color": null,
           "size": "S",
           "file_basename": "File Basename 9"
         },
         {
-          "url": "/images/test/product_a.jpg",
+          "url": "images/test/product_a.jpg",
           "color": "red",
           "size": "M",
           "file_basename": "File Basename 10"
         },
         {
-          "url": "/images/test/product_b.jpg",
+          "url": "images/test/product_b.jpg",
           "color": "light green",
           "size": "S",
           "file_basename": "File Basename 11"
         },
         {
-          "url": "/images/test/product_c.jpg",
+          "url": "images/test/product_c.jpg",
           "color": null,
           "size": null,
           "file_basename": "File Basename 12"
@@ -2543,30 +2543,30 @@
       "size": "Size 4",
       "color": "Color 4",
       "images": [
-        "/images/test/product_4a.jpg",
-        "/images/test/product_b.jpg"
+        "images/test/product_4a.jpg",
+        "images/test/product_b.jpg"
       ],
       "detailed_images": [
         {
-          "url": "/images/test/product_a.jpg",
+          "url": "images/test/product_a.jpg",
           "color": "red",
           "size": "S",
           "file_basename": "File Basename 1"
         },
         {
-          "url": "/images/test/product_b.jpg",
+          "url": "images/test/product_b.jpg",
           "color": "light green",
           "size": "M",
           "file_basename": "File Basename 2"
         },
         {
-          "url": "/images/test/product_c.jpg",
+          "url": "images/test/product_c.jpg",
           "color": null,
           "size": "S",
           "file_basename": "File Basename 3"
         },
         {
-          "url": "/images/test/product_a.jpg",
+          "url": "images/test/product_a.jpg",
           "color": "red",
           "size": null,
           "file_basename": "File Basename 4"
@@ -2623,82 +2623,82 @@
       "size": "Size 5",
       "color": "Color 5",
       "images": [
-        "/images/test/product_5a.jpg",
-        "/images/test/product_b.jpg",
-        "/images/test/product_a.jpg",
-        "/images/test/product_b.jpg",
-        "/images/test/product_a.jpg",
-        "/images/test/product_b.jpg"
+        "images/test/product_5a.jpg",
+        "images/test/product_b.jpg",
+        "images/test/product_a.jpg",
+        "images/test/product_b.jpg",
+        "images/test/product_a.jpg",
+        "images/test/product_b.jpg"
       ],
       "detailed_images": [
         {
-          "url": "/images/test/product_a.jpg",
+          "url": "images/test/product_a.jpg",
           "color": "red",
           "size": "S",
           "file_basename": "File Basename 1"
         },
         {
-          "url": "/images/test/product_b.jpg",
+          "url": "images/test/product_b.jpg",
           "color": "light green",
           "size": "M",
           "file_basename": "File Basename 2"
         },
         {
-          "url": "/images/test/product_c.jpg",
+          "url": "images/test/product_c.jpg",
           "color": null,
           "size": "S",
           "file_basename": "File Basename 3"
         },
         {
-          "url": "/images/test/product_a.jpg",
+          "url": "images/test/product_a.jpg",
           "color": "red",
           "size": null,
           "file_basename": "File Basename 4"
         },
         {
-          "url": "/images/test/product_b.jpg",
+          "url": "images/test/product_b.jpg",
           "color": "light green",
           "size": "S",
           "file_basename": "File Basename 5"
         },
         {
-          "url": "/images/test/product_c.jpg",
+          "url": "images/test/product_c.jpg",
           "color": null,
           "size": "M",
           "file_basename": "File Basename 6"
         },
         {
-          "url": "/images/test/product_a.jpg",
+          "url": "images/test/product_a.jpg",
           "color": "red",
           "size": "S",
           "file_basename": "File Basename 7"
         },
         {
-          "url": "/images/test/product_b.jpg",
+          "url": "images/test/product_b.jpg",
           "color": "light green",
           "size": null,
           "file_basename": "File Basename 8"
         },
         {
-          "url": "/images/test/product_c.jpg",
+          "url": "images/test/product_c.jpg",
           "color": null,
           "size": "S",
           "file_basename": "File Basename 9"
         },
         {
-          "url": "/images/test/product_a.jpg",
+          "url": "images/test/product_a.jpg",
           "color": "red",
           "size": "M",
           "file_basename": "File Basename 10"
         },
         {
-          "url": "/images/test/product_b.jpg",
+          "url": "images/test/product_b.jpg",
           "color": "light green",
           "size": "S",
           "file_basename": "File Basename 11"
         },
         {
-          "url": "/images/test/product_c.jpg",
+          "url": "images/test/product_c.jpg",
           "color": null,
           "size": null,
           "file_basename": "File Basename 12"
@@ -2844,82 +2844,82 @@
       "size": "Size 7",
       "color": "Color 7",
       "images": [
-        "/images/test/product_7a.jpg",
-        "/images/test/product_b.jpg",
-        "/images/test/product_a.jpg",
-        "/images/test/product_b.jpg",
-        "/images/test/product_a.jpg",
-        "/images/test/product_b.jpg"
+        "images/test/product_7a.jpg",
+        "images/test/product_b.jpg",
+        "images/test/product_a.jpg",
+        "images/test/product_b.jpg",
+        "images/test/product_a.jpg",
+        "images/test/product_b.jpg"
       ],
       "detailed_images": [
         {
-          "url": "/images/test/product_a.jpg",
+          "url": "images/test/product_a.jpg",
           "color": "red",
           "size": "S",
           "file_basename": "File Basename 1"
         },
         {
-          "url": "/images/test/product_b.jpg",
+          "url": "images/test/product_b.jpg",
           "color": "light green",
           "size": "M",
           "file_basename": "File Basename 2"
         },
         {
-          "url": "/images/test/product_c.jpg",
+          "url": "images/test/product_c.jpg",
           "color": null,
           "size": "S",
           "file_basename": "File Basename 3"
         },
         {
-          "url": "/images/test/product_a.jpg",
+          "url": "images/test/product_a.jpg",
           "color": "red",
           "size": null,
           "file_basename": "File Basename 4"
         },
         {
-          "url": "/images/test/product_b.jpg",
+          "url": "images/test/product_b.jpg",
           "color": "light green",
           "size": "S",
           "file_basename": "File Basename 5"
         },
         {
-          "url": "/images/test/product_c.jpg",
+          "url": "images/test/product_c.jpg",
           "color": null,
           "size": "M",
           "file_basename": "File Basename 6"
         },
         {
-          "url": "/images/test/product_a.jpg",
+          "url": "images/test/product_a.jpg",
           "color": "red",
           "size": "S",
           "file_basename": "File Basename 7"
         },
         {
-          "url": "/images/test/product_b.jpg",
+          "url": "images/test/product_b.jpg",
           "color": "light green",
           "size": null,
           "file_basename": "File Basename 8"
         },
         {
-          "url": "/images/test/product_c.jpg",
+          "url": "images/test/product_c.jpg",
           "color": null,
           "size": "S",
           "file_basename": "File Basename 9"
         },
         {
-          "url": "/images/test/product_a.jpg",
+          "url": "images/test/product_a.jpg",
           "color": "red",
           "size": "M",
           "file_basename": "File Basename 10"
         },
         {
-          "url": "/images/test/product_b.jpg",
+          "url": "images/test/product_b.jpg",
           "color": "light green",
           "size": "S",
           "file_basename": "File Basename 11"
         },
         {
-          "url": "/images/test/product_c.jpg",
+          "url": "images/test/product_c.jpg",
           "color": null,
           "size": null,
           "file_basename": "File Basename 12"
@@ -2991,30 +2991,30 @@
       "size": "Size 8",
       "color": "Color 8",
       "images": [
-        "/images/test/product_8a.jpg",
-        "/images/test/product_b.jpg"
+        "images/test/product_8a.jpg",
+        "images/test/product_b.jpg"
       ],
       "detailed_images": [
         {
-          "url": "/images/test/product_a.jpg",
+          "url": "images/test/product_a.jpg",
           "color": "red",
           "size": "S",
           "file_basename": "File Basename 1"
         },
         {
-          "url": "/images/test/product_b.jpg",
+          "url": "images/test/product_b.jpg",
           "color": "light green",
           "size": "M",
           "file_basename": "File Basename 2"
         },
         {
-          "url": "/images/test/product_c.jpg",
+          "url": "images/test/product_c.jpg",
           "color": null,
           "size": "S",
           "file_basename": "File Basename 3"
         },
         {
-          "url": "/images/test/product_a.jpg",
+          "url": "images/test/product_a.jpg",
           "color": "red",
           "size": null,
           "file_basename": "File Basename 4"
@@ -3067,82 +3067,82 @@
       "size": "Size 9",
       "color": "Color 9",
       "images": [
-        "/images/test/product_9a.jpg",
-        "/images/test/product_b.jpg",
-        "/images/test/product_a.jpg",
-        "/images/test/product_b.jpg",
-        "/images/test/product_a.jpg",
-        "/images/test/product_b.jpg"
+        "images/test/product_9a.jpg",
+        "images/test/product_b.jpg",
+        "images/test/product_a.jpg",
+        "images/test/product_b.jpg",
+        "images/test/product_a.jpg",
+        "images/test/product_b.jpg"
       ],
       "detailed_images": [
         {
-          "url": "/images/test/product_a.jpg",
+          "url": "images/test/product_a.jpg",
           "color": "red",
           "size": "S",
           "file_basename": "File Basename 1"
         },
         {
-          "url": "/images/test/product_b.jpg",
+          "url": "images/test/product_b.jpg",
           "color": "light green",
           "size": "M",
           "file_basename": "File Basename 2"
         },
         {
-          "url": "/images/test/product_c.jpg",
+          "url": "images/test/product_c.jpg",
           "color": null,
           "size": "S",
           "file_basename": "File Basename 3"
         },
         {
-          "url": "/images/test/product_a.jpg",
+          "url": "images/test/product_a.jpg",
           "color": "red",
           "size": null,
           "file_basename": "File Basename 4"
         },
         {
-          "url": "/images/test/product_b.jpg",
+          "url": "images/test/product_b.jpg",
           "color": "light green",
           "size": "S",
           "file_basename": "File Basename 5"
         },
         {
-          "url": "/images/test/product_c.jpg",
+          "url": "images/test/product_c.jpg",
           "color": null,
           "size": "M",
           "file_basename": "File Basename 6"
         },
         {
-          "url": "/images/test/product_a.jpg",
+          "url": "images/test/product_a.jpg",
           "color": "red",
           "size": "S",
           "file_basename": "File Basename 7"
         },
         {
-          "url": "/images/test/product_b.jpg",
+          "url": "images/test/product_b.jpg",
           "color": "light green",
           "size": null,
           "file_basename": "File Basename 8"
         },
         {
-          "url": "/images/test/product_c.jpg",
+          "url": "images/test/product_c.jpg",
           "color": null,
           "size": "S",
           "file_basename": "File Basename 9"
         },
         {
-          "url": "/images/test/product_a.jpg",
+          "url": "images/test/product_a.jpg",
           "color": "red",
           "size": "M",
           "file_basename": "File Basename 10"
         },
         {
-          "url": "/images/test/product_b.jpg",
+          "url": "images/test/product_b.jpg",
           "color": "light green",
           "size": "S",
           "file_basename": "File Basename 11"
         },
         {
-          "url": "/images/test/product_c.jpg",
+          "url": "images/test/product_c.jpg",
           "color": null,
           "size": null,
           "file_basename": "File Basename 12"
@@ -3238,30 +3238,30 @@
       "size": "Size 10",
       "color": "Color 10",
       "images": [
-        "/images/test/product_10a.jpg",
-        "/images/test/product_b.jpg"
+        "images/test/product_10a.jpg",
+        "images/test/product_b.jpg"
       ],
       "detailed_images": [
         {
-          "url": "/images/test/product_a.jpg",
+          "url": "images/test/product_a.jpg",
           "color": "red",
           "size": "S",
           "file_basename": "File Basename 1"
         },
         {
-          "url": "/images/test/product_b.jpg",
+          "url": "images/test/product_b.jpg",
           "color": "light green",
           "size": "M",
           "file_basename": "File Basename 2"
         },
         {
-          "url": "/images/test/product_c.jpg",
+          "url": "images/test/product_c.jpg",
           "color": null,
           "size": "S",
           "file_basename": "File Basename 3"
         },
         {
-          "url": "/images/test/product_a.jpg",
+          "url": "images/test/product_a.jpg",
           "color": "red",
           "size": null,
           "file_basename": "File Basename 4"
@@ -3330,82 +3330,82 @@
       "size": "Size 11",
       "color": "Color 11",
       "images": [
-        "/images/test/product_11a.jpg",
-        "/images/test/product_b.jpg",
-        "/images/test/product_a.jpg",
-        "/images/test/product_b.jpg",
-        "/images/test/product_a.jpg",
-        "/images/test/product_b.jpg"
+        "images/test/product_11a.jpg",
+        "images/test/product_b.jpg",
+        "images/test/product_a.jpg",
+        "images/test/product_b.jpg",
+        "images/test/product_a.jpg",
+        "images/test/product_b.jpg"
       ],
       "detailed_images": [
         {
-          "url": "/images/test/product_a.jpg",
+          "url": "images/test/product_a.jpg",
           "color": "red",
           "size": "S",
           "file_basename": "File Basename 1"
         },
         {
-          "url": "/images/test/product_b.jpg",
+          "url": "images/test/product_b.jpg",
           "color": "light green",
           "size": "M",
           "file_basename": "File Basename 2"
         },
         {
-          "url": "/images/test/product_c.jpg",
+          "url": "images/test/product_c.jpg",
           "color": null,
           "size": "S",
           "file_basename": "File Basename 3"
         },
         {
-          "url": "/images/test/product_a.jpg",
+          "url": "images/test/product_a.jpg",
           "color": "red",
           "size": null,
           "file_basename": "File Basename 4"
         },
         {
-          "url": "/images/test/product_b.jpg",
+          "url": "images/test/product_b.jpg",
           "color": "light green",
           "size": "S",
           "file_basename": "File Basename 5"
         },
         {
-          "url": "/images/test/product_c.jpg",
+          "url": "images/test/product_c.jpg",
           "color": null,
           "size": "M",
           "file_basename": "File Basename 6"
         },
         {
-          "url": "/images/test/product_a.jpg",
+          "url": "images/test/product_a.jpg",
           "color": "red",
           "size": "S",
           "file_basename": "File Basename 7"
         },
         {
-          "url": "/images/test/product_b.jpg",
+          "url": "images/test/product_b.jpg",
           "color": "light green",
           "size": null,
           "file_basename": "File Basename 8"
         },
         {
-          "url": "/images/test/product_c.jpg",
+          "url": "images/test/product_c.jpg",
           "color": null,
           "size": "S",
           "file_basename": "File Basename 9"
         },
         {
-          "url": "/images/test/product_a.jpg",
+          "url": "images/test/product_a.jpg",
           "color": "red",
           "size": "M",
           "file_basename": "File Basename 10"
         },
         {
-          "url": "/images/test/product_b.jpg",
+          "url": "images/test/product_b.jpg",
           "color": "light green",
           "size": "S",
           "file_basename": "File Basename 11"
         },
         {
-          "url": "/images/test/product_c.jpg",
+          "url": "images/test/product_c.jpg",
           "color": null,
           "size": null,
           "file_basename": "File Basename 12"
@@ -3501,30 +3501,30 @@
       "size": "Size 12",
       "color": "Color 12",
       "images": [
-        "/images/test/product_12a.jpg",
-        "/images/test/product_b.jpg"
+        "images/test/product_12a.jpg",
+        "images/test/product_b.jpg"
       ],
       "detailed_images": [
         {
-          "url": "/images/test/product_a.jpg",
+          "url": "images/test/product_a.jpg",
           "color": "red",
           "size": "S",
           "file_basename": "File Basename 1"
         },
         {
-          "url": "/images/test/product_b.jpg",
+          "url": "images/test/product_b.jpg",
           "color": "light green",
           "size": "M",
           "file_basename": "File Basename 2"
         },
         {
-          "url": "/images/test/product_c.jpg",
+          "url": "images/test/product_c.jpg",
           "color": null,
           "size": "S",
           "file_basename": "File Basename 3"
         },
         {
-          "url": "/images/test/product_a.jpg",
+          "url": "images/test/product_a.jpg",
           "color": "red",
           "size": null,
           "file_basename": "File Basename 4"
@@ -3591,7 +3591,7 @@
       "comments": [],
       "is_complete": true,
       "author_link": "http://author1",
-      "image": "/images/test/article1.jpg"
+      "image": "images/test/article1.jpg"
     },
     {
       "title": "Blog Post 2",
@@ -3615,7 +3615,7 @@
       "comments": [],
       "is_complete": true,
       "author_link": "http://author3",
-      "image": "/images/test/article3.jpg"
+      "image": "images/test/article3.jpg"
     },
     {
       "title": "Blog Post 4",
@@ -3639,7 +3639,7 @@
       "comments": [],
       "is_complete": true,
       "author_link": "http://author5",
-      "image": "/images/test/article5.jpg"
+      "image": "images/test/article5.jpg"
     },
     {
       "title": "Blog Post 6",
@@ -3663,7 +3663,7 @@
       "comments": [],
       "is_complete": true,
       "author_link": "http://author7",
-      "image": "/images/test/article7.jpg"
+      "image": "images/test/article7.jpg"
     }
   ],
   "product_categories": [
@@ -3671,8 +3671,8 @@
       "title": "Category 1",
       "link": "http://category1",
       "images": [
-        "/images/test/category1.jpg",
-        "/images/test/category1-2.jpg"
+        "images/test/category1.jpg",
+        "images/test/category1-2.jpg"
       ],
       "sub_nav": [
         {
@@ -3693,8 +3693,8 @@
       "title": "Category 2",
       "link": "http://category2",
       "images": [
-        "/images/test/category2.jpg",
-        "/images/test/category2-2.jpg"
+        "images/test/category2.jpg",
+        "images/test/category2-2.jpg"
       ],
       "is_active": true,
       "sub_nav": [
@@ -3702,8 +3702,8 @@
           "title": "Subcategory 1",
           "link": "http://subcategory1",
           "images": [
-            "/images/test/category2a.jpg",
-            "/images/test/category2a-2.jpg"
+            "images/test/category2a.jpg",
+            "images/test/category2a-2.jpg"
           ]
         },
         {
@@ -3711,8 +3711,8 @@
           "link": "http://subcategory2",
           "is_active": true,
           "images": [
-            "/images/test/category2b.jpg",
-            "/images/test/category2b-2.jpg"
+            "images/test/category2b.jpg",
+            "images/test/category2b-2.jpg"
           ],
           "sub_nav": [
             {
@@ -3734,8 +3734,8 @@
           "title": "Subcategory 3",
           "link": "http://subcategory3",
           "images": [
-            "/images/test/category2c.jpg",
-            "/images/test/category2c-2.jpg"
+            "images/test/category2c.jpg",
+            "images/test/category2c-2.jpg"
           ]
         }
       ]
@@ -3752,8 +3752,8 @@
       "link": "http://category4",
       "is_hidden": true,
       "images": [
-        "/images/test/category4.jpg",
-        "/images/test/category4-2.jpg"
+        "images/test/category4.jpg",
+        "images/test/category4-2.jpg"
       ],
       "is_active": false
     },
@@ -3762,8 +3762,8 @@
       "link": "http://special",
       "is_special": true,
       "images": [
-        "/images/test/specialcat1.jpg",
-        "/images/test/specialcat2.jpg"
+        "images/test/specialcat1.jpg",
+        "images/test/specialcat2.jpg"
       ],
       "is_active": false
     }
@@ -3774,8 +3774,8 @@
       "parent_id": 10,
       "title": "General Category 1",
       "images": [
-        "/images/test/general_category_1a.jpg",
-        "/images/test/general_category_1b.jpg"
+        "images/test/general_category_1a.jpg",
+        "images/test/general_category_1b.jpg"
       ],
       "link": "http://general_category1"
     },
@@ -3784,8 +3784,8 @@
       "parent_id": 0,
       "title": "General Category 2",
       "images": [
-        "/images/test/general_category_2a.jpg",
-        "/images/test/general_category_2b.jpg"
+        "images/test/general_category_2a.jpg",
+        "images/test/general_category_2b.jpg"
       ],
       "link": "http://general_category2"
     },
@@ -3794,8 +3794,8 @@
       "parent_id": 30,
       "title": "General Category 3",
       "images": [
-        "/images/test/general_category_3a.jpg",
-        "/images/test/general_category_3b.jpg"
+        "images/test/general_category_3a.jpg",
+        "images/test/general_category_3b.jpg"
       ],
       "link": "http://general_category3"
     },
@@ -3804,8 +3804,8 @@
       "parent_id": 0,
       "title": "General Category 4",
       "images": [
-        "/images/test/general_category_4a.jpg",
-        "/images/test/general_category_4b.jpg"
+        "images/test/general_category_4a.jpg",
+        "images/test/general_category_4b.jpg"
       ],
       "link": "http://general_category4"
     },
@@ -3814,8 +3814,8 @@
       "parent_id": 50,
       "title": "General Category 5",
       "images": [
-        "/images/test/general_category_5a.jpg",
-        "/images/test/general_category_5b.jpg"
+        "images/test/general_category_5a.jpg",
+        "images/test/general_category_5b.jpg"
       ],
       "link": "http://general_category5"
     },
@@ -3824,8 +3824,8 @@
       "parent_id": 0,
       "title": "General Category 6",
       "images": [
-        "/images/test/general_category_6a.jpg",
-        "/images/test/general_category_6b.jpg"
+        "images/test/general_category_6a.jpg",
+        "images/test/general_category_6b.jpg"
       ],
       "link": "http://general_category6"
     },
@@ -3834,8 +3834,8 @@
       "parent_id": 70,
       "title": "General Category 7",
       "images": [
-        "/images/test/general_category_7a.jpg",
-        "/images/test/general_category_7b.jpg"
+        "images/test/general_category_7a.jpg",
+        "images/test/general_category_7b.jpg"
       ],
       "link": "http://general_category7"
     }
@@ -3845,16 +3845,16 @@
         "title": "Casual Shoes",
         "link": "http://casual",
         "images": [
-            "/images/test/category1.jpg",
-            "/images/test/category1-2.jpg"
+            "images/one-shoe.jpg",
+            "images/one-shoe.jpg"
         ]
     },
     {
         "title": "Running Shoes",
         "link": "http://running",
         "images": [
-            "/images/test/category2.jpg",
-            "/images/test/category2-2.jpg"
+            "images/one-shoe.jpg",
+            "images/one-shoe.jpg"
         ],
         "is_active": true
     },
@@ -3870,8 +3870,8 @@
         "link": "http://football",
         "is_hidden": true,
         "images": [
-            "/images/test/category4.jpg",
-            "/images/test/category4-2.jpg"
+            "images/one-shoe.jpg",
+            "images/one-shoe.jpg"
         ],
         "is_active": false
     },
@@ -3880,8 +3880,8 @@
         "link": "http://sandals",
         "is_special": true,
         "images": [
-            "/images/test/specialcat1.jpg",
-            "/images/test/specialcat2.jpg"
+            "images/one-shoe.jpg",
+            "images/one-shoe.jpg"
         ],
         "is_active": false
     },
@@ -3890,8 +3890,8 @@
         "link": "http://slippers",
         "is_special": true,
         "images": [
-            "/images/test/specialcat1.jpg",
-            "/images/test/specialcat2.jpg"
+            "images/one-shoe.jpg",
+            "images/one-shoe.jpg"
         ],
         "is_active": false
     },
@@ -3900,8 +3900,8 @@
         "link": "http://sneakers",
         "is_special": true,
         "images": [
-            "/images/test/specialcat1.jpg",
-            "/images/test/specialcat2.jpg"
+            "images/one-shoe.jpg",
+            "images/one-shoe.jpg"
         ],
         "is_active": false
     }
@@ -3910,8 +3910,8 @@
     "title": "The Active Category",
     "link": "http://activecategory",
     "images": [
-      "/images/test/activecat1.jpg",
-      "/images/test/activecat2.jpg"
+      "images/test/activecat1.jpg",
+      "images/test/activecat2.jpg"
     ]
   },
   "recently_viewed_products": [
@@ -3933,82 +3933,82 @@
       "size": "Size 1",
       "color": "Color 1",
       "images": [
-        "/images/test/product_1a.jpg",
-        "/images/test/product_b.jpg",
-        "/images/test/product_a.jpg",
-        "/images/test/product_b.jpg",
-        "/images/test/product_a.jpg",
-        "/images/test/product_b.jpg"
+        "images/test/product_1a.jpg",
+        "images/test/product_b.jpg",
+        "images/test/product_a.jpg",
+        "images/test/product_b.jpg",
+        "images/test/product_a.jpg",
+        "images/test/product_b.jpg"
       ],
       "detailed_images": [
         {
-          "url": "/images/test/product_a.jpg",
+          "url": "images/test/product_a.jpg",
           "color": "red",
           "size": "S",
           "file_basename": "File Basename 1"
         },
         {
-          "url": "/images/test/product_b.jpg",
+          "url": "images/test/product_b.jpg",
           "color": "light green",
           "size": "M",
           "file_basename": "File Basename 2"
         },
         {
-          "url": "/images/test/product_c.jpg",
+          "url": "images/test/product_c.jpg",
           "color": null,
           "size": "S",
           "file_basename": "File Basename 3"
         },
         {
-          "url": "/images/test/product_a.jpg",
+          "url": "images/test/product_a.jpg",
           "color": "red",
           "size": null,
           "file_basename": "File Basename 4"
         },
         {
-          "url": "/images/test/product_b.jpg",
+          "url": "images/test/product_b.jpg",
           "color": "light green",
           "size": "S",
           "file_basename": "File Basename 5"
         },
         {
-          "url": "/images/test/product_c.jpg",
+          "url": "images/test/product_c.jpg",
           "color": null,
           "size": "M",
           "file_basename": "File Basename 6"
         },
         {
-          "url": "/images/test/product_a.jpg",
+          "url": "images/test/product_a.jpg",
           "color": "red",
           "size": "S",
           "file_basename": "File Basename 7"
         },
         {
-          "url": "/images/test/product_b.jpg",
+          "url": "images/test/product_b.jpg",
           "color": "light green",
           "size": null,
           "file_basename": "File Basename 8"
         },
         {
-          "url": "/images/test/product_c.jpg",
+          "url": "images/test/product_c.jpg",
           "color": null,
           "size": "S",
           "file_basename": "File Basename 9"
         },
         {
-          "url": "/images/test/product_a.jpg",
+          "url": "images/test/product_a.jpg",
           "color": "red",
           "size": "M",
           "file_basename": "File Basename 10"
         },
         {
-          "url": "/images/test/product_b.jpg",
+          "url": "images/test/product_b.jpg",
           "color": "light green",
           "size": "S",
           "file_basename": "File Basename 11"
         },
         {
-          "url": "/images/test/product_c.jpg",
+          "url": "images/test/product_c.jpg",
           "color": null,
           "size": null,
           "file_basename": "File Basename 12"
@@ -4108,30 +4108,30 @@
       "size": "Size 2",
       "color": "Color 2",
       "images": [
-        "/images/test/product_2a.jpg",
-        "/images/test/product_b.jpg"
+        "images/test/product_2a.jpg",
+        "images/test/product_b.jpg"
       ],
       "detailed_images": [
         {
-          "url": "/images/test/product_a.jpg",
+          "url": "images/test/product_a.jpg",
           "color": "red",
           "size": "S",
           "file_basename": "File Basename 1"
         },
         {
-          "url": "/images/test/product_b.jpg",
+          "url": "images/test/product_b.jpg",
           "color": "light green",
           "size": "M",
           "file_basename": "File Basename 2"
         },
         {
-          "url": "/images/test/product_c.jpg",
+          "url": "images/test/product_c.jpg",
           "color": null,
           "size": "S",
           "file_basename": "File Basename 3"
         },
         {
-          "url": "/images/test/product_a.jpg",
+          "url": "images/test/product_a.jpg",
           "color": "red",
           "size": null,
           "file_basename": "File Basename 4"
@@ -4200,82 +4200,82 @@
       "size": "Size 3",
       "color": "Color 3",
       "images": [
-        "/images/test/product_3a.jpg",
-        "/images/test/product_b.jpg",
-        "/images/test/product_a.jpg",
-        "/images/test/product_b.jpg",
-        "/images/test/product_a.jpg",
-        "/images/test/product_b.jpg"
+        "images/test/product_3a.jpg",
+        "images/test/product_b.jpg",
+        "images/test/product_a.jpg",
+        "images/test/product_b.jpg",
+        "images/test/product_a.jpg",
+        "images/test/product_b.jpg"
       ],
       "detailed_images": [
         {
-          "url": "/images/test/product_a.jpg",
+          "url": "images/test/product_a.jpg",
           "color": "red",
           "size": "S",
           "file_basename": "File Basename 1"
         },
         {
-          "url": "/images/test/product_b.jpg",
+          "url": "images/test/product_b.jpg",
           "color": "light green",
           "size": "M",
           "file_basename": "File Basename 2"
         },
         {
-          "url": "/images/test/product_c.jpg",
+          "url": "images/test/product_c.jpg",
           "color": null,
           "size": "S",
           "file_basename": "File Basename 3"
         },
         {
-          "url": "/images/test/product_a.jpg",
+          "url": "images/test/product_a.jpg",
           "color": "red",
           "size": null,
           "file_basename": "File Basename 4"
         },
         {
-          "url": "/images/test/product_b.jpg",
+          "url": "images/test/product_b.jpg",
           "color": "light green",
           "size": "S",
           "file_basename": "File Basename 5"
         },
         {
-          "url": "/images/test/product_c.jpg",
+          "url": "images/test/product_c.jpg",
           "color": null,
           "size": "M",
           "file_basename": "File Basename 6"
         },
         {
-          "url": "/images/test/product_a.jpg",
+          "url": "images/test/product_a.jpg",
           "color": "red",
           "size": "S",
           "file_basename": "File Basename 7"
         },
         {
-          "url": "/images/test/product_b.jpg",
+          "url": "images/test/product_b.jpg",
           "color": "light green",
           "size": null,
           "file_basename": "File Basename 8"
         },
         {
-          "url": "/images/test/product_c.jpg",
+          "url": "images/test/product_c.jpg",
           "color": null,
           "size": "S",
           "file_basename": "File Basename 9"
         },
         {
-          "url": "/images/test/product_a.jpg",
+          "url": "images/test/product_a.jpg",
           "color": "red",
           "size": "M",
           "file_basename": "File Basename 10"
         },
         {
-          "url": "/images/test/product_b.jpg",
+          "url": "images/test/product_b.jpg",
           "color": "light green",
           "size": "S",
           "file_basename": "File Basename 11"
         },
         {
-          "url": "/images/test/product_c.jpg",
+          "url": "images/test/product_c.jpg",
           "color": null,
           "size": null,
           "file_basename": "File Basename 12"
@@ -4384,13 +4384,13 @@
       "link": "http://sashadrake",
       "is_top": false,
       "images": [
-        "/images/label0.jpg",
-        "/images/label1.jpg",
-        "/images/label2.jpg",
-        "/images/label3.jpg",
-        "/images/label4.jpg",
-        "/images/label5.jpg",
-        "/images/label6.jpg"
+        "images/label0.jpg",
+        "images/label1.jpg",
+        "images/label2.jpg",
+        "images/label3.jpg",
+        "images/label4.jpg",
+        "images/label5.jpg",
+        "images/label6.jpg"
       ]
     },
     {
@@ -4398,13 +4398,13 @@
       "link": "http://george",
       "is_top": false,
       "images": [
-        "/images/label1.jpg",
-        "/images/label2.jpg",
-        "/images/label3.jpg",
-        "/images/label4.jpg",
-        "/images/label5.jpg",
-        "/images/label6.jpg",
-        "/images/label0.jpg"
+        "images/label1.jpg",
+        "images/label2.jpg",
+        "images/label3.jpg",
+        "images/label4.jpg",
+        "images/label5.jpg",
+        "images/label6.jpg",
+        "images/label0.jpg"
       ]
     },
     {
@@ -4412,13 +4412,13 @@
       "link": "http://josephribkoff",
       "is_top": false,
       "images": [
-        "/images/label2.jpg",
-        "/images/label3.jpg",
-        "/images/label4.jpg",
-        "/images/label5.jpg",
-        "/images/label6.jpg",
-        "/images/label0.jpg",
-        "/images/label1.jpg"
+        "images/label2.jpg",
+        "images/label3.jpg",
+        "images/label4.jpg",
+        "images/label5.jpg",
+        "images/label6.jpg",
+        "images/label0.jpg",
+        "images/label1.jpg"
       ]
     },
     {
@@ -4426,13 +4426,13 @@
       "link": "http://stateofgeorgia",
       "is_top": false,
       "images": [
-        "/images/label3.jpg",
-        "/images/label4.jpg",
-        "/images/label5.jpg",
-        "/images/label6.jpg",
-        "/images/label0.jpg",
-        "/images/label1.jpg",
-        "/images/label2.jpg"
+        "images/label3.jpg",
+        "images/label4.jpg",
+        "images/label5.jpg",
+        "images/label6.jpg",
+        "images/label0.jpg",
+        "images/label1.jpg",
+        "images/label2.jpg"
       ]
     },
     {
@@ -4440,13 +4440,13 @@
       "link": "http://unspoken",
       "is_top": false,
       "images": [
-        "/images/label4.jpg",
-        "/images/label5.jpg",
-        "/images/label6.jpg",
-        "/images/label0.jpg",
-        "/images/label1.jpg",
-        "/images/label2.jpg",
-        "/images/label3.jpg"
+        "images/label4.jpg",
+        "images/label5.jpg",
+        "images/label6.jpg",
+        "images/label0.jpg",
+        "images/label1.jpg",
+        "images/label2.jpg",
+        "images/label3.jpg"
       ]
     },
     {
@@ -4454,13 +4454,13 @@
       "link": "http://7camicie",
       "is_top": false,
       "images": [
-        "/images/label5.jpg",
-        "/images/label6.jpg",
-        "/images/label0.jpg",
-        "/images/label1.jpg",
-        "/images/label2.jpg",
-        "/images/label3.jpg",
-        "/images/label4.jpg"
+        "images/label5.jpg",
+        "images/label6.jpg",
+        "images/label0.jpg",
+        "images/label1.jpg",
+        "images/label2.jpg",
+        "images/label3.jpg",
+        "images/label4.jpg"
       ]
     },
     {
@@ -4468,13 +4468,13 @@
       "link": "http://maurieandeve",
       "is_top": true,
       "images": [
-        "/images/label6.jpg",
-        "/images/label0.jpg",
-        "/images/label1.jpg",
-        "/images/label2.jpg",
-        "/images/label3.jpg",
-        "/images/label4.jpg",
-        "/images/label5.jpg"
+        "images/label6.jpg",
+        "images/label0.jpg",
+        "images/label1.jpg",
+        "images/label2.jpg",
+        "images/label3.jpg",
+        "images/label4.jpg",
+        "images/label5.jpg"
       ]
     }
   ]

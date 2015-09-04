@@ -9,7 +9,7 @@ SEPATUKU SIRCLO THEME
 {block name="body"}
 <div class="row s-main-content">
 	<div class="col-md-12">
-		<img src="/images/product-category-image.jpg" class="img-responsive"/>
+		<img src="{sirclo_resource file='images/product-category-image.jpg'}" class="img-responsive"/>
 	</div>
 	<div class="col-md-12 s-breadcrumb s-bottom-padding s-top-padding">
 		<a href="{$links.home}">{sirclo_get_text text='home_title'}</a>

@@ -19,7 +19,7 @@
                         <div class="slide">
                             {$t.content}<br/>
                             <div class="col-md-2 col-md-offset-4 s-top-margin s-bottom-margin">
-                                <img class="s-fullwidth s-padding" src="{$t.image}">
+                                <img class="s-fullwidth s-padding" src="{sirclo_resource file=$t.image}">
                             </div>
                             <div class="identity col-md-2 nopadding">
                                 {$t.author}<br/>

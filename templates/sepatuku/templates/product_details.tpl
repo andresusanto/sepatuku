@@ -18,15 +18,15 @@
                 {$_small_url = $product['images'][0]|replace:'folder':'small'|replace:'jpg':'png'}
                 {$_large_url = $product['images'][0]|replace:'folder':'large'}
                 
-                <img class="s-fullwidth" id="product-zoom" src="{$_small_url}" data-zoom-image="{$_large_url}"/><br/>
+                <img class="s-fullwidth" id="product-zoom" src="{sirclo_resource file=$_small_url}" data-zoom-image="{sirclo_resource file=$_large_url}"/><br/>
 
                 <div id="product-zoom-gallery" style='width=" 500pxfloat:left;="" "="'>
                     {foreach $product['images'] as $img_value}
                         {$_small_url = $img_value|replace:'folder':'small'|replace:'jpg':'png'}
                         {$_large_url = $img_value|replace:'folder':'large'}
 
-                        <a href="#" class="elevatezoom-gallery active" data-update="" data-image="{$_small_url}" data-zoom-image="{$_large_url}">
-                        <img class="" src="{$_small_url}" width="100"></a>
+                        <a href="#" class="elevatezoom-gallery active" data-update="" data-image="{sirclo_resource file=$_small_url}" data-zoom-image="{sirclo_resource file=$_large_url}">
+                        <img class="" src="{sirclo_resource file=$_small_url}" width="100"></a>
                     {/foreach}
                 </div>
             {/if}
@@ -41,7 +41,7 @@
             <h3>SHARE</h3>
             [to be added]
             <div class="s-strike s-top-margin s-bottom-margin">
-                <span><img src="/images/wavy.png"></span></span>
+                <span><img src="{sirclo_resource file='images/wavy.png'}"></span></span>
             </div>
 
             {sirclo_render_product_add_to_cart product=$product action=$links.cart}
@@ -78,15 +78,15 @@
                     {$_small_url = $product['images'][0]|replace:'folder':'small'|replace:'jpg':'png'}
                     {$_large_url = $product['images'][0]|replace:'folder':'large'}
                     
-                    <img class="s-fullwidth" id="product-zoom" src="{$_small_url}" data-zoom-image="{$_large_url}"/><br/>
+                    <img class="s-fullwidth" id="product-zoom" src="{sirclo_resource file=$_small_url}" data-zoom-image="{sirclo_resource file=$_large_url}"/><br/>
 
                     <div id="product-zoom-gallery" style='width=" 500pxfloat:left;="" "="'>
                         {foreach $product['images'] as $img_value}
                             {$_small_url = $img_value|replace:'folder':'small'|replace:'jpg':'png'}
                             {$_large_url = $img_value|replace:'folder':'large'}
 
-                            <a href="#" class="elevatezoom-gallery active" data-update="" data-image="{$_small_url}" data-zoom-image="{$_large_url}">
-                            <img class="" src="{$_small_url}" width="100"></a>
+                            <a href="#" class="elevatezoom-gallery active" data-update="" data-image="{sirclo_resource file=$_small_url}" data-zoom-image="{sirclo_resource file=$_large_url}">
+                            <img class="" src="{sirclo_resource file=$_small_url}" width="100"></a>
                         {/foreach}
                     </div>
                 {/if}
@@ -101,7 +101,7 @@
                 <h3>SHARE</h3>
                 [to be added]
                 <div class="s-strike s-top-margin s-bottom-margin">
-                    <span><img src="/images/wavy.png"></span></span>
+                    <span><img src="{sirclo_resource file='images/wavy.png'}"></span></span>
                 </div>
 
                 {sirclo_render_product_add_to_cart product=$product action=$links.cart}

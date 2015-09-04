@@ -61,23 +61,8 @@ SEPATUKU SIRCLO THEME
                 <nav class="drawer-nav" role="navigation">
                     <br/><br/>
                     <ul class="drawer-menu">
-                        {if isset($main_nav)}
-                            {foreach $main_nav as $key=>$nav}
-                                {if $key != 'home'}
-                                    {if isset($nav.sub_nav)}
-                                        <li class="drawer-menu-item dropdown drawer-dropdown">
-                                            <a href="#" data-toggle="dropdown" role="button" aria-expanded="false">{$nav.title}<span class="caret"></span></a>
-                                            <ul class="drawer-submenu dropdown-menu" role="menu">
-                                                {foreach $nav.sub_nav as $sn}
-                                                    <li class="drawer-submenu-item"><a href="{$sn.link}">{$sn.title}</a></li>
-                                                {/foreach}
-                                            </ul>
-                                        </li>
-                                    {else}
-                                        <li class="drawer-menu-item"><a href="{$nav.link}">{$nav.title}</a></li>
-                                    {/if}
-                                {/if}
-                            {/foreach}
+                        {if !empty($main_nav)}
+                            {call skeleton_render_main_navbar nav_links=$main_nav pos=mobile}
                         {/if}
                     </ul>
                     <div class="drawer-footer"><span></span></div>
@@ -101,12 +86,13 @@ SEPATUKU SIRCLO THEME
                                     <li>
                                         <a class="page-scroll" href="{$links.account_register}" />{sirclo_get_text text='register_link'}</a>
                                     </li>
+                                {else}
                                     <li>
                                         <a class="page-scroll" href="{$links.account}" />{sirclo_get_text text='account_info_link'}</a>
                                     </li>
                                 {/if}
                                 <li class="dropdown">
-                                    <a aria-expanded="false" class="dropdown-toggle" data-toggle="dropdown" href="#"><img src="/images/ico-bag.png" />
+                                    <a aria-expanded="false" class="dropdown-toggle" data-toggle="dropdown" href="#"><img src="{sirclo_resource file='images/ico-bag.png'}" />
                                         {if !empty($cart) and !empty($cart.grand_total)}
                                             ({$cart.total_items})
                                         {else}
@@ -115,9 +101,9 @@ SEPATUKU SIRCLO THEME
                                      Item(s)</a>
                                     <ul class="dropdown-menu s-chart-top">
                                       <h4>{sirclo_get_text text='shopping_cart'}</h4>
-                                      {if !empty($shopping_cart)}
-                                        {foreach $shopping_cart as $sc}
-                                            {$sc.count} x {$sc.name}<br/>
+                                      {if !empty($cart.items)}
+                                        {foreach $cart.items as $sc}
+                                            {$sc.quantity} x {$sc.name}<br/>
                                         {/foreach}
                                         <div class="s-checkout-right"><a href="{$links.cart}"></i>{sirclo_get_text text='checkout'}</a></div>
                                       {/if}
@@ -136,36 +122,8 @@ SEPATUKU SIRCLO THEME
                     <div class="col-md-5 s-menu-left s-menu-utama">
                         <div class="s-web-content">
                             <div class="row">
-                                {if isset($main_nav)}
-                                    {$i = 0}
-                                    {foreach $main_nav as $key=>$nav}
-                                        {if $key != 'home'}
-                                            {if $i lt (count($main_nav)-1)/2}
-                                                {$col = count($main_nav)-1 - ((count($main_nav)-1)/2)|floor}
-                                                {if isset($nav.sub_nav)}
-                                                    <div class="col-md-{(int) (12/$col)}">
-                                                        <a aria-expanded="false" class="dropdown-toggle" data-toggle="dropdown" href="#">
-                                                            <div class="s-menu-text-big">{$nav.title}</div>
-                                                            <div class="s-menu-text-small">{sirclo_get_text text=$nav.title|cat:'_collections'|replace:' ':'_'|lower}</div>
-                                                        </a>
-                                                        <ul class="dropdown-menu">
-                                                            {foreach $nav.sub_nav as $sn}
-                                                                <li><a href="{$sn.link}">{$sn.title}</a></li>
-                                                            {/foreach}
-                                                        </ul>
-                                                    </div>
-                                                {else}
-                                                    <div class="col-md-{(int) (12/$col)}">
-                                                        <a href="{$nav.link}">
-                                                            <div class="s-menu-text-big">{$nav.title}</div>
-                                                            <div class="s-menu-text-small">{sirclo_get_text text=$nav.title|cat:'_collections'|replace:' ':'_'|lower}</div>
-                                                        </a>
-                                                    </div>
-                                                {/if}
-                                            {/if}
-                                            {$i=$i+1}
-                                        {/if}
-                                    {/foreach}
+                                {if !empty($main_nav)}
+                                    {call skeleton_render_main_navbar nav_links=$main_nav pos=left}
                                 {/if}
                             </div>
                         </div>
@@ -176,9 +134,9 @@ SEPATUKU SIRCLO THEME
                     <!-- LOGO UTAMA SITUS -->
                     <div class="col-md-2 s-logo-utama">
                     {if isset($main_nav.home.link) and isset($logo_url)}
-                        <a href="{$main_nav.home.link}"><img src="{$logo_url}" /></div></a>
+                        <a href="{$main_nav.home.link}"><img src="{sirclo_resource file=$logo_url}" /></div></a>
                     {else if isset($logo_url)}
-                        <a href="#"><img src="{$logo_url}" /></div></a>
+                        <a href="#"><img src="{sirclo_resource file=$logo_url}" /></div></a>
                     {else}
                         <a href="#"></div></a>
                     {/if}
@@ -187,42 +145,14 @@ SEPATUKU SIRCLO THEME
                     <div class="col-md-5 s-menu-right s-menu-utama">
                         <div class="s-web-content">
                             <div class="row">
-                                {if isset($main_nav)}
-                                    {$i = 0}
-                                    {foreach $main_nav as $key=>$nav}
-                                        {if $key != 'home'}
-                                            {if $i gte (count($main_nav)-1)/2}
-                                                {$col = count($main_nav)-1 - ((count($main_nav)-1)/2)|ceil}
-                                                {if isset($nav.sub_nav)}
-                                                    <div class="col-md-{(int) (12/$col)}">
-                                                        <a aria-expanded="false" class="dropdown-toggle" data-toggle="dropdown" href="#">
-                                                            <div class="s-menu-text-big">{$nav.title}</div>
-                                                            <div class="s-menu-text-small">{sirclo_get_text text=$nav.title|cat:'_collections'|replace:' ':'_'|lower}</div>
-                                                        </a>
-                                                        <ul class="dropdown-menu">
-                                                            {foreach $nav.sub_nav as $sn}
-                                                                <li><a href="{$sn.link}">{$sn.title}</a></li>
-                                                            {/foreach}
-                                                        </ul>
-                                                    </div>
-                                                {else}
-                                                    <div class="col-md-{(int) (12/$col)}">
-                                                        <a href="{$nav.link}">
-                                                            <div class="s-menu-text-big">{$nav.title}</div>
-                                                            <div class="s-menu-text-small">{sirclo_get_text text=$nav.title|cat:'_collections'|replace:' ':'_'|lower}</div>
-                                                        </a>
-                                                    </div>
-                                                {/if}
-                                            {/if}
-                                            {$i=$i+1}
-                                        {/if}
-                                    {/foreach}
+                                {if !empty($main_nav)}
+                                    {call skeleton_render_main_navbar nav_links=$main_nav pos=right}
                                 {/if}
                             </div>
                         </div>
                         <div class="s-mobile-content">
                             <div class="s-mobile-menu">
-                                <a href="javascript:void(0);" id="menu-mobile"><img src="/images/ico-menu.png"/>{sirclo_get_text text='menu'}</a>
+                                <a href="javascript:void(0);" id="menu-mobile"><img src="{sirclo_resource file='images/ico-menu.png'}"/>{sirclo_get_text text='menu'}</a>
                             </div>
                         </div>  
                     </div>
@@ -254,8 +184,8 @@ SEPATUKU SIRCLO THEME
 
                 <!-- FOOTER MENU -->
                 <div class="row s-footer-menu">
-                    <div class="col-md-3">
-                        {if isset($labels)}
+                    {if isset($labels)}
+                        <div class="col-md-3">
                             <h4>{sirclo_get_text text='top_labels'}</h4>
                             <ul class="list-unstyled">
                                 {foreach $labels as $label}
@@ -266,10 +196,10 @@ SEPATUKU SIRCLO THEME
                                     {/if}
                                 {/foreach}
                             </ul>
-                        {/if}
-                    </div>
-                    <div class="col-md-3">
-                        {if isset($categories)}
+                        </div>
+                    {/if}
+                    {if isset($categories)}
+                        <div class="col-md-3">
                             <h4>{sirclo_get_text text='categories'}</h4>
                             <ul class="list-unstyled">
                                 {foreach $categories as $category}
@@ -278,10 +208,10 @@ SEPATUKU SIRCLO THEME
                                     </li>
                                 {/foreach}
                             </ul>
-                        {/if}
-                    </div>
-                    <div class="col-md-3">
-                        {if isset($labels)}
+                        </div>
+                    {/if}
+                    {if isset($labels)}
+                        <div class="col-md-3">
                             <h4>{sirclo_get_text text='labels'}</h4>
                             <ul class="list-unstyled">
                                 {foreach $labels as $label}
@@ -290,8 +220,8 @@ SEPATUKU SIRCLO THEME
                                     </li>
                                 {/foreach}
                             </ul>
-                        {/if}
-                    </div>
+                        </div>
+                    {/if}
                     <div class="col-md-3">
                         <h4>{sirclo_get_text text='contact'}</h4>
                         {$static_contents['Contact Info']}
@@ -311,11 +241,11 @@ SEPATUKU SIRCLO THEME
                 <div class="container">
                     <!-- FOOTER SOCIAL -->
                     <div class="row s-foot-social">
-                        <a href="{$configs.theme_facebook_url}"><img src="/images/ico-fb.png"/></a>
-                        <a href="{$configs.theme_twitter_url}"><img src="/images/ico-twitter.png"/></a>
-                        <a><img src="/images/logo-bawah.png"/></a>
-                        <a href="{$configs.theme_pinterest_url}"><img src="/images/ico-pintrest.png"/></a>
-                        <a href="{$configs.theme_instagram_url}"><img src="/images/ico-instagram.png"/></a>
+                        <a href="{$configs.theme_facebook_url}"><img src="{sirclo_resource file='images/ico-fb.png'}"/></a>
+                        <a href="{$configs.theme_twitter_url}"><img src="{sirclo_resource file='images/ico-twitter.png'}"/></a>
+                        <a><img src="{sirclo_resource file='images/logo-bawah.png'}"/></a>
+                        <a href="{$configs.theme_pinterest_url}"><img src="{sirclo_resource file='images/ico-pintrest.png'}"/></a>
+                        <a href="{$configs.theme_instagram_url}"><img src="{sirclo_resource file='images/ico-instagram.png'}"/></a>
                     </div>
                     <!-- FOOTER COPYRIGHT -->
                     <div class="row s-foot-copyright">

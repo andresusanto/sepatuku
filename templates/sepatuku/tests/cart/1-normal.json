@@ -1572,7 +1572,7 @@
     "discounts":[  
 
     ],
-    "total_items":2,
+    "total_items":3,
     "total_weight":2750,
     "npoints":4,
     "npoints_earned":40,
@@ -1589,7 +1589,7 @@
     {  
       "title":"Category 1",
       "link":"http:\/\/category1",
-      "images":[  
+      "images":[
         "\/images\/test\/category1.jpg",
         "\/images\/test\/category1-2.jpg"
       ],

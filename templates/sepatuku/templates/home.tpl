@@ -7,7 +7,7 @@
         <div class="home-slider">
           {foreach $slides as $slide}
             <div class="slide">
-              <img class="" lass="s-fullwidth s-padding" src="{$slide.image}">
+              <img class="" lass="s-fullwidth s-padding" src="{sirclo_resource file=$slide.image}">
             </div>
           {/foreach}
         </div>
@@ -49,7 +49,7 @@
       {if isset($labels)}
         {foreach $labels as $label}
           <div class="col-md-7ths">
-            <img src="{$label.images[0]}" class="s-fullwidth">
+            <img src="{sirclo_resource file=$label.images[0]}" class="s-fullwidth">
           </div>
         {/foreach}
       {else}
@@ -73,7 +73,7 @@
           {$_small_url = $featured_products[3]['detailed_images'][0]['url']|replace:'folder':'small'|replace:'jpg':'png'}
           {$_large_url = $featured_products[3]['detailed_images'][0]['url']|replace:'folder':'large'}
           
-          <img class="s-fullwidth" id="product-zoom" src="{$_small_url}" data-zoom-image="{$_large_url}"/><br/>
+          <img class="s-fullwidth" id="product-zoom" src="{sirclo_resource file=$_small_url}" data-zoom-image="{$_large_url}"/><br/>
 
           <div id="product-zoom-gallery" style='width=" 500pxfloat:left;="" "="'>
             {foreach $featured_products[3]['detailed_images'] as $img_value}
@@ -81,7 +81,7 @@
               {$_large_url = $img_value['url']|replace:'folder':'large'}
 
               <a href="#" class="elevatezoom-gallery active" data-update="" data-image="{$_small_url}" data-zoom-image="{$_large_url}">
-              <img class="" src="{$_small_url}" width="100"></a>
+              <img class="" src="{sirclo_resource file=$_small_url}" width="100"></a>
             {/foreach}
           </div>
         {/if}
@@ -96,7 +96,7 @@
         <h3>{sirclo_get_text text='share'}</h3>
         [to be added]
         <div class="s-strike s-top-margin s-bottom-margin">
-          <span><img src="/images/wavy.png"></span></span>
+          <span><img src="{sirclo_resource file='images/wavy.png'}"></span></span>
         </div>
 
         {sirclo_render_product_add_to_cart product=$featured_products[3] action=$links.cart}

@@ -1526,13 +1526,13 @@
     "items":[  
       {  
         "fid":"some-product",
-        "name":"Some Product",
+        "name":"Nike Ardilla",
         "quantity":7,
         "price":70,
         "weight":30,
         "link":"http:\/\/some-product",
         "edit_link":"http:\/\/edit-some-product",
-        "image":"\/images\/test\/product7.jpg",
+        "image":"/images/one-shoe.jpg",
         "options":{  
           "size":"S",
           "color":"Red"
@@ -1540,30 +1540,27 @@
       },
       {  
         "fid":"another-product",
-        "name":"Another Product",
+        "name":"Nike Ardilla",
         "quantity":8,
         "price":80,
         "weight":40,
-        "image":"\/images\/test\/product8.jpg",
+        "image":"/images/one-shoe.jpg",
         "link":"http:\/\/another-product",
         "edit_link":"http:\/\/edit-another-product"
       },
       {  
         "fid":"yet-another-product",
-        "name":"Yet Another Product",
+        "name":"Nike Ardilla",
         "quantity":23,
         "price":7.5,
         "weight":10,
         "link":"http:\/\/yet-another-product",
         "edit_link":"http:\/\/edit-yet-another-product",
-        "image":"\/images\/test\/product9.jpg",
-        "options":{  
-          "text":"This is a very long text and really really long text"
-        }
+        "image":"/images/one-shoe.jpg"
       }
     ],
-    "shipping":10,
-    "shipping_discount":-1,
+    "shipping":0,
+    "shipping_discount":0,
     "link":"http:\/\/localhost\/debug.php",
     "checkout_link":"http:\/\/cartcheckout",
     "code":"cart-code",
@@ -1573,30 +1570,15 @@
     "shipping_city":"Surabaya",
     "coupon_code":"ABC",
     "discounts":[  
-      {  
-        "title":"Birthday Discount",
-        "code":"BD4321",
-        "value":-1.5
-      },
-      {  
-        "title":"Membership Discount",
-        "code":"MB1234",
-        "value":-2,
-        "type":"special"
-      },
-      {  
-        "title":"Valentine Discount",
-        "code":"VL4321",
-        "value":-3.5
-      }
+
     ],
-    "total_items":2,
+    "total_items":3,
     "total_weight":2750,
     "npoints":4,
     "npoints_earned":40,
     "grand_total":1300.5,
     "item_total":1200.5,
-    "tax":1.555,
+    "tax":0,
     "point_rule":{  
       "point_per_dollar":1.4567,
       "dollar_per_point":0.2345

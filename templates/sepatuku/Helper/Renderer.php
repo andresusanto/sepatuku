@@ -23,7 +23,7 @@ class Helper_Renderer
         $img = '';
         $curency = $order['currency'];
         if ($image) {
-            $img = "<a target=\"_blank\" href=\"$image\"><img style=\"max-width: 64px;\" src=\"$image\"/></a>";
+            $img = "<a target=\"_blank\" href=\"$image\"><img style=\"max-width: 64px;\" src={sirclo_resource file=$image}/></a>";
         }
         $tr = '';
         $tr .= "<tr>\n";

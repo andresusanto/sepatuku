@@ -43,7 +43,7 @@ SEPATUKU SIRCLO THEME
         <link {$_body_css} href="{sirclo_resource file='css/drawer.css'}">
         <link {$_body_css} href="{sirclo_resource file='css/jquery.bxslider.css'}">
         <link {$_body_css} href="{sirclo_resource file='css/sepatuku.css'}">
-        <link {$_body_css} href="{sirclo_resource file='css/font-awesome.min.css'}">
+        <link {$_body_css} href="{sirclo_resource file='css/font-awesome.css'}">
         <link {$_body_css} href="{sirclo_resource file='css/lookbook.css'}">
         <script src="{sirclo_resource file='js/modernizr.custom.70736.js'}"></script>
         

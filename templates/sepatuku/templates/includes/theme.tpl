@@ -184,77 +184,75 @@ SEPATUKU SIRCLO THEME
 
                 <!-- FOOTER MENU -->
 
+                <div id="footer-content"
                 <div id="footer-content row s-footer-menu">
                     <div class="container">
-                        <div class="row">
-                            <div class="footer-links span3 col-md-3">
-                                {if !empty($static_contents['Footer Links'])}        
-                                    {$static_contents['Footer Links']}
-                                {/if}
-                            </div>
-                            <div class="footer-links span3 col-md-3">
-                                {if !empty($static_contents['Footer Links 2'])}
-                                    {$static_contents['Footer Links 2']}
-                                {/if}
-                            </div>
-                            <div class="footer-links span3 col-md-3">
-                                {if !empty($static_contents['Footer Links 3'])}
-                                    {$static_contents['Footer Links 3']}
-                                {/if}
-                            </div>
-
-                            <div class="col-md-3">
-                                <h4>{sirclo_get_text text='contact'}</h4>
-                                <i class='fa fa-phone'></i> (021) 555 7777<br/><i class='fa fa-clock-o'></i> 09:00 AM - 06.00 PM (WIB)<br/>
-                                
-                                <h4>{sirclo_get_text text='newsletter'}</h4>
-                                <div class="input-group">
-                                    <input class="form-control" type="text" placeholder="{sirclo_get_text text='email_address'}">
-                                    <span class="input-group-btn">
-                                        <button class="btn btn-primary" type="button">{sirclo_get_text text='subscribe'}</button>
-                                    </span>
-                                </div>
-                            </div>
-            
-                        <div class="s-footer-bleky">
-                            <div class="container">
-                                <!-- FOOTER SOCIAL -->
-                                <div class="row s-foot-social">
-                                    <a href="{$configs.theme_facebook_url}"><img src="{sirclo_resource file='images/ico-fb.png'}"/></a>
-                                    <a href="{$configs.theme_twitter_url}"><img src="{sirclo_resource file='images/ico-twitter.png'}"/></a>
-                                    <a><img src="{sirclo_resource file='images/logo-bawah.png'}"/></a>
-                                    <a href="{$configs.theme_pinterest_url}"><img src="{sirclo_resource file='images/ico-pintrest.png'}"/></a>
-                                    <a href="{$configs.theme_instagram_url}"><img src="{sirclo_resource file='images/ico-instagram.png'}"/></a>
-                                </div>
-                                <!-- FOOTER COPYRIGHT -->
-                                <div class="row s-foot-copyright">
-                                    {$static_contents['Footer Text']}
-                                </div>
-                                <!-- FOOTER EXTRA MENU -->
-                                <div class="row s-foot-menu-end">
-                                    <ul class="list-unstyled">
-                                        <li>
-                                            <a class="page-scroll" href="{$links.about}">{sirclo_get_text text='about'}</a>
-                                        </li>
-                                        <li>
-                                            <a class="page-scroll" href="{$links.contact}">{sirclo_get_text text='contact'}</a>
-                                        </li>
-                                        <li>
-                                            <a class="page-scroll" href="{$links.terms}">{sirclo_get_text text='terms'}</a>
-                                        </li>
-                                        <li>
-                                            <a class="page-scroll" href="{$links.privacy}">{sirclo_get_text text='privacy'}</a>
-                                        </li>
-                                        <li>
-                                            <a class="page-scroll" href="{$links.sitemap}">{sirclo_get_text text='sitemap'}</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
+                        <div class="footer-links span3 col-md-3">
+                            {if !empty($static_contents['Footer Links'])}        
+                                {$static_contents['Footer Links']}
+                            {/if}
+                        </div>
+                        <div class="footer-links span3 col-md-3">
+                            {if !empty($static_contents['Footer Links 2'])}
+                                {$static_contents['Footer Links 2']}
+                            {/if}
+                        </div>
+                        <div class="footer-links span3 col-md-3">
+                            {if !empty($static_contents['Footer Links 3'])}
+                                {$static_contents['Footer Links 3']}
+                            {/if}
                         </div>
 
-
-
+                        <div class="col-md-3">
+                            <h4>{sirclo_get_text text='contact'}</h4>
+                            <i class='fa fa-phone'></i> (021) 555 7777<br/><i class='fa fa-clock-o'></i> 09:00 AM - 06.00 PM (WIB)<br/>
+                            
+                            <h4>{sirclo_get_text text='newsletter'}</h4>
+                            <div class="input-group">
+                                <input class="form-control" type="text" placeholder="{sirclo_get_text text='email_address'}">
+                                <span class="input-group-btn">
+                                    <button class="btn btn-primary" type="button">{sirclo_get_text text='subscribe'}</button>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                </div>
+                
+                <div class="s-footer-bleky">
+                    <div class="container">
+                        <!-- FOOTER SOCIAL -->
+                        <div class="row s-foot-social">
+                            <a href="{$configs.theme_facebook_url}"><img src="{sirclo_resource file='images/ico-fb.png'}"/></a>
+                            <a href="{$configs.theme_twitter_url}"><img src="{sirclo_resource file='images/ico-twitter.png'}"/></a>
+                            <a><img src="{sirclo_resource file='images/logo-bawah.png'}"/></a>
+                            <a href="{$configs.theme_pinterest_url}"><img src="{sirclo_resource file='images/ico-pintrest.png'}"/></a>
+                            <a href="{$configs.theme_instagram_url}"><img src="{sirclo_resource file='images/ico-instagram.png'}"/></a>
+                        </div>
+                        <!-- FOOTER COPYRIGHT -->
+                        <div class="row s-foot-copyright">
+                            {$static_contents['Footer Text']}
+                        </div>
+                        <!-- FOOTER EXTRA MENU -->
+                        <div class="row s-foot-menu-end">
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a class="page-scroll" href="{$links.about}">{sirclo_get_text text='about'}</a>
+                                </li>
+                                <li>
+                                    <a class="page-scroll" href="{$links.contact}">{sirclo_get_text text='contact'}</a>
+                                </li>
+                                <li>
+                                    <a class="page-scroll" href="{$links.terms}">{sirclo_get_text text='terms'}</a>
+                                </li>
+                                <li>
+                                    <a class="page-scroll" href="{$links.privacy}">{sirclo_get_text text='privacy'}</a>
+                                </li>
+                                <li>
+                                    <a class="page-scroll" href="{$links.sitemap}">{sirclo_get_text text='sitemap'}</a>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>

@@ -36,11 +36,13 @@ SEPATUKU SIRCLO THEME
 			
 			<a class="btn btn-lg blue-button s-fullwidth s-bottom-margin s-top-margin s-bebas" href="{$context_links['account_register']}">{sirclo_get_text text='login_register_link'}</a>
 			<div>{sirclo_get_text text='receive_member_privileges'}</div>
-			<div class="s-strike s-top-margin">
-				<span>{sirclo_get_text text='misc_or'}</span>
-			</div>
-			<a id="link-checkout-step2" class="btn btn-lg blue-button s-fullwidth s-bottom-margin s-top-margin s-checkout-as-guest s-bebas" href="{$guest_checkout_link}">{sirclo_get_text text='guest_checkout_title'}</a>
-		
+			
+			{if empty($member)}
+				<div class="s-strike s-top-margin">
+					<span>{sirclo_get_text text='misc_or'}</span>
+				</div>
+				<a id="link-checkout-step2" class="btn btn-lg blue-button s-fullwidth s-bottom-margin s-top-margin s-checkout-as-guest s-bebas" href="{$guest_checkout_link}">{sirclo_get_text text='guest_checkout_title'}</a>
+			{/if}
 		</div>
 	</div>
 {/block}

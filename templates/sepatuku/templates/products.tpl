@@ -12,9 +12,10 @@ SEPATUKU SIRCLO THEME
 		<img src="{sirclo_resource file='images/product-category-image.jpg'}" class="img-responsive"/>
 	</div>
 	<div class="col-md-12 s-breadcrumb s-bottom-padding s-top-padding">
-		<a href="{$links.home}">{sirclo_get_text text='home_title'}</a>
+		{sirclo_render_breadcrumb breadcrumb=$breadcrumb}
+		<!-- <a href="{$links.home}">{sirclo_get_text text='home_title'}</a>
 		<span>&nbsp;/&nbsp;</span>
-		<a href="{$links.products}">{sirclo_get_text text='new_arrivals_title'}</a>
+		<a href="{$links.products}">{sirclo_get_text text='new_arrivals_title'}</a> -->
 	</div>
 	<div class="col-md-12 s-content-title">
 		<h1>{sirclo_get_text text='new_arrivals_title'}</h1>

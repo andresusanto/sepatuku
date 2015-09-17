@@ -18,16 +18,30 @@ SEPATUKU SIRCLO THEME
 			<h1>INVITE FRIENDS</h1>
 			<hr/>
 		</div>
-		<div class="col-md-8 col-md-offset-2 s-top-margin s-content text-center">
-			<p class="s-top-margin">
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tincidunt risus et fermentum venenatis. Suspendisse molestie purus sit amet ligula placerat rutrum. Aliquam erat volutpat. Phasellus id finibus sem. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce tempus lectus vel posuere varius. Sed viverra dignissim lorem eu pharetra. Ut ut sagittis nulla. Donec eu ultrices lorem, in rutrum odio. Sed viverra at erat non facilisis. Duis at felis accumsan, mollis sapien eu, elementum est.
-			</p>
-			<p class="s-top-margin">Enter email address</p>
-			<div class="row">
-				<textarea class="col-xs-10 col-xs-offset-1 col-md-10 col-md-offset-1 s-bottom-margin" rows="7"></textarea>
-			</div>
-			<button class="btn btn-lg blue-button">SEND</button>
-		</div>
+
+    <div class="container" id="account-content">
+        <div class="row sirclo-no-negative col-wrap">
+          <div id="account-sidebar" class="span-sirclo4-1 margin-to-padding col common-sidebar">
+            {$_sidename = 'account'}
+            {include 'includes/account_nav.tpl'}
+          </div>
+
+          <div class="span-sirclo4-3 col-md-6 s-content s-top-margin text-center">
+
+          <!--<div class="col-md-8 col-md-offset-2 s-top-margin s-content text-center"> -->
+            <p class="s-top-margin">
+              
+            </p>
+            <p class="s-top-margin">Enter email address</p>
+            <div class="row">
+              <textarea class="col-xs-10 col-xs-offset-1 col-md-11 col-md-offset-1 s-bottom-margin" rows="7"></textarea>
+            </div>
+            <button class="btn btn-lg blue-button">SEND</button>
+          </div>
+        </div>
+      </div>
+
+		
 			
 	</div>
 {/block}

@@ -21,8 +21,6 @@ SEPATUKU SIRCLO THEME
 		<div class="col-xs-9 col-sm-6 col-md-3 s-register-container">
 			{sirclo_render_register_form form_class="sirclo-form" link_terms=$links['terms'] link_privacy=$links['privacy'] with_birthday=true}
 		</div>
-		
-			
 	</div>
 {/block}
 

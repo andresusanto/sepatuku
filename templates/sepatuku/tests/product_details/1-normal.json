@@ -113,18 +113,15 @@
     "wish_count": 147,
     "options": {
       "size": [
-        "X-Small",
-        "Small",
-        "Medium",
-        "Large",
-        "X-Large"
+        "S",
+        "M",
+        "L",
+        "XL"
       ],
       "color": [
-        "White",
-        "Black",
-        "Navy",
-        "Brown",
-        "Grey"
+        "Red",
+        "Light Green",
+        "Blue"
       ]
     },
     "general_options": {
@@ -132,22 +129,19 @@
         "title": "Size",
         "value": "option1_value",
         "options": [
-          "X-Small",
-          "Small",
-          "Medium",
-          "Large",
-          "X-Large"
+          "S",
+          "M",
+          "L",
+          "XL"
         ]
       },
       "option2": {
         "title": "Color",
         "value": "option2_value",
         "options": [
-          "White",
-          "Black",
-          "Navy",
-          "Brown",
-          "Grey"
+          "Red",
+          "Light Green",
+          "Blue"
         ]
       }
     },

@@ -434,7 +434,7 @@ EOD;
             $_html .= "
             <div id='form-row-$_sanitized_name' class='form-group checkbox'>
                 <label for='$_name'>
-                    <input type='checkbox' value=''>
+                    <input name ='agreement' required type='checkbox'>
                     $_label
                     $_required
                 </label>
@@ -669,7 +669,7 @@ EOD;
             $_label_different_address = 'Kirim ke alamat berbeda?';
 
             $_label_payment_method = 'Metode Pembayaran';
-            $_label_message_subheader = 'Pesan ke Penjual';
+            // $_label_message_subheader = 'Pesan ke Penjual';
             $_label_message = 'Pesan';
             $_label_bank_transfer = !empty($params['label_bank_transfer']) ? $params['label_bank_transfer'] : 'Transfer Bank';
             $_label_credit_card = 'Kartu Kredit / PayPal';
@@ -687,12 +687,12 @@ EOD;
             $_label_email = 'E-mail';
 
             $_label_shipping = "Shipping Address";
-            // $_label_shipping_methods = "Shipping Method";
+            $_label_shipping_methods = "Shipping Method";
             $_label_backorder_shipping_methods = "Backorder Shipping Method";
             $_label_different_address = 'Ship to different address';
 
             $_label_payment_method = 'Payment Method';
-            $_label_message_subheader = 'Note to Seller';
+            // $_label_message_subheader = 'Note to Seller';
             $_label_message = 'Message';
             $_label_bank_transfer = !empty($params['label_bank_transfer']) ? $params['label_bank_transfer'] : 'Bank Transfer';
             $_label_credit_card = 'Credit Card / PayPal';
@@ -742,10 +742,10 @@ EOD;
         $params['fields'][] = array('name' => 'delivery_email', 'type' => 'email', 'value' => $_member_email, 'label' => $_label_email, 'attribute' => 'required');
         $params['fields'][] = array('name' => '', 'type' => 'div_close', 'value' => '', 'label' => '', 'attribute' => '');
 
-        // if (!empty($params['with_shipping_methods'])) {
-        //     $params['fields'][] = array('name' => '', 'type' => 'subheader', 'value' => $_label_shipping_methods, 'label' => '', 'attribute' => '');
-        //     $params['fields'][] = array('name' => 'shipping_value_wrapper', 'type' => 'plain_text', 'value' => '', 'label' => '', 'attribute' => '');
-        // }
+        if (!empty($params['with_shipping_methods'])) {
+            $params['fields'][] = array('name' => '', 'type' => 'subheader', 'value' => $_label_shipping_methods, 'label' => '', 'attribute' => '');
+            $params['fields'][] = array('name' => 'shipping_value_wrapper', 'type' => 'plain_text', 'value' => '', 'label' => '', 'attribute' => '');
+        }
 
         if (!empty($params['with_backorder_shipping_methods'])) {
             $params['fields'][] = array('name' => '', 'type' => 'subheader', 'value' => $_label_backorder_shipping_methods, 'label' => '', 'attribute' => '');
@@ -763,7 +763,7 @@ EOD;
         $params['fields'][] = array('name' => '', 'type' => 'submit', 'value' => 'Checkout', 'label' => '', 'attribute' => 'class="'.$_btn_class.'"');
 
         $renderer = Renderer_Cart::getInstanceFromSmartyParams($params);
-        // $couponForm = $renderer->_getDiscountForm(array('link' => '/cart?return='.htmlentities($_SERVER['REQUEST_URI']),'discounts' => ''));
+        $couponForm = $renderer->_getDiscountForm(array('link' => '/cart?return='.htmlentities($_SERVER['REQUEST_URI']),'discounts' => ''));
         $html = Helper_Renderer::renderForm($params);
         return $html;
     }

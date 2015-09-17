@@ -103,9 +103,9 @@ $(function() {
 
 });
 
-$('.gamma-gallery li').on("click", function() {
-	alert('click image. ganti dengan script yang diinginkan atau hapus alert ini bila ingin menampilkan gambar.');
-});
+// $('.gamma-gallery li').on("click", function() {
+// 	alert('click image. ganti dengan script yang diinginkan atau hapus alert ini bila ingin menampilkan gambar.');
+// });
 
 // SLIDER TESTIMONY
 $(document).ready(function(){

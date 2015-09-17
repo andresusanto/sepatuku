@@ -202,8 +202,9 @@ SEPATUKU SIRCLO THEME
                             {/if}
                         </div>
                         <div class="col-md-3">
-                            <h4>{sirclo_get_text text='contact'}</h4>
-                            <i class='fa fa-phone'></i> (021) 555 7777<br/><i class='fa fa-clock-o'></i> 09:00 AM - 06.00 PM (WIB)<br/>
+                            {if !empty($static_contents['Footer Links 4'])}
+                                {$static_contents['Footer Links 4']}
+                            {/if}
                             
                             <h4>{sirclo_get_text text='newsletter'}</h4>
                             <div class="input-group">
@@ -234,28 +235,33 @@ SEPATUKU SIRCLO THEME
                     <!-- FOOTER EXTRA MENU -->
                     <div class="row s-foot-menu-end">
                         <ul class="list-unstyled">
-                            <li>
-                                <a class="page-scroll" href="{$links.about}">{sirclo_get_text text='about'}</a>
-                            </li>
-                            <li>
-                                <a class="page-scroll" href="{$links.contact}">{sirclo_get_text text='contact'}</a>
-                            </li>
-                            <li>
-                                <a class="page-scroll" href="{$links.terms}">{sirclo_get_text text='terms'}</a>
-                            </li>
-                            <li>
-                                <a class="page-scroll" href="{$links.privacy}">{sirclo_get_text text='privacy'}</a>
-                            </li>
-                            <li>
-                                <a class="page-scroll" href="{$links.sitemap}">{sirclo_get_text text='sitemap'}</a>
-                            </li>
+                            {if !empty($static_contents['Widget 1'])}        
+                                {$static_contents['Widget 1']}
+                            {/if}
+                            {if !empty($static_contents['Widget 2'])}        
+                                {$static_contents['Widget 2']}
+                            {/if}
+                            {if !empty($static_contents['Widget 3'])}        
+                                {$static_contents['Widget 3']}
+                            {/if}
+                            {if !empty($static_contents['Widget 4'])}        
+                                {$static_contents['Widget 4']}
+                            {/if}
+                            {if !empty($static_contents['Widget 5'])}        
+                                {$static_contents['Widget 5']}
+                            {/if}
                         </ul>
+
+
+                        Powered by <a href="http://www.sirclo.com">SIRCLO</a></span>
                     </div>
                 </div>
             </div>
             
             <!-- END FOOTER-->
 
+        {sirclo_render_js}
+        {sirclo_render_ajax_info}
         {$_body_js = 'type="text/javascript"'}
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>

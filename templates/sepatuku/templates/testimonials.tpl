@@ -23,7 +23,7 @@
                             </div>
                             <div class="identity col-md-2 nopadding">
                                 {$t.author}<br/>
-                                <small class="location">{$t.location}</small>
+                                <!-- <small class="location"></small> -->
                             </div>
                         </div>
                     {/foreach}

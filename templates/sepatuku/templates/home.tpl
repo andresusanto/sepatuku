@@ -47,11 +47,11 @@
     </div>
     <div class="col-md-12 s-bottom-margin s-bottom-padding">
       {if isset($labels)}
-        {foreach $labels as $label}
-          <div class="col-md-7ths">
-            <img src="{sirclo_resource file=$label.images[0]}" class="s-fullwidth">
-          </div>
-        {/foreach}
+        {for $i=1 to 7}
+            {if (!empty($static_contents['Adv '|cat:$i]))}
+              {$static_contents['Adv '|cat:$i]}
+            {/if}
+        {/for}
       {else}
         <div style="text-align: center">{sirclo_get_text text='no_labels'}</div>
       {/if}

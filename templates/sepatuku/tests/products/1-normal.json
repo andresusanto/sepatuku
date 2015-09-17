@@ -6,12 +6,8 @@
       "link": "http://home"
     },
     {
-      "title": "Some Page",
+      "title": "New Arrivals",
       "link": "http://page"
-    },
-    {
-      "title": "Sub Page",
-      "link": "http://subpage"
     }
   ],
   "products": [

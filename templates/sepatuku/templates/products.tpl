@@ -11,24 +11,49 @@ SEPATUKU SIRCLO THEME
 	<div class="col-md-12">
 		<img src="{sirclo_resource file='images/product-category-image.jpg'}" class="img-responsive"/>
 	</div>
-	<div class="col-md-12 s-breadcrumb s-bottom-padding s-top-padding">
+
+	{if !empty($query)}
+        <div id="common-page-header">
+        	<div class="col-md-12 s-breadcrumb s-bottom-padding s-top-padding">
+            	{sirclo_render_breadcrumb breadcrumb=$breadcrumb}
+            </div>
+            <div class="col-md-12 s-content-title">
+            	<h1>{sirclo_get_text text='search_result_title'} '{$query}'</h1>
+            </div>
+        </div>
+    {elseif !empty($active_category)}
+        <div id="common-page-header" {if !empty($active_category.images)}{/if}>
+        	<div class="col-md-12 s-breadcrumb s-bottom-padding s-top-padding">
+            	{sirclo_render_breadcrumb breadcrumb=$breadcrumb}
+            </div>
+            <div class="col-md-12 s-content-title">
+            	<h1>{$active_category.title}</h1>
+            </div>
+
+            <div class="col-md-12">
+				<div class="s-categories">
+					{if !empty($categories)}
+						{call skeleton_render_sidebar_category categories=$categories}
+					{/if}
+				</div>
+			</div>
+        </div>
+    {/if}
+
+	<!-- <div class="col-md-12 s-breadcrumb s-bottom-padding s-top-padding">
 		{sirclo_render_breadcrumb breadcrumb=$breadcrumb}
-		<!-- <a href="{$links.home}">{sirclo_get_text text='home_title'}</a>
+		<a href="{$links.home}">{sirclo_get_text text='home_title'}</a>
 		<span>&nbsp;/&nbsp;</span>
-		<a href="{$links.products}">{sirclo_get_text text='new_arrivals_title'}</a> -->
+		<a href="{$links.products}">{sirclo_get_text text='new_arrivals_title'}</a>
 	</div>
 	<div class="col-md-12 s-content-title">
-		<h1>{sirclo_get_text text='new_arrivals_title'}</h1>
+		<h1>{sirclo_get_text text='search_result_title'}</h1>
 		<hr/>
 		<h2>{sirclo_get_text text='categories_title'}</h2>
-	</div>
-	<div class="col-md-12">
-		<div class="s-categories">
-			{if !empty($categories)}
-				{call skeleton_render_sidebar_category categories=$categories}
-			{/if}
-		</div>
-	</div>
+	</div> -->
+
+
+	
 	<div class="col-md-12 s-products">
 		<div class="row sirclo-negative">
 			{call skeleton_render_products_product products=$products col_count=3}

@@ -903,6 +903,10 @@ h1, h2, h3, h4, h5, h6 {
 	width: 50%;
 }
 
+.breadcrumb {
+	background: none;
+}
+
 @media only screen and (max-width: 600px) {
 	.s-half-form input[type=text], 
 	.s-half-form input[type=password], 

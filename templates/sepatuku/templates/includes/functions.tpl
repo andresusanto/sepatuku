@@ -9,7 +9,6 @@
                         <div class="col-md-{(int) (12/$col)}">
                             <a aria-expanded="false" class="dropdown-toggle" data-toggle="dropdown" href="#">
                                 <div class="s-menu-text-big">{$nav.title}</div>
-                                <div class="s-menu-text-small">{sirclo_get_text text=$nav.title|cat:'_collections'|replace:' ':'_'|lower}</div>
                             </a>
                             <ul class="dropdown-menu">
                                 {foreach $nav.sub_nav as $sn}
@@ -21,7 +20,6 @@
                         <div class="col-md-{(int) (12/$col)}">
                             <a href="{$nav.link}">
                                 <div class="s-menu-text-big">{$nav.title}</div>
-                                <div class="s-menu-text-small">{sirclo_get_text text=$nav.title|cat:'_collections'|replace:' ':'_'|lower}</div>
                             </a>
                         </div>
                     {/if}
@@ -39,7 +37,6 @@
                         <div class="col-md-{(int) (12/$col)}">
                             <a aria-expanded="false" class="dropdown-toggle" data-toggle="dropdown" href="#">
                                 <div class="s-menu-text-big">{$nav.title}</div>
-                                <div class="s-menu-text-small">{sirclo_get_text text=$nav.title|cat:'_collections'|replace:' ':'_'|lower}</div>
                             </a>
                             <ul class="dropdown-menu">
                                 {foreach $nav.sub_nav as $sn}
@@ -51,7 +48,6 @@
                         <div class="col-md-{(int) (12/$col)}">
                             <a href="{$nav.link}">
                                 <div class="s-menu-text-big">{$nav.title}</div>
-                                <div class="s-menu-text-small">{sirclo_get_text text=$nav.title|cat:'_collections'|replace:' ':'_'|lower}</div>
                             </a>
                         </div>
                     {/if}

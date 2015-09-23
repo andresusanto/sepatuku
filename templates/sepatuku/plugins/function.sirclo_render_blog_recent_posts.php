@@ -19,7 +19,7 @@ function smarty_function_sirclo_render_blog_recent_posts($params, $template)
         foreach ($params['recent_posts'] as $rp) {
             $html .= "<li>";
             if (!empty($rp['image'])) {
-                $html .= "<img src='{sirclo_resource file=\"". $rp['image'] . "\"}'></img>";
+                $html .= "<img src='". $rp['image'] . "'></img>";
             }
             $html .= "<a href='" . $rp['link'] . "'>" . $rp['title'] . "</a>";
             $html .= "</li>";

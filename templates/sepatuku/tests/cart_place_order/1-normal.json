@@ -1522,20 +1522,47 @@
     }
   ],
   "cart":{  
-    "currency_symbol":"IDR",
+    "currency_symbol":"RM",
     "items":[  
       {  
-        "fid":"nike-ardilla",
-        "name":"Nike - Ardilla",
-        "quantity":2,
-        "price":1500000,
+        "fid":"some-product",
+        "name":"Some Product",
+        "quantity":7,
+        "price":70,
         "weight":30,
         "link":"http:\/\/some-product",
         "edit_link":"http:\/\/edit-some-product",
-        "image":"\/images\/test\/product7.jpg"
+        "image":"\/images\/test\/product7.jpg",
+        "options":{  
+          "size":"S",
+          "color":"Red"
+        }
+      },
+      {  
+        "fid":"another-product",
+        "name":"Another Product",
+        "quantity":8,
+        "price":80,
+        "weight":40,
+        "image":"\/images\/test\/product8.jpg",
+        "link":"http:\/\/another-product",
+        "edit_link":"http:\/\/edit-another-product"
+      },
+      {  
+        "fid":"yet-another-product",
+        "name":"Yet Another Product",
+        "quantity":23,
+        "price":7.5,
+        "weight":10,
+        "link":"http:\/\/yet-another-product",
+        "edit_link":"http:\/\/edit-yet-another-product",
+        "image":"\/images\/test\/product9.jpg",
+        "options":{  
+          "text":"This is a very long text and really really long text"
+        }
       }
     ],
-    "shipping":100000,
+    "shipping":0,
     "shipping_discount":0,
     "link":"http:\/\/localhost\/debug.php",
     "checkout_link":"http:\/\/cartcheckout",

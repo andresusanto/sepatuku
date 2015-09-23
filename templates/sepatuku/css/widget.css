@@ -1,0 +1,215 @@
+
+/*----------------------------------------------------------------------------*/
+/*                                  header                                    */
+/*----------------------------------------------------------------------------*/
+#screen_quickview{
+    z-index: 5000;
+    position: absolute;
+    opacity: 1;
+    display: inline-block;
+    height: auto;
+    width: 1170px;
+    color: #333333;
+    background: #ffffff;
+}
+#screen_quickview .sale{padding:5px 10px 0px;}
+.quick_view .wrapper-content{margin: 40px 0;padding: 0 40px;position: relative;}
+.quick_view #close_screen{
+    background: url(../images/close.png) no-repeat;
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    position: absolute;
+    top: -16px;
+    right: -16px;
+}
+#screen_quickview .loading-ajax{
+    background: url('../images/ajax-loader.gif') no-repeat center 100px;    
+    width: 1170px;
+    height: 1030px;
+}
+#screen_quickview .spec{overflow: auto;max-height: 565px;}
+.boxed .product_action {display:none;}
+.boxed:hover .product_action {
+    display: block;
+    position: absolute;
+    width: 116px;
+    top: 160px;
+    left: 52px; 
+}
+.boxed:hover .image-cover {
+    position:absolute;
+}
+.boxed:hover .image-cover {
+    background: rgba(255,255,255,0.8);
+    top: 130px;
+    width:100%;
+    height: 155px;
+}
+.boxed:hover .product_action a {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 11px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #ffffff;
+    display: block;
+    padding: 8px 15px;
+    text-align: center;
+    text-decoration: none;
+}
+.boxed:hover .product_action .add_cart{
+    border-bottom: #b5412b solid 1px;
+    background: #e94b3f;
+    border-radius: 5px;
+}
+.boxed:hover .product_action .add_cart a:hover{
+    background: #b5412b;
+    border-radius: 5px;
+}
+.boxed:hover .product_action .quick_view a {
+    background: #999;
+    border-bottom: #777 solid 1px;
+    margin-bottom:5px;
+    border-radius: 5px;
+}
+.boxed:hover .product_action .quick_view a:hover {
+    background: #666;
+}
+/*----------------------------------------------------------------------------*/
+/*                                      dialog box                                          */
+/*----------------------------------------------------------------------------*/
+#dialog-overlay, #screen-overlay{
+    background-color: #101010;
+    opacity: 0.7;
+    filter: alpha(opacity=70);
+    z-index: 3000;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+}
+#dialog-box{
+    z-index: 10000;
+    position: absolute;
+    opacity: 1;
+    display: inline-block;
+    border-radius: 5px;
+            -moz-border-radius: 5px;
+            -khtml-border-radius: 5px;
+            -webkit-border-radius: 5px;
+}
+#button_close span{
+    cursor: pointer;
+    color:#fe5252;
+}
+#button_close span:hover{
+    color:#18a2e9;
+}
+.success-ajax{
+    text-align: center;
+    margin: 60px 0 20px;
+}
+.loading-ajax, #link_ajax{
+    background: url('../images/ajax-loader.gif') no-repeat center center;
+    text-align: center;
+    float: left;
+    width: 300px;
+}
+div#dialog-box{
+    height: 253px;
+    width: 300px;
+    color:#333333;
+}
+.dialog-status-message{
+    float: left;
+    background-color: #fff;
+    width: 290px;
+    color: #666666;
+    text-align: center;
+    height: auto;
+    padding: 18px 10px 18px;
+    box-shadow: 0 0 10px 4px #1d1d1d;
+    -moz-box-shadow: 0 0 10px 4px #1d1d1d;
+    -webkit-box-shadow: 0 0 10px 4px #1d1d1d;
+}
+#link_ajax{background: url(../images/cart.png) no-repeat top center;}
+.cart_link{
+    border: none;
+    color: #f61636;
+    padding: 5px 0;
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+a:hover.cart_link{text-decoration: underline;}
+.cart_link.right_link{
+    width: 100px;
+    color: #fff;
+    background: #222222;
+    font-size: 13px;
+    padding: 16px;
+    font-weight: normal;
+    font-family: "Raleway";
+    text-transform: uppercase;
+    border-radius: 3px;
+            -moz-border-radius: 3px;
+            -khtml-border-radius: 3px;
+            -webkit-border-radius: 3px;
+    box-shadow: 2px 2px 2px #c5c5c5;
+    -moz-box-shadow: 2px 2px 2px #c5c5c5;
+    -webkit-box-shadow: 2px 2px 2px #c5c5c5;
+}
+a:hover.cart_link.right_link{background: #6d6889;text-decoration: none;}
+.cart_link_box{margin-top: 24px;}
+/*----------------------------------------------------------------------------*/
+/*                                  Facebook Login                            */
+/*----------------------------------------------------------------------------*/
+button#fbloginlink {
+    zoom: 1;
+    opacity: 1;
+    border-color: #2d5073;
+    background-color: #3b5998;
+    filter: alpha(opacity=100);
+    background-image: url(../images/facebook-icon.png);
+}
+button#fbloginlink:hover {
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+}
+div.social-wrap button:hover{
+    box-shadow: 0 2px 2px -2px gray;
+}
+div.social-wrap button {
+    padding-left: 45px;
+    height: 35px;
+    background: none;
+    border: none;
+    display: block;
+    background-size: 35px 35px;
+    background-position: left center;
+    background-repeat: no-repeat;
+    color: white;
+    font-size: 14px;
+    margin: 12px 0 0;
+    width: 205px;
+    border: 1px solid transparent;
+    box-shadow: 0 4px 2px -2px gray;
+    text-shadow: rgba(0, 0, 0, 0.5) -1px -1px 0;
+}
+.hr-wrap{
+    width:70%;
+    float:left;
+    display:block;
+}
+.social-or{
+    display: block;
+    background: #fff;
+    padding: 2px 5px;
+    width: 50px;
+    margin: -33px 0 10px 20%;
+    text-align: center;
+}

@@ -1,0 +1,26 @@
+{
+  "title": "Edit Account",
+  "member": {
+        "salutation": "Ms",
+        "first_name": "Member 6 Long Name",
+        "last_name": "Last Name",
+        "company": "Company 6",
+        "email": "email6@site.org",
+        "address_line1": "Address Line 1",
+        "postal_code": "123456",
+        "city": "City 6",
+        "state": "State 6",
+        "country": "SG",
+        "phone": "98765432",
+        "dob_timestamp": 121132800,
+        "npoints": 60,
+        "member_level": "Level 6",
+        "wish_product_ids": [
+            1,
+            3,
+            6,
+            10,
+            15
+        ]
+    }
+}

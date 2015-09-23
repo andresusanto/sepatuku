@@ -2,68 +2,19 @@
   "title": "My Blog",
   "categories": [
     {
-        "title": "Casual Shoes",
-        "link": "http://casual",
-        "images": [
-            "images/one-shoe.jpg",
-            "images/one-shoe.jpg"
-        ]
+      "name": "Travel",
+      "link": "http:\/\/travel",
+      "n_articles": 20
     },
     {
-        "title": "Running Shoes",
-        "link": "http://running",
-        "images": [
-            "images/one-shoe.jpg",
-            "images/one-shoe.jpg"
-        ],
-        "is_active": true
+      "name": "Personal",
+      "link": "http:\/\/personal",
+      "n_articles": 1
     },
     {
-        "title": "Sport Shoes",
-        "link": "http://sport",
-        "images": [],
-        "is_active": false,
-        "is_special": false
-    },
-    {
-        "title": "Footbal Shoes",
-        "link": "http://football",
-        "is_hidden": true,
-        "images": [
-            "images/one-shoe.jpg",
-            "images/one-shoe.jpg"
-        ],
-        "is_active": false
-    },
-    {
-        "title": "Sandals",
-        "link": "http://sandals",
-        "is_special": true,
-        "images": [
-            "images/one-shoe.jpg",
-            "images/one-shoe.jpg"
-        ],
-        "is_active": false
-    },
-    {
-        "title": "Slippers",
-        "link": "http://slippers",
-        "is_special": true,
-        "images": [
-            "images/one-shoe.jpg",
-            "images/one-shoe.jpg"
-        ],
-        "is_active": false
-    },
-    {
-        "title": "Sneakers",
-        "link": "http://sneakers",
-        "is_special": true,
-        "images": [
-            "images/one-shoe.jpg",
-            "images/one-shoe.jpg"
-        ],
-        "is_active": false
+      "name": "Food",
+      "link": "http:\/\/food",
+      "n_articles": 3
     }
   ],
   "archives": [
@@ -87,7 +38,7 @@
     {
       "title": "Tom & Jerry This is a Very Long Title and Very Very Long Title",
       "link": "http:\/\/tomandjerry",
-      "image": "images/products/large/image1.jpg"
+      "image": "\/images\/test\/article1.jpg"
     },
     {
       "title": "Alice & Bob",
@@ -134,10 +85,10 @@
         }
       ],
       "is_complete": false,
-      "image": "images/products/large/image1.jpg",
+      "image": "\/images\/test\/article1.jpg",
       "images": [
-        "images\/test\/article1.jpg",
-        "images\/test\/article1b.jpg"
+        "\/images\/test\/article1.jpg",
+        "\/images\/test\/article1b.jpg"
       ]
     },
     {
@@ -185,9 +136,9 @@
         }
       ],
       "is_complete": false,
-      "image": "images/products/large/image1.jpg",
+      "image": "\/images\/test\/article1.jpg",
       "images": [
-        "images/products/large/image1.jpg"
+        "\/images\/test\/article1.jpg"
       ]
     }
   ],

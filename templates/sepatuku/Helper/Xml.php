@@ -135,6 +135,7 @@ class Helper_Xml
     {
         return '<?xml version="1.0" encoding="UTF-8"?>' . "\n";
     }
+
     static function xmlCsses($csses)
     {
         $s = '';

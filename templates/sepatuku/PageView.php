@@ -127,7 +127,7 @@ class PageView
             $s .= "<div class=\"hover-fade\" id=\"form-btn-send\">\n";
             $image_active = $form['image_buttons']['active'];
             $image_normal = $form['image_buttons']['normal'];
-            $s .= "<img class=\"after\" src={sirclo_resource file=$image_active} alt=\"$submit_text\"/>\n";
+            $s .= "<img class=\"after\" src=\"$image_active\" alt=\"$submit_text\"/>\n";
             $s .= "<input type=\"image\" class=\"before\" src=\"$image_normal\" alt=\"$submit_text\"/>\n";
             $s .= "</div>\n";
         }

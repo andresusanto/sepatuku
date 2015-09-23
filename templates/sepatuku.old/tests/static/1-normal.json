@@ -1,0 +1,80 @@
+{
+  "title": "Static",
+  "breadcrumb": [
+    {
+      "title": "Home",
+      "link": "http://home"
+    },
+    {
+      "title": "Some Page",
+      "link": "http://page"
+    },
+    {
+      "title": "Sub Page",
+      "link": "http://subpage"
+    }
+  ],
+  "static_data": {
+    "title": "The Static Title: The Subtitle",
+    "content": "<img class='pull-right' src='/images/caslon-specimen1.jpg' style='width:200px; margin-top:0px'/><p><i>Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, </i></p><h1>LEVEL 01 HEADING</h1><h2>LEVEL 02 HEADING</h2><h3>LEVEL 03 HEADING</h3><h4>LEVEL 04 HEADING</h4><h5>LEVEL 05 HEADING</h5><p>Teks biasa, <a href='#'>link silakan dihover</a><br/><br/></p><h2>TEXT STYLE</h2><p>Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, </p><br/><h2>TABLE</h2><table class='s-table'><thead><tr><td>COLUMN HEADER</td><td>COLUMN HEADER</td><td>COLUMN HEADER</td><td>COLUMN HEADER</td><td>COLUMN HEADER</td></tr></thead><tbody><tr><td>Row Header</td><td>Cell Data</td><td>Cell Data</td><td>Cell Data</td><td>Cell Data</td></tr><tr><td>Row Header</td><td>Cell Data</td><td>Cell Data</td><td>Cell Data</td><td>Cell Data</td></tr><tr><td>Row Header</td><td>Cell Data</td><td>Cell Data</td><td>Cell Data</td><td>Cell Data</td></tr><tr><td>Row Header</td><td>Cell Data</td><td>Cell Data</td><td>Cell Data</td><td>Cell Data</td></tr></tbody></table>",
+    "nav": [
+      {
+        "title": "About Us",
+        "link": "/contact",
+        "sub_nav": [
+          {
+            "title": "Overview",
+            "link": "/overview"
+          },
+          {
+            "title": "History",
+            "link": "/history"
+          },
+          {
+            "title": "Our Team",
+            "link": "/our-team"
+          }
+        ],
+        "is_active": true
+      },
+      {
+        "title": "Terms & Conditions",
+        "link": "/terms",
+        "sub_nav": [
+          {
+            "title": "Sub 1",
+            "link": "http://subnav1"
+          },
+          {
+            "title": "Sub 2",
+            "link": "http://subnav2"
+          }
+        ]
+      },
+      {
+        "title": "Privacy Policy",
+        "link": ""
+      },
+      {
+        "title": "Sitemap",
+        "link": "http://longtitle",
+        "sub_nav": [
+          {
+            "title": "Sub 1",
+            "link": "http://subnav1"
+          },
+          {
+            "title": "Sub 2",
+            "link": "http://subnav2"
+          }
+        ]   
+      }
+    ],
+    "nav_title": "",
+    "images": [
+      "/images/test/static1.jpg",
+      "/images/test/static2.jpg",
+      "/images/test/static3.jpg"
+    ]
+  }
+}

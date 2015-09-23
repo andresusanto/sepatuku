@@ -48,11 +48,10 @@ class Renderer_Cart extends PageView
 
     function _getImageName($item)
     {
-        $suffix = '';
-		/*
+        $suffix = '_tn';
         if (isset($this->thumbnailSuffix)) {
             $suffix = $this->thumbnailSuffix;
-        }*/
+        }
         $imageName = '';
         if ($item['image']) {
             $imageName = Helper_File::addSuffix($item['image'], $suffix);
@@ -74,8 +73,8 @@ class Renderer_Cart extends PageView
             $attrs['colspan'] = 3;
         }
         $tds .= $this->xmlTag('td', $quantity, $attrs);
-        $tds .= $this->xmlTag('td', $amount, array('class' => 'number dollar-value text-right'));
-        $row = $this->xmlTag('tr', $tds, array('class' => 'cart-total-row '));
+        $tds .= $this->xmlTag('td', $amount, array('class' => 'number dollar-value'));
+        $row = $this->xmlTag('tr', $tds, array('class' => 'cart-total-row'));
         return $row;
     }
 
@@ -150,7 +149,7 @@ class Renderer_Cart extends PageView
         $inputs .= Helper_Xml::xmlSelect('shipping_value', $countryOptions, $country);
         $inputs .= Helper_Xml::xmlEmptyTag('input', array(
             'type' => 'submit',
-            'value' => 'Update'
+            'value' => 'Update',
         ));
         $shippingLabel = $defaultShippingLabel;
         if (isset($shippingForm[$labelKey])) {
@@ -160,7 +159,7 @@ class Renderer_Cart extends PageView
         $shippingForm = Helper_Xml::xmlTag('form', $label . $inputs, array(
             'action' => $cart['link'],
             'method' => 'post',
-            'class' => 'cart-shipping'
+            'class' => 'cart-shipping',
         ));
         return $shippingForm;
     }
@@ -430,7 +429,7 @@ class Renderer_Cart extends PageView
             }
             $total_tds .= $this->xmlTag('td', $this->xmlTag('strong', 'Total:'), array('class' => 'number'));
             $grandTotal = Helper_Cart::getGrandTotal($cart);
-            $total_tds .= $this->xmlTag('td', $this->xmlTag('strong', $this->dol($grandTotal)), array('class' => 'number dollar-value text-right'));
+            $total_tds .= $this->xmlTag('td', $this->xmlTag('strong', $this->dol($grandTotal)), array('class' => 'number dollar-value'));
             $trs .= $this->xmlTag('tr', $total_tds, array('class' => 'cart-grand-total-row'));
         }
         return $trs;
@@ -454,12 +453,12 @@ class Renderer_Cart extends PageView
     {
         $ths = '';
         if ($this->_withImage) {
-            $ths .= $this->xmlTag('th', $this->getCartText(''));
+            $ths .= $this->xmlTag('th', $this->getCartText('Picture'));
         }
-        $ths .= $this->xmlTag('th', $this->getCartText('ITEM'), array ('class' => 'text-center'));
-        $ths .= $this->xmlTag('th', $this->getCartText('PRICE'), array('class' => 'number cart-column-price'));
-        $ths .= $this->xmlTag('th', $this->getCartText('QUANTITY'), array('class' => 'number cart-column-quantity'));
-        $ths .= $this->xmlTag('th', $this->getCartText('TOTAL'), array('class' => 'number cart-column-amount text-right'));
+        $ths .= $this->xmlTag('th', $this->getCartText('Description'));
+        $ths .= $this->xmlTag('th', $this->getCartText('Price'), array('class' => 'number cart-column-price'));
+        $ths .= $this->xmlTag('th', $this->getCartText('Quantity'), array('class' => 'number cart-column-quantity'));
+        $ths .= $this->xmlTag('th', $this->getCartText('Amount'), array('class' => 'number cart-column-amount'));
         $trs = $this->xmlTag('tr', $ths);
         return $trs;
     }
@@ -489,7 +488,6 @@ class Renderer_Cart extends PageView
             $q_edit_content .= $this->xmlEmptyTag('input', array(
                 'type' => 'submit',
                 'value' => 'Update',
-				'class' => 'btn blue-button'
             ));
         }
         return $q_edit_content;
@@ -510,8 +508,7 @@ class Renderer_Cart extends PageView
         ) + $itemOptions);
         $remove_content .= $this->xmlEmptyTag('input', array(
             'type' => 'submit',
-            'value' => '[x] remove',
-			'class' => 'cart-remove-btn'
+            'value' => 'Remove',
         ));
         $remove_form = $this->xmlTag('form', $remove_content, array(
             'action' => $this->cart['link'],
@@ -546,7 +543,7 @@ class Renderer_Cart extends PageView
             $tds .= $this->xmlTag('td', $q_cell, array('class' => 'number'));
         }
         $amount = $item['quantity'] * $item['price'];
-        $tds .= $this->xmlTag('td', $this->dol($amount), array('class' => 'number dollar-value text-right'));
+        $tds .= $this->xmlTag('td', $this->dol($amount), array('class' => 'number dollar-value'));
         $tr = $this->xmlTag('tr', $tds, array('class' => 'shopping-cart-item'));
         return $tr;
     }
@@ -570,9 +567,9 @@ class Renderer_Cart extends PageView
             $item_total_tds .= $this->xmlTag('td', '&nbsp;', array('class' => 'cart-cell-empty'));
             $item_total_tds .= $this->xmlTag('td', '&nbsp;', array('class' => 'cart-cell-empty'));
         }
-        $item_total_tds .= $this->xmlTag('td', $this->xmlTag('strong', 'Item Total'), array('class' => 'number'));
+        $item_total_tds .= $this->xmlTag('td', $this->xmlTag('strong', 'Item Total:'), array('class' => 'number'));
         $itemTotal = Helper_Cart::getItemTotal($this->cart['items']);
-        $item_total_tds .= $this->xmlTag('td', $this->xmlTag('strong', $this->dol($itemTotal)), array('class' => 'number text-right'));
+        $item_total_tds .= $this->xmlTag('td', $this->xmlTag('strong', $this->dol($itemTotal)), array('class' => 'number dollar-value'));
         $tr = $this->xmlTag('tr', $item_total_tds, array('class' => 'cart-item-total-row'));
         return $tr;
     }
@@ -609,7 +606,7 @@ class Renderer_Cart extends PageView
         $cart_table = $empty_div;
         $is_empty = count($cart['items']) == 0;
         if (!$is_empty) {
-            $cart_table = $this->xmlTag('table', $table_content, array('class' => 's-table'));
+            $cart_table = $this->xmlTag('table', $table_content, array());
         }
         return $cart_table;
     }

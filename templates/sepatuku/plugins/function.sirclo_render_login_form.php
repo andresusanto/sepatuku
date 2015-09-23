@@ -19,9 +19,9 @@ function smarty_function_sirclo_render_login_form($params, $template) {
     $_label_password = $_lang == "id" ? "Password" : "Password";
 
     $params['fields'] = array(
-        array('name' => 'username', 'type' => 'emailLogin', 'value' => '', 'label' => 'E-mail', 'attribute' => 'required'),
-        array('name' => 'password', 'type' => 'passwordLogin', 'value' => '', 'label' => 'Password', 'attribute' => 'required'),
-        array('name' => '', 'type' => 'submit', 'value' => 'LOGIN', 'label' => '', 'attribute' => 'class="'.$_btn_class.'"'));
+        array('name' => 'username', 'type' => 'email', 'value' => '', 'label' => 'E-mail', 'attribute' => 'required'),
+        array('name' => 'password', 'type' => 'password', 'value' => '', 'label' => 'Password', 'attribute' => 'required'),
+        array('name' => '', 'type' => 'submit', 'value' => 'Submit', 'label' => '', 'attribute' => 'class="'.$_btn_class.'"'));
 
     $_html = Helper_Renderer::renderForm($params);
     return $_html;

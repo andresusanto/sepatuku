@@ -1,0 +1,153 @@
+{
+  "title": "My Blog",
+  "categories": [
+    {
+      "name": "Travel",
+      "link": "http:\/\/travel",
+      "n_articles": 20
+    },
+    {
+      "name": "Personal",
+      "link": "http:\/\/personal",
+      "n_articles": 1
+    },
+    {
+      "name": "Food",
+      "link": "http:\/\/food",
+      "n_articles": 3
+    }
+  ],
+  "archives": [
+    {
+      "name": "July 2011",
+      "link": "http:\/\/url\/2011\/07",
+      "n_articles": 20
+    },
+    {
+      "name": "June 2011",
+      "link": "http:\/\/url\/2011\/06",
+      "n_articles": 1
+    },
+    {
+      "name": "May 2011",
+      "link": "http:\/\/url\/2011\/05",
+      "n_articles": 3
+    }
+  ],
+  "recent_posts": [
+    {
+      "title": "Tom & Jerry This is a Very Long Title and Very Very Long Title",
+      "link": "http:\/\/tomandjerry",
+      "image": "\/images\/test\/article1.jpg"
+    },
+    {
+      "title": "Alice & Bob",
+      "link": "http:\/\/aliceandbob",
+      "image": ""
+    },
+    {
+      "title": "Tom & Jerry",
+      "link": "http:\/\/tomandjerry",
+      "image": "\/images\/test\/article2.jpg"
+    },
+    {
+      "title": "Alice & Bob This is a Very Long Title and Very Very Long Title",
+      "link": "http:\/\/tomandjerry",
+      "image": "\/images\/test\/article3.jpg"
+    }
+  ],
+  "rss_url": "http:\/\/rss",
+  "article": {
+    "title": "Tom & <strong>Jerry<\/strong>",
+    "link": "http:\/\/www.blog.com\/article",
+    "comments": [
+      {
+        "content": "This is my comment.",
+        "author": "Tom & Jerry",
+        "timestamp": 1,
+        "website": "http:\/\/tom&jerry"
+      },
+      {
+        "content": "This is another comment.",
+        "author": "Alice & Bob",
+        "timestamp": 1,
+        "website": ""
+      }
+    ],
+    "comment_post_url": "http:\/\/commentposturl",
+    "snippet": "<p>This is a very short article.<\/p>",
+    "short_description": "<p>Lorem ipsum <strong>dolor sit amet<\/strong>, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <\/p>\n\n<p>Lorem ipsum <strong>dolor sit amet<\/strong>, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <\/p>\n",
+    "timestamp": 1,
+    "author": "Alice",
+    "categories": [
+      
+    ],
+    "is_complete": false,
+    "comment_form": {
+      "fields": [
+        {
+          "label": "",
+          "name": "comment_content",
+          "type": "textarea",
+          "is_required": true
+        },
+        {
+          "label": "",
+          "name": "comment_name",
+          "type": "text",
+          "is_required": true
+        },
+        {
+          "label": "Foo",
+          "name": "email",
+          "type": "text",
+          "style": "display: none;",
+          "is_required": false
+        },
+        {
+          "label": " ()",
+          "name": "comment_rnsuk",
+          "type": "text",
+          "is_required": true
+        },
+        {
+          "label": "",
+          "name": "comment_website",
+          "type": "text",
+          "is_required": false
+        }
+      ]
+    },
+    "image": "\/images\/test\/article1.jpg",
+    "images": [
+      "\/images\/test\/article1.jpg",
+      "\/images\/test\/article1b.jpg"
+    ]
+  },
+  "related_posts": [
+    {
+      "title": "Related This is a Very Long Title and Very Very Long Title",
+      "link": "http:\/\/tomandjerry",
+      "image": "\/images\/test\/article1.jpg"
+    },
+    {
+      "title": "Related Alice & Bob",
+      "link": "http:\/\/aliceandbob",
+      "image": null
+    },
+    {
+      "title": "Another Related Post",
+      "link": "http:\/\/anotherpost",
+      "image": "\/images\/test\/article3.jpg"
+    }
+  ],
+  "prev_next_posts": [
+    null,
+    {
+      "title": "Next Post",
+      "link": "http:\/\/next"
+    }
+  ],
+  "message": "This is a success message",
+  "message_type": "success"
+}

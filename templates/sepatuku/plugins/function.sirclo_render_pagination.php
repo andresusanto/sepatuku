@@ -28,7 +28,7 @@ function smarty_function_sirclo_render_pagination($params, $template) {
     if (!empty($params['paging'])) $paging = $params['paging'];
     if (!empty($params['view_all'])) $view_all = $params['view_all'];
 
-    $vw = Helper_Renderer::renderPaging($paging, 10, $options);
+    $vw = Helper_Renderer::renderPaging($paging, 3, $options);
 
     return $vw;
 }

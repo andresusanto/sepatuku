@@ -1,0 +1,83 @@
+{
+  "title": "Testimonials",
+  "testimonials": [
+    {
+      "content": "Sangat memuaskan. Dua hari barang langsung sampai. Saya puas dan pasti akan beli terus di sepatuku! Ayo kamu yang belum pernah coba beli di sepatuku, cepat beli ya, barangnya bagus, murah dan dijamin sampai!",
+      "author": "Raisa Ardiana",
+      "image": "images/testi_profile.png",
+      "short_content": "<p>Lorem ipsum <strong>dolor sit amet</strong>, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>\n",
+      "author_description": "Author Description",
+      "email": "testimonial1@domain.com",
+      "company": "Company 1",
+      "website": "website1",
+      "label": "label1",
+      "product_link": "http://productlink1",
+      "product_used": "",
+      "link": "http://testimonial1",
+      "timestamp_created": 1017656631,
+      "rating": 1
+    },
+    {
+      "content": "Cuma di Sepatuku saja diskon jor-joran dan sesuai dengan kantong mahasiswa. Saya dan keluarga selalu beli di sepatuku!",
+      "author": "James Waringin Jati",
+      "image": "images/testi_profile_1.png",
+      "short_content": "<p>Lorem ipsum <strong>dolor sit amet</strong>, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>\n",
+      "author_description": "Author 2 Description Line 1\nAuthor 2 Description Line 2\n",
+      "email": "",
+      "company": "",
+      "website": "website2",
+      "label": "label2",
+      "product_link": "http://productlink2",
+      "product_used": "Product Used 2",
+      "link": "http://testimonial2",
+      "timestamp_created": 1017743031
+    },
+    {
+      "content": "Sangat memuaskan. Dua hari barang langsung sampai. Saya puas dan pasti akan beli terus di sepatuku! Ayo kamu yang belum pernah coba beli di sepatuku, cepat beli ya, barangnya bagus, murah dan dijamin sampai!",
+      "author": "Raisa Ardiana",
+      "image": "images/testi_profile.png",
+      "short_content": "<p>Lorem ipsum <strong>dolor sit amet</strong>, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>\n",
+      "author_description": "",
+      "email": "testimonial3@domain.com",
+      "company": "Company 3",
+      "website": "",
+      "label": "label3",
+      "product_link": "http://productlink3",
+      "product_used": "",
+      "link": "http://testimonial3",
+      "timestamp_created": 1017829431,
+      "rating": 3
+    },
+    {
+      "content": "Cuma di Sepatuku saja diskon jor-joran dan sesuai dengan kantong mahasiswa. Saya dan keluarga selalu beli di sepatuku!",
+      "author": "James Waringin Jati",
+      "image": "images/testi_profile.png",
+      "short_content": "<p>Lorem ipsum <strong>dolor sit amet</strong>, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>\n",
+      "author_description": "Author 4 Description Line 1\nAuthor 4 Description Line 2\n",
+      "email": "",
+      "company": "",
+      "website": "website4",
+      "label": "label4",
+      "product_link": "",
+      "product_used": "Product Used 4",
+      "link": "http://testimonial4",
+      "timestamp_created": 1017915831
+    },
+    {
+      "content": "Cuma di Sepatuku saja diskon jor-joran dan sesuai dengan kantong mahasiswa. Saya dan keluarga selalu beli di sepatuku!",
+      "author": "James Waringin Jati",
+      "image": "images/testi_profile.png",
+      "short_content": "<p>Lorem ipsum <strong>dolor sit amet</strong>, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>\n",
+      "author_description": "Author Description",
+      "email": "testimonial5@domain.com",
+      "company": "Company 5",
+      "website": "website5",
+      "label": "label5",
+      "product_link": "http://productlink5",
+      "product_used": "",
+      "link": "http://testimonial5",
+      "timestamp_created": 1018002231,
+      "rating": 5
+    }
+  ]
+}

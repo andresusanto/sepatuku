@@ -24,7 +24,7 @@
     {
       "title": "Tom & Jerry This is a Very Long Title and Very Very Long Title",
       "link": "http:\/\/tomandjerry",
-      "image": "images/products/large/image1.jpg"
+      "image": "\/images\/test\/article1.jpg"
     },
     {
       "title": "Alice & Bob",
@@ -34,12 +34,12 @@
     {
       "title": "Tom & Jerry",
       "link": "http:\/\/tomandjerry",
-      "image": "images\/test\/article2.jpg"
+      "image": "\/images\/test\/article2.jpg"
     },
     {
       "title": "Alice & Bob This is a Very Long Title and Very Very Long Title",
       "link": "http:\/\/tomandjerry",
-      "image": "images\/test\/article3.jpg"
+      "image": "\/images\/test\/article3.jpg"
     }
   ],
   "rss_url": "http:\/\/rss_url",
@@ -71,10 +71,10 @@
         }
       ],
       "is_complete": false,
-      "image": "images/products/large/image1.jpg",
+      "image": "\/images\/test\/article1.jpg",
       "images": [
-        "images\/test\/article1.jpg",
-        "images\/test\/article1b.jpg"
+        "\/images\/test\/article1.jpg",
+        "\/images\/test\/article1b.jpg"
       ]
     },
     {
@@ -122,9 +122,9 @@
         }
       ],
       "is_complete": false,
-      "image": "images/products/large/image1.jpg",
+      "image": "\/images\/test\/article1.jpg",
       "images": [
-        "images\/test\/article1.jpg"
+        "\/images\/test\/article1.jpg"
       ]
     }
   ],

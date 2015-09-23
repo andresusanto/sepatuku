@@ -3,32 +3,38 @@
   "breadcrumb": [
       {
           "title": "Home",
-          "link": "/"
+          "link": "http://home"
       },
       {
-          "title": "New Arrivals",
-          "link": "/products/category/new-in"
+          "title": "Some Page",
+          "link": "http://page"
+      },
+      {
+          "title": "Sub Page",
+          "link": "http://subpage"
       }
   ],
   "product": {
     "id": 3,
     "fid": "product-3",
     "product_code": "ABC3",
-    "title": "NIKE - LUNAR TERRA SAFARI",
-    "description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nunc dolor, luctus ac varius et, sollicitudin quis purus. Aenean egestas sagittis sem, vel egestas arcu tincidunt sit amet. Curabitur condimentum sagittis pretium. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed neque mi, fermentum et justo et, semper vestibulum ex. Fusce viverra enim eget mollis feugiat.</p>\n",
+    "title": "Product 3 Long Long Very Long Name",
+    "description": "<p>Lorem ipsum <strong>dolor sit amet</strong>, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>\n\n<p>Lorem ipsum <strong>dolor sit amet</strong>, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>\n",
     "brand": "Brand 3",
     "specification": "<p>Lorem ipsum <strong>dolor sit amet</strong>, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>\n\n<h3>Specification</h3>\n\n<p>Lorem ipsum <strong>dolor sit amet</strong>, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>\n\n<p>Lorem ipsum <strong>dolor sit amet</strong>, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>\n\n<h3>Application</h3>\n\n<p>Lorem ipsum <strong>dolor sit amet</strong>, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>\n\n<h3>Features</h3>\n\n<p>Lorem ipsum <strong>dolor sit amet</strong>, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>\n",
-    "link": "/3",
-    "price_raw": 1500000,
+    "link": "http://product3",
+    "price_raw": 1500,
     "is_new": true,
     "is_featured": false,
     "size": "Size 3",
     "color": "Color 3",
     "images": [
-      "images/products/folder/image1.jpg",
-      "images/products/folder/image2.jpg",
-      "images/products/folder/image3.jpg",
-      "images/products/folder/image4.jpg"
+      "/images/test/product_3a.jpg",
+      "/images/test/product_b.jpg",
+      "/images/test/product_a.jpg",
+      "/images/test/product_b.jpg",
+      "/images/test/product_a.jpg",
+      "/images/test/product_b.jpg"
     ],
     "detailed_images": [
       {
@@ -184,18 +190,23 @@
       "id": 1,
       "fid": "product-1",
       "product_code": "ABC1",
-      "title": "Nike - Ardilla",
+      "title": "Product 1 Long Long Very Long Name",
       "description": "<p>Lorem ipsum <strong>dolor sit amet</strong>, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>\n\n<p>Lorem ipsum <strong>dolor sit amet</strong>, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>\n",
       "brand": "Brand 1",
       "specification": "<p>Lorem ipsum <strong>dolor sit amet</strong>, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>\n\n<h3>Specification</h3>\n\n<p>Lorem ipsum <strong>dolor sit amet</strong>, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>\n\n<p>Lorem ipsum <strong>dolor sit amet</strong>, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>\n\n<h3>Application</h3>\n\n<p>Lorem ipsum <strong>dolor sit amet</strong>, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>\n\n<h3>Features</h3>\n\n<p>Lorem ipsum <strong>dolor sit amet</strong>, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>\n",
       "link": "http://product1",
-      "price_raw": 1500000,
+      "price_raw": 500,
       "is_new": false,
       "is_featured": false,
       "size": "Size 1",
       "color": "Color 1",
       "images": [
-        "images/one-shoe.jpg"
+        "/images/test/product_1a.jpg",
+        "/images/test/product_b.jpg",
+        "/images/test/product_a.jpg",
+        "/images/test/product_b.jpg",
+        "/images/test/product_a.jpg",
+        "/images/test/product_b.jpg"
       ],
       "detailed_images": [
         {
@@ -350,18 +361,19 @@
       "id": 2,
       "fid": "product-2",
       "product_code": "ABC2",
-      "title": "Nike - Ardilla",
+      "title": "Product 2",
       "description": "<p>Lorem ipsum <strong>dolor sit amet</strong>, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>\n\n<p>Lorem ipsum <strong>dolor sit amet</strong>, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>\n",
       "brand": "Brand 2",
       "specification": "<p>Lorem ipsum <strong>dolor sit amet</strong>, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>\n\n<h3>Specification</h3>\n\n<p>Lorem ipsum <strong>dolor sit amet</strong>, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>\n\n<p>Lorem ipsum <strong>dolor sit amet</strong>, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>\n\n<h3>Application</h3>\n\n<p>Lorem ipsum <strong>dolor sit amet</strong>, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>\n\n<h3>Features</h3>\n\n<p>Lorem ipsum <strong>dolor sit amet</strong>, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>\n",
       "link": "http://product2",
-      "price_raw": 1500000,
+      "price_raw": 1000,
       "is_new": false,
       "is_featured": true,
       "size": "Size 2",
       "color": "Color 2",
       "images": [
-        "images/one-shoe.jpg"
+        "/images/test/product_2a.jpg",
+        "/images/test/product_b.jpg"
       ],
       "detailed_images": [
         {
@@ -441,18 +453,23 @@
       "id": 3,
       "fid": "product-3",
       "product_code": "ABC3",
-      "title": "Nike - Ardilla",
+      "title": "Product 3 Long Long Very Long Name",
       "description": "<p>Lorem ipsum <strong>dolor sit amet</strong>, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>\n\n<p>Lorem ipsum <strong>dolor sit amet</strong>, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>\n",
       "brand": "Brand 3",
       "specification": "<p>Lorem ipsum <strong>dolor sit amet</strong>, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>\n\n<h3>Specification</h3>\n\n<p>Lorem ipsum <strong>dolor sit amet</strong>, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>\n\n<p>Lorem ipsum <strong>dolor sit amet</strong>, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>\n\n<h3>Application</h3>\n\n<p>Lorem ipsum <strong>dolor sit amet</strong>, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>\n\n<h3>Features</h3>\n\n<p>Lorem ipsum <strong>dolor sit amet</strong>, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>\n",
       "link": "http://product3",
-      "price_raw": 1500000,
+      "price_raw": 1500,
       "is_new": true,
       "is_featured": false,
       "size": "Size 3",
       "color": "Color 3",
       "images": [
-        "images/one-shoe.jpg"
+        "/images/test/product_3a.jpg",
+        "/images/test/product_b.jpg",
+        "/images/test/product_a.jpg",
+        "/images/test/product_b.jpg",
+        "/images/test/product_a.jpg",
+        "/images/test/product_b.jpg"
       ],
       "detailed_images": [
         {
@@ -607,18 +624,19 @@
       "id": 4,
       "fid": "product-4",
       "product_code": "ABC4",
-      "title": "Nike - Ardilla",
+      "title": "Product 4",
       "description": "<p>Lorem ipsum <strong>dolor sit amet</strong>, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>\n",
       "brand": "Brand 4",
       "specification": "<p>Lorem ipsum <strong>dolor sit amet</strong>, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>\n\n<h3>Specification</h3>\n\n<p>Lorem ipsum <strong>dolor sit amet</strong>, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>\n\n<p>Lorem ipsum <strong>dolor sit amet</strong>, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>\n\n<h3>Application</h3>\n\n<p>Lorem ipsum <strong>dolor sit amet</strong>, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>\n\n<h3>Features</h3>\n\n<p>Lorem ipsum <strong>dolor sit amet</strong>, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>\n",
       "link": "http://product4",
-      "price_raw": 1500000,
+      "price_raw": 2000,
       "is_new": false,
       "is_featured": true,
       "size": "Size 4",
       "color": "Color 4",
       "images": [
-        "images/one-shoe.jpg"
+        "/images/test/product_4a.jpg",
+        "/images/test/product_b.jpg"
       ],
       "detailed_images": [
         {
@@ -684,7 +702,7 @@
     }
   ],
   "cart": {
-    "currency_symbol": "IDR",
+    "currency_symbol": "RM",
     "items": [
       {
         "fid": "some-product",

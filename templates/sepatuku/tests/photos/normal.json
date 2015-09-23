@@ -1,6 +1,6 @@
 {
     "title": "Photos",
-    "logo_url": "images/logo.png",
+    "logo_url": "/images/logo.png",
     "breadcrumb": [
         {
             "title": "Home",
@@ -22,7 +22,7 @@
             "title": "Photo 1",
             "description": "<p>This is description of Photo 1.</p>\n<p>Lorem ipsum <strong>dolor sit amet</strong>, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>\n\n<p>Lorem ipsum <strong>dolor sit amet</strong>, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>\n",
             "images": [
-                "/images/caslon-specimen1.jpg"
+                "/images/test/photo_1.jpg"
             ],
             "link": "http://photo1"
         },
@@ -32,7 +32,7 @@
             "title": "Photo 2",
             "description": "<p>This is description of Photo 2.</p>\n<p>Lorem ipsum <strong>dolor sit amet</strong>, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>\n\n<p>Lorem ipsum <strong>dolor sit amet</strong>, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>\n",
             "images": [
-                "/images/dbs.jpg"
+                "/images/test/photo_2.jpg"
             ],
             "link": "http://photo2"
         },
@@ -42,7 +42,7 @@
             "title": "Photo 3",
             "description": "<p>This is description of Photo 3.</p>\n<p>Lorem ipsum <strong>dolor sit amet</strong>, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>\n\n<p>Lorem ipsum <strong>dolor sit amet</strong>, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>\n",
             "images": [
-                "/images/products/large/image1.jpg"
+                "/images/test/photo_3.jpg"
             ],
             "link": "http://photo3"
         },
@@ -52,7 +52,7 @@
             "title": "Photo 4",
             "description": "<p>This is description of Photo 4.</p>\n<p>Lorem ipsum <strong>dolor sit amet</strong>, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>\n\n<p>Lorem ipsum <strong>dolor sit amet</strong>, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>\n",
             "images": [
-                "/images/products/large/image2.jpg"
+                "/images/test/photo_4.jpg"
             ],
             "link": "http://photo4"
         },
@@ -62,7 +62,7 @@
             "title": "Photo 5",
             "description": "<p>This is description of Photo 5.</p>\n<p>Lorem ipsum <strong>dolor sit amet</strong>, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>\n\n<p>Lorem ipsum <strong>dolor sit amet</strong>, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>\n",
             "images": [
-                "/images/products/large/image3.jpg"
+                "/images/test/photo_5.jpg"
             ],
             "link": "http://photo5"
         },
@@ -72,7 +72,7 @@
             "title": "Photo 6",
             "description": "<p>This is description of Photo 6.</p>\n<p>Lorem ipsum <strong>dolor sit amet</strong>, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>\n\n<p>Lorem ipsum <strong>dolor sit amet</strong>, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>\n",
             "images": [
-                "/images/products/large/image4.jpg"
+                "/images/test/photo_6.jpg"
             ],
             "link": "http://photo6"
         },
@@ -82,7 +82,7 @@
             "title": "Photo 7",
             "description": "<p>This is description of Photo 7.</p>\n<p>Lorem ipsum <strong>dolor sit amet</strong>, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>\n\n<p>Lorem ipsum <strong>dolor sit amet</strong>, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>\n",
             "images": [
-                "/images/products/large/image1.jpg"
+                "/images/test/photo_7.jpg"
             ],
             "link": "http://photo7"
         },
@@ -92,7 +92,7 @@
             "title": "Photo 8",
             "description": "<p>This is description of Photo 8.</p>\n<p>Lorem ipsum <strong>dolor sit amet</strong>, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>\n\n<p>Lorem ipsum <strong>dolor sit amet</strong>, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>\n",
             "images": [
-                "/images/products/large/image2.jpg"
+                "/images/test/photo_8.jpg"
             ],
             "link": "http://photo8"
         },
@@ -102,7 +102,7 @@
             "title": "Photo 9",
             "description": "<p>This is description of Photo 9.</p>\n<p>Lorem ipsum <strong>dolor sit amet</strong>, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>\n\n<p>Lorem ipsum <strong>dolor sit amet</strong>, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>\n",
             "images": [
-                "/images/caslon-specimen1.jpg"
+                "/images/test/photo_9.jpg"
             ],
             "link": "http://photo9"
         },
@@ -112,7 +112,7 @@
             "title": "Photo 10",
             "description": "<p>This is description of Photo 10.</p>\n<p>Lorem ipsum <strong>dolor sit amet</strong>, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>\n\n<p>Lorem ipsum <strong>dolor sit amet</strong>, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>\n",
             "images": [
-                "/images/caslon-specimen1.jpg"
+                "/images/test/photo_10.jpg"
             ],
             "link": "http://photo10"
         },
@@ -122,77 +122,7 @@
             "title": "Photo 11",
             "description": "<p>This is description of Photo 11.</p>\n<p>Lorem ipsum <strong>dolor sit amet</strong>, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>\n\n<p>Lorem ipsum <strong>dolor sit amet</strong>, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>\n",
             "images": [
-                "/images/products/large/image3.jpg"
-            ],
-            "link": "http://photo11"
-        },
-		{
-            "fid": "photo-11",
-            "timestamp_created": 1414627200,
-            "title": "Photo 11",
-            "description": "<p>This is description of Photo 11.</p>\n<p>Lorem ipsum <strong>dolor sit amet</strong>, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>\n\n<p>Lorem ipsum <strong>dolor sit amet</strong>, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>\n",
-            "images": [
-                "/images/products/large/image3.jpg"
-            ],
-            "link": "http://photo11"
-        },
-		{
-            "fid": "photo-11",
-            "timestamp_created": 1414627200,
-            "title": "Photo 11",
-            "description": "<p>This is description of Photo 11.</p>\n<p>Lorem ipsum <strong>dolor sit amet</strong>, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>\n\n<p>Lorem ipsum <strong>dolor sit amet</strong>, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>\n",
-            "images": [
-                "/images/products/large/image3.jpg"
-            ],
-            "link": "http://photo11"
-        },
-		{
-            "fid": "photo-11",
-            "timestamp_created": 1414627200,
-            "title": "Photo 11",
-            "description": "<p>This is description of Photo 11.</p>\n<p>Lorem ipsum <strong>dolor sit amet</strong>, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>\n\n<p>Lorem ipsum <strong>dolor sit amet</strong>, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>\n",
-            "images": [
-                "/images/products/large/image2.jpg"
-            ],
-            "link": "http://photo11"
-        },
-		{
-            "fid": "photo-11",
-            "timestamp_created": 1414627200,
-            "title": "Photo 11",
-            "description": "<p>This is description of Photo 11.</p>\n<p>Lorem ipsum <strong>dolor sit amet</strong>, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>\n\n<p>Lorem ipsum <strong>dolor sit amet</strong>, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>\n",
-            "images": [
-                "/images/products/large/image2.jpg"
-            ],
-            "link": "http://photo11"
-        },
-		{
-            "fid": "photo-11",
-            "timestamp_created": 1414627200,
-            "title": "Photo 11",
-            "description": "<p>This is description of Photo 11.</p>\n<p>Lorem ipsum <strong>dolor sit amet</strong>, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>\n\n<p>Lorem ipsum <strong>dolor sit amet</strong>, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>\n",
-            "images": [
-                "/images/products/large/image2.jpg"
-            ],
-            "link": "http://photo11"
-        },
-		{
-            "fid": "photo-11",
-            "timestamp_created": 1414627200,
-            "title": "Photo 11",
-            "description": "<p>This is description of Photo 11.</p>\n<p>Lorem ipsum <strong>dolor sit amet</strong>, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>\n\n<p>Lorem ipsum <strong>dolor sit amet</strong>, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>\n",
-            "images": [
-                "/images/products/large/image2.jpg"
-            ],
-            "link": "http://photo11"
-        },
-		{
-            "fid": "photo-11",
-            "timestamp_created": 1414627200,
-            "title": "Photo 11",
-            "description": "<p>This is description of Photo 11.</p>\n<p>Lorem ipsum <strong>dolor sit amet</strong>, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>\n\n<p>Lorem ipsum <strong>dolor sit amet</strong>, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>\n",
-            "images": [
-                "/images/products/large/image2.jpg"
+                "/images/test/photo_11.jpg"
             ],
             "link": "http://photo11"
         }

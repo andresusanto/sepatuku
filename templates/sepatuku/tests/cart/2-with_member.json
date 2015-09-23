@@ -1522,17 +1522,17 @@
     }
   ],
   "cart":{  
-    "currency_symbol":"IDR",
+    "currency_symbol":"RM",
     "items":[  
       {  
         "fid":"some-product",
-        "name":"Nike Ardilla",
+        "name":"Some Product",
         "quantity":7,
         "price":70,
         "weight":30,
         "link":"http:\/\/some-product",
         "edit_link":"http:\/\/edit-some-product",
-        "image":"/images/one-shoe.jpg",
+        "image":"\/images\/test\/product7.jpg",
         "options":{  
           "size":"S",
           "color":"Red"
@@ -1540,23 +1540,26 @@
       },
       {  
         "fid":"another-product",
-        "name":"Nike Ardilla",
+        "name":"Another Product",
         "quantity":8,
         "price":80,
         "weight":40,
-        "image":"/images/one-shoe.jpg",
+        "image":"\/images\/test\/product8.jpg",
         "link":"http:\/\/another-product",
         "edit_link":"http:\/\/edit-another-product"
       },
       {  
         "fid":"yet-another-product",
-        "name":"Nike Ardilla",
+        "name":"Yet Another Product",
         "quantity":23,
         "price":7.5,
         "weight":10,
         "link":"http:\/\/yet-another-product",
         "edit_link":"http:\/\/edit-yet-another-product",
-        "image":"/images/one-shoe.jpg"
+        "image":"\/images\/test\/product9.jpg",
+        "options":{  
+          "text":"This is a very long text and really really long text"
+        }
       }
     ],
     "shipping":0,
@@ -1572,12 +1575,15 @@
     "discounts":[  
 
     ],
-    "total_items":3,
+    "total_items":2,
     "total_weight":2750,
     "npoints":4,
     "npoints_earned":40,
     "grand_total":1300.5,
     "item_total":1200.5,
+    "is_checkout_enabled":true,
+    "checkout_disabled_reason":"",
+    "delivery_timestamp":1423116464,
     "tax":0,
     "point_rule":{  
       "point_per_dollar":1.4567,

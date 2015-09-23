@@ -46,7 +46,7 @@
                 {/if}
 
                 {if !empty($article.image)}
-                    <p><img src="{sirclo_resource file=$article.image|sirclo_file_add_suffix:'_ori'}"></p>
+                    <p><img src="{$article.image|sirclo_file_add_suffix:'_ori'}"></p>
                 {/if}
                 <p>{$article.snippet}</p>
 				<!-- AddThis Button BEGIN -->

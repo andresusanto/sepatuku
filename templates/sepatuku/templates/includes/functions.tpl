@@ -1,95 +1,53 @@
-{function skeleton_render_main_navbar nav_links=array() pos=left}
-    {if $pos == 'left'}
-        {$i = 0}
-        {foreach $nav_links as $key=>$nav}
-            {if $key != 'home'}
-                {if $i lt (count($nav_links)-1)/2}
-                    {$col = count($nav_links)-1 - ((count($nav_links)-1)/2)|floor}
-                    {if isset($nav.sub_nav)}
-                        <div class="col-md-{(int) (12/$col)}">
-                            <a aria-expanded="false" class="dropdown-toggle" data-toggle="dropdown" href="#">
-                                <div class="s-menu-text-big">{$nav.title}</div>
-                            </a>
-                            <ul class="dropdown-menu">
-                                {foreach $nav.sub_nav as $sn}
-                                    <li><a href="{$sn.link}">{$sn.title}</a></li>
-                                {/foreach}
-                            </ul>
-                        </div>
-                    {else}
-                        <div class="col-md-{(int) (12/$col)}">
-                            <a href="{$nav.link}">
-                                <div class="s-menu-text-big">{$nav.title}</div>
-                            </a>
-                        </div>
+{function skeleton_render_main_navbar nav_links=array() is_submenu=false}
+    {foreach $nav_links as $nav_link}
+        {if !empty($nav_link.is_active)}
+            {assign var=is_active_class value="active"}
+        {else}
+            {assign var=is_active_class value=""}
+        {/if}
+
+        {if !empty($nav_link.sub_nav)}
+            {if $is_submenu}
+                {assign var=is_submenu_class value="dropdown-submenu"}
+            {else}
+                {assign var=is_submenu_class value="dropdown"}
+            {/if}
+
+            <li class="{$is_active_class} {$is_submenu_class}">
+                <a href="{$nav_link.link}" class="dropdown-toggle">
+                    {$nav_link.title}
+
+                    {if !$is_submenu}
+                        <b class="caret hidden-phone hidden-tablet"></b>
                     {/if}
-                {/if}
-                {$i=$i+1}
-            {/if}
-        {/foreach}
-    {else if $pos == 'right'}
-        {$i = 0}
-        {foreach $nav_links as $key=>$nav}
-            {if $key != 'home'}
-                {if $i gte (count($nav_links)-1)/2}
-                    {$col = count($nav_links)-1 - ((count($nav_links)-1)/2)|ceil}
-                    {if isset($nav.sub_nav)}
-                        <div class="col-md-{(int) (12/$col)}">
-                            <a aria-expanded="false" class="dropdown-toggle" data-toggle="dropdown" href="#">
-                                <div class="s-menu-text-big">{$nav.title}</div>
-                            </a>
-                            <ul class="dropdown-menu">
-                                {foreach $nav.sub_nav as $sn}
-                                    <li><a href="{$sn.link}">{$sn.title}</a></li>
-                                {/foreach}
-                            </ul>
-                        </div>
-                    {else}
-                        <div class="col-md-{(int) (12/$col)}">
-                            <a href="{$nav.link}">
-                                <div class="s-menu-text-big">{$nav.title}</div>
-                            </a>
-                        </div>
-                    {/if}
-                {/if}
-                {$i=$i+1}
-            {/if}
-        {/foreach}
-    {else if $pos == 'mobile'}
-        {foreach $nav_links as $key=>$nav}
-            {if $key != 'home'}
-                {if isset($nav.sub_nav)}
-                    <li class="drawer-menu-item dropdown drawer-dropdown">
-                        <a href="#" data-toggle="dropdown" role="button" aria-expanded="false">{$nav.title}<span class="caret"></span></a>
-                        <ul class="drawer-submenu dropdown-menu" role="menu">
-                            {foreach $nav.sub_nav as $sn}
-                                <li class="drawer-submenu-item"><a href="{$sn.link}">{$sn.title}</a></li>
-                            {/foreach}
-                        </ul>
-                    </li>
-                {else}
-                    <li class="drawer-menu-item"><a href="{$nav.link}">{$nav.title}</a></li>
-                {/if}
-            {/if}
-        {/foreach}
-    {/if}
+                </a>
+                <ul class="dropdown-menu hidden-phone hidden-tablet">
+                    {call skeleton_render_main_navbar nav_links=$nav_link.sub_nav is_submenu=true}
+                </ul>
+            </li>
+        {else}  
+            <li class="{$is_active_class}"><a href="{$nav_link.link}">{$nav_link.title} </a></li>
+        {/if}        
+    {/foreach}
 {/function}
 
 {function skeleton_render_sidebar_category categories=array()}
     {if !empty($categories)}
-		<div>
-			{foreach $categories as $category}
-				{if !empty($category.is_active)}
-					{$is_active_class = "active"}
-				{else}
-					{$is_active_class = ""}
-				{/if}
-				<a href="{$category.link}" class="{$is_active_class} col-md-3">{$category.title}</a>
-				{if !empty($category.is_active) and !empty($category['sub_nav'])}
-					{call skeleton_render_sidebar_category categories=$category.sub_nav}
-				{/if}
-			{/foreach}
-		</div>
+        <ul>
+        {foreach $categories as $category}
+            {if !empty($category.is_active)}
+                {$is_active_class = "active"}
+            {else}
+                {$is_active_class = ""}
+            {/if}
+            <li class="{$is_active_class}">
+                <a href="{$category.link}">{$category.title}</a>
+                {if !empty($category.is_active) and !empty($category['sub_nav'])}
+                    {call skeleton_render_sidebar_category categories=$category.sub_nav}
+                {/if}
+            </li>
+        {/foreach}
+        </ul>
     {/if}
 {/function}
 
@@ -109,27 +67,65 @@
     {/if}
 
     {foreach $products as $product}
-        <a href="{$product.link}">
-            <div class="col-md-3 s-single-product">
-                <div class="s-single-product-img">
-                    {if ($product.is_new)}
-                        <img class="label-img" src="{sirclo_resource file='images/label-exclusive.png'}"/>
-                    {else if ($product.is_backorder)}
-                        <img class="label-img" src="{sirclo_resource file='images/label-backorder.png'}"/>
-                    {else if ($product.is_featured)}
-                        <img class="label-img" src="{sirclo_resource file='images/label-sale.png'}"/>
-                    {/if}
-                    <img class="product-img img-responsive" src="{sirclo_resource file=$product.images.0}"/>
-                    <div class="s-product-overlay">
-						<i class="glyphicon glyphicon-zoom-in" linkproduk="{$product.link}?viewmode=quickview"></i>
-                    </div>
-                </div>
-                <div class="s-single-product-desc">
-                    <div class="">{$product.title}</div>
-                    <div class="">{$active_currency} {$product.price_raw|number_format:2}</div>
-                </div>
+        <div class="span-sirclo4-1 products-product product">
+        
+        {if !empty($product.images)}
+            <div class="product-image">
+                <a href="{$product.link}"><img src="{$product.images.0|sirclo_file_add_suffix:'_tn'}"></a>
             </div>
-        </a>
+        {/if}
+        
+        <div class="product-action">
+            <div class="quick_view"><a href="{$product.link}?viewmode=quickview" class="quickview">&nbsp;</a></div>
+            <div class="add_cart"><a href="{$product.link}">{sirclo_get_text text='misc_add_to_cart'}</a></div>
+            <div class="clearfix"></div>
+        </div>
+        
+
+        <div class="product-name">
+          <a href="{$product.link}">{$product.title}</a>
+        </div>
+
+        {if !empty($product.brand)}
+        <div class="product-label">
+          {$product.brand}
+        </div>
+        {/if}
+
+        <div class="product-price">            
+          {if !empty($product.usual_price_raw)}
+            <span class="usual-price">{$active_currency} {$product.usual_price_raw|number_format:2}</span>
+            <span class="now-price">{$active_currency} {$product.price_raw|number_format:2}</span>
+          {else}
+            {$active_currency} {$product.price_raw|number_format:2}
+          {/if}
+        </div>
+
+        {if ($product.is_new or !$product.is_in_stock or !empty($product.usual_price_raw) or $product.is_backorder)}
+          <div class="product-special-icon">
+            {if $product.is_new and !$product.is_backorder and $product.is_in_stock and empty($product.usual_price_raw)}
+              <img src="{sirclo_resource file='images/icon-product-new.png'}"/>
+            {/if}
+
+            {if !empty($product.usual_price_raw) and $product.is_in_stock and !$product.is_backorder}
+              <img src="{sirclo_resource file='images/icon-product-sale.png'}"/>
+            {/if}
+
+            {if !$product.is_in_stock and !$product.is_backorder}
+              <img src="{sirclo_resource file='images/icon-product-oos.png'}"/>
+            {/if}
+
+            {if $product.is_backorder}
+              <img src="{sirclo_resource file='images/icon-product-stock.png'}"/>
+            {/if}
+          </div>
+        {/if}
+        
+        </div>
+
+        {if ($product@key % $col_count == $col_count-1)}
+            <div class="clearfix"></div>
+        {/if}
     {/foreach}
 {/function}
 
@@ -145,7 +141,7 @@
         
         {if !empty($category.images)}
             <div class="category-image">
-                <a href="{$category.link}"><img src="{sirclo_resource file=$category.images.0}"></a>
+                <a href="{$category.link}"><img src="{$category.images.0}"></a>
             </div>
         {/if}
 

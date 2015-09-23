@@ -17,7 +17,7 @@
             {/if}
             </p>
         </p>
-        <p><img src="{sirclo_resource file='images/ajax-loader.gif'}" /></p>
+        <p><img src="{sirclo_resource file='/images/ajax-loader.gif'}" /></p>
     </div>
 </div>
 {/block}

@@ -55,20 +55,9 @@
 				<nav class="drawer-nav" role="navigation">
 					<br/><br/>
 					<ul class="drawer-menu">
-						<li class="drawer-menu-item"><a href="product.html">NEW IN</a></li>
-						<li class="drawer-menu-item"><a href="#">MEN</a></li>
-						<li class="drawer-menu-item"><a href="#">WOMEN</a></li>
-						<li class="drawer-menu-item dropdown drawer-dropdown">
-							<a href="#" data-toggle="dropdown" role="button" aria-expanded="false">KIDS <span class="caret"></span></a>
-							<ul class="drawer-submenu dropdown-menu" role="menu">
-								<li class="drawer-submenu-item"><a href="#">Child Product</a></li>
-								<li class="drawer-submenu-item"><a href="#">Child Product</a></li>
-								<li class="drawer-submenu-item"><a href="#">Child Product</a></li>
-							</ul>
-						</li>
-						<li class="drawer-menu-item"><a href="#">SALE</a></li>
-						<li class="drawer-menu-item"><a href="contact.html">CONTACT</a></li>
-						
+						{if !empty($main_nav)}
+                            {call skeleton_render_main_navbar nav_links=$main_nav pos=mobile}
+                        {/if}
 					</ul>
 
 					<div class="drawer-footer"><span></span></div>
@@ -150,7 +139,7 @@
 						</div>
 						<div class="s-mobile-content">
 							<div class="s-mobile-menu">
-								<a href="javascript:void(0);" id="menu-mobile"><img src="img/ico-menu.png"/> MENU</a>
+								<a href="javascript:void(0);" id="menu-mobile"><img src="{sirclo_resource file='images/ico-menu.png'}"/>{sirclo_get_text text='menu'}</a>
 							</div>
 						</div>	
 					</div>

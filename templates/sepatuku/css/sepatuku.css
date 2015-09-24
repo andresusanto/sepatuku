@@ -1039,12 +1039,26 @@ img.s-icon-pay {
 	padding-bottom: 20px;
 }
 
+.s-newletterfirst {
+	position: fixed;
+	top: 30%;
+	left: 30%;
+	z-index: 101;
+	padding: 20px;
+	background: white;
+}
+
 .s-show-product {
 	position: relative;
 	display: none;
 }
 
-.s-quickview .s-close {
+.s-first-time {
+	position: relative;
+	display: none;
+}
+
+.s-quickview .s-close , .s-newletterfirst .s-close{
 	z-index: 102;
 	position: absolute;
 	top: -10px;

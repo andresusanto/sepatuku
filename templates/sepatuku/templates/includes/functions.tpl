@@ -111,65 +111,33 @@
     {/if}
 
     {foreach $products as $product}
-        <div class="span-sirclo4-1 products-product product">
-        
-        {if !empty($product.images)}
-            <div class="product-image">
-                <a href="{$product.link}"><img src="{$product.images.0|sirclo_file_add_suffix:'_tn'}"></a>
+        <a href="{$product.link}">
+            <div class="col-md-3 s-single-product">
+                <div class="s-single-product-img">
+                    {if ($product.is_new)}
+                        <img class="label-img" src="{sirclo_resource file='images/label-exclusive.png'}"/>
+                    {else if ($product.is_backorder)}
+                        <img class="label-img" src="{sirclo_resource file='images/label-backorder.png'}"/>
+                    {else if ($product.is_featured)}
+                        <img class="label-img" src="{sirclo_resource file='images/label-sale.png'}"/>
+                    {/if}
+					
+					{if !empty($product.images)}
+						<img class="product-img img-responsive" src="{$product.images.0|sirclo_file_add_suffix:'_tn'}"/>
+					{else}
+						<img class="product-img img-responsive" src="{sirclo_resource file='images/na.png'}"/>
+					{/if}
+					
+                    <div class="s-product-overlay">
+						<i class="glyphicon glyphicon-zoom-in" linkproduk="{$product.link}?viewmode=quickview"></i>
+                    </div>
+                </div>
+                <div class="s-single-product-desc">
+                    <div class="">{$product.title}</div>
+                    <div class="">{$active_currency} {$product.price_raw|number_format:2}</div>
+                </div>
             </div>
-        {/if}
-        
-        <div class="product-action">
-            <div class="quick_view"><a href="{$product.link}?viewmode=quickview" class="quickview">&nbsp;</a></div>
-            <div class="add_cart"><a href="{$product.link}">{sirclo_get_text text='misc_add_to_cart'}</a></div>
-            <div class="clearfix"></div>
-        </div>
-        
-
-        <div class="product-name">
-          <a href="{$product.link}">{$product.title}</a>
-        </div>
-
-        {if !empty($product.brand)}
-        <div class="product-label">
-          {$product.brand}
-        </div>
-        {/if}
-
-        <div class="product-price">            
-          {if !empty($product.usual_price_raw)}
-            <span class="usual-price">{$active_currency} {$product.usual_price_raw|number_format:2}</span>
-            <span class="now-price">{$active_currency} {$product.price_raw|number_format:2}</span>
-          {else}
-            {$active_currency} {$product.price_raw|number_format:2}
-          {/if}
-        </div>
-
-        {if ($product.is_new or !$product.is_in_stock or !empty($product.usual_price_raw) or $product.is_backorder)}
-          <div class="product-special-icon">
-            {if $product.is_new and !$product.is_backorder and $product.is_in_stock and empty($product.usual_price_raw)}
-              <img src="{sirclo_resource file='images/icon-product-new.png'}"/>
-            {/if}
-
-            {if !empty($product.usual_price_raw) and $product.is_in_stock and !$product.is_backorder}
-              <img src="{sirclo_resource file='images/icon-product-sale.png'}"/>
-            {/if}
-
-            {if !$product.is_in_stock and !$product.is_backorder}
-              <img src="{sirclo_resource file='images/icon-product-oos.png'}"/>
-            {/if}
-
-            {if $product.is_backorder}
-              <img src="{sirclo_resource file='images/icon-product-stock.png'}"/>
-            {/if}
-          </div>
-        {/if}
-        
-        </div>
-
-        {if ($product@key % $col_count == $col_count-1)}
-            <div class="clearfix"></div>
-        {/if}
+        </a>
     {/foreach}
 {/function}
 

@@ -29,9 +29,8 @@
 
         {sirclo_render_css}
         {$_body_css = 'rel="stylesheet" type="text/css"'}
-         <link {$_body_css} href="{sirclo_resource file='css/nivoslider/light.css'}">
-         <link {$_body_css} href="{sirclo_resource file='css/nivoslider/nivo-slider.css'}">
          <link {$_body_css} href="{sirclo_resource file='css/drawer.css'}">
+         <link {$_body_css} href="{sirclo_resource file='css/jquery.bxslider.css'}">
          <link {$_body_css} href="{sirclo_resource file='css/bootstrap.min.css'}">
          <link rel="stylesheet" href="//code.jquery.com/ui/1.10.3/themes/flick/jquery-ui.min.css">
          <link {$_body_css} href="{sirclo_resource file='css/ccdialog.css'}">
@@ -103,10 +102,10 @@
 							{/if}
 							<li>
 								<a href="{$links.cart}"><img src="{sirclo_resource file='images/ico-bag.png'}" /> {if !empty($cart) and !empty($cart.grand_total)}
-                                        {$cart.total_items}
+                                        {call skeleton_pluralize singular="Item" plural="Items" count=$cart.total_items}
                                     {else}
-                                        0
-                                    {/if} Item(s)</a>
+                                        {call skeleton_pluralize singular="Item" plural="Items" count=0}
+                                    {/if} </a>
 							</li>
 						</ul>
 					</div>
@@ -174,9 +173,8 @@
 					</div>
 				{/if}
 				
-				<div id="content" class="container">
-					{block name=body}{/block}
-				</div>
+				
+				{block name=body}{/block}
 				
 				
 				<!-- BEGIN FOOTER -->
@@ -336,14 +334,23 @@
         {sirclo_render_ajax_info}
         {$_body_js = 'type="text/javascript"'}
         <script type="text/javascript" async="" src="http://www.google-analytics.com/ga.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.1.1/iscroll-min.js"></script>
         <script {$_body_js} src="{sirclo_resource file='js/jquery-migrate.min.js'}"></script>
         <script {$_body_js} src="{sirclo_resource file='js/jquery.scrollTo.min.js'}"></script>
         <script {$_body_js} src="{sirclo_resource file='js/cloud-zoom.1.0.3-min.js'}"></script>
         <script {$_body_js} src="{sirclo_resource file='js/bootstrap.min.js'}"></script>
-        <script {$_body_js} src="{sirclo_resource file='js/jquery.nivo.slider.min.js'}"></script>
         <script {$_body_js} src="{sirclo_resource file='js/quickview.js'}"></script>
         <script {$_body_js} src="{sirclo_resource file='js/ccdialog.js'}"></script>
 
+		<script {$_body_js} src="{sirclo_resource file='js/jquery.drawer.min.js'}"></script>
+		<script {$_body_js} src="{sirclo_resource file='js/jquery.elevatezoom.js'}"></script>
+		<script {$_body_js} src="{sirclo_resource file='js/sepatuku.js'}"></script>
+		<script {$_body_js} src="{sirclo_resource file='js/jquery.masonry.min.js'}"></script>
+		<script {$_body_js} src="{sirclo_resource file='js/jquery.history.js'}"></script>
+		<script {$_body_js} src="{sirclo_resource file='js/js-url.min.js'}"></script>
+		<script {$_body_js} src="{sirclo_resource file='js/jquerypp.custom.js'}"></script>
+		<script {$_body_js} src="{sirclo_resource file='js/gamma.js'}"></script>
+		<script {$_body_js} src="{sirclo_resource file='js/jquery.bxslider.min.js'}"></script>
         {block name=footer}{/block}
     </body>
 </html>

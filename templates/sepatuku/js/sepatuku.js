@@ -144,13 +144,17 @@ $('.s-product-overlay').hover(function() {
 
 $('.s-products i').on('click', function(e) {
 	e.preventDefault();
+	var alamat = $(this).attr( "linkproduk" );
+	$('#konten-produk').attr('src', alamat);
 	$('.s-show-product').show();
 });
 
 $('.s-close').on('click', function() {
 	$('.s-show-product').hide();
+	$('.s-first-time').hide();
 });
 
 $('.s-overlay').on('click', function() {
 	$('.s-show-product').hide();
+	$('.s-first-time').hide();
 });

@@ -1,34 +1,78 @@
-{function skeleton_render_main_navbar nav_links=array() is_submenu=false}
-    {foreach $nav_links as $nav_link}
-        {if !empty($nav_link.is_active)}
-            {assign var=is_active_class value="active"}
-        {else}
-            {assign var=is_active_class value=""}
-        {/if}
-
-        {if !empty($nav_link.sub_nav)}
-            {if $is_submenu}
-                {assign var=is_submenu_class value="dropdown-submenu"}
-            {else}
-                {assign var=is_submenu_class value="dropdown"}
-            {/if}
-
-            <li class="{$is_active_class} {$is_submenu_class}">
-                <a href="{$nav_link.link}" class="dropdown-toggle">
-                    {$nav_link.title}
-
-                    {if !$is_submenu}
-                        <b class="caret hidden-phone hidden-tablet"></b>
+{function skeleton_render_main_navbar nav_links=array() pos=left}
+    {if $pos == 'left'}
+        {$i = 0}
+        {foreach $nav_links as $key=>$nav}
+            {if $key != 'home'}
+                {if $i lt (count($nav_links)-1)/2}
+                    {$col = count($nav_links)-1 - ((count($nav_links)-1)/2)|floor}
+                    {if isset($nav.sub_nav)}
+                        <div class="col-md-{(int) (12/$col)}">
+                            <a aria-expanded="false" class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                <div class="s-menu-text-big">{$nav.title}</div>
+                            </a>
+                            <ul class="dropdown-menu">
+                                {foreach $nav.sub_nav as $sn}
+                                    <li><a href="{$sn.link}">{$sn.title}</a></li>
+                                {/foreach}
+                            </ul>
+                        </div>
+                    {else}
+                        <div class="col-md-{(int) (12/$col)}">
+                            <a href="{$nav.link}">
+                                <div class="s-menu-text-big">{$nav.title}</div>
+                            </a>
+                        </div>
                     {/if}
-                </a>
-                <ul class="dropdown-menu hidden-phone hidden-tablet">
-                    {call skeleton_render_main_navbar nav_links=$nav_link.sub_nav is_submenu=true}
-                </ul>
-            </li>
-        {else}  
-            <li class="{$is_active_class}"><a href="{$nav_link.link}">{$nav_link.title} </a></li>
-        {/if}        
-    {/foreach}
+                {/if}
+                {$i=$i+1}
+            {/if}
+        {/foreach}
+    {else if $pos == 'right'}
+        {$i = 0}
+        {foreach $nav_links as $key=>$nav}
+            {if $key != 'home'}
+                {if $i gte (count($nav_links)-1)/2}
+                    {$col = count($nav_links)-1 - ((count($nav_links)-1)/2)|ceil}
+                    {if isset($nav.sub_nav)}
+                        <div class="col-md-{(int) (12/$col)}">
+                            <a aria-expanded="false" class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                <div class="s-menu-text-big">{$nav.title}</div>
+                            </a>
+                            <ul class="dropdown-menu">
+                                {foreach $nav.sub_nav as $sn}
+                                    <li><a href="{$sn.link}">{$sn.title}</a></li>
+                                {/foreach}
+                            </ul>
+                        </div>
+                    {else}
+                        <div class="col-md-{(int) (12/$col)}">
+                            <a href="{$nav.link}">
+                                <div class="s-menu-text-big">{$nav.title}</div>
+                            </a>
+                        </div>
+                    {/if}
+                {/if}
+                {$i=$i+1}
+            {/if}
+        {/foreach}
+    {else if $pos == 'mobile'}
+        {foreach $nav_links as $key=>$nav}
+            {if $key != 'home'}
+                {if isset($nav.sub_nav)}
+                    <li class="drawer-menu-item dropdown drawer-dropdown">
+                        <a href="#" data-toggle="dropdown" role="button" aria-expanded="false">{$nav.title}<span class="caret"></span></a>
+                        <ul class="drawer-submenu dropdown-menu" role="menu">
+                            {foreach $nav.sub_nav as $sn}
+                                <li class="drawer-submenu-item"><a href="{$sn.link}">{$sn.title}</a></li>
+                            {/foreach}
+                        </ul>
+                    </li>
+                {else}
+                    <li class="drawer-menu-item"><a href="{$nav.link}">{$nav.title}</a></li>
+                {/if}
+            {/if}
+        {/foreach}
+    {/if}
 {/function}
 
 {function skeleton_render_sidebar_category categories=array()}

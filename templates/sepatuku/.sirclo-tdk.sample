@@ -1,3 +1,0 @@
-smarty_dir = "D:\xampp\htdocs\sepatuku\smarty-3.1.27"
-local_address = "http://sepatuku.dev"
-temp_dir = "D:\xampp\htdocs\sepatuku\templates\tmp_preview"

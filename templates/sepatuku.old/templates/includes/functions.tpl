@@ -119,7 +119,7 @@
                     {else if ($product.is_featured)}
                         <img class="label-img" src="{sirclo_resource file='images/label-sale.png'}"/>
                     {/if}
-                    <img class="product-img img-responsive" src="{sirclo_resource file=$product.images.0}"/>
+                    <img class="product-img img-responsive" src="{$product.images.0|sirclo_file_add_suffix:'_tn'}"/>
                     <div class="s-product-overlay">
 						<i class="glyphicon glyphicon-zoom-in" linkproduk="{$product.link}?viewmode=quickview"></i>
                     </div>

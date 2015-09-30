@@ -15,7 +15,7 @@
         'link' => {$links.account_orders}
     ]
 ]}
-<ul>
+<!-- <ul> -->
 {foreach $_array_tabs as $side_nav}
     {$_first = ''}
     {if $side_nav@first}
@@ -25,7 +25,7 @@
     {if isset($_sidename) && $_sidename==$side_nav.page}
         {$_active = 'active'}
     {/if}
-    <li class="{$_active} {$_first}"><a href="{$side_nav.link}" >{$side_nav.title}</a></li>
+    <div class="{$_active} {$_first} s-top-margin"><a class="attention" href="{$side_nav.link}" >{$side_nav.title}</a></div>
 {/foreach}
 
 {if isset($links.account_invite)}
@@ -40,7 +40,7 @@
 {if isset($_sidename) && $_sidename==$side_nav.page}
     {$_active = 'active'}
 {/if}
-<li class="{$_active} {$_first}"><a href="{$side_nav.link}" >{$side_nav.title}</a></li>
+<div class="{$_active} {$_first} s-top-margin"><a class="attention" href="{$side_nav.link}" >{$side_nav.title}</a></div>
 
 {/if}
-<ul>
+<!-- <ul> -->

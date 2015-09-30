@@ -19,6 +19,10 @@
 	font-family: DroidSans;
 }
 
+a:hover {
+	text-decoration: none;
+}
+
 /* TAMBAHAN BOOTSTRAP */
 .col-xs-7ths,
 .col-sm-7ths,
@@ -57,7 +61,7 @@
 }
 
 /* COMMON ITEM */
-input[type=text], input[type=password], input[type=date], input[type=email] {
+input[type=text], input[type=password], input[type=date], input[type=email], select {
 	border-radius:10px;
 	-moz-border-radius:10px;
 	-webkit-border-radius:10px;
@@ -71,11 +75,11 @@ input[type=text], input[type=password], input[type=date], input[type=email] {
 	-o-transition: all 0.30s ease-in-out;
 }
 
-input[type=text], input[type=password], input[type=email] {
+input[type=text], input[type=password], input[type=email], select {
 	padding: 5px 5px;
 }
  
-input[type=text]:focus {
+input[type=text]:focus select:focus{
   box-shadow: 0 0 1px rgba(89, 62, 62, 1);
   border: 2px solid rgba(89, 62, 62, 1);
 }
@@ -462,11 +466,16 @@ h1, h2, h3, h4, h5, h6 {
 	width: 80%;
 }
 
-.blue-button {
+.blue-button, #account-form input[type=submit] {
 	padding: 2% 10%;
 	border-radius: 5px;
 	background-color: #b1d6cd;
 	font-family: BebasNeue;
+}
+
+#account-form input[type=submit] {
+	font-size: 18px;
+	padding: 10px 10px;
 }
 
 .s-contact-info .title {

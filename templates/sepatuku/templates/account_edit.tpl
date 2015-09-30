@@ -1,18 +1,21 @@
 {extends file='includes/theme.tpl'}
 
 {block name="body"}
-    <div class="container" id="common-page-header">
+<!-- tidak bisa diberi breadcrumb -->
+    <div class="container col-md-12 s-content-title s-top-margin" id="common-page-header">
         <h1>{sirclo_get_text text='edit_account_info'}</h1>
+        <hr/>
     </div>
 
     <div class="container" id="account-content">
         <div class="row sirclo-no-negative col-wrap">
-            <div id="account-sidebar" class="span-sirclo4-1 margin-to-padding col common-sidebar">
+            <div id="account-sidebar" class="span-sirclo4-1 margin-to-padding col common-sidebar col-md-3 s-top-margin">
+                <h2 class="nomargin">MY ACCOUNT</h2>
                 {$_sidename = 'account'}
                 {include 'includes/account_nav.tpl'}
             </div>
 
-            <div id="account-form" class="span-sirclo4-3 col">
+            <div id="account-form" class="span-sirclo4-3 col col-md-9 s-top-margin">
                 {sirclo_render_account_edit_form form_class="sirclo-form" member=$member with_birthday=true}
             </div>
         </div>

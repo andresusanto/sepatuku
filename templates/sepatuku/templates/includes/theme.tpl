@@ -169,7 +169,7 @@
 				<!-- BEGIN FOOTER -->
 				
 				<!-- FOOTER MENU -->
-				<div class="row s-footer-menu">
+				<div class="row s-footer-menu s-top-margin">
                     <div class="container">
                         <div class="col-md-3">
                             {if !empty($static_contents['Footer Links'])}        

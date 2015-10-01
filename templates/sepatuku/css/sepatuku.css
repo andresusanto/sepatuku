@@ -481,6 +481,7 @@ h1, h2, h3, h4, h5, h6 {
 	border-radius: 5px;
 	background-color: #b1d6cd;
 	font-family: BebasNeue;
+	color: #5F6264;
 }
 
 #account-form input[type=submit] {
@@ -719,6 +720,14 @@ h1, h2, h3, h4, h5, h6 {
 	padding-right: 20px;
 }
 
+.s-login-container input {
+	width: 100%;
+}
+
+.s-login-container label {
+	display: none;
+}
+
 .s-fullwidth {
 	width: 100%;
 }
@@ -728,7 +737,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .s-login-container a {
-	color: #333333;
+	color: #5F6264;
 }
 
 .s-strike {
@@ -1106,11 +1115,19 @@ img.s-icon-pay {
 	cursor: pointer;
 }
 
-.s-checkout-form .sirclo-form .sirclo-form-label {
+.sirclo-form .sirclo-form-label {
 	width: inherit;
 	float: none;
 }
 
-.s-checkout-form .sirclo-form .sirclo-form-input {
-	/*margin-left: 0px;*/
+.sirclo-form .sirclo-form-input {
+	margin-left: 0px;
+}
+
+.sirclo-form .required {
+	color: inherit;
+}
+
+.sirclo-form input[type=submit] {
+	border: none;
 }

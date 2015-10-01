@@ -25,13 +25,13 @@
             </div>
         </div>
         <div class="col-md-6 s-top-margin">
-            <div id="cart-place-order-personal" class="wrapper">
+            <div id="cart-place-order-personal" class="wrapper s-half-form">
                 <h2>{sirclo_get_text text='cart_place_order_title'}</h2>
 
                 {if !empty($member)}
-                    {sirclo_render_place_order_form form_class="sirclo-form shipping-form" member=$member paypal=$paypal shipping_city=$cart['shipping_city'] shipping_country=$cart['shipping_country'] link_terms=$links['terms'] link_privacy=$links['privacy'] label_bank_transfer=$static_contents['Bank Account Info'] btn_class="btn btn-info" city_enabled=true _payment_methods=$payment_methods with_shipping_methods=true}
+                    {sirclo_render_place_order_form form_class="sirclo-form shipping-form" member=$member paypal=$paypal shipping_city=$cart['shipping_city'] shipping_country=$cart['shipping_country'] link_terms=$links['terms'] link_privacy=$links['privacy'] label_bank_transfer=$static_contents['Bank Account Info'] btn_class="btn btn-lg blue-button" city_enabled=true _payment_methods=$payment_methods with_shipping_methods=true}
                 {else}
-                    {sirclo_render_place_order_form form_class="sirclo-form shipping-form" paypal=$paypal shipping_city=$cart['shipping_city'] shipping_country=$cart['shipping_country'] link_terms=$links['terms'] link_privacy=$links['privacy'] label_bank_transfer=$static_contents['Bank Account Info'] btn_class="btn btn-info" city_enabled=true _payment_methods=$payment_methods with_shipping_methods=true}
+                    {sirclo_render_place_order_form form_class="sirclo-form shipping-form" paypal=$paypal shipping_city=$cart['shipping_city'] shipping_country=$cart['shipping_country'] link_terms=$links['terms'] link_privacy=$links['privacy'] label_bank_transfer=$static_contents['Bank Account Info'] btn_class="btn btn-lg blue-button" city_enabled=true _payment_methods=$payment_methods with_shipping_methods=true}
                 {/if}
             </div>
         </div>

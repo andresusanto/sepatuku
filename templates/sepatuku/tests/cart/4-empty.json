@@ -72,7 +72,7 @@
           "title":"Subcategory 3",
           "link":"http:\/\/subcategory3"
         }
-      ],
+      ]
     },
     {  
       "title":"Category 2",
@@ -113,7 +113,7 @@
               "title":"Subcategory 2c",
               "link":"http:\/\/subcategory2c"
             }
-          ],
+          ]
         },
         {  
           "title":"Subcategory 3",
@@ -123,7 +123,7 @@
             "\/images\/test\/category2c-2.jpg"
           ]
         }
-      ],
+      ]
     },
     {  
       "title":"Category 3",
@@ -132,7 +132,7 @@
 
       ],
       "is_active":false,
-      "is_special":false,
+      "is_special":false
     },
     {  
       "title":"Category 4",
@@ -142,7 +142,7 @@
         "\/images\/test\/category4.jpg",
         "\/images\/test\/category4-2.jpg"
       ],
-      "is_active":false,
+      "is_active":false
     },
     {  
       "title":"Special Category",

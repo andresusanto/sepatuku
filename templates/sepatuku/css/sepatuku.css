@@ -545,7 +545,7 @@ h1, h2, h3, h4, h5, h6 {
 	text-transform: lowercase;
 }
 
-.s-cart .cart-item-total-row td {
+.s-cart .cart-item-total-row td, .s-cart .cart-grand-total-row td {
 	padding: 10px 0px;
 	color: #e85e35;
 }
@@ -557,6 +557,10 @@ h1, h2, h3, h4, h5, h6 {
 	display: block;
 	border-radius: 2px;
 	padding: 2px;
+}
+
+.s-cart .cart-total-row, .s-cart .cart-item-total-row {
+	border: none;
 }
 
 .s-main-content .s-table-responsive {

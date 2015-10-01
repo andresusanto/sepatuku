@@ -102,7 +102,7 @@
 				<!-- END MENU KECIL -->
 				
 				<!-- MENU DAN LOGO ATAS -->
-				<div class="row">
+				<div class="row s-bottom-margin">
 					<!-- LEFT MENU -->
 					<div class="col-md-5 s-menu-left s-menu-utama">
 						<div class="s-web-content">

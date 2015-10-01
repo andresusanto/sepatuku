@@ -1,6 +1,13 @@
 {extends file='includes/theme.tpl'}
 
 {block name="body"}
+
+<div class="s-breadcrumb s-bottom-padding">
+    <a href="{$links.home}">{sirclo_get_text text='home_title'}</a>
+    <span>&nbsp;/&nbsp;</span>
+    <a href="{$links.cart}">{sirclo_get_text text='cart_title'}</a>
+</div>
+
 <div id="common-page-header" class="col-md-12 s-content-title">
     <h1>Cart</h1>
     <hr/>

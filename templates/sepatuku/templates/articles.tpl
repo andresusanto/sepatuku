@@ -2,9 +2,20 @@
 
 {block name="body"}
 
+<div class="s-breadcrumb s-bottom-padding">
+    <a href="{$links.home}">{sirclo_get_text text='home_title'}</a>
+    <span>&nbsp;/&nbsp;</span>
+    <a href="{$links.blog}">{sirclo_get_text text='blog'}</a>
+</div>
+
 {if !empty($articles_title)}
 <div id="common-page-header" class="col-md-12 s-content-title">
     <h1>{$articles_title}</h1>
+    <hr/>
+</div>
+{else}
+<div id="common-page-header" class="col-md-12 s-content-title">
+    <h1>Articles</h1>
     <hr/>
 </div>
 {/if}

@@ -1,12 +1,14 @@
 {extends file='includes/theme.tpl'}
 
 {block name="body"}
-<div id="common-page-header">
+<div id="common-page-header" class="col-md-12 s-content-title">
     <h1>Cart</h1>
-    <p>{sirclo_get_text text='review_your_items_title'}</p>
+    <hr/>
 </div>
 
-<div id="cart-content" class="container box-shadow">
+<p>{sirclo_get_text text='review_your_items_title'}</p>
+
+<div id="cart-content" class="row container box-shadow s-cart">
 
     {if !empty($cart['items'])}
         <div class="cart-table">
@@ -19,15 +21,18 @@
         <p class="cart-empty">{sirclo_get_text text='cart_empty'}.</p>
     {/if}
 
-    <hr/>
+    <div class="s-wavy-separator"></div>
 
-    <div id="cart-continue">
+    <div id="cart-continue row">
         <div id="cart-continue-continue">
-            <a class="continue" href="{$continue_url}">{sirclo_get_text text='continue_shopping_link'}</a> 
+            <div class="col-md-6 nopadding">
+                <a class="continue" href="{$continue_url}"><span class="s-large-font s-bebas attention"><i class="fa fa-angle-left"></i>{sirclo_get_text text='continue_shopping_link'}</span></a> 
+            </div>
 
             {if !empty($cart['items'])}
-                OR
-                <a class="btn-flat" href="{$links['cart_place_order']}">{sirclo_get_text text='check_out_title'}</a>
+                <div class="col-md-6 text-right nopadding">
+                    <a class="btn-flat btn btn-lg blue-button pull-right s-large-button s-to-checkout-page" href="{$links['cart_place_order']}">{sirclo_get_text text='check_out_title'}</a>
+                </div>
             {/if}
         </div>
     </div>

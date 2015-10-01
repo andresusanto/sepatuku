@@ -1,9 +1,10 @@
 {extends file='includes/theme.tpl'}
 
 {block name="body"}
-<div id="common-page-header">
-    <h1>Thank you for your order!</h1>
-</div>
+<div class="container col-md-12 s-content-title s-top-margin" id="common-page-header">
+        <h1>Thank you for your order!</h1>
+        <hr/>
+    </div>
 
 <div id="common-page-content" class="container box-shadow">
     <div id="order-prepayment-content" class="wrapper">

@@ -8,7 +8,7 @@
 <div style="width:590px; padding:10px; margin:0px auto; font-family:'Arial',tahoma; font-size:12px;">
     <div style="width:100%; height:100px">
     <div style="float:left; height: 100px; width:50%;">
-            <img src="{sirclo_resource file='images/logo.png'}" />
+            <img src="{sirclo_resource file='images/logo.png'}" style="height:100px" />
     </div>
     <div style="float:right; height:75px; width:50%; text-align:right;">
     <span style="font-size:20px; font-weight:bold; display:block;">{sirclo_get_text text='invoice_title'}</span>

@@ -2,8 +2,9 @@
 
 {block name="body"}
 
-<div class="container" id="common-page-header">
+<div id="common-page-header" class="container col-md-12 s-content-title">
     <h1>Thank you for your order</h1>
+    <hr/>
 </div>
 
 <div class="container" id="common-page-content">

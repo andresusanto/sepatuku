@@ -61,7 +61,7 @@ a:hover {
 }
 
 /* COMMON ITEM */
-input[type=text], input[type=password], input[type=date], input[type=email], select {
+input[type=text], input[type=password], input[type=date], input[type=email], select, textarea {
 	border-radius:10px;
 	-moz-border-radius:10px;
 	-webkit-border-radius:10px;
@@ -82,6 +82,16 @@ input[type=text], input[type=password], input[type=email], select {
 input[type=text]:focus select:focus{
   box-shadow: 0 0 1px rgba(89, 62, 62, 1);
   border: 2px solid rgba(89, 62, 62, 1);
+}
+
+.checkbox input[type=checkbox], .radio input[type=radio] {
+	margin-left: 0px;
+	margin-right: 4px;
+	position: inherit;
+}
+
+.checkbox label {
+	padding-left: 0px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -1094,4 +1104,13 @@ img.s-icon-pay {
 	right: 10px;
 	font-size: 50px;
 	cursor: pointer;
+}
+
+.s-checkout-form .sirclo-form .sirclo-form-label {
+	width: inherit;
+	float: none;
+}
+
+.s-checkout-form .sirclo-form .sirclo-form-input {
+	/*margin-left: 0px;*/
 }

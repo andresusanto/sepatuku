@@ -1,5 +1,5 @@
 $.fn.ccProductQuickView = function (callback) {
-    var apiUrl = $(this).attr('href');
+    var apiUrl = $(this).attr('linkproduk');
     var delay = 0;
     var param = apiUrl.substr(apiUrl.indexOf("?"),apiUrl.length);
     if (window.isFakeView) {
@@ -9,7 +9,7 @@ $.fn.ccProductQuickView = function (callback) {
     if (window.isTDKView) {
         apiUrl = '/pages/product_details/tests/1-normal/execute'+param;
         delay = 2000;
-    }    
+    }
     setTimeout(function () {
         $.get(apiUrl, function (data) {
             callback(data);
@@ -18,11 +18,11 @@ $.fn.ccProductQuickView = function (callback) {
 };
 
 $(document).ready(function(){
-	
+
 	//dialog box
 	window.alert = $.ccDialogBox;
-	
-	$('a.quickview').click(function (ev) {
+
+	$('.s-products i').click(function (ev) {
 	ev.preventDefault();
 	$('body').append('<div id="screen-overlay"></div>\n\
 	                            <div id="screen_quickview">\n\
@@ -43,7 +43,7 @@ $(document).ready(function(){
 	     ');
 	    $('#screen_quickview').append('<script type="text/javascript" src="../js/quickview.js"></script>');
 	    $('#screen_quickview').append('<script type="text/javascript" src="../js/cloud-zoom.1.0.3-min.js"></script>');
-	
+
 	    $("body").on("click", "a#button_close",function(e){
 	                e.preventDefault();
 	                closeBox();
@@ -54,14 +54,14 @@ $(document).ready(function(){
 	     });
 	});
 	});
-    
+
 
 	function closeBox() {
 	    $('#dialog-overlay, #dialog-box').remove();
 	};
 	function closeScreen() {
 	    $('#screen-overlay, #screen_quickview').remove();
-	};    
+	};
 });
 
 jQuery.fn.extend({

@@ -136,18 +136,20 @@ $('#see-labels').on('click', function() {
 });
 
 // POPUP PRODUCT
+
 $('.s-product-overlay').hover(function() {
 	$(this).children('i').show();
 }, function() {
 	$(this).children('i').hide();
 });
 
+/*
 $('.s-products i').on('click', function(e) {
 	e.preventDefault();
 	var alamat = $(this).attr( "linkproduk" );
 	$('#konten-produk').attr('src', alamat);
 	$('.s-show-product').show();
-});
+});*/
 
 $('.s-close').on('click', function() {
 	$('.s-show-product').hide();

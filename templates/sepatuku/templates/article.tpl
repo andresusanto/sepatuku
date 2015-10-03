@@ -7,37 +7,7 @@
 
 <div id="blog-article" class="common-content container">
     <div class="row sirclo-no-negative col-wrap">
-        <div id="blog-articles-sidebar" class="span-sirclo4-1 margin-to-padding col common-sidebar">
-            <div class="sidebar-header">
-                {sirclo_get_text text='recent_posts_title'}  
-            </div>
-            
-            {if !empty($recent_posts)}
-                {sirclo_render_blog_recent_posts recent_posts=$recent_posts}
-            {/if}
-
-            <div class="sidebar-header">
-                {sirclo_get_text text='categories_title'}
-            </div>
-
-            {if !empty($categories)}
-                <ul id="blog-categories">
-                {foreach $categories as $category}
-                    <li><a href="{$category.link}">{$category.name} ({$category.n_articles})</a></li>
-                {/foreach}
-                </ul>
-            {/if}
-            
-            <div class="sidebar-header">
-				{sirclo_get_text text='archives_title'}
-            </div>
-
-            {if !empty($archives)}
-                {sirclo_render_blog_archives archives=$archives}
-            {/if}
-        </div>
-
-        <div id="blog-articles-content" class="span-sirclo4-3 col">
+        <div id="blog-articles-content" class="col-md-9">
             <div class="blog-articles-row">
                 {if !empty($article.author_link)}
                     <p class="author">{sirclo_get_text text='misc_by'} <a href="{$article.author_link}">{$article.author}</a> {sirclo_get_text text='misc_on'} {$article.timestamp|date_format}</p>
@@ -61,6 +31,35 @@
                 <!-- AddThis Button END -->
 				</div>
 			
+        </div>
+		<div id="blog-articles-sidebar" class="col-md-3">
+            <h3>
+                {sirclo_get_text text='recent_posts_title'}  
+            </h3>
+            
+            {if !empty($recent_posts)}
+                {sirclo_render_blog_recent_posts recent_posts=$recent_posts}
+            {/if}
+
+            <h3>
+                {sirclo_get_text text='categories_title'}
+            </h3>
+            
+            {if !empty($categories)}
+                <ul id="blog-categories">
+                {foreach $categories as $category}
+                    <li><a href="{$category.link}">{$category.name} ({$category.n_articles})</a></li>
+                {/foreach}
+                </ul>
+            {/if}
+            
+            <h3>
+            	{sirclo_get_text text='archives_title'}
+            </h3>
+            
+            {if !empty($archives)}
+                {sirclo_render_blog_archives archives=$archives}
+            {/if}
         </div>
     </div>
     

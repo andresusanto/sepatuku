@@ -46,60 +46,6 @@
       {call skeleton_render_products_product products=$featured_products col_count=4}
     </div>
 </div>
-<!--
-<div id="home-banners" class="container">
-  <div class="row">
-    <div class="span4">
-      <div class="banner-content">
-        {if !empty($static_contents['Widget 1'])}
-          <p>
-            {$static_contents['Widget 1']}
-          </p>
-        {/if}
-      </div>
-    </div>
-
-    <div class="span4">
-      <div class="banner-content">
-        {if !empty($static_contents['Widget 2'])}
-          <p>
-            {$static_contents['Widget 2']}
-          </p>
-        {/if}
-      </div>
-    </div>
-
-    <div class="span4">
-      <div class="banner-content">
-        {if !empty($static_contents['Widget 3'])}
-          <p>
-            {$static_contents['Widget 3']}
-          </p>
-        {/if}
-      </div>
-    </div>
-
-  </div>
-</div>-->
-
-<!--
-<div id="first-time-visit" class="modal hide fade">
-  <div class="modal-header">
-    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-    <h3>Newsletter Sign Up</h3>
-  </div>
-  <div class="modal-body">
-    {if !empty($configs.theme_mailing_list_content)}
-      {$configs.theme_mailing_list_content}
-    {/if}
-    <form class="sirclo-form" action="{$links['newsletter']}" method="post">
-      <div class="form-wrapper">
-        <input class="span5" id="appendedInputButton" type="email" name="email" placeholder="Your email..." required>
-        <input style="" class="btn btn-flat" type="submit">
-      </div>
-    </form>
-  </div>
-</div>-->
 
 
 <div class="s-first-time">

@@ -1249,3 +1249,23 @@ div.paging {
 .table-no-bordered .strong{
 	font-weight: bold;
 }
+
+#blog-articles-sidebar  ul{ list-style-type: none; }
+
+#blog-recent-posts > li {
+	padding-bottom: 10px;
+	padding-top: 10px;
+	border-bottom: 1px dotted;
+}
+
+.author{
+	font-size: 11px;
+	font-style: oblique;
+}
+
+#blog-recent-posts > li > img {
+  display:inline-block;
+  width:58px;
+  margin-right:10px;
+  vertical-align:top;
+}

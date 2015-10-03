@@ -75,23 +75,24 @@
     {/if}
 {/function}
 
-{function skeleton_render_sidebar_category categories=array()}
+{function skeleton_render_sidebar_category categories=array() level=0}
+	{$append = ""}
+	{for $i = 0 to $level - 1}
+		{$append = "`$append`----" }
+	{/for}
+	
     {if !empty($categories)}
-        <ul>
-        {foreach $categories as $category}
+		{foreach $categories as $category}
             {if !empty($category.is_active)}
-                {$is_active_class = "active"}
+                {$is_active_class = " active"}
             {else}
                 {$is_active_class = ""}
             {/if}
-            <li class="{$is_active_class}">
-                <a href="{$category.link}">{$category.title}</a>
-                {if !empty($category.is_active) and !empty($category['sub_nav'])}
-                    {call skeleton_render_sidebar_category categories=$category.sub_nav}
-                {/if}
-            </li>
+			<a class="list-group-item{$is_active_class}" href="{$category.link}">{$append} {$category.title}</a>
+			{if !empty($category.is_active) and !empty($category['sub_nav'])}
+				{call skeleton_render_sidebar_category categories=$category.sub_nav level=($level+1)}
+			{/if}
         {/foreach}
-        </ul>
     {/if}
 {/function}
 

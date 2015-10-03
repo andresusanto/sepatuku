@@ -149,22 +149,15 @@
     {/if}
 
     {foreach $categories as $category}
-        <div class="span-sirclo4-1 categories-category">
-        
-        {if !empty($category.images)}
-            <div class="category-image">
-                <a href="{$category.link}"><img src="{$category.images.0}"></a>
-            </div>
-        {/if}
-
-            <div class="category-name">
-                <a href="{$category.link}">{$category.title}</a>
-            </div>
-        </div>
-
-        {if ($category@key % $col_count == $col_count-1)}
-            <div class="clearfix"></div>
-        {/if}
+		<div class="col-xs-3 text-center">
+			{if !empty($category.images)}
+				<a href="{$category.link}"><img src="{$category.images.0}" style="height: 170px;"></a>
+			{else}
+				<img style="height: 170px;" src="{sirclo_resource file='images/na-sm.png'}"/>
+            {/if}
+			<br/>
+			<a href="{$category.link}"><strong>{$category.title}</strong></a>
+		</div>	
     {/foreach}
 {/function}
 

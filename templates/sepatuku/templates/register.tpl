@@ -3,10 +3,9 @@
 {block name="body"}    
     <div id="common-page-header">
         <h1>{sirclo_get_text text='register_title'}</h1>
-        <p>{sirclo_get_text text='register_subtitle'}</p>
     </div>
-
-    <div id="common-page-content">
+	<h3>{sirclo_get_text text='register_subtitle'}</h3>
+    <div id="common-page-content" class="container">
         <div id="store-login" class="row">
             <div class="span6">
                 <div class="wrapper">
@@ -23,5 +22,6 @@
     <script type="text/javascript">
         var register = new SIRCLO.Register();
         register.init();
+		$(".btn-flat").addClass( "btn btn-lg reg-button s-add-to-cart" );
     </script>
 {/block}

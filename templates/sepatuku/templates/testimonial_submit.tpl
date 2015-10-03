@@ -5,7 +5,7 @@
     <h1>{sirclo_get_text text='add_testimonial_link'}</h1>
 </div>
 
-<div id="testimonial">
+<div id="testimonial" class="container">
     <div id="testimonial-submit" class="row">
         <div class="span12">
             <div class="wrapper">
@@ -19,5 +19,6 @@
 {block name="footer"}
 <script type="text/javascript">
     $('.sirclo-form').validate();
+	$(".btn-flat").addClass( "btn btn-lg reg-button s-add-to-cart" );
 </script>
 {/block}

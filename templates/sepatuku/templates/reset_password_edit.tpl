@@ -27,5 +27,6 @@
             }
         }
     });
+	$(".btn-flat").addClass( "btn btn-lg reg-button s-add-to-cart" );
 </script>
 {/block}

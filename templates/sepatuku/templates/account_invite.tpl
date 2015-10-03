@@ -9,7 +9,7 @@
     <div class="container" id="account-content">
         <div class="row sirclo-no-negative col-wrap">
             <div id="account-sidebar" class="span-sirclo4-1 margin-to-padding col common-sidebar col-md-3 s-top-margin">
-                <h2 class="nomargin">MY ACCOUNT</h2>
+                <h3 class="nomargin">MY ACCOUNT</h3>
                 {$_sidename = 'account_invite'}
                 {include 'includes/account_nav.tpl'}
             </div>

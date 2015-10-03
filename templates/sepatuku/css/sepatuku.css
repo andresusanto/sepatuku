@@ -1241,3 +1241,11 @@ div.paging {
 .s-sidebar-anak li ul{
 	margin-left: 40px;
 }
+
+.table.table-no-bordered th, .table.table-no-bordered td {
+  border-top:none;
+}
+
+.table-no-bordered .strong{
+	font-weight: bold;
+}

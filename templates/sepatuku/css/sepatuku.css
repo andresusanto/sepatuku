@@ -1227,3 +1227,17 @@ div.paging {
 	width: 30%;
 	height: 150px;
 }
+
+.sidebar-header{
+	font-family: BebasNeue;
+	color: #333333;
+	font-size: 20px;
+}
+
+.s-sidebar-anak{
+	font-size: 12px;
+}
+
+.s-sidebar-anak li ul{
+	margin-left: 40px;
+}

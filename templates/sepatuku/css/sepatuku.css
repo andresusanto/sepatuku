@@ -1140,3 +1140,74 @@ img.s-icon-pay {
 #product-price{
 	font-size: 20px;
 }
+
+div.paging {
+  float:right;
+}
+#products-list-paging {
+  text-align:right;
+}
+#products-list-paging .pagination_number {float:right;
+}
+#products-list-paging a, #products-list-paging span {
+  border:1px solid #e5e5e5;
+  padding:5px 10px;
+  font-size:14px;
+  display:block;
+  float:left;
+  color:#999;
+}
+#products-list-paging span.page-active { 
+  font-size:13px; 
+  font-weight:bold;
+  color:#000;
+}
+#products-list-paging .page-prev {
+  border-top-left-radius:3px;
+  border-bottom-left-radius:3px;
+}
+#products-list-paging .page-next {
+  border-top-right-radius:3px;
+  border-bottom-right-radius:3px; 
+}
+
+#orders-list-paging {
+  text-align: right;
+  margin-bottom: 85px;
+  margin-right: 20px;
+}
+#orders-list-paging .pagination_number {float:right;
+}
+#orders-list-paging a, #orders-list-paging span {
+  border:1px solid #e5e5e5;
+  padding:5px 10px;
+  font-size:12px;
+  display:block;
+  float:left;
+  color:#999;
+}
+#orders-list-paging span.page-active { 
+  font-size:13px; 
+  font-weight:bold;
+  color:#000;
+}
+#orders-list-paging .page-prev {
+  border-top-left-radius:3px;
+  border-bottom-left-radius:3px;
+}
+#orders-list-paging .page-next {
+  border-top-right-radius:3px;
+  border-bottom-right-radius:3px; 
+}
+
+#common-page-headerz {
+  margin-top:20px;
+  background-color:#f6f6f6;
+  height:130px;
+}
+
+#common-page-headerz h1{
+  text-align: left;
+  padding-top: 70px;
+  padding-left: 20px;
+}

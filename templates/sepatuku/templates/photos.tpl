@@ -1,7 +1,7 @@
 {extends file='includes/theme.tpl'}
 
 {block name="body"}
-    <div class="container" id="common-page-header">
+    <div class="container">
         <h1>{sirclo_get_text text='lookbook_title'}</h1>
         <h3>{$active_category.title}</h3>
     </div>

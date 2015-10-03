@@ -1131,3 +1131,12 @@ img.s-icon-pay {
 .sirclo-form input[type=submit] {
 	border: none;
 }
+
+.s-fifty-dropbox{
+	width: 48%;
+	margin-right: 10px;
+}
+
+#product-price{
+	font-size: 20px;
+}
